@@ -37,7 +37,7 @@ const ROUTES = [
 	},
 	{
 		name: 'Contact Us',
-		path: '#footer',
+		path: '#contact',
 		component: null
 	}
 ];
