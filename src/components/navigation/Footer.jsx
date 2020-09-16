@@ -37,17 +37,12 @@ export default class Footer extends Component {
                  style={{
                    backgroundColor: '#242424',
                    height: '4.5em',
-                   position: 'absolute',
-                   left: 0,
-                   marginTop: '1rem',
-                   paddingTop: '1rem',
-                   bottom: 0,
                  }}
                  className="p-0">
         <Toolbar style={{marginLeft: 100, marginRight: 100}}>
           <Container fluid className="p-0">
             <Row className="mx-n4">
-              <Col xs="1" className="my-auto">
+              <Col xs="1" className="my-auto p-0">
                 <p style={{fontSize: 20, margin: 0, padding: 0}} className="text-white mr-5">
                   Socials
                 </p>

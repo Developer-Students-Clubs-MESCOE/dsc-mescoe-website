@@ -7,11 +7,21 @@ import Typical from 'react-typical';
 import gdgLogo from "../assets/img/gdg_logo.png";
 import gdgWordmark from "../assets/img/gdg_wordmark.png";
 import dscHomeImage from "../assets/img/dsc_home_image.webp";
+import downArrow from "../assets/img/down-arrow.svg";
 
+import homeSections from "../data/homeSections";
+import HomeSection from "../components/home/HomeSection";
+import {resetNavStyle} from "../utils/utils";
 
 export default class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
   componentDidMount() {
     document.title = 'Home - DSC MESCOE';
+    resetNavStyle({page: 'Home'})
     window.addEventListener('scroll', this.handleScroll);
   }
 
@@ -20,29 +30,36 @@ export default class Home extends React.Component {
   }
 
   handleScroll() {
-    console.log(window.scrollY);
-    if (window.scrollY > 120) {
-      document.querySelectorAll('.dsc-brand').forEach(e => {
-        if (e.classList.contains('fade-out-animation'))
-          e.classList.remove('fade-out-animation')
-        e.classList.add('fade-in-animation')
-      });
-      document.querySelector('header').classList.replace('MuiPaper-elevation0', 'MuiPaper-elevation4')
-
-    } else {
-      document.querySelectorAll('.dsc-brand').forEach(e => {
-        if (e.classList.contains('fade-in-animation'))
-          e.classList.remove('fade-in-animation')
-        e.classList.add('fade-out-animation')
-        document.querySelector('header').classList.replace('MuiPaper-elevation4', 'MuiPaper-elevation0')
-      });
+    if (document.title.includes('Home')) {
+      if (this.brand) {
+        const bottom = this.brand.getBoundingClientRect().bottom;
+        const navBar = document.querySelector('.dsc-nav');
+        const navBottom = navBar.getBoundingClientRect().bottom
+        if (bottom <= navBottom) {
+          document.querySelectorAll('.dsc-brand').forEach(e => {
+            if (e.classList.contains('fade-out-animation'))
+              e.classList.replace('fade-out-animation', 'fade-in-animation')
+            else
+              e.classList.add('fade-in-animation')
+          });
+          navBar.classList.replace('MuiPaper-elevation0', 'MuiPaper-elevation4')
+        } else {
+          document.querySelectorAll('.dsc-brand').forEach(e => {
+            if (e.classList.contains('fade-in-animation'))
+              e.classList.replace('fade-in-animation', 'fade-out-animation')
+            else
+              e.classList.add('fade-out-animation')
+          });
+          navBar.classList.replace('MuiPaper-elevation4', 'MuiPaper-elevation0')
+        }
+      }
     }
   }
 
   render() {
     return (
       <Toolbar style={{marginLeft: 100, marginRight: 100}} className="p-0 mt-5">
-        <Container fluid className='mt-5'>
+        <Container fluid style={{height: "100%"}} className='mt-5'>
           <Row>
             <Col className='my-auto'>
               <Row ref={node => this.brand = node}>
@@ -114,8 +131,8 @@ export default class Home extends React.Component {
                     Building
                     <Typical
                       loop={Infinity}
-                      wrapper="React.Fragment"
-                      steps={[' a strong community.', 3000 ,' fortis civitas.', 3000]}
+                      wrapper="span"
+                      steps={[' a strong community.', 3000, ' fortis civitas.', 3000]}
                     />
                   </p>
                 </Col>
@@ -125,6 +142,16 @@ export default class Home extends React.Component {
               <Image src={dscHomeImage} style={{width: '100%', borderRadius: 30, boxShadow: "-25px -30px #4385F4"}}/>
             </Col>
           </Row>
+          <Row className='mt-5 text-center'>
+            <Col>
+              <Image src={downArrow} style={{width: "4%"}}/>
+            </Col>
+          </Row>
+          <Row className='mt-5'/>
+          {homeSections.map((homeSection, key) => <Row key={key} className='mt-5'>
+            <HomeSection key={key} data={homeSection}/>
+          </Row>)}
+          <Row className='mb-5'/>
         </Container>
       </Toolbar>
     );
