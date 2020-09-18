@@ -1,9 +1,35 @@
-body {
-	margin: 0;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+.dsc-brand {
+    opacity: 0;
+}
+
+.fade-in-animation {
+    animation: fadeIn 300ms forwards;
+}
+
+.fade-out-animation {
+    animation: fadeOut 300ms forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 * {
-	font-family: 'Google Sans', 'Roboto';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Google Sans', 'Roboto', sans-serif;
 }
