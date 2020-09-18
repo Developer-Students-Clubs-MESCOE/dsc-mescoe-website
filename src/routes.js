@@ -4,41 +4,54 @@ import Events from './views/Events';
 import Videos from './views/Videos';
 import Projects from './views/Projects';
 
+export const RouteType = {
+	LINK: 0,
+	PAGE: 1,
+	FOOTER: 2
+}
+
 const ROUTES = [
 	{
 		name: 'Home',
 		path: '/',
-		component: Home
+		component: Home,
+		type: RouteType.PAGE
 	},
 	{
 		name: 'Team',
 		path: '/team',
-		component: Team
+		component: Team,
+		type: RouteType.PAGE
 	},
 	{
 		name: 'Events',
 		path: '/events',
-		component: Events
+		component: Events,
+		type: RouteType.PAGE
 	},
 	{
 		name: 'Videos',
 		path: '/videos',
-		component: Videos
+		component: Videos,
+		type: RouteType.PAGE
 	},
 	{
 		name: 'Projects',
 		path: '/projects',
-		component: Projects
+		component: Projects,
+		type: RouteType.PAGE
 	},
 	{
 		name: 'Blogs',
-		path: '#blogs',
-		component: null
+		path: 'https://medium.com',
+		component: null,
+		type: RouteType.LINK
 	},
 	{
 		name: 'Contact Us',
-		path: '#footer',
-		component: null
+		path: '#contact',
+		component: null,
+		type: RouteType.FOOTER
 	}
 ];
 

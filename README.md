@@ -36,7 +36,7 @@ yarn test
 * Website: https://dscmescoe.ml
 * Twitter: [@dscmescoe](https://twitter.com/dscmescoe)
 * Github: [@Developer-Students-Clubs-MESCOE](https://github.com/Developer-Students-Clubs-MESCOE)
-* LinkedIn: [@dsc-mescoe-powered-by-google-developers](https://linkedin.com/in/dsc-mescoe-powered-by-google-developers)
+* LinkedIn: [@dscmescoe](https://www.linkedin.com/company/dscmescoe)
 
 ## Show your support
 

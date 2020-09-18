@@ -1,5 +1,6 @@
 import { Toolbar } from '@material-ui/core';
 import React from 'react';
+import {resetNavStyle} from "../utils/utils";
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import logo from '../assets/img/sample.jpg';
 
@@ -57,6 +58,7 @@ const projects = [
 export default class Projects extends React.Component {
 	componentDidMount() {
 		document.title = 'Projects - DSC MESCOE';
+		resetNavStyle({page: 'Projects'})
 	}
 	render() {
 		return (
