@@ -1,5 +1,5 @@
 import React from 'react';
-import {Toolbar} from '@material-ui/core';
+import {Hidden, Toolbar} from '@material-ui/core';
 import {Switch, Route, BrowserRouter as Router} from 'react-router-dom';
 import DSCNavBar from './components/navigation/DSCNavBar';
 import ROUTES, {RouteType} from './routes';
@@ -23,7 +23,9 @@ export default class App extends React.Component {
         <DSCNavBar/>
         <Toolbar/>
         <Switch>{this.getRoutes(ROUTES)}</Switch>
-        <Footer/>
+        <Hidden xsDown>
+          <Footer/>
+        </Hidden>
       </Router>
     );
   }

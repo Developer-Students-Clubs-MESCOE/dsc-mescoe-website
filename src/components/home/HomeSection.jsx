@@ -1,20 +1,20 @@
 import React, {Component} from 'react';
 import {Col, Image, ResponsiveEmbed, Row} from "react-bootstrap";
-import {Button, CardActionArea, Card, CardMedia, CardContent, CardActions} from '@material-ui/core';
+import {Button, CardActionArea, Card, CardMedia, CardContent, CardActions, Hidden} from '@material-ui/core';
 import ReactPlayer from "react-player";
 import Paper from "@material-ui/core/Paper";
 
 class HomeSection extends Component {
-
   render() {
     const data = this.props.data;
     return (
       <React.Fragment>
-        <Col className='p-0 my-auto' id={data.id ? data.id : ""}>
-          <Row>
+        <Col xs="12" md={data.image ? "6" : null} lg={data.image ? "6" : null} className='p-0 my-auto'
+             id={data.id ? data.id : ""}>
+          <Row className="ml-3">
             <h3 style={{color: data.button.backgroundColor}}>{data.title}</h3>
           </Row>
-          <Row>
+          <Row className="ml-3">
             {data.content.map((text, key) => <Col key={key} xs="11" className="p-0 mt-2">
               <p
                 className='p-0 m-0'
@@ -26,13 +26,13 @@ class HomeSection extends Component {
             </Col>)}
           </Row>
           {data.videos ?
-            <Row className="mt-5">
-              {data.videos.map((video, index) => <Col key={index} className="p-0 pr-4" xs="4">
+            <Row className="ml-3">
+              {data.videos.map((video, index) => <Col key={index} className="p-0 pr-4 mt-5" xs="12" md="6" lg="4">
                 <ResponsiveEmbed
                   style={{
                     borderRadius: 30,
                     boxShadow: `-10px -10px ${data.button.backgroundColor}`,
-                    border: `1px solid ${data.button.backgroundColor}`
+                    border: `2px solid ${data.button.backgroundColor}`
                   }}>
                   <Col>
                     <ReactPlayer url={video}/>
@@ -42,15 +42,17 @@ class HomeSection extends Component {
             </Row>
             : null}
           {data.cards ?
-            <Row className="mt-5">
-              {data.cards.map((card, index) => <Col key={index} className="p-0 pr-4" xs="4">
+            <Row className="ml-3">
+              {data.cards.map((card, index) => <Col xs="12" key={index} className="p-0 pr-4 mt-5" md="6" lg="4">
                 <Card style={{
                   boxShadow: `-10px -10px ${data.button.backgroundColor}`,
                   borderRadius: 10,
-                  border: `1px solid ${data.button.backgroundColor}`
+                  border: `2px solid ${data.button.backgroundColor}`
                 }}>
                   <CardActionArea>
-                    <CardMedia image={card.image} component="img" title="Event Image"/>
+                    <ResponsiveEmbed aspectRatio="16by9">
+                      <CardMedia image={card.image} component="img" title="Event Image"/>
+                    </ResponsiveEmbed>
                     <CardContent>
                       {card.content.map((text, key) => <p
                         key={key}
@@ -71,7 +73,7 @@ class HomeSection extends Component {
               </Col>)}
             </Row>
             : null}
-          <Row className='mt-5'>
+          <Row className='mt-5 ml-3'>
             <Button variant="contained" href={data.button.href} size='large' style={{
               backgroundColor: data.button.backgroundColor,
               color: data.button.textColor,
@@ -80,11 +82,13 @@ class HomeSection extends Component {
             }}>{data.button.text}</Button>
           </Row>
         </Col>
-        {data.image ? <Col className='my-auto text-center'>
-          <Paper elevation={3} style={{borderRadius: 10}} variant="outlined">
-            <Image src={data.image} width="100%" style={{borderRadius: 10}}/>
-          </Paper>
-        </Col> : null}
+        <Hidden xsDown>
+          {data.image ? <Col md="6" lg="6" className='my-auto'>
+            <Paper elevation={3} style={{borderRadius: 10}} variant="outlined">
+              <Image src={data.image} width="100%" style={{borderRadius: 10}}/>
+            </Paper>
+          </Col> : null}
+        </Hidden>
       </React.Fragment>
     );
   }

@@ -58,17 +58,17 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <Toolbar style={{marginLeft: 100, marginRight: 100}} className="p-0 mt-5">
-        <Container fluid style={{height: "100%"}} className='mt-5'>
-          <Row>
-            <Col className='my-auto'>
-              <Row ref={node => this.brand = node}>
-                <Col xs="1" className="p-0 my-auto">
+      <Toolbar>
+        <Container className="mt-5">
+          <Row className="text-md-left">
+            <Col xs="12" md="6" className='my-auto'>
+              <Row ref={node => this.brand = node} className="text-left">
+                <Col xs="3" md="3" xl="2" className="my-auto">
                   <Link to="/">
                     <Image src={gdgLogo} style={{width: '100%'}}/>
                   </Link>
                 </Col>
-                <Col xs="11" className="p-0 my-auto px-3">
+                <Col xs="9" md="9" xl="6" className="my-auto" >
                   <Link
                     to="/"
                     style={{
@@ -81,8 +81,8 @@ export default class Home extends React.Component {
                   </Link>
                 </Col>
               </Row>
-              <Row className='mt-4'>
-                <Col xs="3" className="p-0 mr-n3">
+              <Row className='mt-3'>
+                <Col xs="12" lg="5" xl="4" className="my-auto">
                   <p
                     className='p-0 m-0'
                     style={{
@@ -95,14 +95,14 @@ export default class Home extends React.Component {
                     Powered by
                   </p>
                 </Col>
-                <Col xs="5" className="p-1">
+                <Col xs="6" lg="5" xl="6" className="my-auto mx-xl-n4">
                   <a href="https://gdg.community.dev/" target='blank'>
-                    <Image src={gdgWordmark} style={{width: '95%'}}/>
+                    <Image src={gdgWordmark} style={{width: '100%'}}/>
                   </a>
                 </Col>
               </Row>
               <Row className='mt-5'>
-                <Col className="p-0 mr-5">
+                <Col xs="12">
                   <p
                     className='p-0 m-0'
                     style={{
@@ -118,7 +118,7 @@ export default class Home extends React.Component {
                 </Col>
               </Row>
               <Row className='mt-5'>
-                <Col className="p-0">
+                <Col xs="12">
                   <p
                     className='p-0 m-0'
                     style={{
@@ -138,16 +138,16 @@ export default class Home extends React.Component {
                 </Col>
               </Row>
             </Col>
-            <Col>
-              <Image src={dscHomeImage} style={{width: '100%', borderRadius: 30, boxShadow: "-25px -30px #4385F4"}}/>
+            <Col xs="12" md="6" className="mt-5">
+              <Image src={dscHomeImage} style={{width: '100%', borderRadius: 30, boxShadow: "-10px -10px #4385F4", border: "2px solid #4385F4"}}/>
             </Col>
           </Row>
-          <Row className='mt-5 text-center'>
-            <Col>
-              <Image src={downArrow} style={{width: "4%"}}/>
+          <Row className='mt-5'>
+            <Col xs="2" md="1" lg="1" className="mx-auto p-lg-4">
+              <Image src={downArrow} style={{width: "100%"}}/>
             </Col>
           </Row>
-          <Row className='mt-5'/>
+          <Row className='mt-4'/>
           {homeSections.map((homeSection, key) => <Row key={key} className='mt-5'>
             <HomeSection key={key} data={homeSection}/>
           </Row>)}

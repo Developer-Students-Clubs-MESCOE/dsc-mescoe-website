@@ -1,12 +1,11 @@
 import teamImage from "../assets/img/team.webp";
-import location from "../assets/img/location.svg";
-import event from "../assets/img/event.svg";
-// import mediumLogo from "../assets/img/medium.png";
+import {Event, LocationOn} from "@material-ui/icons";
+import React from "react";
 
 const homeSections = [
   {
     title: 'Get to know the team',
-    content: ["We’ve got a brilliant set of minds, that will blow your mind, teaching you, all sorts of stuff in the world of development.",
+    content: ["We’ve got a set of minds, that will blow your mind, teaching you, all sorts of stuff in the world of development.",
       "P.S. They love caffeine too!"],
     button: {
       text: 'The Team',
@@ -33,18 +32,18 @@ const homeSections = [
     cards: [
       {
         image: "https://flutter.dev/images/flutter-logo-sharing.png",
-        content: ["This is the longest possible event name in the history of event names"],
-        actions: [{icon: location, text: "Event Location"}, {icon: event, text: "Aug 1"}],
+        content: ["Flutter Interact Extended"],
+        actions: [{icon: <LocationOn />, text: "Event Location"}, {icon: <Event />, text: "Aug 1"}],
       },
       {
         image: "https://www.freecodecamp.org/news/content/images/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png",
-        content: ["This is the longest possible event name in the history of event names"],
-        actions: [{icon: location, text: "Event Location"}, {icon: event, text: "Aug 2"}],
+        content: ["An Intro to React JS"],
+        actions: [{icon: <LocationOn />, text: "Event Location"}, {icon: <Event />, text: "Aug 2"}],
       },
       {
         image: "https://images.squarespace-cdn.com/content/v1/58d20c79725e25b221549193/1521098155260-OD3QNLD1RK7DGPWMCUA6/ke17ZwdGBToddI8pDm48kNvT88LknE-K9M4pGNO0Iqd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1USOFn4xF8vTWDNAUBm5ducQhX-V3oVjSmr829Rco4W2Uo49ZdOtO_QXox0_W7i2zEA/js.jpg?format=2500w",
-        content: ["This is the longest possible event name in the history of event names"],
-        actions: [{icon: location, text: "Event Location"}, {icon: event, text: "Aug 3"}],
+        content: ["Code JS not 💩"],
+        actions: [{icon: <LocationOn />, text: "Event Location"}, {icon: <Event />, text: "Aug 3"}],
       }
     ],
     videos: null,
@@ -65,7 +64,7 @@ const homeSections = [
   },
   {
     title: 'Featured Projects',
-    content: ["So very proud of our community! Take a look at these awesome projects."],
+    content: ["We're so very proud of our community! Take a look at these awesome projects."],
     button: {
       text: 'View Projects',
       textColor: '#fff',
