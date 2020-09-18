@@ -74,7 +74,7 @@ export default class Events extends React.Component {
 							</Col>)}
 						</Row> */}
 					</Row>
-				</Container>
+			</Container>
 			</Toolbar>
 		);
 	}
