@@ -14,7 +14,7 @@ class HomeSection extends Component {
           <Row className="ml-3">
             <h3 style={{color: data.button.backgroundColor}}>{data.title}</h3>
           </Row>
-          <Row className="ml-3">
+         {data.content ? <Row className="ml-3">
             {data.content.map((text, key) => <Col key={key} xs="11" className="p-0 mt-2">
               <p
                 className='p-0 m-0'
@@ -24,7 +24,7 @@ class HomeSection extends Component {
                 }}
               >{text}</p>
             </Col>)}
-          </Row>
+          </Row> : null}
           {data.videos ?
             <Row className="ml-3">
               {data.videos.map((video, index) => <Col key={index} className="p-0 pr-4 mt-5" xs="12" md="6" lg="4">
@@ -74,12 +74,12 @@ class HomeSection extends Component {
             </Row>
             : null}
           <Row className='mt-5 ml-3'>
-            <Button variant="contained" href={data.button.href} size='large' style={{
+            {data.button.text ? <Button variant="contained" href={data.button.href} size='large' style={{
               backgroundColor: data.button.backgroundColor,
               color: data.button.textColor,
               textTransform: "capitalize",
               borderRadius: 5,
-            }}>{data.button.text}</Button>
+            }}>{data.button.text}</Button> : null}
           </Row>
         </Col>
         <Hidden xsDown>
