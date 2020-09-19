@@ -7,6 +7,7 @@ export default class Events extends React.Component {
 
 	componentDidMount() {
 		document.title = 'Events - DSC MESCOE';
+		resetNavStyle({page: 'Events'})
 	}
 
 	render() {
