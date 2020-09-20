@@ -1,7 +1,3 @@
-import teamImage from "../assets/img/team.webp";
-import {Event, LocationOn} from "@material-ui/icons";
-import React from "react";
-
 const eventSections = [
   {
     title: 'Upcoming ',
