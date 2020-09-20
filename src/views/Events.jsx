@@ -24,7 +24,7 @@ export default class Events extends React.Component {
 						<Col xs={8}>  
 							<TextField
 								id="standard-textarea"
-								label="Serach"
+								label="Search"
 								placeholder="Flutter For Beginner"
 								multiline
 								fullWidth
