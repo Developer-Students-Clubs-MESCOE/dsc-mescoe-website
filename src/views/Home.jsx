@@ -3,12 +3,10 @@ import React from 'react';
 import {Col, Container, Image, Row} from 'react-bootstrap';
 import {Link} from "react-router-dom";
 import Typical from 'react-typical';
-
 import gdgLogo from "../assets/img/gdg_logo.png";
 import gdgWordmark from "../assets/img/gdg_wordmark.png";
 import dscHomeImage from "../assets/img/dsc_home_image.webp";
 import downArrow from "../assets/img/down-arrow.svg";
-
 import homeSections from "../data/homeSections";
 import HomeSection from "../components/home/HomeSection";
 import {resetNavStyle} from "../utils/utils";

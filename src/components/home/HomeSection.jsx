@@ -14,7 +14,6 @@ class HomeSection extends Component {
           <Row className="ml-3">
             <h3 style={{color: data.button.backgroundColor}}>{data.title}</h3>
           </Row>
-          <Row className="ml-3">
             {data.content.map((text, key) => <Col key={key} xs="11" className="p-0 mt-2">
               <p
                 className='p-0 m-0'
