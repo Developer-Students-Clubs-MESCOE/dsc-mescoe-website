@@ -1,7 +1,10 @@
-import { Toolbar } from '@material-ui/core';
+import { Toolbar, Button, CardActionArea, Card, CardContent, CardActions } from '@material-ui/core';
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col, ResponsiveEmbed } from 'react-bootstrap';
+import ReactPlayer from "react-player";
 import {resetNavStyle} from "../utils/utils";
+
+import videos from '../data/videos';
 
 export default class Videos extends React.Component {
 	componentDidMount() {
@@ -10,9 +13,35 @@ export default class Videos extends React.Component {
 	}
 	render() {
 		return (
-			<Toolbar>
-				<Container style={{ height: 1000 }}>
-					<h3 className="mt-5">Videos</h3>
+			<Toolbar className="p-0">
+				<Container>
+					<h3 className="mt-5" style={{color: '#EA4435'}}>Videos</h3>
+
+					<Row className="ml-3">
+						{videos.map((videos, index) => <Col xs="12" key={index} className="p-0 pr-4 mt-5" md="6" lg="4">
+							<Card style={{
+								boxShadow: `-10px -10px #EA4435`,
+								borderRadius: 10,
+								border: `2px solid #EA4435`
+								}}>
+								<CardActionArea>
+									<ResponsiveEmbed aspectRatio="16by9">
+										<ReactPlayer height="100%" width="100%" url={videos.youtube}/>
+									</ResponsiveEmbed>
+									<CardContent>
+										<p className='p-0 m-0' style={{ fontSize: 16, fontWeight: "normal", }}>
+											<b>{videos.title}</b><br />
+											<b>Description: </b>{videos.desc}<br />
+										</p>
+									</CardContent>
+								</CardActionArea>
+								<CardActions>
+									<Button style={{color: '#EA4435'}} target="_blank" href={videos.youtube}>Watch Now</Button>
+								</CardActions>
+							</Card>
+						</Col>)}
+					</Row>
+					<Row className='mb-5'/>
 				</Container>
 			</Toolbar>
 		);

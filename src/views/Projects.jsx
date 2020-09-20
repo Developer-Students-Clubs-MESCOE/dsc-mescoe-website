@@ -16,10 +16,10 @@ export default class Projects extends React.Component {
 	render() {
 		return (
 			<Toolbar className="p-0">
-				<Container className="mb-5">
+				<Container>
 					<Row className="mt-5">
 						<Col>
-							<h3>Projects</h3>
+							<h3 style={{color: '#34A852'}}>Projects</h3>
 						</Col>
 						<Col>
 						<Button variant="contained" href='#' size='large' className="float-right" style={{
@@ -51,10 +51,10 @@ export default class Projects extends React.Component {
 									</CardContent>
 								</CardActionArea>
 								<CardActions>
-									{projects.github ? <Button href={projects.github} style={{color: '#000000'}}>
+									{projects.github ? <Button href={projects.github} target="_blank" style={{color: '#000000'}}>
 										<GitHubIcon />
 									</Button> : null}
-									{projects.youtube ? <Button href={projects.youtube} style={{color: '#ff0000'}}>
+									{projects.youtube ? <Button href={projects.youtube} target="_blank" style={{color: '#ff0000'}}>
 										<YouTubeIcon />
 									</Button> : null}
 								</CardActions>
