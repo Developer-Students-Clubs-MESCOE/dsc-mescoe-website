@@ -23,7 +23,7 @@ class DSCDrawer extends Component {
     >
       <List>
         {ROUTES.map((route, index) => (
-          <Link to={route.path}>
+          <Link to={route.path} key={index}>
             <ListItem button key={index}>
               <ListItemText primary={route.name} style={{color: "white"}}/>
             </ListItem>
@@ -33,8 +33,8 @@ class DSCDrawer extends Component {
       <Divider style={{backgroundColor: "white"}}/>
       <List>
         {socials.map((social, index) => (
-          <a href={social.link} target="blank">
-            <ListItem button key={index}>
+          <a href={social.link} target="blank" key={index}>
+            <ListItem button>
               <ListItemIcon>{social.icon}</ListItemIcon>
               <ListItemText primary={social.name} style={{color: "white"}}/>
             </ListItem>
