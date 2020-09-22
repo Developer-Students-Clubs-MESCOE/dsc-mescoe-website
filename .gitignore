@@ -20,6 +20,9 @@
 .idea
 /server/node_modules
 
+# MongoURI
+/server/db/default.js
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
