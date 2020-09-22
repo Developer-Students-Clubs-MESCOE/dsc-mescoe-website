@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mongoURI = require('./default').config.mongoURI;
+const mongoURI = require('./default').mongoURI;
 const Event = require('./models/Event');
 const Project = require('./models/Project');
 const Video = require('./models/Video');
@@ -24,13 +24,9 @@ class Database {
       case 'events':
         Event.findOne({_id: data._id}, (err, event) => {
           if (event === null) {
-            Event.create(data).then(value => {
-              callback(value, true)
-            }).catch(err => {
-              console.log(err);
-            })
+            return Event.create(data)
           } else {
-            callback(event, false)
+            return new Promise((resolve, reject) => reject('Event already exists.'));
           }
         })
         break;
@@ -38,13 +34,9 @@ class Database {
       case 'projects':
         Project.findOne({_id: data._id}, (err, project) => {
           if (project === null) {
-            Project.create(data).then(value => {
-              callback(value, true)
-            }).catch(err => {
-              console.log(err);
-            })
+            return Project.create(data)
           } else {
-            callback(project, false)
+            return new Promise((resolve, reject) => reject('Project already exists.'));
           }
         })
         break;
@@ -52,25 +44,19 @@ class Database {
       case 'videos':
         Video.findOne({_id: data._id}, (err, video) => {
           if (video === null) {
-            Video.create(data).then(value => {
-              callback(value, true)
-            }).catch(err => {
-              console.log(err);
-            })
+            return Video.create(data)
           } else {
-            callback(video, false)
+            return new Promise((resolve, reject) => reject('Video already exists.'));
           }
         })
         break;
 
       default:
-        console.log('Collection not found!');
-        callback(null, false)
-        break;
+        return new Promise((resolve, reject) => reject('Collection does not exist'));
     }
   }
 
-  readAll(collection, callback) {
+  readAll(collection) {
     switch (collection) {
       case 'events':
         return Event.find({}).exec();
