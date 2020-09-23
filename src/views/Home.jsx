@@ -63,7 +63,7 @@ export default class Home extends React.Component {
               <Row ref={node => this.brand = node} className="text-left">
                 <Col xs="3" md="3" xl="2" className="my-auto">
                   <Link to="/">
-                    <Image src={gdgLogo} style={{width: '100%'}}/>
+                    <Image src={gdgLogo} style={{width: '100%'}} className='inverted'/>
                   </Link>
                 </Col>
                 <Col xs="9" md="9" xl="6" className="my-auto" >
@@ -95,7 +95,7 @@ export default class Home extends React.Component {
                 </Col>
                 <Col xs="6" lg="5" xl="6" className="my-auto mx-xl-n4">
                   <a href="https://gdg.community.dev/" target='blank'>
-                    <Image src={gdgWordmark} style={{width: '100%'}}/>
+                    <Image src={gdgWordmark} style={{width: '100%'}} className='inverted'/>
                   </a>
                 </Col>
               </Row>
@@ -137,7 +137,7 @@ export default class Home extends React.Component {
               </Row>
             </Col>
             <Col xs="12" md="6" className="mt-5">
-              <Image src={dscHomeImage} style={{width: '100%', borderRadius: 30, boxShadow: "-10px -10px #4385F4", border: "2px solid #4385F4"}}/>
+              <Image className='inverted' src={dscHomeImage} style={{width: '100%', borderRadius: 30, boxShadow: "-10px -10px #4385F4", border: "2px solid #4385F4"}}/>
             </Col>
           </Row>
           <Row className='mt-5'>

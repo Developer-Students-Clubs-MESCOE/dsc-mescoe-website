@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
 	<React.StrictMode>
-		<App />
+		<App className="dark-mode" />
 	</React.StrictMode>,
 	document.getElementById('root')
 );

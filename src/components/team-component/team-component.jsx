@@ -50,10 +50,10 @@ const TeamComponent = ({ imgUrl, name, role, gitHublink, linkedInLink }) => {
       </div>
       <div className="team-links">
         <a href={gitHublink} target="blank">
-          <GitHub className="mr-2" style={{ color: "black" }} />
+          <GitHub className="mr-2" style={{ color: "white" }} />
         </a>
         <a href={linkedInLink} target="blank">
-          <LinkedIn className="ml-1" style={{ color: "black" }} />
+          <LinkedIn className="ml-1" style={{ color: "white" }} />
         </a>
       </div>
     </div>

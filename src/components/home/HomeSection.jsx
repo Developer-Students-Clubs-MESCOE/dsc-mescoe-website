@@ -12,7 +12,7 @@ class HomeSection extends Component {
         <Col xs="12" md={data.image ? "6" : null} lg={data.image ? "6" : null} className='p-0 my-auto'
              id={data.id ? data.id : ""}>
           <Row className="ml-3">
-            <h3 style={{color: data.button.backgroundColor}}>{data.title}</h3>
+            <h3 style={{color: data.button.backgroundColor}} className='inverted'>{data.title}</h3>
           </Row>
           <Row className="ml-3">
             {data.content.map((text, key) => <Col key={key} xs="11" className="p-0 mt-2">
@@ -29,14 +29,13 @@ class HomeSection extends Component {
             <Row className="ml-3">
               {data.videos.map((video, index) => <Col key={index} className="p-0 pr-4 mt-5" xs="12" md="6" lg="4">
                 <ResponsiveEmbed
+                  className='inverted'
                   style={{
                     borderRadius: 30,
                     boxShadow: `-10px -10px ${data.button.backgroundColor}`,
                     border: `2px solid ${data.button.backgroundColor}`
                   }}>
-                  <Col>
                     <ReactPlayer url={video}/>
-                  </Col>
                 </ResponsiveEmbed>
               </Col>)}
             </Row>
@@ -48,7 +47,7 @@ class HomeSection extends Component {
                   boxShadow: `-10px -10px ${data.button.backgroundColor}`,
                   borderRadius: 10,
                   border: `2px solid ${data.button.backgroundColor}`
-                }}>
+                }} className='inverted'>
                   <CardActionArea>
                     <ResponsiveEmbed aspectRatio="16by9">
                       <CardMedia image={card.image} component="img" title="Event Image"/>
@@ -74,7 +73,7 @@ class HomeSection extends Component {
             </Row>
             : null}
           <Row className='mt-5 ml-3'>
-            <Button variant="contained" href={data.button.href} size='large' style={{
+            <Button variant="contained" className='inverted' href={data.button.href} size='large' style={{
               backgroundColor: data.button.backgroundColor,
               color: data.button.textColor,
               textTransform: "capitalize",
@@ -84,7 +83,7 @@ class HomeSection extends Component {
         </Col>
         <Hidden xsDown>
           {data.image ? <Col md="6" lg="6" className='my-auto'>
-            <Paper elevation={3} style={{borderRadius: 10}} variant="outlined">
+            <Paper className='inverted' elevation={3} style={{borderRadius: 10}} variant="outlined">
               <Image src={data.image} width="100%" style={{borderRadius: 10}}/>
             </Paper>
           </Col> : null}
