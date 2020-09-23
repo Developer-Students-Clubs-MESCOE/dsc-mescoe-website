@@ -3,13 +3,13 @@ import React from 'react';
 import { Container, Row, Col, ResponsiveEmbed } from 'react-bootstrap';
 import ReactPlayer from "react-player";
 import {resetNavStyle} from "../utils/utils";
-import Axios from 'axios'
+import axios from 'axios'
 
 // import videos from '../data/videos';
 
 export default class Videos extends React.Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 		this.state = {
 			videos: []
 		}
@@ -18,12 +18,14 @@ export default class Videos extends React.Component {
 
 	componentDidMount() {
 		document.title = 'Videos - DSC MESCOE';
-		resetNavStyle({page: 'Videos'})
-		Axios.get('http://localhost:5000/api/videos/').then(result => {
-			this.setState({videos: result})
-			console.log(result)
-		}).catch(err => console.log(err))
-		console.log(this.state.videos)
+		resetNavStyle({page: 'Videos'});
+		axios.get(`http://localhost:5000/api/videos/`)
+			.then(res => {
+				console.log(res);
+				this.setState({videos: res.data });
+				})
+			.catch(err => console.error(err.message));
+		console.log(this.state.videos);
 	}
 
 	render() {

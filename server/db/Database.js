@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const mongoURI = require("./default").config.mongoURI;
+const mongoURI = require("./default").mongoURI;
 const Event = require("./models/Event");
 const Project = require("./models/Project");
 const Video = require("./models/Video");
@@ -70,7 +70,7 @@ class Database {
       case "projects":
         return Project.find({}).exec();
       case "videos":
-        return Video.find({}).exec();
+        return Video.find({}).sort({date: -1}).exec();
       default:
         return new Promise((resolve, reject) => {
           reject("Collection does not exist");
