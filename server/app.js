@@ -11,6 +11,7 @@ const projectRouter = require('./routes/project');
 const videoRouter = require('./routes/video');
 
 const app = express();
+app.use(cors());
 
 app.use(cors());
 app.use(logger('dev'));
@@ -19,7 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/api', indexRouter);
+app.use('/api/', indexRouter);
 app.use('/api/events', eventRouter);
 app.use('/api/projects', projectRouter);
 app.use('/api/videos', videoRouter);
