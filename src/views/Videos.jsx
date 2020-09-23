@@ -3,14 +3,29 @@ import React from 'react';
 import { Container, Row, Col, ResponsiveEmbed } from 'react-bootstrap';
 import ReactPlayer from "react-player";
 import {resetNavStyle} from "../utils/utils";
+import Axios from 'axios'
 
-import videos from '../data/videos';
+// import videos from '../data/videos';
 
 export default class Videos extends React.Component {
+	constructor() {
+		super();
+		this.state = {
+			videos: []
+		}
+
+	}
+
 	componentDidMount() {
 		document.title = 'Videos - DSC MESCOE';
 		resetNavStyle({page: 'Videos'})
+		Axios.get('http://localhost:5000/api/videos/').then(result => {
+			this.setState({videos: result})
+			console.log(result)
+		}).catch(err => console.log(err))
+		console.log(this.state.videos)
 	}
+
 	render() {
 		return (
 			<Toolbar className="p-0">
@@ -18,7 +33,7 @@ export default class Videos extends React.Component {
 					<h3 className="mt-5" style={{color: '#EA4435'}}>Videos</h3>
 
 					<Row className="ml-3">
-						{videos.map((videos, index) => <Col xs="12" key={index} className="p-0 pr-4 mt-5" md="6" lg="4">
+						{this.state.videos.map((video, index) => <Col xs="12" key={index} className="p-0 pr-4 mt-5" md="6" lg="4">
 							<Card style={{
 								boxShadow: `-10px -10px #EA4435`,
 								borderRadius: 10,
@@ -26,17 +41,17 @@ export default class Videos extends React.Component {
 								}}>
 								<CardActionArea>
 									<ResponsiveEmbed aspectRatio="16by9">
-										<ReactPlayer height="100%" width="100%" url={videos.youtube}/>
+										<ReactPlayer height="100%" width="100%" url={video.url}/>
 									</ResponsiveEmbed>
 									<CardContent>
 										<p className='p-0 m-0' style={{ fontSize: 16, fontWeight: "normal", }}>
-											<b>{videos.title}</b><br />
-											<b>Description: </b>{videos.desc}<br />
+											<b>{video.name}</b><br />
+											<b>Description: </b>{video.description}<br />
 										</p>
 									</CardContent>
 								</CardActionArea>
 								<CardActions>
-									<Button style={{color: '#EA4435'}} target="_blank" href={videos.youtube}>Watch Now</Button>
+									<Button style={{color: '#EA4435'}} target="_blank" href={video.url}>Watch Now</Button>
 								</CardActions>
 							</Card>
 						</Col>)}
