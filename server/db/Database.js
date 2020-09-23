@@ -1,13 +1,15 @@
-const mongoose = require('mongoose');
-const mongoURI = require('./default').mongoURI;
-const Event = require('./models/Event');
-const Project = require('./models/Project');
-const Video = require('./models/Video');
+const mongoose = require("mongoose");
+const mongoURI = require("./default").mongoURI;
+const Event = require("./models/Event");
+const Project = require("./models/Project");
+const Video = require("./models/Video");
 
 class Database {
   constructor() {
-    this.connect().then(() => console.info("MongoDB Connected")).catch(err => console.log(err));
-    this.db = mongoose.connection
+    this.connect()
+      .then(() => console.info("MongoDB Connected"))
+      .catch(err => console.log(err));
+    this.db = mongoose.connection;
   }
 
   connect() {
@@ -15,83 +17,95 @@ class Database {
       useNewUrlParser: true,
       useCreateIndex: true,
       useFindAndModify: false,
-      useUnifiedTopology: true,
+      useUnifiedTopology: true
     });
   }
 
   createOrUpdate(collection, data) {
     switch (collection) {
-      case 'events':
-        return Event.findOneAndUpdate({title: data.title}, {$set: data}, {
-          new: true,
-          upsert: true,
-          setDefaultsOnInsert: true
-        })
+      case "events":
+        return Event.findOneAndUpdate(
+          { title: data.title },
+          { $set: data },
+          {
+            new: true,
+            upsert: true,
+            setDefaultsOnInsert: true
+          }
+        );
 
-      case 'projects':
-        return Project.findOneAndUpdate({title: data.title}, {$set: data}, {
-          new: true,
-          upsert: true,
-          setDefaultsOnInsert: true
-        })
+      case "projects":
+        return Project.findOneAndUpdate(
+          { title: data.title },
+          { $set: data },
+          {
+            new: true,
+            upsert: true,
+            setDefaultsOnInsert: true
+          }
+        );
 
-      case 'videos':
-        return Video.findOneAndUpdate({name: data.name}, {$set: data}, {
-          new: true,
-          upsert: true,
-          setDefaultsOnInsert: true
-        })
+      case "videos":
+        return Video.findOneAndUpdate(
+          { name: data.name },
+          { $set: data },
+          {
+            new: true,
+            upsert: true,
+            setDefaultsOnInsert: true
+          }
+        );
 
       default:
         return new Promise((resolve, reject) => {
-          reject('Collection does not exist')
+          reject("Collection does not exist");
         });
     }
   }
 
   readAll(collection) {
     switch (collection) {
-      case 'events':
+      case "events":
         return Event.find({}).exec();
-      case 'projects':
+      case "projects":
         return Project.find({}).exec();
-      case 'videos':
-        return Video.find({}).exec();
+      case "videos":
+        return Video.find({}).sort({date: -1}).exec();
       default:
         return new Promise((resolve, reject) => {
-          reject('Collection does not exist')
+          reject("Collection does not exist");
         });
     }
   }
 
   readOne(collection, id) {
     switch (collection) {
-      case 'events':
+      case "events":
         return Event.findById(id);
-      case 'projects':
+      case "projects":
         return Project.findById(id);
-      case 'videos':
+      case "videos":
         return Video.findById(id);
       default:
         return new Promise((resolve, reject) => {
-          reject('Collection does not exist')
+          reject("Collection does not exist");
         });
     }
   }
 
   delete(collection, id) {
     switch (collection) {
-      case 'events':
-        return Event.findByIdAndRemove(id)
+      case "events":
+        return Event.findByIdAndRemove(id);
 
-      case 'projects':
-        return Project.findByIdAndRemove(id)
+      case "projects":
+        return Project.findByIdAndRemove(id);
 
-      case 'videos':
-        return Video.findByIdAndRemove(id)
+      case "videos":
+        return Video.findByIdAndRemove(id);
       default:
         return new Promise((resolve, reject) => {
-          reject('Collection does not exist')
+          reject("Collection does not exist");
         });
     }
   }
