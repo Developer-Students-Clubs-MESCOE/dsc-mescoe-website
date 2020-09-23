@@ -19,40 +19,33 @@ class Database {
     });
   }
 
-  create(collection, data, callback) {
+  createOrUpdate(collection, data) {
     switch (collection) {
       case 'events':
-        Event.findOne({_id: data._id}, (err, event) => {
-          if (event === null) {
-            return Event.create(data)
-          } else {
-            return new Promise((resolve, reject) => reject('Event already exists.'));
-          }
+        return Event.findOneAndUpdate({title: data.title}, {$set: data}, {
+          new: true,
+          upsert: true,
+          setDefaultsOnInsert: true
         })
-        break;
 
       case 'projects':
-        Project.findOne({_id: data._id}, (err, project) => {
-          if (project === null) {
-            return Project.create(data)
-          } else {
-            return new Promise((resolve, reject) => reject('Project already exists.'));
-          }
+        return Project.findOneAndUpdate({title: data.title}, {$set: data}, {
+          new: true,
+          upsert: true,
+          setDefaultsOnInsert: true
         })
-        break;
 
       case 'videos':
-        Video.findOne({_id: data._id}, (err, video) => {
-          if (video === null) {
-            return Video.create(data)
-          } else {
-            return new Promise((resolve, reject) => reject('Video already exists.'));
-          }
+        return Video.findOneAndUpdate({name: data.name}, {$set: data}, {
+          new: true,
+          upsert: true,
+          setDefaultsOnInsert: true
         })
-        break;
 
       default:
-        return new Promise((resolve, reject) => reject('Collection does not exist'));
+        return new Promise((resolve, reject) => {
+          reject('Collection does not exist')
+        });
     }
   }
 
@@ -65,109 +58,43 @@ class Database {
       case 'videos':
         return Video.find({}).exec();
       default:
-        return new Promise((resolve, reject) => reject('Collection does not exist'));
+        return new Promise((resolve, reject) => {
+          reject('Collection does not exist')
+        });
     }
   }
 
-//   async update(collection, data) {
-//     switch (collection) {
-//       case 'events':
-//         try {
-//           let event = await Event.findOne(data.id);
-//           if (!event) {
-//             console.log('Event does not exist!');
-//             return;
-//           }
-//           event = {
-//             name: 'updated'
-//           }
-//           await event.save();
-//           console.log(event);
-//           return event;
-//         } catch (err) {
-//           console.error(err.message);
-//         }
-//         break;
-//
-//       case 'projects':
-//         try {
-//           let project = await Project.findOne(data);
-//           if (!project) {
-//             console.log('Project does not exist!');
-//             return;
-//           }
-//           project = {
-//             name: 'updated'
-//           }
-//           await project.save();
-//           console.log(project);
-//           return project;
-//         } catch (err) {
-//           console.error(err.message);
-//         }
-//         break;
-//
-//       case 'videos':
-//         try {
-//           let video = await Video.findOne(data);
-//           if (!video) {
-//             console.log('Video does not exist!');
-//             return;
-//           }
-//           video = {
-//             name: 'updated'
-//           }
-//           await video.save();
-//           console.log(video);
-//           return video;
-//         } catch (err) {
-//           console.error(err.message);
-//         }
-//         break;
-//
-//       default:
-//         console.log('Collection not found!');
-//         break;
-//     }
-//   }
-//
-//   async delete(collection, data) {
-//     switch (collection) {
-//       case 'events':
-//         try {
-//           const event = await Event.findById(data.id);
-//           await event.remove();
-//           console.log('Event removed!');
-//         } catch (err) {
-//           console.error(err.message);
-//         }
-//         break;
-//
-//       case 'projects':
-//         try {
-//           const project = await Project.findById(data.id);
-//           await project.remove();
-//           console.log('Project removed!');
-//         } catch (err) {
-//           console.error(err.message);
-//         }
-//         break;
-//
-//       case 'videos':
-//         try {
-//           const video = await Video.findById(data.id);
-//           await video.remove();
-//           console.log('Video removed!');
-//         } catch (err) {
-//           console.error(err.message);
-//         }
-//         break;
-//
-//       default:
-//         console.log('Collection not found!');
-//         break;
-//     }
-//   }
+  readOne(collection, id) {
+    switch (collection) {
+      case 'events':
+        return Event.findById(id);
+      case 'projects':
+        return Project.findById(id);
+      case 'videos':
+        return Video.findById(id);
+      default:
+        return new Promise((resolve, reject) => {
+          reject('Collection does not exist')
+        });
+    }
+  }
+
+  delete(collection, id) {
+    switch (collection) {
+      case 'events':
+        return Event.findByIdAndRemove(id)
+
+      case 'projects':
+        return Project.findByIdAndRemove(id)
+
+      case 'videos':
+        return Video.findByIdAndRemove(id)
+      default:
+        return new Promise((resolve, reject) => {
+          reject('Collection does not exist')
+        });
+    }
+  }
 }
 
 module.exports = new Database();
