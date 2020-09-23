@@ -1,42 +1,65 @@
-import { TextField, Toolbar } from '@material-ui/core';
-import { SearchOutlined } from '@material-ui/icons';
+import {Toolbar} from '@material-ui/core';
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import {Col, Container, Row} from 'react-bootstrap';
 import {resetNavStyle} from "../utils/utils";
-import eventSections from '../data/eventSections';
-import EventSection from '../components/event/EventSection';
+// import eventSections from '../data/eventSections';
+import EventCard from '../components/event/EventCard';
+import Axios from "axios";
 
 export default class Events extends React.Component {
 
-	componentDidMount() {
-		document.title = 'Events - DSC MESCOE';
-		resetNavStyle({page: 'Events'})
-	}
+  state = {
+    eventSections: {upcoming: [], recent: []}
+  }
 
-	render() {
-		return (
-			<Toolbar>
-				<Container className="mt-5">
-					<Row className="justify-content-center">
-						<Col xs={-4} style={{ marginTop: 20 }}>
-							<SearchOutlined />
-						</Col>
-						<Col xs={8}>  
-							<TextField
-								id="standard-textarea"
-								label="Search"
-								placeholder="Flutter For Beginner"
-								multiline
-								fullWidth
-							/>
-						</Col>
-					</Row>
+  componentDidMount() {
+    document.title = 'Events - DSC MESCOE';
+    resetNavStyle({page: 'Events'})
+    Axios.get('http://localhost:5000/api/events').then(result => {
+      let events = this.state.eventSections;
+      const allEvents = result.data;
+      const upcomingEvents = allEvents.filter(event => event.upcoming);
+      const recentEvents = allEvents.filter(event => !event.upcoming);
+      events["upcoming"] = upcomingEvents
+      events["recent"] = recentEvents
+      this.setState({eventSections: events})
+    });
+  }
 
-					{eventSections.map((homeSection, key) => <Row key={key} className='mt-5'>
-						<EventSection index={key} key={key} data={homeSection}/>
-					</Row>)}
-			</Container>
-			</Toolbar>
-		);
-	}
+  render() {
+    return (
+      <Toolbar>
+        <Container style={{height: window.innerHeight}}>
+          <h3 style={{color: '#FBBD04'}} className='mt-5'>Upcoming Events</h3>
+          <Row className='ml-3'>
+            {this.state.eventSections.upcoming.length ?
+              this.state.eventSections.upcoming.map((eventSection, key) =>
+                <Col xs="12"
+                     key={key}
+                     className='p-0 pr-4 mt-5'
+                     md="6" lg="4">
+                  <EventCard index={key} key={key} data={eventSection} color='#FBBD04'/>
+                </Col>
+              )
+              : <Col xs="12" className='p-0 mt-3'><h5>No recent events</h5></Col>}
+          </Row>
+          <h3 style={{color: '#34A852'}} className='mt-5'>Recently Held Events</h3>
+          <Row className='ml-3'>
+            {this.state.eventSections.recent.length ?
+              this.state.eventSections.recent.map((eventSection, key) =>
+                <Col xs="12"
+                     key={key}
+                     className='p-0 pr-4 mt-5'
+                     md="6" lg="4">
+                  <EventCard index={key} key={key} data={eventSection} color='#34A852'/>
+                </Col>
+              )
+              : <Col xs="12" className='p-0 mt-3'><h5>No recent events</h5></Col>}
+          </Row>
+
+          <Row className="mt-5"/>
+        </Container>
+      </Toolbar>
+    );
+  }
 }
