@@ -9,17 +9,21 @@ videoRouter.get("/", (req, res, next) => {
   database
     .readAll("videos")
     .then(videos => {
-      // if(videos.length >=0) {
       res.status(200).json(videos);
-      // } else {
-      //   res.status(404).json(null)
-      // }
+    })
+    .catch(err => console.log(err));
+});
+
+videoRouter.get("/top3", (req, res, next) => {
+  database
+    .readTop("videos", 3)
+    .then(videos => {
+      res.status(200).json(videos);
     })
     .catch(err => console.log(err));
 });
 
 videoRouter.post("/", (req, res, next) => {
-  // res.json(req.body);
   const videos = new Video({
     _id: new mongoose.Types.ObjectId(),
     name: req.body.name,

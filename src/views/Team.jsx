@@ -1,13 +1,10 @@
 import React from "react";
 import {Toolbar} from "@material-ui/core";
-import {Container, Image, Row, Col} from "react-bootstrap";
+import {Container, Row, Col} from "react-bootstrap";
 // import { GitHub, LinkedIn } from "@material-ui/icons";
-import {resetNavStyle} from "../utils/utils";
+import {resetFooterStyle, resetNavStyle} from "../utils/utils";
 
 // import "./Team.css";
-
-import team from "../assets/img/team.webp";
-import gdglogo from "../assets/img/gdg_logo.png";
 import Dhruvil from "../assets/img/Dhruvil.jpg";
 import Kaif from "../assets/img/Kaif.jpg";
 import Karan from "../assets/img/Karan.jpg";
@@ -19,7 +16,7 @@ import Pratik from "../assets/img/Pratik.jpg";
 import Laukik from "../assets/img/Laukik.jpg";
 import Gaurav from "../assets/img/Gaurav.jpg";
 
-import TeamComponent from "../components/team-component/team-component";
+import TeamComponent from "../components/team/team-component";
 
 export default class Team extends React.Component {
   componentDidMount() {
@@ -28,15 +25,19 @@ export default class Team extends React.Component {
   }
 
   render() {
+    const footer = document.querySelector('#contact');
+    if (footer) {
+      resetFooterStyle()
+    }
     return (
-      <Toolbar>
+      <Toolbar className='grid'>
         <Container className="mb-5">
-          <Row className="mt-5">
+          <Row className="mt-5 no-dark">
             <Col>
               <h3 style={{color: '#4385F4'}}>Our Team</h3>
             </Col>
           </Row>
-          <Row className="mt-5">
+          <Row className="mt-5 no-dark">
             <Col className="d-flex justify-content-center team-component">
               <TeamComponent
                 name="Karan Wagh"
@@ -48,7 +49,7 @@ export default class Team extends React.Component {
             </Col>
           </Row>
 
-          <div className="row mt-5 tech-row">
+          <div className="row mt-5 tech-row no-dark">
             <div className="col-sm d-flex justify-content-center team-component">
               <TeamComponent
                 name="Varun Irani"
@@ -78,7 +79,7 @@ export default class Team extends React.Component {
             </div>
           </div>
 
-          <div className="row mt-5 pr-row">
+          <div className="row mt-5 pr-row no-dark">
             <div className="col-sm d-flex justify-content-center team-component">
               <TeamComponent
                 name="Sakshi Chaudhry"
@@ -99,10 +100,10 @@ export default class Team extends React.Component {
             </div>
           </div>
 
-          <div className="row mt-5 last-row">
+          <div className="row mt-5 last-row no-dark">
             <div className="col-sm d-flex justify-content-center team-component">
               <TeamComponent
-                name="Laukik chavan"
+                name="Laukik Chavan"
                 role="Design Core"
                 imgUrl={Laukik}
                 gitHublink="https://github.com/leo13200006"
@@ -137,6 +138,7 @@ export default class Team extends React.Component {
               />
             </div>
           </div>
+          <Row className='mb-5'/>
         </Container>
       </Toolbar>
     );

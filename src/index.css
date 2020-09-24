@@ -1,3 +1,15 @@
+/*:root {*/
+/*    filter: invert(1);*/
+/*}*/
+
+/*.no-dark {*/
+/*    filter: invert(1);*/
+/*}*/
+
+.grid {
+    background-image: url("../src/assets/img/trialNoGridFinal.svg");
+}
+
 .dsc-brand {
     opacity: 0;
 }

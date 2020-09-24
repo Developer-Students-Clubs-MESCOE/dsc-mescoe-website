@@ -23,7 +23,7 @@ export default class DSCNavBar extends Component {
               </Hidden>
               <Col lg="1" md="1" sm="1" xs="2" className="dsc-brand my-auto p-xl-3 p-lg-3 p-md-2 p-sm-1 p-xs-0">
                 <Link to="/">
-                  <Image src={gdgLogo} style={{width: '100%'}} className='inverted'/>
+                  <Image src={gdgLogo} style={{width: '100%'}} className='no-dark'/>
                 </Link>
               </Col>
               <Col lg="3" md="6" sm="6" xs="6" className="my-auto dsc-brand p-0">

@@ -78,6 +78,21 @@ class Database {
     }
   }
 
+  readTop(collection, count) {
+    switch (collection) {
+      case "events":
+        return Event.find({}).sort({'dateTime': 'asc'}).limit(count).exec();
+      case "projects":
+        return Project.find({}).limit(count).exec();
+      case "videos":
+        return Video.find({}).sort({'date': 'desc'}).limit(count).exec();
+      default:
+        return new Promise((resolve, reject) => {
+          reject("Collection does not exist");
+        });
+    }
+  }
+
   readOne(collection, id) {
     switch (collection) {
       case "events":

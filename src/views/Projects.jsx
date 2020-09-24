@@ -1,22 +1,17 @@
 import {
   Toolbar,
   Button,
-  CardActionArea,
   Card,
-  CardMedia,
   CardContent,
-  CardActions,
   Fade,
   Backdrop,
   Modal
 } from '@material-ui/core';
 import React from 'react';
 import axios from 'axios';
-import {resetNavStyle} from "../utils/utils";
-import {Container, Row, Col, ResponsiveEmbed, Form} from 'react-bootstrap';
-
-import GitHubIcon from '@material-ui/icons/GitHub';
-import YouTubeIcon from '@material-ui/icons/YouTube';
+import {resetFooterStyle, resetNavStyle} from "../utils/utils";
+import {Container, Row, Col, Form} from 'react-bootstrap';
+import ProjectCard from "../components/project/ProjectCard";
 
 
 export default class Projects extends React.Component {
@@ -78,16 +73,6 @@ export default class Projects extends React.Component {
         this.setState({projects: res.data});
       })
       .catch(err => console.error(err.message));
-
-    console.log(window.innerWidth);
-    if (this.props.index > 0) {
-      if (window.innerWidth <= 576) {
-        this.accordion.click();
-      }
-    }
-    if (window.innerWidth <= 1024) {
-      this.setState({cardWidth: window.innerWidth * 0.8, cardHeight: window.innerHeight * 0.8});
-    }
   }
 
   handleOpen = () => {
@@ -103,9 +88,12 @@ export default class Projects extends React.Component {
   }
 
   render() {
+    const footer = document.querySelector('#contact');
+    if (footer) {
+      resetFooterStyle()
+    }
     return (
-      <Toolbar className="p-0">
-
+      <Toolbar className='grid'>
         {this.state.open ?
           <Modal
             style={{
@@ -186,7 +174,6 @@ export default class Projects extends React.Component {
               </Card>
             </Fade>
           </Modal> : null}
-
         <Container>
           <Row className="mt-5">
             <Col>
@@ -199,42 +186,17 @@ export default class Projects extends React.Component {
                 textTransform: "capitalize",
                 borderRadius: 5,
               }} onClick={() => {
-                console.log("Hello")
                 this.clickEvent();
               }}>Submit a Project</Button>
             </Col>
           </Row>
-
           <Row className="ml-3">
             {this.state.projects.map((project, index) => <Col xs="12" key={index} className="p-0 pr-4 mt-5" md="6"
                                                               lg="4">
-              <Card style={{
-                boxShadow: `-10px -10px #34A852`,
-                borderRadius: 10,
-                border: `2px solid #34A852`
-              }}>
-                <CardActionArea>
-                  <ResponsiveEmbed aspectRatio="16by9">
-                    <CardMedia image={project.image} component="img" title="Event Image"/>
-                  </ResponsiveEmbed>
-                  <CardContent>
-                    <p className='p-0 m-0' style={{fontSize: 16, fontWeight: "normal",}}>
-                      <b>{project.title}</b><br/>
-                      <b>Description: </b>{project.description}<br/>
-                    </p>
-                  </CardContent>
-                </CardActionArea>
-                <CardActions>
-                  {project.github ? <Button href={project.github} target="_blank" style={{color: '#000000'}}>
-                    <GitHubIcon/>
-                  </Button> : null}
-                  {project.youtube ? <Button href={project.youtube} target="_blank" style={{color: '#ff0000'}}>
-                    <YouTubeIcon/>
-                  </Button> : null}
-                </CardActions>
-              </Card>
+              <ProjectCard project={project}/>
             </Col>)}
           </Row>
+          <Row className='mb-5'/>
           <Row className='mb-5'/>
         </Container>
       </Toolbar>

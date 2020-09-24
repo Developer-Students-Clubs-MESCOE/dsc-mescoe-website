@@ -1,9 +1,9 @@
 const express = require('express');
 const database = require('../db/Database')
 
-const event = express.Router();
+const eventRouter = express.Router();
 
-event.get('/', (req, res, next) => {
+eventRouter.get('/', (req, res, next) => {
   database.readAll('events').then(events => {
     res.statusCode = 200
     res.json(events)
@@ -13,7 +13,16 @@ event.get('/', (req, res, next) => {
   });
 });
 
-event.get('/:id', (req, res, next) => {
+eventRouter.get("/top3", (req, res, next) => {
+  database
+    .readTop("events", 3)
+    .then(events => {
+      res.status(200).json(events);
+    })
+    .catch(err => console.log(err));
+});
+
+eventRouter.get('/:id', (req, res, next) => {
   database.readOne('events', req.params.id).then(event => {
     res.statusCode = 200
     res.json(event)
@@ -23,7 +32,7 @@ event.get('/:id', (req, res, next) => {
   });
 });
 
-event.post('/add', (req, res, next) => {
+eventRouter.post('/add', (req, res, next) => {
   database.createOrUpdate('events', req.body).then(event => {
     res.statusCode = 201
     res.json({'status': res.statusCode, 'message': 'Event created successfully'})
@@ -33,7 +42,7 @@ event.post('/add', (req, res, next) => {
   })
 })
 
-event.delete('/remove/:id', (req, res, next) => {
+eventRouter.delete('/remove/:id', (req, res, next) => {
   database.delete('events', req.params.id).then(event => {
     res.statusCode = 200
     res.json({'status': res.statusCode, 'message': 'Event deleted successfully'})
@@ -43,7 +52,7 @@ event.delete('/remove/:id', (req, res, next) => {
   })
 })
 
-event.put('/update/:id', (req, res, next) => {
+eventRouter.put('/update/:id', (req, res, next) => {
 })
 
-module.exports = event
+module.exports = eventRouter

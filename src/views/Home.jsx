@@ -9,7 +9,8 @@ import dscHomeImage from "../assets/img/dsc_home_image.webp";
 import downArrow from "../assets/img/down-arrow.svg";
 import homeSections from "../data/homeSections";
 import HomeSection from "../components/home/HomeSection";
-import {resetNavStyle} from "../utils/utils";
+import {resetFooterStyle, resetNavStyle} from "../utils/utils";
+import Axios from "axios";
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -21,6 +22,16 @@ export default class Home extends React.Component {
     document.title = 'Home - DSC MESCOE';
     resetNavStyle({page: 'Home'})
     window.addEventListener('scroll', this.handleScroll);
+    Axios.get('http://localhost:5000/api/events/top3').then(result => {
+      homeSections[1].cards = result.data
+      Axios.get('http://localhost:5000/api/videos/top3').then(result => {
+        homeSections[2].videos = result.data
+        Axios.get('http://localhost:5000/api/projects/top3').then(result => {
+          homeSections[3].cards = result.data
+          this.setState({})
+        })
+      })
+    })
   }
 
   componentWillUnmount() {
@@ -55,15 +66,19 @@ export default class Home extends React.Component {
   }
 
   render() {
+    const footer = document.querySelector('#contact');
+    if (footer) {
+      resetFooterStyle()
+    }
     return (
-      <Toolbar>
+      <Toolbar className='grid'>
         <Container className="mt-5">
           <Row className="text-md-left">
             <Col xs="12" md="6" className='my-auto'>
               <Row ref={node => this.brand = node} className="text-left">
                 <Col xs="3" md="3" xl="2" className="my-auto">
                   <Link to="/">
-                    <Image src={gdgLogo} style={{width: '100%'}} className='inverted'/>
+                    <Image src={gdgLogo} style={{width: '100%'}} className='no-dark'/>
                   </Link>
                 </Col>
                 <Col xs="9" md="9" xl="6" className="my-auto" >
@@ -95,7 +110,7 @@ export default class Home extends React.Component {
                 </Col>
                 <Col xs="6" lg="5" xl="6" className="my-auto mx-xl-n4">
                   <a href="https://gdg.community.dev/" target='blank'>
-                    <Image src={gdgWordmark} style={{width: '100%'}} className='inverted'/>
+                    <Image src={gdgWordmark} style={{width: '100%'}} className='no-dark'/>
                   </a>
                 </Col>
               </Row>
@@ -126,18 +141,17 @@ export default class Home extends React.Component {
                       textDecoration: 'inherit'
                     }}
                   >
-                    Building
                     <Typical
                       loop={Infinity}
                       wrapper="span"
-                      steps={[' a strong community.', 3000, ' fortis civitas.', 3000]}
+                      steps={['Build good things, together,', 2000, '', 1000]}
                     />
                   </p>
                 </Col>
               </Row>
             </Col>
             <Col xs="12" md="6" className="mt-5">
-              <Image className='inverted' src={dscHomeImage} style={{width: '100%', borderRadius: 30, boxShadow: "-10px -10px #4385F4", border: "2px solid #4385F4"}}/>
+              <Image className='no-dark' src={dscHomeImage} style={{width: '100%', borderRadius: 30, boxShadow: "-10px -10px #4385F4", border: "2px solid #4385F4"}}/>
             </Col>
           </Row>
           <Row className='mt-5'>
@@ -147,9 +161,11 @@ export default class Home extends React.Component {
           </Row>
           <Row className='mt-4'/>
           {homeSections.map((homeSection, key) => <Row key={key} className='mt-5'>
-            <HomeSection key={key} data={homeSection}/>
+            <HomeSection data={homeSection} index={key}/>
           </Row>)}
           <Row className='mb-5'/>
+          <Row className='mb-5'/>
+
         </Container>
       </Toolbar>
     );

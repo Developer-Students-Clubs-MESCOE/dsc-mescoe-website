@@ -33,7 +33,7 @@ const TeamComponent = ({ imgUrl, name, role, gitHublink, linkedInLink }) => {
             src={imgUrl}
           />
         </div>
-        <div className="d-flex flex-column team-cred">
+        <div className="d-flex flex-column team-cred no-dark">
           <span
             className="text-center font-weight-light"
             style={{ fontSize: "18px" }}

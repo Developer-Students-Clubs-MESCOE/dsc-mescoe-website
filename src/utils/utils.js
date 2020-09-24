@@ -19,3 +19,18 @@ export function resetNavStyle(options) {
     document.querySelector('.dsc-nav').classList.replace('MuiPaper-elevation0', 'MuiPaper-elevation4')
   }
 }
+
+export function resetFooterStyle() {
+  const footer = document.querySelector('#contact');
+  if (footer) {
+    if (window.innerHeight < document.body.scrollHeight) {
+      if (footer.classList.contains('fade-in-animation'))
+        footer.classList.replace('fade-in-animation', 'fade-out-animation')
+      else footer.classList.add('fade-out-animation')
+    } else {
+      if (footer.classList.contains('fade-out-animation'))
+        footer.classList.replace('fade-out-animation', 'fade-in-animation')
+      else footer.classList.add('fade-in-animation')
+    }
+  }
+}

@@ -70,7 +70,7 @@ class EventCard extends Component {
                 boxShadow: `-10px -10px ${this.props.color}`,
                 borderRadius: 10,
                 border: `2px solid ${this.props.color}`
-              }}>
+              }} className="no-dark">
                 <CardActionArea>
                   <ResponsiveEmbed aspectRatio="16by9">
                     <CardMedia image={this.state.card.image} component="img" title="Event Image"/>
@@ -110,7 +110,7 @@ class EventCard extends Component {
           boxShadow: `-10px -10px ${this.props.color}`,
           borderRadius: 10,
           border: `2px solid ${this.props.color}`
-        }}>
+        }} className="no-dark">
           <CardActionArea>
             <ResponsiveEmbed aspectRatio="16by9">
               <CardMedia image={data.image} component="img" title="Event Image"/>

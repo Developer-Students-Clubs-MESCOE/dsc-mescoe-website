@@ -1,16 +1,10 @@
 const express = require('express');
 const normalize = require('normalize-url');
-// const database = require('../db/Database')
+const database = require('../db/Database')
 
 const Project = require('../db/models/Project');
 
 const projectRouter = express.Router();
-
-// projectRouter.get('/', (req, res, next) => {
-//   database.readAll('projects').then(events => {
-//     res.json(events)
-//   }).catch(err => console.log(err));
-// });
 
 // @route    POST api/projects
 // @desc     Create or Update a project
@@ -48,6 +42,18 @@ projectRouter.get('/', async (req, res) => {
       console.error(err.message);
       res.status(500).send('Server Error!');
   }
+});
+
+// @route   GET /api/projects/top3
+// @desc    Get recent 3 Projects
+// @access  Public
+projectRouter.get("/top3", (req, res, next) => {
+  database
+    .readTop("projects", 3)
+    .then(projects => {
+      res.status(200).json(projects);
+    })
+    .catch(err => console.log(err));
 });
 
 // @route   GET /api/projects/:id

@@ -1,6 +1,7 @@
 import {Container, Row, Col} from 'react-bootstrap';
 import React, {Component} from 'react';
 import {Facebook, GitHub, Instagram, LinkedIn, Twitter} from "@material-ui/icons";
+import {resetFooterStyle} from "../../utils/utils";
 
 export const socials = [
   {
@@ -31,15 +32,19 @@ export const socials = [
 ];
 
 export default class Footer extends Component {
+  componentDidMount() {
+    resetFooterStyle();
+  }
+
   render() {
     return (
       <Container fluid id="contact"
-
                  style={{
                    backgroundColor: '#242424',
                    height: '4.5em',
                    left: 0,
                    bottom: 0,
+                   position: 'fixed'
                  }}>
         <Container style={{height: "100%"}}>
           <Row style={{height: "100%"}}>
