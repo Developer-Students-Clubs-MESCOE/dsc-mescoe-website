@@ -22,11 +22,11 @@ export default class Home extends React.Component {
     document.title = 'Home - DSC MESCOE';
     resetNavStyle({page: 'Home'})
     window.addEventListener('scroll', this.handleScroll);
-    Axios.get(`${serverURL}/api/events`).then(result => {
+    Axios.get(`${serverURL}/api/events/top3`).then(result => {
       homeSections[1].cards = result.data
-      Axios.get(`${serverURL}/api/videos`).then(result => {
+      Axios.get(`${serverURL}/api/videos/top3`).then(result => {
         homeSections[2].videos = result.data
-        Axios.get(`${serverURL}/api/projects`).then(result => {
+        Axios.get(`${serverURL}/api/projects/top3`).then(result => {
           homeSections[3].cards = result.data
           this.setState({})
         })
@@ -144,7 +144,7 @@ export default class Home extends React.Component {
                     <Typical
                       loop={Infinity}
                       wrapper="span"
-                      steps={['Build good things, together,', 2000, '', 1000]}
+                      steps={['Build good things, together.', 2000, '', 1000]}
                     />
                   </p>
                 </Col>
