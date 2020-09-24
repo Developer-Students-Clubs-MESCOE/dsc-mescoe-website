@@ -179,16 +179,16 @@ export default class Projects extends React.Component {
             <Col>
               <h3 style={{color: '#34A852'}}>Projects</h3>
             </Col>
-            <Col>
-              <Button variant="contained" size='large' className="float-right" style={{
-                backgroundColor: '#34A852',
-                color: '#ffffff',
-                textTransform: "capitalize",
-                borderRadius: 5,
-              }} onClick={() => {
-                this.clickEvent();
-              }}>Submit a Project</Button>
-            </Col>
+            {/*<Col>*/}
+            {/*  <Button variant="contained" size='large' className="float-right" style={{*/}
+            {/*    backgroundColor: '#34A852',*/}
+            {/*    color: '#ffffff',*/}
+            {/*    textTransform: "capitalize",*/}
+            {/*    borderRadius: 5,*/}
+            {/*  }} onClick={() => {*/}
+            {/*    this.clickEvent();*/}
+            {/*  }}>Submit a Project</Button>*/}
+            {/*</Col>*/}
           </Row>
           <Row className="ml-3">
             {this.state.projects.map((project, index) => <Col xs="12" key={index} className="p-0 pr-4 mt-5" md="6"

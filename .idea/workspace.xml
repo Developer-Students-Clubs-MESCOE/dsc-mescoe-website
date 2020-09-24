@@ -29,15 +29,15 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/precache-manifest.e18a66e594a0bbcbbc5c7c3ea1b2f604.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/css/main.9aad754f.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/css/main.9aad754f.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/js/runtime-main.6caaaea0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/js/runtime-main.6caaaea0.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/navigation/DSCNavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/navigation/DSCNavBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/js/2.f67fb514.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/js/2.f67fb514.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/js/2.f67fb514.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/js/main.42702aba.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/js/main.42702aba.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Projects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Projects.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +149,7 @@
       <workItem from="1600844874367" duration="466000" />
       <workItem from="1600867034925" duration="6719000" />
       <workItem from="1600910761314" duration="9294000" />
-      <workItem from="1600925894548" duration="6646000" />
+      <workItem from="1600925894548" duration="7346000" />
     </task>
     <task id="LOCAL-00001" summary="Completed first draft of Home Page having sections with cards and YouTube videos.🙂">
       <created>1600275250732</created>
@@ -288,10 +288,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="470" y="284" key="scopes/0.0.1440.900@0.0.1440.900" timestamp="1600751115241" />
-    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup" timestamp="1600942902113">
+    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup" timestamp="1600943679179">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1600942902113" />
+    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1600943679179" />
     <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.23.1440.809@0.23.1440.809" timestamp="1600877952296" />
   </component>
 </project>
