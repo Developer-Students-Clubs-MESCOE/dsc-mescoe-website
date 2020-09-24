@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/dsc-mescoe-website/precache-manifest.11729f3752026eb81706bfd9211969e9.js"
+  "/dsc-mescoe-website/precache-manifest.e18a66e594a0bbcbbc5c7c3ea1b2f604.js"
 );
 
 self.addEventListener('message', (event) => {
