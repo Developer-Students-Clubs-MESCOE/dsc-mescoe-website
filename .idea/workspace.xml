@@ -26,145 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="204f5db7-3ef6-4e7c-85d0-ae676053e510" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Dhruvil.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Gaurav.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Kaif.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Karan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Laukik.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Pratik.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Prem.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Sakshi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Tanya.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Varun.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/college_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/down-arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/dsc_home_image.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/event.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/facebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/gdg_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/gdg_wordmark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/github.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/instagram.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/linkedin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/location.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/medium.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/sample.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/team.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/trialNoGridFinal.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/twitter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/img/youtube.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/event/EventCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/home/HomeSection.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/navigation/DSCDrawer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/navigation/DSCNavBar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/navigation/Footer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/project/ProjectCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/team/team-component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/team/team-component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/video/VideoCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/data/homeSections.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/utils/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/Events.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/Home.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/Projects.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/Team.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/Videos.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/Database.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/default.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/models/Event.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/models/Project.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/models/Video.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/event.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/project.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/bin/www" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/db/Database.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/db/models/Event.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/db/models/Project.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/db/models/Video.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/public/stylesheets/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/event.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/project.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/video.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/Dhruvil.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/Gaurav.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/Kaif.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/Karan.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/Laukik.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/Pratik.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/Prem.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/Sakshi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/Tanya.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/Varun.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/college_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/down-arrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/dsc_home_image.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/event.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/facebook.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/gdg_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/gdg_wordmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/github.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/instagram.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/linkedin.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/location.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/medium.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/sample.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/team.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/trialNoGridFinal.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/twitter.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/youtube.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/event/EventCard.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/HomeSection.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navigation/DSCDrawer.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navigation/DSCNavBar.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navigation/Footer.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/project/ProjectCard.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/team/team-component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/team/team-component.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/video/VideoCard.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/homeSections.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Events.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Projects.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Team.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Videos.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +149,7 @@
       <workItem from="1600844874367" duration="466000" />
       <workItem from="1600867034925" duration="6719000" />
       <workItem from="1600910761314" duration="9294000" />
-      <workItem from="1600925894548" duration="858000" />
+      <workItem from="1600925894548" duration="1055000" />
     </task>
     <task id="LOCAL-00001" summary="Completed first draft of Home Page having sections with cards and YouTube videos.🙂">
       <created>1600275250732</created>
