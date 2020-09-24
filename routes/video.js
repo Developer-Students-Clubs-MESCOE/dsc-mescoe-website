@@ -27,7 +27,8 @@ videoRouter.post("/", (req, res, next) => {
   const videos = new Video({
     _id: new mongoose.Types.ObjectId(),
     name: req.body.name,
-    url: req.body.url
+    url: req.body.url,
+    description: req.body.description
   });
   videos
     .save()

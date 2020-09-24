@@ -1,7 +1,7 @@
 import {Toolbar} from '@material-ui/core';
 import React from 'react';
 import {Col, Container, Row} from 'react-bootstrap';
-import {resetFooterStyle, resetNavStyle} from "../utils/utils";
+import {resetFooterStyle, resetNavStyle, serverURL} from "../utils/utils";
 // import eventSections from '../data/eventSections';
 import EventCard from '../components/event/EventCard';
 import Axios from "axios";
@@ -15,7 +15,7 @@ export default class Events extends React.Component {
   componentDidMount() {
     document.title = 'Events - DSC MESCOE';
     resetNavStyle({page: 'Events'})
-    Axios.get('http://localhost:5000/api/events').then(result => {
+    Axios.get(`${serverURL}/api/events`).then(result => {
       let events = this.state.eventSections;
       const allEvents = result.data;
       const upcomingEvents = allEvents.filter(event => event.upcoming);

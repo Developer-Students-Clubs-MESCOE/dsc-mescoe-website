@@ -34,3 +34,5 @@ export function resetFooterStyle() {
     }
   }
 }
+
+export const serverURL = 'https://dscmescoe.herokuapp.com'

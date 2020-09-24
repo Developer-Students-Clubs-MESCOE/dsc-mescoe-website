@@ -9,7 +9,7 @@ import dscHomeImage from "../assets/img/dsc_home_image.webp";
 import downArrow from "../assets/img/down-arrow.svg";
 import homeSections from "../data/homeSections";
 import HomeSection from "../components/home/HomeSection";
-import {resetFooterStyle, resetNavStyle} from "../utils/utils";
+import {resetFooterStyle, resetNavStyle, serverURL} from "../utils/utils";
 import Axios from "axios";
 
 export default class Home extends React.Component {
@@ -22,11 +22,11 @@ export default class Home extends React.Component {
     document.title = 'Home - DSC MESCOE';
     resetNavStyle({page: 'Home'})
     window.addEventListener('scroll', this.handleScroll);
-    Axios.get('http://localhost:5000/api/events/top3').then(result => {
+    Axios.get(`${serverURL}/api/events`).then(result => {
       homeSections[1].cards = result.data
-      Axios.get('http://localhost:5000/api/videos/top3').then(result => {
+      Axios.get(`${serverURL}/api/videos`).then(result => {
         homeSections[2].videos = result.data
-        Axios.get('http://localhost:5000/api/projects/top3').then(result => {
+        Axios.get(`${serverURL}/api/projects`).then(result => {
           homeSections[3].cards = result.data
           this.setState({})
         })

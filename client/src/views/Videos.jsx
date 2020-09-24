@@ -1,7 +1,7 @@
 import { Toolbar } from '@material-ui/core';
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import {resetFooterStyle, resetNavStyle} from "../utils/utils";
+import {resetFooterStyle, resetNavStyle, serverURL} from "../utils/utils";
 import axios from 'axios'
 import VideoCard from "../components/video/VideoCard";
 
@@ -16,7 +16,7 @@ export default class Videos extends React.Component {
 	componentDidMount() {
 		document.title = 'Videos - DSC MESCOE';
 		resetNavStyle({page: 'Videos'});
-		axios.get(`http://localhost:5000/api/videos/`)
+		axios.get(`${serverURL}/api/videos`)
 			.then(res => {
 				this.setState({videos: res.data });
 				})

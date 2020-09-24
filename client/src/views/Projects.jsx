@@ -9,7 +9,7 @@ import {
 } from '@material-ui/core';
 import React from 'react';
 import axios from 'axios';
-import {resetFooterStyle, resetNavStyle} from "../utils/utils";
+import {resetFooterStyle, resetNavStyle, serverURL} from "../utils/utils";
 import {Container, Row, Col, Form} from 'react-bootstrap';
 import ProjectCard from "../components/project/ProjectCard";
 
@@ -46,7 +46,7 @@ export default class Projects extends React.Component {
   handleSubmit = event => {
     event.preventDefault();
 
-    axios.post(`http://localhost:5000/api/projects`, {
+    axios.post(serverURL, {
       title: this.state.title,
       description: this.state.description,
       image: this.state.image,
@@ -67,7 +67,7 @@ export default class Projects extends React.Component {
     document.title = 'Projects - DSC MESCOE';
     resetNavStyle({page: 'Projects'});
 
-    axios.get(`http://localhost:5000/api/projects/`)
+    axios.get(`${serverURL}/api/projects`)
       .then(res => {
         console.log(res);
         this.setState({projects: res.data});
