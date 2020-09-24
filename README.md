@@ -27,10 +27,11 @@ yarn start
 
 👤 **DSC MESCOE**
 
-* Website: https://dscmescoe.com
+* Website: https://dscmescoe.tech
 * Twitter: [@dscmescoe](https://twitter.com/dscmescoe)
 * Github: [@Developer-Students-Clubs-MESCOE](https://github.com/Developer-Students-Clubs-MESCOE)
 * LinkedIn: [@dscmescoe](https://www.linkedin.com/company/dscmescoe)
+* Medium: [@DSCMESCOE](https://medium.com/@dscmescoe)
 
 ## Show your support
 
