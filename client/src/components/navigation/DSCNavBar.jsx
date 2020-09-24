@@ -79,7 +79,10 @@ export default class DSCNavBar extends Component {
                       )}
                       {footerRoutes.map(
                         (route, index) =>
-                          <a
+                          <p
+                            onClick={() => {
+                              window.screenTop = document.body.scrollHeight
+                            }}
                             key={index}
                             style={{
                               fontSize: 16,
@@ -88,10 +91,9 @@ export default class DSCNavBar extends Component {
                               color: 'inherit',
                               textDecoration: 'inherit'
                             }}
-                            href={route.path}
                           >
                             {route.name}
-                          </a>
+                          </p>
                       )}
                     </Row>
                   </Container>

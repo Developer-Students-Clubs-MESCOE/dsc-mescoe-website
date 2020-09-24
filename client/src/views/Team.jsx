@@ -82,7 +82,7 @@ export default class Team extends React.Component {
           <div className="row mt-5 pr-row no-dark">
             <div className="col-sm d-flex justify-content-center team-component">
               <TeamComponent
-                name="Sakshi Chaudhry"
+                name="Sakshi Chaudhari"
                 role="Public Relations Core"
                 imgUrl={Sakshi}
                 gitHublink="https://github.com/sakshi-chaudhari"

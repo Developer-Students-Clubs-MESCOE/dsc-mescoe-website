@@ -10,7 +10,7 @@ let homeSections = [
       textColor: '#fff',
       backgroundColor: '#4385F4',
       isLink: true,
-      href: "/team"
+      href: "/#/team"
     },
     image: teamImage,
     cards: [],
@@ -24,7 +24,7 @@ let homeSections = [
       textColor: '#fff',
       backgroundColor: '#FBBD04',
       isLink: true,
-      href: "/events"
+      href: "/#/events"
     },
     image: null,
     cards: [],
@@ -38,7 +38,7 @@ let homeSections = [
       textColor: '#fff',
       backgroundColor: '#EA4435',
       isLink: true,
-      href: "/videos"
+      href: "/#/videos"
     },
     image: null,
     cards: [],
@@ -52,7 +52,7 @@ let homeSections = [
       textColor: '#fff',
       backgroundColor: '#34A852',
       isLink: true,
-      href: "/projects"
+      href: "/#/projects"
     },
     image: null,
     cards: [],

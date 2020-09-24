@@ -27,7 +27,13 @@
   <component name="ChangeListManager">
     <list default="true" id="204f5db7-3ef6-4e7c-85d0-ae676053e510" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/navigation/DSCNavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/navigation/DSCNavBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/data/homeSections.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/data/homeSections.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Team.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Team.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +82,7 @@
       <recent name="$PROJECT_DIR$/server/db" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.dev">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -101,6 +107,17 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="yarn" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/client/package.json" />
       <command value="run" />
@@ -114,6 +131,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -155,7 +173,7 @@
       <workItem from="1600844874367" duration="466000" />
       <workItem from="1600867034925" duration="6719000" />
       <workItem from="1600910761314" duration="9294000" />
-      <workItem from="1600925894548" duration="7922000" />
+      <workItem from="1600925894548" duration="8967000" />
     </task>
     <task id="LOCAL-00001" summary="Completed first draft of Home Page having sections with cards and YouTube videos.🙂">
       <created>1600275250732</created>
@@ -254,22 +272,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="392" y="146" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1600748304803" />
-    <state width="1388" height="227" key="GridCell.Tab.0.bottom" timestamp="1600944021877">
+    <state width="1388" height="227" key="GridCell.Tab.0.bottom" timestamp="1600945539334">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1600944021877" />
-    <state width="1388" height="227" key="GridCell.Tab.0.center" timestamp="1600944021876">
+    <state width="1388" height="227" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1600945539334" />
+    <state width="1388" height="227" key="GridCell.Tab.0.center" timestamp="1600945539331">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1600944021876" />
-    <state width="1388" height="227" key="GridCell.Tab.0.left" timestamp="1600944021875">
+    <state width="1388" height="227" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1600945539331" />
+    <state width="1388" height="227" key="GridCell.Tab.0.left" timestamp="1600945539331">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1600944021875" />
-    <state width="1388" height="227" key="GridCell.Tab.0.right" timestamp="1600944021876">
+    <state width="1388" height="227" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1600945539331" />
+    <state width="1388" height="227" key="GridCell.Tab.0.right" timestamp="1600945539332">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1600944021876" />
+    <state width="1388" height="227" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1600945539332" />
     <state x="205" y="140" key="IDE.errors.dialog" timestamp="1600761745209">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -294,10 +312,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="470" y="284" key="scopes/0.0.1440.900@0.0.1440.900" timestamp="1600751115241" />
-    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup" timestamp="1600944099936">
+    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup" timestamp="1600945970781">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1600944099936" />
+    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1600945970781" />
     <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.23.1440.809@0.23.1440.809" timestamp="1600877952296" />
   </component>
 </project>
