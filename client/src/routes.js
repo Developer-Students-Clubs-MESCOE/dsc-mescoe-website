@@ -43,7 +43,7 @@ const ROUTES = [
 	},
 	{
 		name: 'Blogs',
-		path: 'https://medium.com',
+		path: 'https://medium.com/@dscmescoe',
 		component: null,
 		type: RouteType.LINK
 	},

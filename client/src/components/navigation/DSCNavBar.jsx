@@ -72,6 +72,7 @@ export default class DSCNavBar extends Component {
                             }}
                             className="mr-5"
                             href={route.path}
+                            target='blank'
                           >
                             {route.name}
                           </a>
