@@ -26,43 +26,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="204f5db7-3ef6-4e7c-85d0-ae676053e510" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/build/asset-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/precache-manifest.11729f3752026eb81706bfd9211969e9.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/service-worker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/css/2.d9ad5f5c.chunk.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/css/2.d9ad5f5c.chunk.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/css/main.9aad754f.chunk.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/css/main.9aad754f.chunk.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/js/2.f67fb514.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/js/2.f67fb514.chunk.js.LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/js/2.f67fb514.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/js/main.ebbf7410.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/js/main.ebbf7410.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/js/runtime-main.6caaaea0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/js/runtime-main.6caaaea0.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/media/Dhruvil.38e52b7f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/media/Gaurav.e58ffdd1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/media/Kaif.494634e1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/media/Karan.a7cce155.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/media/Laukik.6bdbbcf6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/media/Pratik.c35b2749.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/media/Prem.7c541b9c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/media/Sakshi.059ff969.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/media/Tanya.c5f78bdf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/media/Varun.6a4efdb7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/media/down-arrow.3550ec3d.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/media/dsc_home_image.ddc5add1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/media/gdg_logo.bd954cee.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/media/gdg_wordmark.d02663a4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/media/team.37501b6a.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/build/static/media/trialNoGridFinal.26ed4dc2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/CNAME" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/asset-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/precache-manifest.1cc9c02ef5b13d5dfab278df12ac1b77.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/service-worker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/css/2.d9ad5f5c.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/css/2.d9ad5f5c.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/css/main.4d7eb8f9.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/css/main.4d7eb8f9.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/js/2.f0f10ea7.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/js/2.f0f10ea7.chunk.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/js/2.f0f10ea7.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/js/main.19931404.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/js/main.19931404.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/js/runtime-main.22e97026.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/js/runtime-main.22e97026.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/media/Dhruvil.38e52b7f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/media/Gaurav.e58ffdd1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/media/Kaif.494634e1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/media/Karan.a7cce155.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/media/Laukik.6bdbbcf6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/media/Pratik.c35b2749.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/media/Prem.7c541b9c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/media/Sakshi.059ff969.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/media/Tanya.c5f78bdf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/media/Varun.6a4efdb7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/media/down-arrow.3550ec3d.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/media/dsc_home_image.ddc5add1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/media/gdg_logo.bd954cee.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/media/gdg_wordmark.d02663a4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/media/team.37501b6a.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/media/trialNoGridFinal.26ed4dc2.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +114,7 @@
       <recent name="$PROJECT_DIR$/server/db" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.deploy">
+  <component name="RunManager" selected="npm.deploy (1)">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -148,6 +150,17 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="deploy (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="yarn" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -172,6 +185,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.deploy (1)" />
         <item itemvalue="npm.deploy" />
         <item itemvalue="npm.build" />
       </list>
@@ -214,7 +228,7 @@
       <workItem from="1600844874367" duration="466000" />
       <workItem from="1600867034925" duration="6719000" />
       <workItem from="1600910761314" duration="9294000" />
-      <workItem from="1600925894548" duration="3254000" />
+      <workItem from="1600925894548" duration="5055000" />
     </task>
     <task id="LOCAL-00001" summary="Completed first draft of Home Page having sections with cards and YouTube videos.🙂">
       <created>1600275250732</created>
@@ -301,6 +315,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="2" width="1079" height="898" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1600926166998" />
+    <state x="420" y="237" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600937534935">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="420" y="237" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1600937534935" />
     <state x="405" y="185" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600269473030">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -309,22 +327,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="392" y="146" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1600748304803" />
-    <state width="1388" height="227" key="GridCell.Tab.0.bottom" timestamp="1600930191547">
+    <state width="1388" height="227" key="GridCell.Tab.0.bottom" timestamp="1600937501123">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1600930191547" />
-    <state width="1388" height="227" key="GridCell.Tab.0.center" timestamp="1600930191546">
+    <state width="1388" height="227" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1600937501123" />
+    <state width="1388" height="227" key="GridCell.Tab.0.center" timestamp="1600937501116">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1600930191546" />
-    <state width="1388" height="227" key="GridCell.Tab.0.left" timestamp="1600930191545">
+    <state width="1388" height="227" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1600937501116" />
+    <state width="1388" height="227" key="GridCell.Tab.0.left" timestamp="1600937501112">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1600930191545" />
-    <state width="1388" height="227" key="GridCell.Tab.0.right" timestamp="1600930191546">
+    <state width="1388" height="227" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1600937501111" />
+    <state width="1388" height="227" key="GridCell.Tab.0.right" timestamp="1600937501117">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1600930191546" />
+    <state width="1388" height="227" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1600937501117" />
     <state x="205" y="140" key="IDE.errors.dialog" timestamp="1600761745209">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -341,14 +359,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="516" y="367" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1600274967240" />
+    <state x="301" y="207" key="run.anything.popup" timestamp="1600930278520">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="301" y="207" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1600930278520" />
     <state x="470" y="284" key="scopes" timestamp="1600751115241">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="470" y="284" key="scopes/0.0.1440.900@0.0.1440.900" timestamp="1600751115241" />
-    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup" timestamp="1600928121020">
+    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup" timestamp="1600933709606">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1600928121020" />
+    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1600933709606" />
     <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.23.1440.809@0.23.1440.809" timestamp="1600877952296" />
   </component>
 </project>

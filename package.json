@@ -1,6 +1,6 @@
 {
   "name": "server",
-  "homepage": "http://developer-students-clubs.github.io/dsc-website",
+  "homepage": "https://developer-students-clubs.github.io/dsc-website",
   "version": "0.0.0",
   "private": true,
   "scripts": {

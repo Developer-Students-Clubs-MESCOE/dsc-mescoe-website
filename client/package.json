@@ -1,7 +1,7 @@
 {
   "name": "dsc-mescoe-website",
   "version": "0.1.0",
-  "homepage": "http://developer-students-clubs.github.io/dsc-mescoe-website",
+  "homepage": "http://developer-students-clubs-mescoe.github.io/dsc-mescoe-website",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.0",
