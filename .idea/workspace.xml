@@ -26,7 +26,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="204f5db7-3ef6-4e7c-85d0-ae676053e510" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/precache-manifest.1cc9c02ef5b13d5dfab278df12ac1b77.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/service-worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/css/2.d9ad5f5c.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/css/2.d9ad5f5c.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/css/main.4d7eb8f9.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/css/main.4d7eb8f9.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/js/2.f0f10ea7.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/js/2.f0f10ea7.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/js/2.f0f10ea7.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/js/main.19931404.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/js/main.19931404.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/js/runtime-main.22e97026.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/js/runtime-main.22e97026.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/Dhruvil.38e52b7f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/Gaurav.e58ffdd1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/Kaif.494634e1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/Karan.a7cce155.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/Laukik.6bdbbcf6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/Pratik.c35b2749.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/Prem.7c541b9c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/Sakshi.059ff969.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/Tanya.c5f78bdf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/Varun.6a4efdb7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/down-arrow.3550ec3d.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/dsc_home_image.ddc5add1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/gdg_logo.bd954cee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/gdg_wordmark.d02663a4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/team.37501b6a.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/trialNoGridFinal.26ed4dc2.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +112,7 @@
       <recent name="$PROJECT_DIR$/server/db" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.deploy">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -111,6 +148,17 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="yarn" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -124,6 +172,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.deploy" />
         <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
@@ -165,7 +214,7 @@
       <workItem from="1600844874367" duration="466000" />
       <workItem from="1600867034925" duration="6719000" />
       <workItem from="1600910761314" duration="9294000" />
-      <workItem from="1600925894548" duration="2303000" />
+      <workItem from="1600925894548" duration="3254000" />
     </task>
     <task id="LOCAL-00001" summary="Completed first draft of Home Page having sections with cards and YouTube videos.🙂">
       <created>1600275250732</created>
@@ -260,22 +309,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="392" y="146" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1600748304803" />
-    <state width="1388" height="227" key="GridCell.Tab.0.bottom" timestamp="1600928444911">
+    <state width="1388" height="227" key="GridCell.Tab.0.bottom" timestamp="1600930191547">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1600928444911" />
-    <state width="1388" height="227" key="GridCell.Tab.0.center" timestamp="1600928444910">
+    <state width="1388" height="227" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1600930191547" />
+    <state width="1388" height="227" key="GridCell.Tab.0.center" timestamp="1600930191546">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1600928444910" />
-    <state width="1388" height="227" key="GridCell.Tab.0.left" timestamp="1600928444909">
+    <state width="1388" height="227" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1600930191546" />
+    <state width="1388" height="227" key="GridCell.Tab.0.left" timestamp="1600930191545">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1600928444909" />
-    <state width="1388" height="227" key="GridCell.Tab.0.right" timestamp="1600928444911">
+    <state width="1388" height="227" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1600930191545" />
+    <state width="1388" height="227" key="GridCell.Tab.0.right" timestamp="1600930191546">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1600928444911" />
+    <state width="1388" height="227" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1600930191546" />
     <state x="205" y="140" key="IDE.errors.dialog" timestamp="1600761745209">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

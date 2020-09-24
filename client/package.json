@@ -1,7 +1,7 @@
 {
   "name": "dsc-mescoe-website",
   "version": "0.1.0",
-  "homepage": "http://developer-students-clubs.github.io/dsc-website",
+  "homepage": "http://developer-students-clubs.github.io/dsc-mescoe-website",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.0",
@@ -25,6 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy":  "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
