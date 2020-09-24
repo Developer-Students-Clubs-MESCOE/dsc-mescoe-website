@@ -19,6 +19,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "../build", "index.html"));
+// })
 app.use("/api/", indexRouter);
 app.use("/api/events", eventRouter);
 app.use("/api/projects", projectRouter);

@@ -5,8 +5,6 @@ import {resetFooterStyle, resetNavStyle} from "../utils/utils";
 import axios from 'axios'
 import VideoCard from "../components/video/VideoCard";
 
-// import videos from '../data/videos';
-
 export default class Videos extends React.Component {
 	constructor(props) {
 		super(props);
@@ -14,7 +12,7 @@ export default class Videos extends React.Component {
 			videos: []
 		}
 	}
-
+47
 	componentDidMount() {
 		document.title = 'Videos - DSC MESCOE';
 		resetNavStyle({page: 'Videos'});

@@ -1,44 +1,21 @@
 {
-  "name": "dsc-mescoe-website",
-  "version": "0.1.0",
+  "name": "server",
+  "version": "0.0.0",
   "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
-    "axios": "^0.20.0",
-    "bootstrap": "^4.5.2",
-    "config": "^3.3.1",
-    "react": "^16.13.1",
-    "react-bootstrap": "^1.3.0",
-    "react-dom": "^16.13.1",
-    "react-player": "^2.6.2",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3",
-    "react-typical": "^0.1.3"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "client": "npm start",
-    "server": "nodemon ./server/bin/www",
+    "start": "node ./bin/www",
+    "client": "cd client && npm start",
+    "server": "nodemon",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "mongoose": "^5.10.6",
+    "morgan": "~1.9.1",
+    "normalize-url": "^5.1.0"
   },
   "devDependencies": {
     "concurrently": "^5.3.0",

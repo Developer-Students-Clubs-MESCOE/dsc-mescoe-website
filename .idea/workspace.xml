@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="204f5db7-3ef6-4e7c-85d0-ae676053e510" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Dhruvil.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Gaurav.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Kaif.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Karan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Laukik.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Pratik.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Prem.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Sakshi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Tanya.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Varun.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/college_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/down-arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/dsc_home_image.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/event.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/gdg_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/gdg_wordmark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/github.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/linkedin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/location.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/medium.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/sample.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/team.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/trialNoGridFinal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/twitter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/youtube.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/event/EventCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/home/HomeSection.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/navigation/DSCDrawer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/navigation/DSCNavBar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/navigation/Footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/project/ProjectCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/team/team-component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/team/team-component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/video/VideoCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/data/homeSections.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/utils/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/views/Events.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/views/Home.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/views/Projects.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/views/Team.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/views/Videos.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/Database.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/default.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/models/Event.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/models/Project.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/models/Video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/event.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/project.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/video.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/bin/www" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/db/Database.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/db/models/Event.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/db/models/Project.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/db/models/Video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/stylesheets/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/event.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/project.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Dhruvil.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Gaurav.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Kaif.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Karan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Laukik.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Pratik.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Prem.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Sakshi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Tanya.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Varun.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/college_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/down-arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/dsc_home_image.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/event.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/gdg_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/gdg_wordmark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/github.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/instagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/linkedin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/location.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/medium.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/sample.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/team.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/trialNoGridFinal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/youtube.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/event/EventCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/HomeSection.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigation/DSCDrawer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigation/DSCNavBar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigation/Footer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/project/ProjectCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/team/team-component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/team/team-component.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/video/VideoCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/homeSections.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Events.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Projects.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Team.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Videos.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="event-routes" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hUwGd6b1HrYOAWmbNgNbv5mgHK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.4.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.11.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client" />
+      <recent name="$PROJECT_DIR$/server/db" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="yarn" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="yarn" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="204f5db7-3ef6-4e7c-85d0-ae676053e510" name="Default Changelist" comment="" />
+      <created>1600078883648</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600078883648</updated>
+      <workItem from="1600078885352" duration="595000" />
+      <workItem from="1600079493910" duration="711000" />
+      <workItem from="1600090940389" duration="244000" />
+      <workItem from="1600091198625" duration="9992000" />
+      <workItem from="1600147227454" duration="6255000" />
+      <workItem from="1600163863847" duration="3183000" />
+      <workItem from="1600236256215" duration="10404000" />
+      <workItem from="1600269591196" duration="4574000" />
+      <workItem from="1600312149435" duration="15496000" />
+      <workItem from="1600353270836" duration="14000" />
+      <workItem from="1600361037540" duration="1315000" />
+      <workItem from="1600399105372" duration="72000" />
+      <workItem from="1600399196991" duration="463000" />
+      <workItem from="1600401079536" duration="8946000" />
+      <workItem from="1600515370422" duration="10000" />
+      <workItem from="1600518575176" duration="660000" />
+      <workItem from="1600571933093" duration="6000" />
+      <workItem from="1600584580949" duration="1458000" />
+      <workItem from="1600598706005" duration="1036000" />
+      <workItem from="1600662927816" duration="1165000" />
+      <workItem from="1600683575299" duration="254000" />
+      <workItem from="1600745732652" duration="7210000" />
+      <workItem from="1600762128655" duration="378000" />
+      <workItem from="1600762521982" duration="168000" />
+      <workItem from="1600762711570" duration="18243000" />
+      <workItem from="1600832480371" duration="1863000" />
+      <workItem from="1600844874367" duration="466000" />
+      <workItem from="1600867034925" duration="6719000" />
+      <workItem from="1600910761314" duration="9294000" />
+      <workItem from="1600925894548" duration="858000" />
+    </task>
+    <task id="LOCAL-00001" summary="Completed first draft of Home Page having sections with cards and YouTube videos.🙂">
+      <created>1600275250732</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600275250732</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Completed Home Page with responsive design.">
+      <created>1600435209007</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600435209007</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="home-page" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Completed first draft of Home Page having sections with cards and YouTube videos." />
+    <MESSAGE value="Completed Home Page with responsive design." />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed Home Page with responsive design." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="418" y="56" key="#CSS" timestamp="1600265997789">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="418" y="56" key="#CSS/0.0.1440.900@0.0.1440.900" timestamp="1600265997789" />
+    <state x="80" y="0" key="#Project_Structure" timestamp="1600872433166">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="80" y="0" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1600872433166" />
+    <state x="229" y="2" width="1079" height="898" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600926166998">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="2" width="1079" height="898" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1600926166998" />
+    <state x="405" y="185" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600269473030">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="405" y="185" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1440.900@0.0.1440.900" timestamp="1600269473030" />
+    <state x="392" y="146" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600748304803">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="392" y="146" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1600748304803" />
+    <state width="1388" height="227" key="GridCell.Tab.0.bottom" timestamp="1600926418565">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1388" height="227" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1600926418565" />
+    <state width="1388" height="227" key="GridCell.Tab.0.center" timestamp="1600926418564">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1388" height="227" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1600926418564" />
+    <state width="1388" height="227" key="GridCell.Tab.0.left" timestamp="1600926418563">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1388" height="227" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1600926418563" />
+    <state width="1388" height="227" key="GridCell.Tab.0.right" timestamp="1600926418564">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1388" height="227" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1600926418564" />
+    <state x="205" y="140" key="IDE.errors.dialog" timestamp="1600761745209">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="205" y="140" key="IDE.errors.dialog/0.0.1440.900@0.0.1440.900" timestamp="1600761745209" />
+    <state x="63" y="23" width="1280" height="809" key="SettingsEditor" timestamp="1600762486991">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="63" y="23" width="1280" height="809" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1600762486991" />
+    <state x="220" y="122" key="Vcs.Push.Dialog.v2" timestamp="1600826143806">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="220" y="122" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1600826143806" />
+    <state x="516" y="367" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600274967240">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="516" y="367" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1600274967240" />
+    <state x="470" y="284" key="scopes" timestamp="1600751115241">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="470" y="284" key="scopes/0.0.1440.900@0.0.1440.900" timestamp="1600751115241" />
+    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup" timestamp="1600925170010">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1600925170010" />
+    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.23.1440.809@0.23.1440.809" timestamp="1600877952296" />
+  </component>
+</project>
