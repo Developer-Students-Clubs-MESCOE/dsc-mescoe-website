@@ -50,11 +50,15 @@ class EventCard extends Component {
             style={{zIndex: 9999}}
             size='lg'
             show={this.state.open}
-            onHide={this.toggleEventModal}
+            onHide={() => {
+              this.toggleEventModal()
+            }}
             onShow={() => {
-              document.querySelectorAll('.event-modal').forEach(e => {
-                e.classList.toggle('dark-mode')
-              })
+              if (JSON.parse(localStorage.getItem('isDarkMode'))) {
+                document.querySelectorAll('.event-modal').forEach(e => {
+                  e.classList.toggle('dark-mode')
+                })
+              }
             }}
 
             centered
