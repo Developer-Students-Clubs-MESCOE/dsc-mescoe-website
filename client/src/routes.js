@@ -48,11 +48,11 @@ const ROUTES = [
 		type: RouteType.LINK
 	},
 	{
-		name: 'Contact Us',
-		path: '#contact',
+		name: 'Community Page',
+		path: 'https://dsc.community.dev/modern-education-societys-college-of-engineering/',
 		component: null,
-		type: RouteType.FOOTER
-	}
+		type: RouteType.LINK
+	},
 ];
 
 export default ROUTES;

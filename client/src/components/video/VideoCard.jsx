@@ -11,7 +11,7 @@ class VideoCard extends Component {
         boxShadow: `-10px -10px #EA4435`,
         borderRadius: 10,
         border: `2px solid #EA4435`
-      }} className="no-dark">
+      }} className="">
         <CardActionArea>
           <ResponsiveEmbed aspectRatio="16by9">
             <ReactPlayer height="100%" width="100%" url={video.url}/>

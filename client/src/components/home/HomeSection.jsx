@@ -14,10 +14,10 @@ class HomeSection extends Component {
         <Col xs="12" md={data.image ? "6" : null} lg={data.image ? "6" : null} className='p-0 my-auto'
              id={data.id ? data.id : ""}>
           <Row className="ml-3">
-            <h3 style={{color: data.button.backgroundColor}} className='no-dark'>{data.title}</h3>
+            <h3 style={{color: data.button.backgroundColor}}>{data.title}</h3>
           </Row>
           <Row className="ml-3">
-            {data.content.map((text, key) => <Col key={key} xs="11" className="p-0 mt-2">
+            {data.content.map((text, key) => <Col key={key} xs="11" className="p-0 mt-2 home">
               <p
                 className='p-0 m-0'
                 style={{
@@ -43,7 +43,7 @@ class HomeSection extends Component {
             </Row>
             : null}
           <Row className='mt-5 ml-3'>
-            <Button variant="contained" className='no-dark' href={data.button.href} size='large' style={{
+            <Button variant="contained" href={data.button.href} size='large' style={{
               backgroundColor: data.button.backgroundColor,
               color: data.button.textColor,
               textTransform: "capitalize",
@@ -53,7 +53,7 @@ class HomeSection extends Component {
         </Col>
         <Hidden xsDown>
           {data.image ? <Col md="6" lg="6" className='my-auto'>
-            <Paper className='no-dark' elevation={3} style={{borderRadius: 10}} variant="outlined">
+            <Paper elevation={3} style={{borderRadius: 10}} variant="outlined">
               <Image src={data.image} width="100%" style={{borderRadius: 10}}/>
             </Paper>
           </Col> : null}

@@ -1,10 +1,7 @@
 import React from "react";
 import {Toolbar} from "@material-ui/core";
 import {Container, Row, Col} from "react-bootstrap";
-// import { GitHub, LinkedIn } from "@material-ui/icons";
 import {resetFooterStyle, resetNavStyle} from "../utils/utils";
-
-// import "./Team.css";
 import Dhruvil from "../assets/img/Dhruvil.jpg";
 import Kaif from "../assets/img/Kaif.jpg";
 import Karan from "../assets/img/Karan.jpg";
@@ -22,6 +19,11 @@ export default class Team extends React.Component {
   componentDidMount() {
     document.title = "Team - DSC MESCOE";
     resetNavStyle({page: "Team"});
+    if (JSON.parse(localStorage.getItem('isDarkMode'))) {
+      document.querySelectorAll('.team').forEach(e => {
+        e.classList.toggle('dark-mode')
+      })
+    }
   }
 
   render() {
@@ -32,12 +34,12 @@ export default class Team extends React.Component {
     return (
       <Toolbar className='grid'>
         <Container className="mb-5">
-          <Row className="mt-5 no-dark">
+          <Row className="mt-5 team">
             <Col>
               <h3 style={{color: '#4385F4'}}>Our Team</h3>
             </Col>
           </Row>
-          <Row className="mt-5 no-dark">
+          <Row className="mt-5 team">
             <Col className="d-flex justify-content-center team-component">
               <TeamComponent
                 name="Karan Wagh"
@@ -49,7 +51,7 @@ export default class Team extends React.Component {
             </Col>
           </Row>
 
-          <div className="row mt-5 tech-row no-dark">
+          <div className="row mt-5 tech-row team">
             <div className="col-sm d-flex justify-content-center team-component">
               <TeamComponent
                 name="Varun Irani"
@@ -79,7 +81,7 @@ export default class Team extends React.Component {
             </div>
           </div>
 
-          <div className="row mt-5 pr-row no-dark">
+          <div className="row mt-5 pr-row team">
             <div className="col-sm d-flex justify-content-center team-component">
               <TeamComponent
                 name="Sakshi Chaudhari"
@@ -100,7 +102,7 @@ export default class Team extends React.Component {
             </div>
           </div>
 
-          <div className="row mt-5 last-row no-dark">
+          <div className="row mt-5 last-row team">
             <div className="col-sm d-flex justify-content-center team-component">
               <TeamComponent
                 name="Laukik Chavan"

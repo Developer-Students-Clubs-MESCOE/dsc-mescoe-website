@@ -21,7 +21,7 @@ let homeSections = [
     content: ["Here are some of our events."],
     button: {
       text: 'View Events',
-      textColor: '#fff',
+      textColor: '#000',
       backgroundColor: '#FBBD04',
       isLink: true,
       href: "/#/events"

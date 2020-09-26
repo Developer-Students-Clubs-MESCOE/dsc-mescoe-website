@@ -13,6 +13,9 @@ export default class App extends React.Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+    if (localStorage.getItem('isDarkMode') === null) {
+      localStorage.setItem('isDarkMode', JSON.stringify(false));
+    }
   }
 
   handleScroll() {

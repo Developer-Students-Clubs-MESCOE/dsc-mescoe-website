@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
 import {IconButton, Drawer, List, ListItem, Divider, ListItemIcon, ListItemText} from "@material-ui/core";
-import ROUTES from "../../routes";
+import ROUTES, {RouteType} from "../../routes";
 import {Menu} from "@material-ui/icons";
 import {socials} from "./Footer";
 import {Link} from "react-router-dom";
+
+const linkRoutes = ROUTES.filter(route => route.type === RouteType.LINK)
+const pageRoutes = ROUTES.filter(route => route.type === RouteType.PAGE)
 
 class DSCDrawer extends Component {
   constructor(props) {
@@ -22,13 +25,21 @@ class DSCDrawer extends Component {
       onKeyDown={this.toggleDrawer(false)}
     >
       <List>
-        {ROUTES.map((route, index) => (
+        {pageRoutes.map((route, index) => (
           <Link to={route.path} key={index}>
             <ListItem button key={index}>
               <ListItemText primary={route.name} style={{color: "white"}}/>
             </ListItem>
           </Link>
         ))}
+        {linkRoutes.map((route, index) => (
+          <a href={route.path} key={index} target='blank'>
+            <ListItem button key={index}>
+              <ListItemText primary={route.name} style={{color: "white"}}/>
+            </ListItem>
+          </a>
+        ))}
+
       </List>
       <Divider style={{backgroundColor: "white"}}/>
       <List>

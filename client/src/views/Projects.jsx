@@ -69,8 +69,12 @@ export default class Projects extends React.Component {
 
     axios.get(`${serverURL}/api/projects`)
       .then(res => {
-        console.log(res);
         this.setState({projects: res.data});
+        if (JSON.parse(localStorage.getItem('isDarkMode'))) {
+          document.querySelectorAll('.project').forEach(e => {
+            e.classList.toggle('dark-mode')
+          })
+        }
       })
       .catch(err => console.error(err.message));
   }
@@ -94,90 +98,10 @@ export default class Projects extends React.Component {
     }
     return (
       <Toolbar className='grid'>
-        {this.state.open ?
-          <Modal
-            style={{
-              top: (window.innerHeight * 0.2),
-              margin: "auto",
-              width: this.state.cardWidth,
-              height: this.state.cardHeight,
-              padding: 20,
-            }}
-            aria-labelledby="transition-modal-title"
-            aria-describedby="transition-modal-description"
-            open={this.state.open}
-            onClose={this.handleClose}
-            closeAfterTransition
-            BackdropComponent={Backdrop}
-            disableAutoFocus={true}
-          >
-            <Fade in={this.state.open}>
-              <Card style={{borderRadius: 10}}>
-                <CardContent>
-                  <Form onSubmit={this.handleSubmit}>
-                    <legend>Submit a Project</legend>
-                    <Form.Group controlId="projectTitle">
-                      <Form.Label>Project Title</Form.Label>
-                      <Form.Control type="text" name="title" onChange={this.handleChange} value={this.state.title}
-                                    placeholder="Enter Project Title" required/>
-                      <Form.Text className="text-muted">
-                        Project Title should not exceed 100 characters.
-                      </Form.Text>
-                    </Form.Group>
-
-                    <Form.Group controlId="projectDescription">
-                      <Form.Label>Project Description</Form.Label>
-                      <Form.Control as="textarea" rows="3" name="description" onChange={this.handleChange}
-                                    value={this.state.description} placeholder="Enter Project Description" required/>
-                      <Form.Text className="text-muted">
-                        Explain the project. A brief intro is expected.
-                      </Form.Text>
-                    </Form.Group>
-
-                    <Form.Group controlId="projectThumbnail">
-                      <Form.Label>Thumbnail Image Link</Form.Label>
-                      <Form.Control type="text" name="image" onChange={this.handleChange} value={this.state.image}
-                                    placeholder="Enter Thumbnail Image's Link"/>
-                      <Form.Text className="text-muted">
-                        Provide the link copied from the address bar in the browser to avoid any errors.
-                      </Form.Text>
-                    </Form.Group>
-
-                    <Form.Group controlId="projectYouTube">
-                      <Form.Label>YouTube Demo Link</Form.Label>
-                      <Form.Control type="text" name="youtube" onChange={this.handleChange} value={this.state.youtube}
-                                    placeholder="Enter Project's YouTube Demo Link"/>
-                      <Form.Text className="text-muted">
-                        Provide the link copied from the address bar in the browser to avoid any errors.
-                      </Form.Text>
-                    </Form.Group>
-
-                    <Form.Group controlId="projectGitHub">
-                      <Form.Label>GitHub Repository Link</Form.Label>
-                      <Form.Control type="text" name="github" onChange={this.handleChange} value={this.state.github}
-                                    placeholder="Enter Project's GitHub Repository Link"/>
-                      <Form.Text className="text-muted">
-                        Provide the link copied from the address bar in the browser to avoid any errors.
-                      </Form.Text>
-                    </Form.Group>
-
-                    <Button variant="primary" type="submit" style={{
-                      backgroundColor: '#34A852',
-                      color: '#ffffff',
-                      textTransform: "capitalize",
-                      borderRadius: 5,
-                    }}>
-                      Submit
-                    </Button>
-                  </Form>
-                </CardContent>
-              </Card>
-            </Fade>
-          </Modal> : null}
         <Container>
           <Row className="mt-5">
             <Col>
-              <h3 style={{color: '#34A852'}}>Projects</h3>
+              <h3 style={{color: '#34A852'}} className='project'>Projects</h3>
             </Col>
             {/*<Col>*/}
             {/*  <Button variant="contained" size='large' className="float-right" style={{*/}
@@ -191,7 +115,7 @@ export default class Projects extends React.Component {
             {/*</Col>*/}
           </Row>
           <Row className="ml-3">
-            {this.state.projects.map((project, index) => <Col xs="12" key={index} className="p-0 pr-4 mt-5" md="6"
+            {this.state.projects.map((project, index) => <Col xs="12" key={index} className="p-0 pr-4 mt-5 project" md="6"
                                                               lg="4">
               <ProjectCard project={project}/>
             </Col>)}

@@ -12,7 +12,7 @@ class ProjectCard extends Component {
         boxShadow: `-10px -10px #34A852`,
         borderRadius: 10,
         border: `2px solid #34A852`
-      }}>
+      }} className=''>
         <CardActionArea>
           <ResponsiveEmbed aspectRatio="16by9">
             <CardMedia image={project.image} component="img" title="Event Image"/>
