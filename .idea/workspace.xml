@@ -26,24 +26,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="204f5db7-3ef6-4e7c-85d0-ae676053e510" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/DarkModeToggler.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/img/Dhruvil.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/img/Dhruvil.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/Dhruvil.38e52b7f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/Laukik.6bdbbcf6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/Prem.7c541b9c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/Sakshi.059ff969.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/Tanya.c5f78bdf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/gdg_logo.bd954cee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/gdg_wordmark.d02663a4.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/event/EventCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/event/EventCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/home/HomeSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/home/HomeSection.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/navigation/DSCDrawer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/navigation/DSCDrawer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/navigation/DSCNavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/navigation/DSCNavBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/project/ProjectCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/project/ProjectCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/team/team-component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/team/team-component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/video/VideoCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/video/VideoCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/data/homeSections.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/data/homeSections.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/Events.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Events.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/navigation/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/navigation/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/views/Projects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Projects.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/Team.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Team.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/Videos.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Videos.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,15 +92,13 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -187,7 +184,9 @@
       <workItem from="1601015123204" duration="4064000" />
       <workItem from="1601033590937" duration="5000" />
       <workItem from="1601033931696" duration="1246000" />
-      <workItem from="1601108379708" duration="7924000" />
+      <workItem from="1601108379708" duration="8098000" />
+      <workItem from="1601117607187" duration="845000" />
+      <workItem from="1601120752442" duration="1215000" />
     </task>
     <task id="LOCAL-00001" summary="Completed first draft of Home Page having sections with cards and YouTube videos.🙂">
       <created>1600275250732</created>
@@ -286,22 +285,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="392" y="146" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1601112957155" />
-    <state width="1388" height="227" key="GridCell.Tab.0.bottom" timestamp="1601116813941">
+    <state width="1388" height="227" key="GridCell.Tab.0.bottom" timestamp="1601122447706">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601116813941" />
-    <state width="1388" height="227" key="GridCell.Tab.0.center" timestamp="1601116813940">
+    <state width="1388" height="227" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601122447706" />
+    <state width="1388" height="227" key="GridCell.Tab.0.center" timestamp="1601122447703">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601116813940" />
-    <state width="1388" height="227" key="GridCell.Tab.0.left" timestamp="1601116813940">
+    <state width="1388" height="227" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601122447703" />
+    <state width="1388" height="227" key="GridCell.Tab.0.left" timestamp="1601122447701">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601116813940" />
-    <state width="1388" height="227" key="GridCell.Tab.0.right" timestamp="1601116813941">
+    <state width="1388" height="227" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601122447701" />
+    <state width="1388" height="227" key="GridCell.Tab.0.right" timestamp="1601122447704">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601116813941" />
+    <state width="1388" height="227" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601122447704" />
     <state x="205" y="140" key="IDE.errors.dialog" timestamp="1600761745209">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -330,10 +329,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="470" y="284" key="scopes/0.0.1440.900@0.0.1440.900" timestamp="1600751115241" />
-    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup" timestamp="1601117179660">
+    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup" timestamp="1601122064966">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1601117179660" />
+    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1601122064966" />
     <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.23.1440.809@0.23.1440.809" timestamp="1600877952296" />
   </component>
 </project>

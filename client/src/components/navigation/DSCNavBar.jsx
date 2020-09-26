@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import {AppBar, Hidden, Toolbar} from '@material-ui/core';
 import gdgLogo from '../../assets/img/gdg_logo.png';
-import {Container, Row, Col, Image, Form} from 'react-bootstrap';
+import {Container, Row, Col, Image} from 'react-bootstrap';
 import ROUTES, {RouteType} from '../../routes';
 import {Link} from 'react-router-dom';
 import DSCDrawer from "./DSCDrawer";
+import DarkModeToggler from "../DarkModeToggler";
 
 export default class DSCNavBar extends Component {
   constructor(props) {
@@ -17,12 +18,10 @@ export default class DSCNavBar extends Component {
 
   componentDidMount() {
     if (JSON.parse(localStorage.getItem('isDarkMode'))) {
-      const navBar = document.querySelector('.dsc-nav');
-      navBar.classList.remove('MuiPaper-elevation4')
       document.querySelector(':root').classList.toggle('dark-mode')
-      // document.querySelectorAll('.home').forEach(e => {
-      //   e.classList.toggle('dark-mode')
-      // })
+      document.querySelectorAll('.nav-logo').forEach(e => {
+        e.classList.toggle('dark-mode')
+      })
     }
   }
 
@@ -30,6 +29,9 @@ export default class DSCNavBar extends Component {
     this.setState({isDarkMode: !this.state.isDarkMode})
     localStorage.setItem('isDarkMode', JSON.stringify(!JSON.parse(localStorage.getItem('isDarkMode'))))
     document.querySelector(':root').classList.toggle('dark-mode')
+    document.querySelectorAll('.nav-logo').forEach(e => {
+      e.classList.toggle('dark-mode')
+    })
     document.querySelectorAll('.home').forEach(e => {
       e.classList.toggle('dark-mode')
     })
@@ -57,12 +59,12 @@ export default class DSCNavBar extends Component {
             <Row>
               <Hidden lgUp implementation="css" className="my-auto">
                 <Col xs="1">
-                  <DSCDrawer/>
+                  <DSCDrawer isDarkMode={this.state.isDarkMode} handleThemeSwitch={this.handleThemeSwitch}/>
                 </Col>
               </Hidden>
               <Col lg="1" md="1" sm="1" xs="2" className="dsc-brand my-auto p-xl-3 p-lg-3 p-md-2 p-sm-1 p-xs-0">
                 <Link to="/">
-                  <Image src={gdgLogo} style={{width: '100%'}} className='no-dark'/>
+                  <Image src={gdgLogo} style={{width: '100%'}} className='nav-logo'/>
                 </Link>
               </Col>
               <Col lg="3" md="6" sm="6" xs="6" className="my-auto dsc-brand p-0">
@@ -114,13 +116,7 @@ export default class DSCNavBar extends Component {
                             {route.name}
                           </a>
                       )}
-                      <Form.Check
-                        checked={this.state.isDarkMode}
-                        type="switch"
-                        id="custom-switch"
-                        label="Dark Mode"
-                        onChange={this.handleThemeSwitch}
-                      />
+                      <DarkModeToggler isDarkMode={this.state.isDarkMode} handleThemeSwitch={this.handleThemeSwitch} color='black'/>
                     </Row>
                   </Container>
                 </Hidden>

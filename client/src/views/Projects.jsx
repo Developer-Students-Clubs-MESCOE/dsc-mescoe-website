@@ -1,16 +1,10 @@
 import {
   Toolbar,
-  Button,
-  Card,
-  CardContent,
-  Fade,
-  Backdrop,
-  Modal
 } from '@material-ui/core';
 import React from 'react';
 import axios from 'axios';
 import {resetFooterStyle, resetNavStyle, serverURL} from "../utils/utils";
-import {Container, Row, Col, Form} from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
 import ProjectCard from "../components/project/ProjectCard";
 
 

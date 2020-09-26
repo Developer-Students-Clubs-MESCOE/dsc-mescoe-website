@@ -4,6 +4,7 @@ import ROUTES, {RouteType} from "../../routes";
 import {Menu} from "@material-ui/icons";
 import {socials} from "./Footer";
 import {Link} from "react-router-dom";
+import DarkModeToggler from "../DarkModeToggler";
 
 const linkRoutes = ROUTES.filter(route => route.type === RouteType.LINK)
 const pageRoutes = ROUTES.filter(route => route.type === RouteType.PAGE)
@@ -39,7 +40,9 @@ class DSCDrawer extends Component {
             </ListItem>
           </a>
         ))}
-
+        <ListItem>
+          <DarkModeToggler isDarkMode={this.props.isDarkMode} handleThemeSwitch={this.props.handleThemeSwitch} color='white'/>
+        </ListItem>
       </List>
       <Divider style={{backgroundColor: "white"}}/>
       <List>

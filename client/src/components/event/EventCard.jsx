@@ -50,16 +50,20 @@ class EventCard extends Component {
             style={{zIndex: 9999}}
             size='lg'
             show={this.state.open}
-            onHide={() => {
-              this.setState({open: !this.state.open})
+            onHide={this.toggleEventModal}
+            onShow={() => {
+              document.querySelectorAll('.event-modal').forEach(e => {
+                e.classList.toggle('dark-mode')
+              })
             }}
+
             centered
           >
             <Card style={{
               boxShadow: `-10px -10px ${this.props.color}`,
               borderRadius: 10,
               border: `2px solid ${this.props.color}`,
-            }} className="">
+            }} className="event-modal">
               <CardActionArea>
                 <ResponsiveEmbed>
                   <CardMedia image={this.state.card.image} component="img" title="Event Image"/>
@@ -85,9 +89,7 @@ class EventCard extends Component {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size='large' className='mr-auto' onClick={() => {
-                  this.setState({open: !this.state.open})
-                }}
+                <Button size='large' className='mr-auto' onClick={this.toggleEventModal}
                         style={{color: 'white', backgroundColor: 'red'}}>
                   Close
                 </Button>

@@ -61,7 +61,7 @@ export default class Footer extends Component {
               </Col>
             ))}
             <Col xl="6" md="5" className="my-auto">
-              <Row className="justify-content-end">
+              <Row className='justify-content-end'>
                 <p className="my-auto text-white">Modern Education Society's College of Engineering, Pune</p>
               </Row>
             </Col>
