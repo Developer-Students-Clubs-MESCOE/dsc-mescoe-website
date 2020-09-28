@@ -27,8 +27,6 @@
   <component name="ChangeListManager">
     <list default="true" id="204f5db7-3ef6-4e7c-85d0-ae676053e510" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/event/EventCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/event/EventCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/default.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +76,17 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -165,7 +174,9 @@
       <workItem from="1601186832325" duration="112000" />
       <workItem from="1601254712730" duration="10000" />
       <workItem from="1601254739166" duration="700000" />
-      <workItem from="1601258854545" duration="35000" />
+      <workItem from="1601258854545" duration="380000" />
+      <workItem from="1601280172624" duration="9000" />
+      <workItem from="1601314106802" duration="168000" />
     </task>
     <task id="LOCAL-00001" summary="Completed first draft of Home Page having sections with cards and YouTube videos.🙂">
       <created>1600275250732</created>
@@ -308,10 +319,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="470" y="284" key="scopes/0.0.1440.900@0.0.1440.900" timestamp="1600751115241" />
-    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup" timestamp="1601258878659">
+    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup" timestamp="1601314114459">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1601258878659" />
+    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1601314114459" />
     <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.23.1440.809@0.23.1440.809" timestamp="1600877952296" />
   </component>
 </project>
