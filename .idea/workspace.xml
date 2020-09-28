@@ -26,11 +26,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="204f5db7-3ef6-4e7c-85d0-ae676053e510" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/event/EventCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/event/EventCard.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,17 +80,6 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -174,7 +163,10 @@
       <workItem from="1601033931696" duration="1246000" />
       <workItem from="1601108379708" duration="8098000" />
       <workItem from="1601117607187" duration="845000" />
-      <workItem from="1601120752442" duration="1590000" />
+      <workItem from="1601120752442" duration="1839000" />
+      <workItem from="1601186832325" duration="112000" />
+      <workItem from="1601254712730" duration="10000" />
+      <workItem from="1601254739166" duration="36000" />
     </task>
     <task id="LOCAL-00001" summary="Completed first draft of Home Page having sections with cards and YouTube videos.🙂">
       <created>1600275250732</created>
@@ -273,22 +265,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="392" y="146" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1601112957155" />
-    <state width="1388" height="227" key="GridCell.Tab.0.bottom" timestamp="1601122798528">
+    <state width="1388" height="227" key="GridCell.Tab.0.bottom" timestamp="1601131603899">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601122798528" />
-    <state width="1388" height="227" key="GridCell.Tab.0.center" timestamp="1601122798527">
+    <state width="1388" height="227" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601131603899" />
+    <state width="1388" height="227" key="GridCell.Tab.0.center" timestamp="1601131603897">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601122798527" />
-    <state width="1388" height="227" key="GridCell.Tab.0.left" timestamp="1601122798527">
+    <state width="1388" height="227" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601131603897" />
+    <state width="1388" height="227" key="GridCell.Tab.0.left" timestamp="1601131603896">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601122798527" />
-    <state width="1388" height="227" key="GridCell.Tab.0.right" timestamp="1601122798528">
+    <state width="1388" height="227" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601131603896" />
+    <state width="1388" height="227" key="GridCell.Tab.0.right" timestamp="1601131603898">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601122798528" />
+    <state width="1388" height="227" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601131603898" />
     <state x="205" y="140" key="IDE.errors.dialog" timestamp="1600761745209">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
