@@ -69,7 +69,7 @@ class EventCard extends Component {
               border: `2px solid ${this.props.color}`,
             }} className="event-modal">
               <CardActionArea>
-                <ResponsiveEmbed>
+                <ResponsiveEmbed aspectRatio='16by9'>
                   <CardMedia image={this.state.card.image} component="img" title="Event Image"/>
                 </ResponsiveEmbed>
                 <CardContent>
