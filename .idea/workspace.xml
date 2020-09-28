@@ -26,11 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="204f5db7-3ef6-4e7c-85d0-ae676053e510" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/db/default.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +162,7 @@
       <workItem from="1601120752442" duration="1839000" />
       <workItem from="1601186832325" duration="112000" />
       <workItem from="1601254712730" duration="10000" />
-      <workItem from="1601254739166" duration="36000" />
+      <workItem from="1601254739166" duration="293000" />
     </task>
     <task id="LOCAL-00001" summary="Completed first draft of Home Page having sections with cards and YouTube videos.🙂">
       <created>1600275250732</created>
