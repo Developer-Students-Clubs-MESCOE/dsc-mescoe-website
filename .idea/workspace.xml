@@ -26,7 +26,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="204f5db7-3ef6-4e7c-85d0-ae676053e510" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.slugignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/service-worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/css/2.d9ad5f5c.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/css/2.d9ad5f5c.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/Gaurav.e58ffdd1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/Kaif.494634e1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/Karan.a7cce155.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/Pratik.c35b2749.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/Varun.6a4efdb7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/down-arrow.3550ec3d.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/dsc_home_image.ddc5add1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/team.37501b6a.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build/static/media/trialNoGridFinal.26ed4dc2.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,13 +96,15 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -176,7 +198,8 @@
       <workItem from="1601254739166" duration="700000" />
       <workItem from="1601258854545" duration="380000" />
       <workItem from="1601280172624" duration="9000" />
-      <workItem from="1601314106802" duration="168000" />
+      <workItem from="1601314106802" duration="488000" />
+      <workItem from="1601352905043" duration="179000" />
     </task>
     <task id="LOCAL-00001" summary="Completed first draft of Home Page having sections with cards and YouTube videos.🙂">
       <created>1600275250732</created>
@@ -263,10 +286,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="0" width="1079" height="900" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1600937664513" />
-    <state x="420" y="237" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600937534935">
+    <state x="420" y="237" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601353059390">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="420" y="237" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1600937534935" />
+    <state x="420" y="237" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1601353059390" />
     <state x="405" y="185" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600269473030">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
