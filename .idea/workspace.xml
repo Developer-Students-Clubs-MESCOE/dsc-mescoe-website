@@ -27,7 +27,13 @@
   <component name="ChangeListManager">
     <list default="true" id="204f5db7-3ef6-4e7c-85d0-ae676053e510" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/db/default.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/home/HomeSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/home/HomeSection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Events.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Events.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Projects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Projects.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Videos.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Videos.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,19 +83,6 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -180,7 +173,9 @@
       <workItem from="1601258854545" duration="380000" />
       <workItem from="1601280172624" duration="9000" />
       <workItem from="1601314106802" duration="488000" />
-      <workItem from="1601352905043" duration="625000" />
+      <workItem from="1601352905043" duration="783000" />
+      <workItem from="1601357779383" duration="20000" />
+      <workItem from="1601453407129" duration="2300000" />
     </task>
     <task id="LOCAL-00001" summary="Completed first draft of Home Page having sections with cards and YouTube videos.🙂">
       <created>1600275250732</created>
@@ -279,22 +274,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="392" y="146" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1601112957155" />
-    <state width="1388" height="227" key="GridCell.Tab.0.bottom" timestamp="1601131603899">
+    <state width="1388" height="227" key="GridCell.Tab.0.bottom" timestamp="1601453492597">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601131603899" />
-    <state width="1388" height="227" key="GridCell.Tab.0.center" timestamp="1601131603897">
+    <state width="1388" height="227" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601453492597" />
+    <state width="1388" height="227" key="GridCell.Tab.0.center" timestamp="1601453492596">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601131603897" />
-    <state width="1388" height="227" key="GridCell.Tab.0.left" timestamp="1601131603896">
+    <state width="1388" height="227" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601453492596" />
+    <state width="1388" height="227" key="GridCell.Tab.0.left" timestamp="1601453492595">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601131603896" />
-    <state width="1388" height="227" key="GridCell.Tab.0.right" timestamp="1601131603898">
+    <state width="1388" height="227" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601453492595" />
+    <state width="1388" height="227" key="GridCell.Tab.0.right" timestamp="1601453492596">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601131603898" />
+    <state width="1388" height="227" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601453492596" />
     <state x="205" y="140" key="IDE.errors.dialog" timestamp="1600761745209">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -323,10 +318,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="470" y="284" key="scopes/0.0.1440.900@0.0.1440.900" timestamp="1600751115241" />
-    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup" timestamp="1601314114459">
+    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup" timestamp="1601455725456">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1601314114459" />
+    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1601455725456" />
     <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.23.1440.809@0.23.1440.809" timestamp="1600877952296" />
   </component>
 </project>
