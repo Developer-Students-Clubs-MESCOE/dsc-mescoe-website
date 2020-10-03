@@ -81,7 +81,7 @@ class Database {
   readTop(collection, count) {
     switch (collection) {
       case "events":
-        return Event.find({}).sort({'dateTime': 'asc'}).limit(count).exec();
+        return Event.find({}).sort({'dateTime': 'desc'}).limit(count).exec();
       case "projects":
         return Project.find({}).limit(count).exec();
       case "videos":

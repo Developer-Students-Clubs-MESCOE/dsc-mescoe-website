@@ -27,13 +27,7 @@
   <component name="ChangeListManager">
     <list default="true" id="204f5db7-3ef6-4e7c-85d0-ae676053e510" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/home/HomeSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/home/HomeSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/Events.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Events.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/Projects.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Projects.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/Videos.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Videos.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/Database.js" beforeDir="false" afterPath="$PROJECT_DIR$/db/Database.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +68,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -175,7 +169,9 @@
       <workItem from="1601314106802" duration="488000" />
       <workItem from="1601352905043" duration="783000" />
       <workItem from="1601357779383" duration="20000" />
-      <workItem from="1601453407129" duration="2300000" />
+      <workItem from="1601453407129" duration="2722000" />
+      <workItem from="1601530763240" duration="302000" />
+      <workItem from="1601732267863" duration="33000" />
     </task>
     <task id="LOCAL-00001" summary="Completed first draft of Home Page having sections with cards and YouTube videos.🙂">
       <created>1600275250732</created>
@@ -274,30 +270,31 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="392" y="146" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1601112957155" />
-    <state width="1388" height="227" key="GridCell.Tab.0.bottom" timestamp="1601453492597">
+    <state width="1388" height="227" key="GridCell.Tab.0.bottom" timestamp="1601456666493">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601453492597" />
-    <state width="1388" height="227" key="GridCell.Tab.0.center" timestamp="1601453492596">
+    <state width="1388" height="227" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601456666493" />
+    <state width="1388" height="227" key="GridCell.Tab.0.center" timestamp="1601456666492">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601453492596" />
-    <state width="1388" height="227" key="GridCell.Tab.0.left" timestamp="1601453492595">
+    <state width="1388" height="227" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601456666492" />
+    <state width="1388" height="227" key="GridCell.Tab.0.left" timestamp="1601456666492">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601453492595" />
-    <state width="1388" height="227" key="GridCell.Tab.0.right" timestamp="1601453492596">
+    <state width="1388" height="227" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601456666492" />
+    <state width="1388" height="227" key="GridCell.Tab.0.right" timestamp="1601456666493">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1388" height="227" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601453492596" />
+    <state width="1388" height="227" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601456666493" />
     <state x="205" y="140" key="IDE.errors.dialog" timestamp="1600761745209">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="205" y="140" key="IDE.errors.dialog/0.0.1440.900@0.0.1440.900" timestamp="1600761745209" />
-    <state x="63" y="3" width="1280" height="897" key="SettingsEditor" timestamp="1601015465983">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="63" y="23" width="1280" height="809" key="SettingsEditor" timestamp="1601530854032">
+      <screen x="0" y="23" width="1440" height="809" />
     </state>
     <state x="63" y="3" width="1280" height="897" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1601015465983" />
+    <state x="63" y="23" width="1280" height="809" key="SettingsEditor/0.23.1440.809@0.23.1440.809" timestamp="1601530854032" />
     <state x="220" y="122" key="Vcs.Push.Dialog.v2" timestamp="1600826143806">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -318,10 +315,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="470" y="284" key="scopes/0.0.1440.900@0.0.1440.900" timestamp="1600751115241" />
-    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup" timestamp="1601455725456">
+    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup" timestamp="1601732275264">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1601455725456" />
+    <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1601732275264" />
     <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.23.1440.809@0.23.1440.809" timestamp="1600877952296" />
   </component>
 </project>
