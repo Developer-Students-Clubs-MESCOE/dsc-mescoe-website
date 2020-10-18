@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.af7b062e.chunk.css",
-    "main.js": "/static/js/main.b035803a.chunk.js",
-    "main.js.map": "/static/js/main.b035803a.chunk.js.map",
+    "main.js": "/static/js/main.6770a43d.chunk.js",
+    "main.js.map": "/static/js/main.6770a43d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a066d184.js",
     "runtime-main.js.map": "/static/js/runtime-main.a066d184.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.f7c61489.chunk.js": "/static/js/2.f7c61489.chunk.js",
-    "static/js/2.f7c61489.chunk.js.map": "/static/js/2.f7c61489.chunk.js.map",
+    "static/js/2.e122a6fe.chunk.js": "/static/js/2.e122a6fe.chunk.js",
+    "static/js/2.e122a6fe.chunk.js.map": "/static/js/2.e122a6fe.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e486099b08d076328f3263dfd40c38f4.js": "/precache-manifest.e486099b08d076328f3263dfd40c38f4.js",
+    "precache-manifest.5d4fa59527ed2aef8d5c14e595009fb9.js": "/precache-manifest.5d4fa59527ed2aef8d5c14e595009fb9.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.af7b062e.chunk.css.map": "/static/css/main.af7b062e.chunk.css.map",
-    "static/js/2.f7c61489.chunk.js.LICENSE.txt": "/static/js/2.f7c61489.chunk.js.LICENSE.txt",
+    "static/js/2.e122a6fe.chunk.js.LICENSE.txt": "/static/js/2.e122a6fe.chunk.js.LICENSE.txt",
     "static/media/Dhruvil.jpg": "/static/media/Dhruvil.f5cfcfc5.jpg",
     "static/media/Gaurav.jpg": "/static/media/Gaurav.e58ffdd1.jpg",
     "static/media/Kaif.jpg": "/static/media/Kaif.494634e1.jpg",
@@ -26,6 +26,7 @@
     "static/media/Varun.jpg": "/static/media/Varun.6a4efdb7.jpg",
     "static/media/down-arrow.svg": "/static/media/down-arrow.3550ec3d.svg",
     "static/media/dsc_home_image.webp": "/static/media/dsc_home_image.ddc5add1.webp",
+    "static/media/gdg_black.png": "/static/media/gdg_black.3da31478.png",
     "static/media/gdg_wordmark.png": "/static/media/gdg_wordmark.c87747af.png",
     "static/media/team.webp": "/static/media/team.37501b6a.webp",
     "static/media/index.css": "/static/media/trialNoGridFinal.26ed4dc2.svg"
@@ -33,8 +34,8 @@
   "entrypoints": [
     "static/js/runtime-main.a066d184.js",
     "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.f7c61489.chunk.js",
+    "static/js/2.e122a6fe.chunk.js",
     "static/css/main.af7b062e.chunk.css",
-    "static/js/main.b035803a.chunk.js"
+    "static/js/main.6770a43d.chunk.js"
   ]
 }
