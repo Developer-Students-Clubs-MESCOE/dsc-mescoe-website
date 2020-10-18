@@ -54,7 +54,7 @@ export default class DSCNavBar extends Component {
           <Container>
             <Row>
               {/*<Hidden lgUp implementation="css" className="my-auto">*/}
-                <Col xs="1" className='my-auto mr-n5'>
+                <Col xs="1" className='my-auto mr-1'>
                   <DSCDrawer isDarkMode={this.state.isDarkMode} handleThemeSwitch={this.handleThemeSwitch}/>
                 </Col>
               {/*</Hidden>*/}
