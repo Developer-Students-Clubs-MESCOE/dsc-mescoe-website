@@ -5,27 +5,27 @@ import {resetFooterStyle} from "../../utils/utils";
 
 export const socials = [
   {
-    icon: <Facebook className="m-xl-4 m-lg-3 m-md-1" style={{color: 'white'}}/>,
+    icon: <Facebook className="m-xl-4 m-lg-3 m-md-1" style={{color: 'black'}}/>,
     link: 'https://www.facebook.com/dscmescoepune/',
     name: "Facebook",
   },
   {
-    icon: <GitHub className="m-xl-4 m-lg-3 m-md-1" style={{color: 'white'}}/>,
+    icon: <GitHub className="m-xl-4 m-lg-3 m-md-1" style={{color: 'black'}}/>,
     link: 'https://github.com/Developer-Students-Clubs-MESCOE',
     name: "GitHub",
   },
   {
-    icon: <Instagram className="m-xl-4 m-lg-3 m-md-1" style={{color: 'white'}}/>,
+    icon: <Instagram className="m-xl-4 m-lg-3 m-md-1" style={{color: 'black'}}/>,
     link: 'https://www.instagram.com/mescoedsc/',
     name: "Instagram",
   },
   {
-    icon: <LinkedIn className="m-xl-4 m-lg-3 m-md-1" style={{color: 'white'}}/>,
+    icon: <LinkedIn className="m-xl-4 m-lg-3 m-md-1" style={{color: 'black'}}/>,
     link: 'https://www.linkedin.com/company/dscmescoe/',
     name: "LinkedIn",
   },
   {
-    icon: <Twitter className="m-xl-4 m-lg-3 m-md-1" style={{color: 'white'}}/>,
+    icon: <Twitter className="m-xl-4 m-lg-3 m-md-1" style={{color: 'black'}}/>,
     link: 'https://twitter.com/dscmescoe',
     name: "Twitter",
   }
@@ -40,7 +40,8 @@ export default class Footer extends Component {
     return (
       <Container fluid id="contact"
                  style={{
-                   backgroundColor: '#242424',
+                   borderTop: '1px solid #aaa',
+                   backgroundColor: '#fff',
                    height: '4.5em',
                    left: 0,
                    bottom: 0,
@@ -49,7 +50,7 @@ export default class Footer extends Component {
         <Container style={{height: "100%"}}>
           <Row style={{height: "100%"}}>
             <Col xl="1" md="2" className="my-auto">
-              <p style={{fontSize: 20}} className="text-white my-auto">
+              <p style={{fontSize: 20}} className="text-dark my-auto">
                 Socials
               </p>
             </Col>
@@ -62,7 +63,7 @@ export default class Footer extends Component {
             ))}
             <Col xl="6" md="5" className="my-auto">
               <Row className='justify-content-end'>
-                <p className="my-auto text-white">Modern Education Society's College of Engineering, Pune</p>
+                <p className="my-auto text-dark">Modern Education Society's College of Engineering, Pune</p>
               </Row>
             </Col>
           </Row>

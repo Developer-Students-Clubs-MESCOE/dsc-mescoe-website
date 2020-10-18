@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
-import {AppBar, Hidden, Toolbar} from '@material-ui/core';
+import {AppBar, Toolbar} from '@material-ui/core';
 import gdgLogo from '../../assets/img/gdg_logo.png';
 import {Container, Row, Col, Image} from 'react-bootstrap';
-import ROUTES, {RouteType} from '../../routes';
 import {Link} from 'react-router-dom';
 import DSCDrawer from "./DSCDrawer";
-import DarkModeToggler from "../DarkModeToggler";
 
 export default class DSCNavBar extends Component {
   constructor(props) {
@@ -50,18 +48,16 @@ export default class DSCNavBar extends Component {
   }
 
   render() {
-    const linkRoutes = ROUTES.filter(route => route.type === RouteType.LINK)
-    const pageRoutes = ROUTES.filter(route => route.type === RouteType.PAGE)
     return (
       <AppBar position="fixed" color="inherit" className="dsc-nav">
         <Toolbar>
           <Container>
             <Row>
-              <Hidden lgUp implementation="css" className="my-auto">
-                <Col xs="1">
+              {/*<Hidden lgUp implementation="css" className="my-auto">*/}
+                <Col xs="1" className='my-auto mr-n5'>
                   <DSCDrawer isDarkMode={this.state.isDarkMode} handleThemeSwitch={this.handleThemeSwitch}/>
                 </Col>
-              </Hidden>
+              {/*</Hidden>*/}
               <Col lg="1" md="1" sm="1" xs="2" className="dsc-brand my-auto p-xl-3 p-lg-3 p-md-2 p-sm-1 p-xs-0">
                 <Link to="/">
                   <Image src={gdgLogo} style={{width: '100%'}} className='nav-logo'/>
@@ -78,48 +74,6 @@ export default class DSCNavBar extends Component {
                 >
                   DSC MESCOE
                 </Link>
-              </Col>
-              <Col lg="8" className="my-auto">
-                <Hidden mdDown implementation="css">
-                  <Container fluid>
-                    <Row className="justify-content-between">
-                      {pageRoutes.map(
-                        (route, index) =>
-                          <Link
-                            key={index}
-                            style={{
-                              fontSize: 16,
-                              margin: 0,
-                              padding: 0,
-                              color: 'inherit',
-                              textDecoration: 'inherit'
-                            }}
-                            to={route.path}
-                          >
-                            {route.name}
-                          </Link>
-                      )}
-                      {linkRoutes.map(
-                        (route, index) =>
-                          <a
-                            key={index}
-                            style={{
-                              fontSize: 16,
-                              margin: 0,
-                              padding: 0,
-                              color: 'inherit',
-                              textDecoration: 'inherit'
-                            }}
-                            href={route.path}
-                            target='blank'
-                          >
-                            {route.name}
-                          </a>
-                      )}
-                      <DarkModeToggler isDarkMode={this.state.isDarkMode} handleThemeSwitch={this.handleThemeSwitch} color='black'/>
-                    </Row>
-                  </Container>
-                </Hidden>
               </Col>
             </Row>
           </Container>
