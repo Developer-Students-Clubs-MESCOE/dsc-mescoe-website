@@ -3,6 +3,7 @@ const mongoURI = require("./default").mongoURI;
 const Event = require("./models/Event");
 const Project = require("./models/Project");
 const Video = require("./models/Video");
+const Rank = require("./models/Rank");
 
 class Database {
   constructor() {
@@ -71,6 +72,8 @@ class Database {
         return Project.find({}).exec();
       case "videos":
         return Video.find({}).sort({date: -1}).exec();
+      case "ranks":
+        return Rank.find({}).exec();
       default:
         return new Promise((resolve, reject) => {
           reject("Collection does not exist");
