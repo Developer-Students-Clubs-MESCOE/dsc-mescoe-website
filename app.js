@@ -8,6 +8,7 @@ const indexRouter = require("./routes/index");
 const eventRouter = require("./routes/event");
 const projectRouter = require("./routes/project");
 const videoRouter = require("./routes/video");
+const rankRouter = require("./routes/rank");
 
 const app = express();
 app.use(cors());
@@ -26,5 +27,6 @@ app.use("/api/", indexRouter);
 app.use("/api/events", eventRouter);
 app.use("/api/projects", projectRouter);
 app.use("/api/videos", videoRouter);
+app.use("/api/ranks", rankRouter);
 
 module.exports = app;
