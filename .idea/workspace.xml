@@ -27,9 +27,8 @@
   <component name="ChangeListManager">
     <list default="true" id="204f5db7-3ef6-4e7c-85d0-ae676053e510" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/Database.js" beforeDir="false" afterPath="$PROJECT_DIR$/db/Database.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/models/Rank.js" beforeDir="false" afterPath="$PROJECT_DIR$/db/models/Rank.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/rank.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/rank.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +54,13 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/Developer-Students-Clubs-MESCOE/dsc-mescoe-website" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -76,7 +82,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.4" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.12.68" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WebScrapingUsingNode" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -192,6 +198,10 @@
       <workItem from="1603005068026" duration="6468000" />
       <workItem from="1603026853224" duration="3148000" />
       <workItem from="1603091263205" duration="31000" />
+      <workItem from="1603103927498" duration="111000" />
+      <workItem from="1603105835322" duration="2389000" />
+      <workItem from="1603108367761" duration="731000" />
+      <workItem from="1603111662393" duration="3668000" />
     </task>
     <task id="LOCAL-00001" summary="Completed first draft of Home Page having sections with cards and YouTube videos.🙂">
       <created>1600275250732</created>
@@ -294,30 +304,30 @@
       <screen x="58" y="27" width="1862" height="1053" />
     </state>
     <state x="494" y="169" width="924" height="691" key="DBNavigator.ProjectSettingsDialog/58.27.1862.1053@58.27.1862.1053" timestamp="1603005931459" />
-    <state x="766" y="296" key="FileChooserDialogImpl" timestamp="1603005396135">
+    <state x="766" y="296" key="FileChooserDialogImpl" timestamp="1603109105064">
       <screen x="58" y="27" width="1862" height="1053" />
     </state>
-    <state x="766" y="296" key="FileChooserDialogImpl/58.27.1862.1053@58.27.1862.1053" timestamp="1603005396135" />
-    <state width="1812" height="550" key="GridCell.Tab.0.bottom" timestamp="1603011610668">
+    <state x="766" y="296" key="FileChooserDialogImpl/58.27.1862.1053@58.27.1862.1053" timestamp="1603109105064" />
+    <state width="1812" height="460" key="GridCell.Tab.0.bottom" timestamp="1603108228779">
       <screen x="58" y="27" width="1862" height="1053" />
     </state>
     <state width="1388" height="227" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601456666493" />
-    <state width="1812" height="550" key="GridCell.Tab.0.bottom/58.27.1862.1053@58.27.1862.1053" timestamp="1603011610668" />
-    <state width="1812" height="550" key="GridCell.Tab.0.center" timestamp="1603011610667">
+    <state width="1812" height="460" key="GridCell.Tab.0.bottom/58.27.1862.1053@58.27.1862.1053" timestamp="1603108228779" />
+    <state width="1812" height="460" key="GridCell.Tab.0.center" timestamp="1603108228778">
       <screen x="58" y="27" width="1862" height="1053" />
     </state>
     <state width="1388" height="227" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601456666492" />
-    <state width="1812" height="550" key="GridCell.Tab.0.center/58.27.1862.1053@58.27.1862.1053" timestamp="1603011610667" />
-    <state width="1812" height="550" key="GridCell.Tab.0.left" timestamp="1603011610666">
+    <state width="1812" height="460" key="GridCell.Tab.0.center/58.27.1862.1053@58.27.1862.1053" timestamp="1603108228778" />
+    <state width="1812" height="460" key="GridCell.Tab.0.left" timestamp="1603108228778">
       <screen x="58" y="27" width="1862" height="1053" />
     </state>
     <state width="1388" height="227" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601456666492" />
-    <state width="1812" height="550" key="GridCell.Tab.0.left/58.27.1862.1053@58.27.1862.1053" timestamp="1603011610666" />
-    <state width="1812" height="550" key="GridCell.Tab.0.right" timestamp="1603011610668">
+    <state width="1812" height="460" key="GridCell.Tab.0.left/58.27.1862.1053@58.27.1862.1053" timestamp="1603108228778" />
+    <state width="1812" height="460" key="GridCell.Tab.0.right" timestamp="1603108228779">
       <screen x="58" y="27" width="1862" height="1053" />
     </state>
     <state width="1388" height="227" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601456666493" />
-    <state width="1812" height="550" key="GridCell.Tab.0.right/58.27.1862.1053@58.27.1862.1053" timestamp="1603011610668" />
+    <state width="1812" height="460" key="GridCell.Tab.0.right/58.27.1862.1053@58.27.1862.1053" timestamp="1603108228779" />
     <state x="205" y="140" key="IDE.errors.dialog" timestamp="1600761745209">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -347,11 +357,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="470" y="284" key="scopes/0.0.1440.900@0.0.1440.900" timestamp="1600751115241" />
-    <state x="556" y="256" width="1084" height="1208" key="search.everywhere.popup" timestamp="1603028472833">
+    <state x="556" y="256" width="1084" height="1208" key="search.everywhere.popup" timestamp="1603106499429">
       <screen x="58" y="27" width="1862" height="1053" />
     </state>
     <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1601732275264" />
     <state x="385" y="196" width="838" height="1032" key="search.everywhere.popup/0.23.1440.809@0.23.1440.809" timestamp="1600877952296" />
-    <state x="556" y="256" width="1084" height="1208" key="search.everywhere.popup/58.27.1862.1053@58.27.1862.1053" timestamp="1603028472833" />
+    <state x="556" y="256" width="1084" height="1208" key="search.everywhere.popup/58.27.1862.1053@58.27.1862.1053" timestamp="1603106499429" />
   </component>
 </project>
