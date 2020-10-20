@@ -36,7 +36,7 @@ export default class Team extends React.Component {
         <Container className="mb-5">
           <Row className="mt-5 team">
             <Col>
-              <h3 style={{color: '#4385F4'}}>Our Team</h3>
+              <h3 style={{color: '#4385F4', fontWeight: 600}}>Our Team</h3>
             </Col>
           </Row>
           <Row className="mt-5 team">

@@ -36,6 +36,40 @@
     }
 }
 
+.medal {
+    height: 2em;
+    width: 2em;
+    background-color: #000;
+    border-radius: 50%;
+    margin-right: 1em;
+    display: inline-block;
+}
+
+.platinum {
+    background-color: #e5e4e2;
+}
+
+.gold {
+    background-color: #FFD700;
+}
+
+.silver {
+    background-color: #c0c0c0;
+}
+
+.bronze {
+    background-color: #cd7f32;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url("./assets/fonts/GoogleSans.ttf") format('truetype');
+}
+
+.MuiTypography-root {
+    font-family: "Google Sans", "Roboto", sans-serif !important;
+}
+
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

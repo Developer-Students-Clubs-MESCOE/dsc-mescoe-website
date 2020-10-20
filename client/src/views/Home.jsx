@@ -30,11 +30,11 @@ export default class Home extends React.Component {
     }
 
     Axios.get(`${serverURL}/api/events/top3`).then(result => {
-      homeSections[1].cards = result.data
+      homeSections[2].cards = result.data
       Axios.get(`${serverURL}/api/videos/top3`).then(result => {
-        homeSections[2].videos = result.data
+        homeSections[3].videos = result.data
         Axios.get(`${serverURL}/api/projects/top3`).then(result => {
-          homeSections[3].cards = result.data
+          homeSections[4].cards = result.data
           this.setState({})
         })
       })
@@ -94,7 +94,7 @@ export default class Home extends React.Component {
                     style={{
                       fontSize: 32,
                       color: 'inherit',
-                      textDecoration: 'inherit'
+                      textDecoration: 'inherit',
                     }}
                   >
                     DSC MESCOE

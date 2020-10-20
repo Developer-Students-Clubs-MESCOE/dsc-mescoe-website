@@ -9,6 +9,7 @@ import {Movie, People, Today, HomeRounded as HomeIcon, DeveloperBoard} from "@ma
 import {faMedium} from '@fortawesome/free-brands-svg-icons'
 import gdgBlack from './assets/img/gdg_black.png'
 import {Image} from "react-bootstrap";
+import GCPRank from "./views/GCPRank";
 
 export const RouteType = {
 	LINK: 0,
@@ -17,6 +18,13 @@ export const RouteType = {
 }
 
 const ROUTES = [
+	{
+		icon: null,
+		name: 'GCP Rank',
+		path: '/gcp-rank',
+		component: GCPRank,
+		type: RouteType.PAGE
+	},
 	{
 		icon: <HomeIcon style={{color: 'black'}} />,
 		name: 'Home',

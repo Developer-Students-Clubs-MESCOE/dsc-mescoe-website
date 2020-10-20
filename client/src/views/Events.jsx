@@ -40,7 +40,7 @@ export default class Events extends React.Component {
 		return (
 			<Toolbar className='grid'>
 				<Container>
-					<h3 style={{color: '#FBBD04'}} className='mt-5 event'>Upcoming Events</h3>
+					<h3 style={{color: '#FBBD04', fontWeight: 600}} className='mt-5 event'>Upcoming Events</h3>
 					<Row className='ml-3'>
 						{this.state.eventSections.upcoming.length ?
 							this.state.eventSections.upcoming.map((eventSection, key) =>
@@ -55,7 +55,7 @@ export default class Events extends React.Component {
 								<h5>There are no upcoming events at the moment. Please check again soon.</h5>
 							</Col>}
 					</Row>
-					<h3 style={{color: '#34A852'}} className='mt-5 event'>Recently Held Events</h3>
+					<h3 style={{color: '#34A852', fontWeight: 600}} className='mt-5 event'>Recently Held Events</h3>
 					<Row className='ml-3'>
 						{this.state.eventSections.recent.length ?
 							this.state.eventSections.recent.map((eventSection, key) =>

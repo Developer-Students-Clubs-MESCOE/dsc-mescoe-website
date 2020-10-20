@@ -38,7 +38,7 @@ export default class Videos extends React.Component {
 		return (
 			<Toolbar className="grid">
 				<Container>
-					<h3 className="mt-5 video" style={{color: '#EA4435'}}>Videos</h3>
+					<h3 className="mt-5 video" style={{color: '#EA4435', fontWeight: 600}}>Videos</h3>
 					<Row className="ml-3">
 						{this.state.videos.length ? this.state.videos.map((video, index) => <Col xs="12" key={index}
 																																										 className="p-0 pr-4 mt-5 video"

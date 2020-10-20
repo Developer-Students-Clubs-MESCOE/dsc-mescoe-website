@@ -51,7 +51,7 @@ export default class Footer extends Component {
           <Row style={{height: "100%"}}>
             <Col xl="1" md="2" className="my-auto">
               <p style={{fontSize: 20}} className="text-dark my-auto">
-                Socials
+                Connect
               </p>
             </Col>
             {socials.map((social, key) => (
