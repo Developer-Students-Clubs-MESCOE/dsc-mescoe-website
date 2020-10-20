@@ -24,7 +24,7 @@ class RankCard extends Component {
                 <Col className='ml-4'>
                   <Row className='justify-content-between'>
                     <p className='h4 font-weight-bold'>{data.name}</p>
-                    <p className='h5'>Rank -- #{data.rank}</p>
+                    <p className='h5'>{data.rank === 0 ? null : `Rank -- #${data.rank}`}</p>
                   </Row>
                   <Row className='mt-2'>
                     <p className='h6'>Number of Skill Badges -- {data.numSkillBadges}</p>
