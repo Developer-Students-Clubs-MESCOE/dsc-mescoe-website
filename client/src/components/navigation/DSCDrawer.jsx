@@ -6,8 +6,8 @@ import {socials} from "./Footer";
 import {Link} from "react-router-dom";
 import DarkModeToggler from "../DarkModeToggler";
 
-const linkRoutes = ROUTES.filter(route => route.type === RouteType.LINK)
-const pageRoutes = ROUTES.filter(route => route.type === RouteType.PAGE)
+const linkRoutes = ROUTES.filter(route => route.type === RouteType.LINK && route.icon !== null)
+const pageRoutes = ROUTES.filter(route => route.type === RouteType.PAGE && route.icon !== null)
 
 class DSCDrawer extends Component {
   constructor(props) {
@@ -27,7 +27,7 @@ class DSCDrawer extends Component {
     >
       <List>
         {pageRoutes.map((route, index) => (
-          <Link to={route.path} key={index}>
+          <Link to={route.path} key={index} style={{textDecoration: 'inherit'}}>
             <ListItem button>
               <ListItemIcon>{route.icon}</ListItemIcon>
               <ListItemText primary={route.name} style={{color: "black", fontSize: 24}}/>
@@ -35,22 +35,22 @@ class DSCDrawer extends Component {
           </Link>
         ))}
         {linkRoutes.map((route, index) => (
-          <a href={route.path} key={index} target='blank'>
+          <a href={route.path} key={index} target='blank' style={{textDecoration: 'inherit'}}>
             <ListItem button>
               <ListItemIcon>{route.icon}</ListItemIcon>
               <ListItemText primary={route.name} style={{color: "black"}}/>
             </ListItem>
           </a>
         ))}
-        <ListItem>
-          <DarkModeToggler isDarkMode={this.props.isDarkMode} handleThemeSwitch={this.props.handleThemeSwitch}
-                           color='black'/>
-        </ListItem>
+        {/*<ListItem>*/}
+        {/*  <DarkModeToggler isDarkMode={this.props.isDarkMode} handleThemeSwitch={this.props.handleThemeSwitch}*/}
+        {/*                   color='black'/>*/}
+        {/*</ListItem>*/}
       </List>
       <Divider style={{backgroundColor: "black"}}/>
       <List>
         {socials.map((social, index) => (
-          <a href={social.link} target="blank" key={index}>
+          <a href={social.link} target="blank" key={index} style={{textDecoration: 'inherit'}}>
             <ListItem button>
               <ListItemIcon style={{color: 'black'}}>{social.icon}</ListItemIcon>
               <ListItemText primary={social.name} style={{color: "black"}}/>
