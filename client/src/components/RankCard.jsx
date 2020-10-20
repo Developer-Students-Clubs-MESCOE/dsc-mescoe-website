@@ -15,7 +15,7 @@ class RankCard extends Component {
         }}>
           <CardActionArea>
             <Container>
-              <Row className='m-4 align-items-center'>
+              <Row className='m-xl-4 m-lg-3 m-md-3 m-sm-3 mt-3 align-items-center'>
                 {/*<Col xs={2}>*/}
                 {/*  <Image className='my-auto'*/}
                 {/*         src={data.profileImage}*/}

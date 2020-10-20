@@ -3,6 +3,9 @@ import {resetFooterStyle, resetNavStyle} from "../utils/utils";
 import {Col, Container, Row} from "react-bootstrap";
 import {Toolbar, Box, AppBar, Tabs, Tab} from "@material-ui/core";
 import RankCard from "../components/RankCard";
+import Axios from "axios";
+import {serverURL} from "../utils/utils";
+import {Skeleton} from "@material-ui/lab";
 
 const TabPanel = (props) => {
 	const {children, value, index, ...other} = props;
@@ -35,6 +38,8 @@ class GCPRank extends Component {
 		super(props);
 		this.state = {
 			value: 0,
+			track1: [],
+			track2: []
 		}
 		this.handleChange = this.handleChange.bind(this);
 	}
@@ -46,6 +51,57 @@ class GCPRank extends Component {
 	componentDidMount() {
 		document.title = 'GCP Rank - DSC MESCOE';
 		resetNavStyle({page: 'GCP Rank'});
+		Axios.get(`${serverURL}/api/ranks/track1`).then(track1 => {
+			Axios.get(`${serverURL}/api/ranks/track2`).then(track2 => {
+				let track1Data = []
+				let track2Data = []
+				track1.data.forEach(data => {
+					let medal;
+					if (data.rank === 0) {
+						medal = this.MedalColors.PLATINUM
+					} else if (data.rank === 1) {
+						medal = this.MedalColors.GOLD
+					} else if (data.rank === 2) {
+						medal = this.MedalColors.SILVER
+					} else if (data.rank === 3) {
+						medal = this.MedalColors.BRONZE
+					} else {
+						medal = this.MedalColors.NORMAL
+					}
+					track1Data.push({
+						name: data.name,
+						rank: data.rank,
+						profileURL: data.qwiklabs_profile,
+						medalColor: medal,
+						numSkillBadges: data.track1_count,
+						lastBadgeName: data.latest_track1
+					})
+				})
+				track2.data.forEach(data => {
+					let medal;
+					if (data.rank === 0) {
+						medal = this.MedalColors.PLATINUM
+					} else if (data.rank === 1) {
+						medal = this.MedalColors.GOLD
+					} else if (data.rank === 2) {
+						medal = this.MedalColors.SILVER
+					} else if (data.rank === 3) {
+						medal = this.MedalColors.BRONZE
+					} else {
+						medal = this.MedalColors.NORMAL
+					}
+					track2Data.push({
+						name: data.name,
+						rank: data.rank,
+						profileURL: data.qwiklabs_profile,
+						medalColor: medal,
+						numSkillBadges: data.track2_count,
+						lastBadgeName: data.latest_track2
+					})
+				})
+				this.setState({track1: track1Data, track2: track2Data})
+			});
+		});
 		if (JSON.parse(localStorage.getItem('isDarkMode'))) {
 			document.querySelectorAll('.gcp').forEach(e => {
 				e.classList.toggle('dark-mode')
@@ -53,27 +109,27 @@ class GCPRank extends Component {
 		}
 	}
 
-	medals = () => <Row>
-		<Col>
-			<Row>
+	medals = () => <Row className='justify-content-center'>
+		<Col xs={3}>
+			<Row className='justify-content-center'>
 				<span className='medal platinum'/>
 				<p className='my-auto gcp'>Platinum</p>
 			</Row>
 		</Col>
-		<Col>
-			<Row>
+		<Col xs={3}>
+			<Row className='justify-content-center'>
 				<span className='medal gold'/>
 				<p className='my-auto gcp'>Gold</p>
 			</Row>
 		</Col>
-		<Col>
-			<Row>
+		<Col xs={3}>
+			<Row className='justify-content-center'>
 				<span className='medal silver'/>
 				<p className='my-auto gcp'>Silver</p>
 			</Row>
 		</Col>
-		<Col>
-			<Row>
+		<Col xs={3}>
+			<Row className='justify-content-center'>
 				<span className='medal bronze'/>
 				<p className='my-auto gcp'>Bronze</p>
 			</Row>
@@ -93,58 +149,8 @@ class GCPRank extends Component {
 		if (footer) {
 			resetFooterStyle()
 		}
-		const data = [
-			{
-				name: 'Varun Irani',
-				medalColor: this.MedalColors.PLATINUM,
-				profileURL: 'https://www.qwiklabs.com/public_profiles/550e6eba-50eb-4aa7-9ac2-f16278796940',
-				profileImage: 'https://secure.gravatar.com/avatar/e6c79144cf9c63733ea5e8bd7c175299.png?s=80&d=mm',
-				rank: 0,
-				numSkillBadges: 99,
-				lastBadgeName: 'Set up and Configure a Cloud Environment in Google Cloud',
-				lastBadgeDate: 'Oct 11, 2020'
-			},
-			{
-				name: 'Varun Irani',
-				medalColor: this.MedalColors.GOLD,
-				profileURL: 'https://www.qwiklabs.com/public_profiles/550e6eba-50eb-4aa7-9ac2-f16278796940',
-				profileImage: 'https://secure.gravatar.com/avatar/e6c79144cf9c63733ea5e8bd7c175299.png?s=80&d=mm',
-				rank: 99,
-				numSkillBadges: 99,
-				lastBadgeName: 'Set up and Configure a Cloud Environment in Google Cloud',
-				lastBadgeDate: 'Oct 11, 2020'
-			},
-			{
-				name: 'Varun Irani',
-				medalColor: this.MedalColors.SILVER,
-				profileURL: 'https://www.qwiklabs.com/public_profiles/550e6eba-50eb-4aa7-9ac2-f16278796940',
-				profileImage: 'https://secure.gravatar.com/avatar/e6c79144cf9c63733ea5e8bd7c175299.png?s=80&d=mm',
-				rank: 99,
-				numSkillBadges: 99,
-				lastBadgeName: 'Set up and Configure a Cloud Environment in Google Cloud',
-				lastBadgeDate: 'Oct 11, 2020'
-			},
-			{
-				name: 'Varun Irani',
-				medalColor: this.MedalColors.BRONZE,
-				profileURL: 'https://www.qwiklabs.com/public_profiles/550e6eba-50eb-4aa7-9ac2-f16278796940',
-				profileImage: 'https://secure.gravatar.com/avatar/e6c79144cf9c63733ea5e8bd7c175299.png?s=80&d=mm',
-				rank: 99,
-				numSkillBadges: 99,
-				lastBadgeName: 'Set up and Configure a Cloud Environment in Google Cloud',
-				lastBadgeDate: 'Oct 11, 2020'
-			},
-			{
-				name: 'Varun Irani',
-				medalColor: this.MedalColors.NORMAL,
-				profileURL: 'https://www.qwiklabs.com/public_profiles/550e6eba-50eb-4aa7-9ac2-f16278796940',
-				profileImage: 'https://secure.gravatar.com/avatar/e6c79144cf9c63733ea5e8bd7c175299.png?s=80&d=mm',
-				rank: 99,
-				numSkillBadges: 99,
-				lastBadgeName: 'Set up and Configure a Cloud Environment in Google Cloud',
-				lastBadgeDate: 'Oct 11, 2020'
-			},
-		]
+		const track1 = this.state.track1;
+		const track2 = this.state.track2
 		return (
 			<Toolbar className='grid'>
 				<Container>
@@ -187,42 +193,63 @@ class GCPRank extends Component {
 									{this.medals()}
 								</Col>
 							</Row>
-							{data.filter((e) => e.medalColor === this.MedalColors.PLATINUM).map((d, index) =>
-								<Row className='mt-4 gcp p-4' key={index} style={{border: `4px solid ${this.MedalColors.PLATINUM}`, borderRadius: 10}}>
-									<RankCard data={d}/>
-								</Row>)}
-							{data.filter((e) => e.medalColor === this.MedalColors.GOLD).map((d, index) =>
-								<Row className='mt-4 gcp p-4' key={index} style={{border: `4px solid ${this.MedalColors.GOLD}`, borderRadius: 10}}>
-									<RankCard data={d}/>
-								</Row>)}
-							{data.filter((e) => e.medalColor === this.MedalColors.SILVER).map((d, index) =>
-								<Row className='mt-4 gcp p-4' key={index} style={{border: `4px solid ${this.MedalColors.SILVER}`, borderRadius: 10}}>
-									<RankCard data={d}/>
-								</Row>)}
-							{data.filter((e) => e.medalColor === this.MedalColors.BRONZE).map((d, index) =>
-								<Row className='mt-4 gcp p-4' key={index} style={{border: `4px solid ${this.MedalColors.BRONZE}`, borderRadius: 10}}>
-									<RankCard data={d}/>
-								</Row>)}
-							{data.filter((e) => e.medalColor === this.MedalColors.NORMAL).map((d, index) =>
-								<Row className='mt-4 gcp p-4' key={index}>
-									<RankCard data={d}/>
-								</Row>)}
+							{track1.length ? <React.Fragment>
+								{track1.filter((e) => e.medalColor === this.MedalColors.PLATINUM).map((d, index) =>
+									<Row className='mt-4 gcp' key={index}>
+										<RankCard data={d}/>
+									</Row>)}
+								{track1.filter((e) => e.medalColor === this.MedalColors.GOLD).map((d, index) =>
+									<Row className='mt-4 gcp' key={index}>
+										<RankCard data={d}/>
+									</Row>)}
+								{track1.filter((e) => e.medalColor === this.MedalColors.SILVER).map((d, index) =>
+									<Row className='mt-4 gcp' key={index}>
+										<RankCard data={d}/>
+									</Row>)}
+								{track1.filter((e) => e.medalColor === this.MedalColors.BRONZE).map((d, index) =>
+									<Row className='mt-4 gcp' key={index}>
+										<RankCard data={d}/>
+									</Row>)}
+								{track1.filter((e) => e.medalColor === this.MedalColors.NORMAL).map((d, index) =>
+									<Row className='mt-4 gcp' key={index}>
+										<RankCard data={d}/>
+									</Row>)}
+							</React.Fragment> : <Skeleton className='mt-3' variant='rect' height={200} style={{borderRadius: 10}}/>}
 						</Container>
 					</TabPanel>
 					<TabPanel value={this.state.value} index={1} style={{backgroundColor: 'white'}}
 										className='mb-5 MuiPaper-elevation3'>
 						<Container>
 							<Row>
-								<Col xl={5}>
-									<h4 style={{color: '#222'}}>Data Science and Machine Learning</h4>
+								<Col xl={3}>
+									<h4 style={{color: '#222'}}>Data Science and ML</h4>
 								</Col>
 								<Col className='gcp'>
 									{this.medals()}
 								</Col>
 							</Row>
-							{data.map((d, index) => <Row className='mt-4' key={index}>
-								<RankCard data={d}/>
-							</Row>)}
+							{track2.length ? <React.Fragment>
+								{track2.filter((e) => e.medalColor === this.MedalColors.PLATINUM).map((d, index) =>
+									<Row className='mt-4 gcp' key={index}>
+										<RankCard data={d}/>
+									</Row>)}
+								{track2.filter((e) => e.medalColor === this.MedalColors.GOLD).map((d, index) =>
+									<Row className='mt-4 gcp' key={index}>
+										<RankCard data={d}/>
+									</Row>)}
+								{track2.filter((e) => e.medalColor === this.MedalColors.SILVER).map((d, index) =>
+									<Row className='mt-4 gcp' key={index}>
+										<RankCard data={d}/>
+									</Row>)}
+								{track2.filter((e) => e.medalColor === this.MedalColors.BRONZE).map((d, index) =>
+									<Row className='mt-4 gcp' key={index}>
+										<RankCard data={d}/>
+									</Row>)}
+								{track2.filter((e) => e.medalColor === this.MedalColors.NORMAL).map((d, index) =>
+									<Row className='mt-4 gcp' key={index}>
+										<RankCard data={d}/>
+									</Row>)}
+							</React.Fragment> : <Skeleton className='mt-3' variant='rect' height={200} style={{borderRadius: 10}}/>}
 						</Container>
 					</TabPanel>
 					<Row className='mb-5'/>
