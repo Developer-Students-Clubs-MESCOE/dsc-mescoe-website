@@ -1,21 +1,8 @@
 import teamImage from "../assets/img/team.webp";
-import gcpImage from "../assets/img/gcp.png";
+
 
 let homeSections = [
-  {
-    title: "30 Days of Google Cloud",
-    content: ["Checkout where you stand amongst other DSC Members in the race to complete quests on Qwiklabs!"],
-    button: {
-      text: 'Show Ranks',
-      textColor: '#fff',
-      backgroundColor: '#8a3fff',
-      isLink: true,
-      href: "/#/gcp-rank"
-    },
-    image: gcpImage,
-    cards: [],
-    videos: [],
-  },
+
   {
     title: 'Get to know the team',
     content: ["We’ve got a set of minds, that will blow your mind, teaching you, all sorts of stuff in the world of development.",
