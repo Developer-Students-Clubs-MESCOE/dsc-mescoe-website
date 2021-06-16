@@ -77,12 +77,12 @@ const ROUTES = [
 	},
 	{
 		icon: null,
-		name: 'Android Study Jam',
-		path: '/android-session-1',
+		name: 'GitHub 101',
+		path: '/github-101',
 		component: (
 			<Redirect
-				path="android-session-1"
-				url="https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzVhNTliOGQtMTkxZi00ZjgwLWIwN2UtZmI1YTk2M2NhZjA4%40thread.v2/0?context=%7b%22Tid%22%3a%22a3d598b6-6092-4351-b1a3-b213e8adc03b%22%2c%22Oid%22%3a%22661f07ac-f916-4ef3-a486-c25860d7f28e%22%7d"
+				path="github-101"
+				url="https://teams.microsoft.com/l/meetup-join/19%3ameeting_YWZlYWQ1MzUtNmVlYy00MWY4LTliZDQtMTY2MDlmNjhlY2U4%40thread.v2/0?context=%7b%22Tid%22%3a%22a3d598b6-6092-4351-b1a3-b213e8adc03b%22%2c%22Oid%22%3a%22105d357b-9536-4050-bdb5-0d5c3c247423%22%7d"
 			/>
 		),
 		type: RouteType.PAGE
