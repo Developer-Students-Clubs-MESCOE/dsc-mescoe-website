@@ -86,6 +86,18 @@ const ROUTES = [
 			/>
 		),
 		type: RouteType.PAGE
+	},
+	{
+		icon: null,
+		name: 'GitHub 101',
+		path: '/github-101-registration',
+		component: (
+			<Redirect
+				path="github-101-registration"
+				url="https://dsc.community.dev/events/details/developer-student-clubs-modern-education-societys-college-of-engineering-presents-github-101-an-adventurers-guide-to-open-source/"
+			/>
+		),
+		type: RouteType.PAGE
 	}
 ];
 
