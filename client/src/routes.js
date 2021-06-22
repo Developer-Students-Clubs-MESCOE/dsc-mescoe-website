@@ -77,28 +77,17 @@ const ROUTES = [
 	},
 	{
 		icon: null,
-		name: 'GitHub 101',
-		path: '/github-101',
+		name: 'LinedIn Profile Building',
+		path: '/linkedin-session',
 		component: (
 			<Redirect
-				path="github-101"
-				url="https://teams.microsoft.com/l/meetup-join/19%3ameeting_YWZlYWQ1MzUtNmVlYy00MWY4LTliZDQtMTY2MDlmNjhlY2U4%40thread.v2/0?context=%7b%22Tid%22%3a%22a3d598b6-6092-4351-b1a3-b213e8adc03b%22%2c%22Oid%22%3a%22105d357b-9536-4050-bdb5-0d5c3c247423%22%7d"
+				path="linkedin-session"
+				url="https://teams.microsoft.com/l/meetup-join/19%3ameeting_ODk1ODk2MWEtOGM4Yi00MDQxLThjOGItNWEyYjc3ODFmMTAx%40thread.v2/0?context=%7b%22Tid%22%3a%22a3d598b6-6092-4351-b1a3-b213e8adc03b%22%2c%22Oid%22%3a%22105d357b-9536-4050-bdb5-0d5c3c247423%22%7d"
 			/>
 		),
 		type: RouteType.PAGE
 	},
-	{
-		icon: null,
-		name: 'GitHub 101',
-		path: '/github-101-registration',
-		component: (
-			<Redirect
-				path="github-101-registration"
-				url="https://dsc.community.dev/events/details/developer-student-clubs-modern-education-societys-college-of-engineering-presents-github-101-an-adventurers-guide-to-open-source/"
-			/>
-		),
-		type: RouteType.PAGE
-	}
+	
 ];
 
 export default ROUTES;
