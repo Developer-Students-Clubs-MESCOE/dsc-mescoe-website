@@ -77,12 +77,12 @@ const ROUTES = [
 	},
 	{
 		icon: null,
-		name: 'LinedIn Profile Building',
-		path: '/linkedin-session',
+		name: 'Resume Building',
+		path: '/resume-building',
 		component: (
 			<Redirect
-				path="linkedin-session"
-				url="https://teams.microsoft.com/l/meetup-join/19%3ameeting_ODk1ODk2MWEtOGM4Yi00MDQxLThjOGItNWEyYjc3ODFmMTAx%40thread.v2/0?context=%7b%22Tid%22%3a%22a3d598b6-6092-4351-b1a3-b213e8adc03b%22%2c%22Oid%22%3a%22105d357b-9536-4050-bdb5-0d5c3c247423%22%7d"
+				path="resume-building"
+				url="https://teams.microsoft.com/l/meetup-join/19%3ameeting_YzliYjJjMmYtOTk1MC00M2JjLWIyN2EtNTQ4MzYyOGM1MTA2%40thread.v2/0?context=%7b%22Tid%22%3a%22a3d598b6-6092-4351-b1a3-b213e8adc03b%22%2c%22Oid%22%3a%22105d357b-9536-4050-bdb5-0d5c3c247423%22%7d"
 			/>
 		),
 		type: RouteType.PAGE
