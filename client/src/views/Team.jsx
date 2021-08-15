@@ -68,7 +68,7 @@ export default class Team extends React.Component {
           <div className='col-6 offset-1 mt-4'>
             <img
               className='mt-4 ml-4'
-              src={process.env.PUBLIC_URL + '/Images/firstparallel.jpg'}
+              src={process.env.PUBLIC_URL + '/Images/team3.gif'}
               alt='heading_illustration'
               style={{ height: '470px', width: '560px' }}
             />
