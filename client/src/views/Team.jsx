@@ -11,8 +11,8 @@ const TeamMember = (member) => {
   return (
     <div className="person">
   <div className="person-badge">
-    <img className="normal" src='{% static "resources/images/p1-removebg-preview.png" %}'/>
-    <img className="peculiar" src='{% static "resources/images/p2-removebg-preview.png" %}'/>
+        <img className="normal" src={member.imgn.Karan}/>
+        <img className="peculiar" src={member.imgp.Dhruvil}/>
   </div>
   <div className="info">
     <h4>Vaibhav Bhapkar</h4>
@@ -25,13 +25,7 @@ const TeamMember = (member) => {
 </div>
   );
 };
-function func(){
-          for (let i of TeamData) {
-            for (let j of i) {
-               TeamMember(j) 
-            }
-  }
-}
+
           
 export default class Team extends React.Component {
   
@@ -39,7 +33,7 @@ export default class Team extends React.Component {
     return (
       <div>
         <div className='col-md-6'></div>
-        {func()}
+        {TeamMember(TeamData[0][0])}
       </div>
     );
   }
