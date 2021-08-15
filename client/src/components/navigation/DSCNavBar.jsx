@@ -80,7 +80,7 @@ export default class DSCNavBar extends Component {
                     textDecoration: 'inherit'
                   }}
                 >
-                  DSC MESCOE
+                  GDSC MESCOE
                 </Link>
               </Col>
               <Col lg="8" className="my-auto">

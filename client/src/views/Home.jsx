@@ -19,7 +19,7 @@ export default class Home extends React.Component {
   }
 
   componentDidMount() {
-    document.title = 'Home - DSC MESCOE';
+    document.title = 'Home - GDSC MESCOE';
     resetNavStyle({page: 'Home'})
     window.addEventListener('scroll', this.handleScroll);
 
@@ -97,7 +97,7 @@ export default class Home extends React.Component {
                       textDecoration: 'inherit',
                     }}
                   >
-                    DSC MESCOE
+                    GDSC MESCOE
                   </Link>
                 </Col>
               </Row>
@@ -132,7 +132,7 @@ export default class Home extends React.Component {
                       textDecoration: 'inherit'
                     }}
                   >
-                    Our aim at DSC MESCOE is to learn and teach. Developers, designers and managers come together under
+                    Our aim at GDSC MESCOE is to learn and teach. Developers, designers and managers come together under
                     one roof to create a community which inspires others.
                   </p>
                 </Col>

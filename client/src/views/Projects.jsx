@@ -59,7 +59,7 @@ export default class Projects extends React.Component {
   }
 
   componentDidMount() {
-    document.title = 'Projects - DSC MESCOE';
+    document.title = 'Projects - GDSC MESCOE';
     resetNavStyle({page: 'Projects'});
 
     axios.get(`${serverURL}/api/projects`)

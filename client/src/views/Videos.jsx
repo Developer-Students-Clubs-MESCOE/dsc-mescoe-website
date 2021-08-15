@@ -15,7 +15,7 @@ export default class Videos extends React.Component {
 	}
 
 	componentDidMount() {
-		document.title = 'Videos - DSC MESCOE';
+		document.title = 'Videos - GDSC MESCOE';
 		resetNavStyle({page: 'Videos'});
 
 		axios.get(`${serverURL}/api/videos`)
@@ -50,7 +50,7 @@ export default class Videos extends React.Component {
 							</Col>
 						)}
 					</Row>
-					<Row className='mb-5 '/>
+					<Row className='mb-5'/>
 					<Row className='mb-5 '/>
 				</Container>
 			</Toolbar>

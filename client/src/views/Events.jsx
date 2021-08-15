@@ -13,7 +13,7 @@ export default class Events extends React.Component {
 	}
 
 	componentDidMount() {
-		document.title = 'Events - DSC MESCOE';
+		document.title = 'Events - GDSC MESCOE';
 		resetNavStyle({page: 'Events'})
 
 		Axios.get(`${serverURL}/api/events`).then(result => {

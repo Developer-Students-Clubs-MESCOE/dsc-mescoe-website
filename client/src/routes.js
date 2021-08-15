@@ -37,7 +37,7 @@ const ROUTES = [
 		icon: <People style={{ color: 'black' }} />,
 		name: 'Team',
 		path: '/team',
-		component: <Team />,
+		component: <Team/>,
 		type: RouteType.PAGE
 	},
 	{
