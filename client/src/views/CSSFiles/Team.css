@@ -1,115 +1,162 @@
 .person {
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  text-align: center;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    text-align: center;
 }
+
 .person-badge {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  overflow: hidden;
-  background: #DDD;
-  background: linear-gradient(to bottom, #EEE 0%,#CCC 100%);
-  position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    overflow: hidden;
+    background: #DDD;
+    background: linear-gradient(to bottom, #EEE 0%, #CCC 100%);
+    position: relative;
 }
 
 .person-badge img {
-  width: 200px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: 500ms;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 500ms;
 }
+
 .person-badge img.peculiar {
-  opacity: 0;
-  transform: translateY(80px)
+    opacity: 0;
+    transform: translateY(80px)
 }
 
-.person .links{
-  position: relative;
-  display: flex;
+.person .links {
+    position: relative;
+    display: flex;
 }
 
-.person-badge:hover img.normal {opacity: 0;transform: translateY(80px)}
-.person-badge:hover img.peculiar {opacity: 1;transform: translateY(0)}
+.person-badge:hover img.normal {
+    opacity: 0;
+    transform: translateY(80px)
+}
 
-
+.person-badge:hover img.peculiar {
+    opacity: 1;
+    transform: translateY(0)
+}
 
 @media only screen and (max-width: 425px) {
-  .person-badge {
-  position: relative;
-  margin: 0 auto;
-  width: 100px;
-  height: 100px;
-  }
-  .person-badge img {
-    width: 100px;
-  }
-  .person {
-    width: 100%;
-    border: 1px solid red;
-    padding: 10px 0 0 10px;
-  }
-}.person {
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  text-align: center;
+    .person-badge {
+        position: relative;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+    }
+    .person-badge img {
+        width: 100px;
+    }
+    .person {
+        width: 100%;
+        border: 1px solid red;
+        padding: 10px 0 0 10px;
+    }
 }
+
+.person {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    text-align: center;
+}
+
 .person-badge {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  overflow: hidden;
-  background: #DDD;
-  background: linear-gradient(to bottom, #EEE 0%,#CCC 100%);
-  position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    overflow: hidden;
+    background: #DDD;
+    background: linear-gradient(to bottom, #EEE 0%, #CCC 100%);
+    position: relative;
 }
 
 .person-badge img {
-  width: 200px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: 500ms;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 500ms;
 }
+
 .person-badge img.peculiar {
-  opacity: 0;
-  transform: translateY(80px)
+    opacity: 0;
+    transform: translateY(80px)
 }
 
-.person .links{
-  position: relative;
-  display: flex;
+.person .links {
+    position: relative;
+    display: flex;
 }
 
-.person-badge:hover img.normal {opacity: 0;transform: translateY(80px)}
-.person-badge:hover img.peculiar {opacity: 1;transform: translateY(0)}
+.person-badge:hover img.normal {
+    opacity: 0;
+    transform: translateY(80px)
+}
 
-
+.person-badge:hover img.peculiar {
+    opacity: 1;
+    transform: translateY(0)
+}
 
 @media only screen and (max-width: 425px) {
-  .person-badge {
-  position: relative;
-  margin: 0 auto;
-  width: 100px;
-  height: 100px;
-  }
-  .person-badge img {
-    width: 100px;
-  }
-  .person {
+    .person-badge {
+        position: relative;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+    }
+    .person-badge img {
+        width: 100px;
+    }
+    .person {
+        width: 100%;
+        border: 1px solid red;
+        padding: 10px 0 0 10px;
+    }
+}
+
+.Teamrow {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 2500px;
+}
+
+.Teamcol {
+    display: flex;
+    justify-items: space-evenly;
+    flex-direction: row;
+    align-items: center;
     width: 100%;
-    border: 1px solid red;
-    padding: 10px 0 0 10px;
-  }
+}
+
+.Cores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Lead hr {
+    display: none;
+}
+
+iframe {
+    height: 20px;
+    width: 30px;
 }

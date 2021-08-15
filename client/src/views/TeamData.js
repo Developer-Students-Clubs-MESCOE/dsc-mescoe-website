@@ -1,7 +1,7 @@
 import Karan from '../assets/img/Karan.jpg';
 import Dhruvil from '../assets/img/Dhruvil.jpg';
-const TeamData = [
-    [
+const TeamData = {
+    "Lead":[
     {
       name: 'Vaibhav',
       imgn: { Karan },
@@ -10,104 +10,104 @@ const TeamData = [
       githubLink: ''
     }
   ],
-   [
+   "Technical":[
     {
-      name: '',
+      name: 'Manav',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
       githubLink: ''
     },
     {
-      name: '',
+      name: 'Hritvik',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
       githubLink: ''
     },
     {
-      name: '',
+      name: 'Param',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
       githubLink: ''
     },
     {
-      name: '',
+      name: 'Shreyash',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
       githubLink: ''
     },
     {
-      name: '',
+      name: 'Kundan',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
       githubLink: ''
     }
   ],
-  [
+   "Public Relations Cores":[
     {
-      name: '',
+      name: 'Prachiti',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
       githubLink: ''
     },
     {
-      name: '',
+      name: 'Zeeshan',
+      imgn: { Karan },
+      imgp: { Dhruvil },
+      linkedInLink: '',
+      githubLink: ''
+    },
+    {
+      name: 'Tanvi',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
       githubLink: ''
     }
   ],
-   [
+  "Finance Core":[
     {
-      name: '',
+      name: 'Pari',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
       githubLink: ''
     },
     {
-      name: '',
-      imgn: { Karan },
-      imgp: { Dhruvil },
-      linkedInLink: '',
-      githubLink: ''
-    },
-    {
-      name: '',
+      name: 'Mihir',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
       githubLink: ''
     }
   ],
-    [
+    "Design Core":[
     {
-      name: '',
+      name: 'Priyanka',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
       githubLink: ''
     },
     {
-      name: '',
+      name: 'Dipam',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
       githubLink: ''
     },
     {
-      name: '',
+      name: 'Pratiksha',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
       githubLink: ''
     }
   ]
-];
+};
 export default TeamData;
