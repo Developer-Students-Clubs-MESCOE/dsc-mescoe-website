@@ -1,7 +1,7 @@
 import Karan from '../assets/img/Karan.jpg';
 import Dhruvil from '../assets/img/Dhruvil.jpg';
-const TeamData = [
-  [
+const TeamData = {
+  Lead: [
     {
       name: 'Vaibhav Bhapkar',
       imgn: { Karan },
@@ -14,9 +14,9 @@ const TeamData = [
       role: 'Lead'
     }
   ],
-  [
+  Technical: [
     {
-      name: 'Vaibhav Bhapkar',
+      name: 'Manav',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
@@ -26,7 +26,7 @@ const TeamData = [
       role: 'Technical Core'
     },
     {
-      name: 'Vaibhav Bhapkar',
+      name: 'Hritvik',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
@@ -36,7 +36,7 @@ const TeamData = [
       role: 'Technical Core'
     },
     {
-      name: 'Vaibhav Bhapkar',
+      name: 'Param',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
@@ -45,7 +45,7 @@ const TeamData = [
       classname1: 'person mt-4'
     },
     {
-      name: 'Vaibhav Bhapkar',
+      name: 'Shreyash',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
@@ -54,7 +54,7 @@ const TeamData = [
       classname1: 'person mt-4'
     },
     {
-      name: 'Vaibhav Bhapkar',
+      name: 'Kundan',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
@@ -63,9 +63,9 @@ const TeamData = [
       classname1: 'person mt-4'
     }
   ],
-  [
+  'Public Relations Cores': [
     {
-      name: 'Vaibhav Bhapkar',
+      name: 'Prachiti',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
@@ -74,18 +74,23 @@ const TeamData = [
       classname1: ' row person mt-4'
     },
     {
-      name: 'Vaibhav Bhapkar',
+      name: 'Zeeshan',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
-      githubLink: '',
-      classname: 'person-badge ${classes.large} shadow-lg',
-      classname1: 'row person mt-4'
+      githubLink: ''
+    },
+    {
+      name: 'Tanvi',
+      imgn: { Karan },
+      imgp: { Dhruvil },
+      linkedInLink: '',
+      githubLink: ''
     }
   ],
-  [
+  'Finance Core': [
     {
-      name: 'Vaibhav Bhapkar',
+      name: 'Pari',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
@@ -93,15 +98,7 @@ const TeamData = [
       classname: 'person-badge ${classes.large} shadow-lg'
     },
     {
-      name: 'Vaibhav Bhapkar',
-      imgn: { Karan },
-      imgp: { Dhruvil },
-      linkedInLink: '',
-      githubLink: '',
-      classname: 'person-badge ${classes.large} shadow-lg'
-    },
-    {
-      name: 'Vaibhav Bhapkar',
+      name: 'Mihir',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
@@ -109,9 +106,9 @@ const TeamData = [
       classname: 'person-badge ${classes.large} shadow-lg'
     }
   ],
-  [
+  'Design Core': [
     {
-      name: 'Vaibhav Bhapkar',
+      name: 'Priyanka',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
@@ -119,7 +116,7 @@ const TeamData = [
       classname: 'person-badge ${classes.large} shadow-lg'
     },
     {
-      name: 'Vaibhav Bhapkar',
+      name: 'Dipam',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
@@ -127,7 +124,7 @@ const TeamData = [
       classname: 'person-badge ${classes.large} shadow-lg'
     },
     {
-      name: 'Vaibhav Bhapkar',
+      name: 'Pratiksha',
       imgn: { Karan },
       imgp: { Dhruvil },
       linkedInLink: '',
@@ -135,5 +132,5 @@ const TeamData = [
       classname: 'person-badge ${classes.large} shadow-lg'
     }
   ]
-];
+};
 export default TeamData;
