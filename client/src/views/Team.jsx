@@ -65,20 +65,18 @@ export default class Team extends React.Component {
     return (
       <div>
         <div className='row align-items-center'>
-          <div className='col-6 offset-1 mt-4'>
+          <div className='col-md-6 col-xs-9 offset-1 mt-4'>
             <img
               className='mt-4 ml-4'
-              src={process.env.PUBLIC_URL + '/Images/team3.gif'}
+              src={process.env.PUBLIC_URL + '/Images/team5.gif'}
               alt='heading_illustration'
               style={{ height: '470px', width: '560px' }}
             />
           </div>
-          <div className='col-5'>
-            <p style={{ fontSize: '28px' }}>
-              We United to be Strong!!
-              afdafdsfsafasdfasdfasdfasdf
-              asdfasdfsadfsdafdsfdasfasdfs
-              sadfsdafdsafadsfasdfdsfdsfdsf
+          <div className='col-md-5 col-xs-3'>
+            <p style={{ fontSize: '28px',color:'#0000cc' }}>
+              The strength of the team is each<br></br> individual member.
+              The strength<br></br> of each member is the team.
             </p>
           </div>
         </div>
