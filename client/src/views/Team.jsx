@@ -64,17 +64,16 @@ export default class Team extends React.Component {
   render() {
     return (
       <div>
-        <div className='row align-items-center'>
-          <div className='col-md-6 col-xs-9 offset-1 mt-4'>
+        <div className='flex-container'>
+          <div className='flex-item-left'>
             <img
               className='mt-4 ml-4'
               src={process.env.PUBLIC_URL + '/Images/team5.gif'}
               alt='heading_illustration'
-              style={{ height: '470px', width: '560px' }}
             />
           </div>
-          <div className='col-md-5 col-xs-3'>
-            <p style={{ fontSize: '28px',color:'#0000cc' }}>
+          <div className='flex-item-right'>
+            <p>
               The strength of the team is each<br></br> individual member.
               The strength<br></br> of each member is the team.
             </p>
