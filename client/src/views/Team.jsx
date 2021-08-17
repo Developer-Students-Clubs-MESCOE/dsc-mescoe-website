@@ -35,10 +35,24 @@ const ArrangeRow=(props)=>{
     member.imgp=member.imgp.Dhruvil;
     Members.push(<TeamMember member={member} key={member.name} core={props.core}/> ); 
   }
+  let spacing="Teamcol space-around";
+  if(Members.length<3)spacing="Teamcol space-evenly";
+  if(props.core==="Technical"){
+    return(<div id={props.core}>
+      <h2 className="Cores" >{props.core}</h2>
+      <hr/>
+       <div className="Teamcol">
+      {Members.slice(0,3)}
+     </div>
+     <div className="Teamcol space-evenly" >
+      {Members.slice(3,5)}
+     </div>
+     </div>);
+  }
   return (<div id={props.core}>
      <h2 className="Cores" >{props.core}</h2>
      <hr/>
-      <div className="Teamcol">
+      <div className={spacing} >
      {Members}
     </div>
     </div>
@@ -63,24 +77,39 @@ const arrangeCol=()=>{
 export default class Team extends React.Component {
   render() {
     return (
-      <div>
-        <div className='row align-items-center'>
+      <div className="Team">
+        
+        <div className='row align-items-center' style={{ zIndex:'2'}}>
           <div className='col-md-6 col-xs-9 offset-1 mt-4'>
             <img
               className='mt-4 ml-4'
               src={process.env.PUBLIC_URL + '/Images/team5.gif'}
               alt='heading_illustration'
-              style={{ height: '470px', width: '560px' }}
+              style={{ height: '470px', width: '550px' }}
             />
           </div>
           <div className='col-md-5 col-xs-3'>
-            <p style={{ fontSize: '28px',color:'#0000cc' }}>
+            <p style={{ fontSize: '28px',color:'#0000cc',textalign:'center'}}>
               The strength of the team is each<br></br> individual member.
               The strength<br></br> of each member is the team.
             </p>
           </div>
         </div>
         {arrangeCol()}
+        <div className="area" >
+      <ul className="circles">
+              <li><img src="https://img.icons8.com/color/48/000000/flutter.png"/></li>
+              <li><img src="https://img.icons8.com/plasticine/100/000000/react.png"/></li>
+              <li><img src="https://img.icons8.com/color/48/000000/angularjs.png"/></li>
+              <li><img src="https://img.icons8.com/color/48/000000/nodejs.png"/></li>
+              <li><img src="https://img.icons8.com/color/48/000000/mongodb.png"/></li>
+              <li><img src="https://img.icons8.com/color/48/000000/tensorflow.png"/></li>
+              <li><img src="https://img.icons8.com/color/48/000000/google-cloud.png"/></li>
+              <li><img src="https://img.icons8.com/color/48/000000/google-cloud-platform.png"/></li>
+              <li><img src="https://img.icons8.com/color/48/000000/django.png"/></li>
+              <li><img src="https://img.icons8.com/fluency/48/000000/mysql-logo.png"/></li>
+      </ul>
+  </div >
       </div>
     );
   }
