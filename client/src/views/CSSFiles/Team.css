@@ -57,6 +57,12 @@
     width:230px;
 }
 }
+
+/*for testing dark mode*/
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 /*for the lower part*/
 .person {
   width: 100%;

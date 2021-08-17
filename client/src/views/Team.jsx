@@ -4,66 +4,76 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { resetFooterStyle, resetNavStyle } from '../utils/utils';
 import './CSSFiles/Team.css';
 import TeamComponent from '../components/team/team-component';
-import { GitHub, LinkedIn } from "@material-ui/icons";
+import { GitHub, LinkedIn } from '@material-ui/icons';
 import TeamData from './TeamData.js';
 import Karan from '../assets/img/Karan.jpg';
 import Dhruvil from '../assets/img/Dhruvil.jpg';
 
 const TeamMember = (props) => {
   return (
-      <div className="person" id={props.member.name}>
-        <div className="person-badge">
-          <img className="normal" src={props.member.imgn}/>
-          <img className="peculiar" src={props.member.imgp}/>
-        </div>
-      <div className="info">
+    <div className='person' id={props.member.name}>
+      <div className='person-badge'>
+        <img className='normal' src={props.member.imgn} />
+        <img className='peculiar' src={props.member.imgp} />
+      </div>
+      <div className='info'>
         <h4>{props.member.name}</h4>
       </div>
-        <div className="links">
-        <a src={props.linkedInLink}><GitHub className="mr-2" style={{ color: "black" }} /></a>
-        <a src={props.githubLink} ><LinkedIn className="ml-1" style={{ color: "black" }} /></a>
-        </div>
+      <div className='links'>
+        <a src={props.linkedInLink}>
+          <GitHub className='mr-2' style={{ color: 'black' }} />
+        </a>
+        <a src={props.githubLink}>
+          <LinkedIn className='ml-1' style={{ color: 'black' }} />
+        </a>
       </div>
-
+    </div>
   );
 };
 
-const ArrangeRow=(props)=>{
+const ArrangeRow = (props) => {
   let Members = [];
   for (let member of TeamData[props.core]) {
-    member.imgn=member.imgn.Karan;
-    member.imgp=member.imgp.Dhruvil;
-    Members.push(<TeamMember member={member} key={member.name} core={props.core}/> ); 
+    member.imgn = member.imgn.Karan;
+    member.imgp = member.imgp.Dhruvil;
+    Members.push(
+      <TeamMember member={member} key={member.name} core={props.core} />
+    );
   }
-  return (<div id={props.core}>
-     <h2 className="Cores" >{props.core}</h2>
-     <hr/>
-      <div className="Teamcol">
-     {Members}
-    </div>
+  return (
+    <div id={props.core}>
+      <h2 className='Cores'>{props.core}</h2>
+      <hr />
+      <div className='Teamcol'>{Members}</div>
     </div>
   );
-}
+};
 
-const arrangeCol=()=>{
+const arrangeCol = () => {
   const Cores = [];
-  const temp=Object.keys(TeamData);
+  const temp = Object.keys(TeamData);
   for (let core of temp) {
-    Cores.push(<ArrangeRow core={core} key={core}/>);
+    Cores.push(<ArrangeRow core={core} key={core} />);
   }
-  
+
   return (
-    <div className="Teamrow">
+    <div className='Teamrow'>
       <h1 className='Cores'>OUR TEAM</h1>
       {Cores}
     </div>
   );
+};
+function checkcolor() {
+  console.log('hii');
+  var element = document.body;
+  element.classList.toggle('dark-mode');
 }
-          
 export default class Team extends React.Component {
+  
   render() {
     return (
       <div>
+        <button onClick={checkcolor}>Toggle dark mode</button>
         <div className='flex-container'>
           <div className='flex-item-left'>
             <img
@@ -74,8 +84,8 @@ export default class Team extends React.Component {
           </div>
           <div className='flex-item-right'>
             <p>
-              The strength of the team is each<br></br> individual member.
-              The strength<br></br> of each member is the team.
+              The strength of the team is each<br></br> individual member. The
+              strength<br></br> of each member is the team.
             </p>
           </div>
         </div>
