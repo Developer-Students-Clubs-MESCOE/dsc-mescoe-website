@@ -6,8 +6,7 @@ import './CSSFiles/Team.css';
 import TeamComponent from '../components/team/team-component';
 import { GitHub, LinkedIn } from '@material-ui/icons';
 import TeamData from './TeamData.js';
-import Karan from '../assets/img/Karan.jpg';
-import Dhruvil from '../assets/img/Dhruvil.jpg';
+
 
 const TeamMember = (props) => {
   return (
@@ -40,11 +39,28 @@ const ArrangeRow = (props) => {
       <TeamMember member={member} key={member.name} core={props.core} />
     );
   }
-  return (
-    <div id={props.core}>
-      <h2 className='Cores'>{props.core}</h2>
-      <hr />
-      <div className='Teamcol'>{Members}</div>
+  let spacing="Teamcol space-around";
+  if(Members.length<3)spacing="Teamcol space-evenly";
+  if(props.core==="Technical"){
+    return(<div id={props.core}>
+      <h2 className="Cores" >{props.core}</h2>
+      <hr/>
+       <div className="Teamcol">
+      {Members.slice(0,3)}
+     </div>
+     <div className="Teamcol space-evenly" >
+      {Members.slice(3,5)}
+     </div>
+     <hr/>
+     </div>);
+  }
+  return (<div id={props.core}>
+     <h2 className="Cores" >{props.core}</h2>
+     <hr/>
+      <div className={spacing} >
+     {Members}
+    </div>
+    <hr/>
     </div>
   );
 };
@@ -90,6 +106,20 @@ export default class Team extends React.Component {
           </div>
         </div>
         {arrangeCol()}
+        <div className="area" >
+      <ul className="circles">
+              <li><img src="https://img.icons8.com/color/48/000000/flutter.png"/></li>
+              <li><img src="https://img.icons8.com/plasticine/100/000000/react.png"/></li>
+              <li><img src="https://img.icons8.com/color/48/000000/angularjs.png"/></li>
+              <li><img src="https://img.icons8.com/color/48/000000/nodejs.png"/></li>
+              <li><img src="https://img.icons8.com/color/48/000000/mongodb.png"/></li>
+              <li><img src="https://img.icons8.com/color/48/000000/tensorflow.png"/></li>
+              <li><img src="https://img.icons8.com/color/48/000000/google-cloud.png"/></li>
+              <li><img src="https://img.icons8.com/color/48/000000/google-cloud-platform.png"/></li>
+              <li><img src="https://img.icons8.com/color/48/000000/django.png"/></li>
+              <li><img src="https://img.icons8.com/fluency/48/000000/mysql-logo.png"/></li>
+      </ul>
+  </div >
       </div>
     );
   }
