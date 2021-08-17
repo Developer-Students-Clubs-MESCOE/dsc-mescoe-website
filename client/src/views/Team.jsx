@@ -24,7 +24,6 @@ const TeamMember = (props) => {
         <a src={props.githubLink} ><LinkedIn className="ml-1" style={{ color: "black" }} /></a>
         </div>
       </div>
-
   );
 };
 
@@ -77,19 +76,17 @@ const arrangeCol=()=>{
 export default class Team extends React.Component {
   render() {
     return (
-      <div className="Team">
-        
-        <div className='row align-items-center' style={{ zIndex:'2'}}>
-          <div className='col-md-6 col-xs-9 offset-1 mt-4'>
+      <div>
+        <div className='flex-container'>
+          <div className='flex-item-left'>
             <img
               className='mt-4 ml-4'
               src={process.env.PUBLIC_URL + '/Images/team5.gif'}
               alt='heading_illustration'
-              style={{ height: '470px', width: '550px' }}
             />
           </div>
-          <div className='col-md-5 col-xs-3'>
-            <p style={{ fontSize: '28px',color:'#0000cc',textalign:'center'}}>
+          <div className='flex-item-right'>
+            <p>
               The strength of the team is each<br></br> individual member.
               The strength<br></br> of each member is the team.
             </p>

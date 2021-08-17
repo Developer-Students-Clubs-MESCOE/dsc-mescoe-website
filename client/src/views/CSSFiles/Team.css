@@ -8,123 +8,187 @@
     height: auto;
     text-align: center;
     z-index:2;
+  }
+/*for the  upper part*/
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
 }
-.person-badge img.normal{
-     border: 2px solid #0000cc;
-     border-radius:100px;
+
+.flex-item-left {
+  padding: 10px;
+  flex: 50%;
+}
+.flex-item-left img {
+    height:470px;
+    width:560px;
+}
+
+.flex-item-right {
+  padding: 10px;
+  flex: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #0000cc;
+}
+/*media query for flexbox*/
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-item-right {
+    font-size: 20px;
+  }
+  .flex-item-left {
+    height: 300px;
+    width: 400px;
+  }
+  .flex-item-left img {
+    height:250px;
+    width:350px;
+}
+}
+@media (max-width: 480px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-item-right {
+    font-size: 20px;
+  }
+  .flex-item-left {
+    height: 200px;
+    width: 200px;
+  }
+  .flex-item-left img {
+    height:150px;
+    width:230px;
+}
+}
+/*for the lower part*/
+.person {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  text-align: center;
+}
+.person-badge img.normal {
+  border: 2px solid #0000cc;
+  border-radius: 100px;
 }
 .person-badge {
-
-    height: 200px;
-    border-radius: 100px;
-    overflow: hidden;
-    background: #DDD;
-    background: linear-gradient(to bottom, #EEE 0%, #CCC 100%);
-    position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  overflow: hidden;
+  background: #ddd;
+  background: linear-gradient(to bottom, #eee 0%, #ccc 100%);
+  position: relative;
 }
 
 .person-badge img {
-    width: 200px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 500ms;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 500ms;
 }
 
 .person-badge img.peculiar {
-    opacity: 0;
-    transform: translateY(80px);
-     border: 2px solid #0000cc;
+  opacity: 0;
+  transform: translateY(80px);
+  border: 2px solid #0000cc;
 }
 
 .person .links {
-    position: relative;
-    display: flex;
+  position: relative;
+  display: flex;
 }
 
 .person-badge:hover img.normal {
-    opacity: 0;
-    transform: translateY(80px)
+  opacity: 0;
+  transform: translateY(80px);
 }
 
 .person-badge:hover img.peculiar {
-    opacity: 1;
-    transform: translateY(0)
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media only screen and (max-width: 425px) {
-    .person-badge {
-        position: relative;
-        margin: 0 0;
-        width: 100px;
-        height: 100px;
-    }
-    .person-badge img {
-        width: 100px;
-    }
-    .person {
-        width: 100%;
-        border: 1px solid red;
-        padding: 10px 0 0 0px;
-    }
-    p{
-        display:flex;
-        justify-content:center;
-    }
+  .person-badge {
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+  }
+  .person-badge img {
+    width: 100px;
+  }
+  .person {
+    width: 100%;
+    border: 1px solid red;
+    padding: 10px 0 0 10px;
+  }
 }
 
 .person {
-    width: auto;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    text-align: center;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  text-align: center;
 }
 
 .person-badge {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    overflow: hidden;
-    background: #DDD;
-    background: linear-gradient(to bottom, #EEE 0%, #CCC 100%);
-    position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  overflow: hidden;
+  background: #ddd;
+  background: linear-gradient(to bottom, #eee 0%, #ccc 100%);
+  position: relative;
 }
 
 .person-badge img {
-    width: 200px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 500ms;
-    
-    
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 500ms;
 }
 
 .person-badge img.peculiar {
-    opacity: 0;
-    transform: translateY(80px);
-    border: 3px solid #0000cc;
-    border-radius:150px;
+  opacity: 0;
+  transform: translateY(80px);
+  border: 3px solid #0000cc;
+  border-radius: 150px;
 }
 
 .person .links {
-    position: relative;
-    display: flex;
+  position: relative;
+  display: flex;
 }
 
 .person-badge:hover img.normal {
-    opacity: 0;
-    transform: translateY(80px);
-     border: 3px solid #0000cc;
+  opacity: 0;
+  transform: translateY(80px);
+  border: 3px solid #0000cc;
 }
 
 .person-badge:hover img.peculiar {
-    opacity: 1;
-    transform: translateY(0)
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media only screen and (max-width: 425px) {
@@ -165,13 +229,13 @@
 }
 
 .Cores {
-    display: flex;
-    justify-content: center;
-    top:0;
+  display: flex;
+  justify-content: center;
+  top: 0;
 }
 
 #Lead hr {
-    display: none;
+  display: none;
 }
 
 iframe {
@@ -312,4 +376,3 @@ iframe {
 .row .align-items-center img{
     z-index: 5;
 }
-
