@@ -6,6 +6,7 @@ import './CSSFiles/Team.css';
 import TeamComponent from '../components/team/team-component';
 import { GitHub, LinkedIn } from '@material-ui/icons';
 import TeamData from './TeamData.js';
+import { Link } from 'react-router-dom';
 
 
 const TeamMember = (props) => {
@@ -73,9 +74,18 @@ const arrangeCol = () => {
   }
 
   return (
-    <div className='Teamrow'>
-      <h1 className='Cores'>OUR TEAM</h1>
-      {Cores}
+    <div>
+      <div className='Teamrow'>
+        <h1 className='Cores'>OUR TEAM</h1>
+        {Cores}
+        <Link to='/team2020'>
+          <center>
+            <button type='button' class='btn btn-dark w-25 mb-4'>
+              <center><h4>Team 2020</h4></center>
+            </button>
+          </center>
+        </Link>
+      </div>
     </div>
   );
 };
@@ -134,9 +144,6 @@ export default class Team extends React.Component {
             </li>
           </ul>
         </div>
-        <button type='button' className='btn btn-primary align-center justify-center'>
-          Primary
-        </button>
       </div>
     );
   }
