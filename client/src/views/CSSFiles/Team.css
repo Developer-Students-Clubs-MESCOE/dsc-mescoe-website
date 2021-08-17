@@ -1,3 +1,6 @@
+.header-demo{
+    height: 100%;
+}
 .person {
     width: auto;
     position: relative;
@@ -35,24 +38,7 @@
   font-size: 28px;
   color: #0000cc;
 }
-/*media query for flexbox*/
-@media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
-  }
-  .flex-item-right {
-    font-size: 20px;
-  }
-  .flex-item-left {
-    
-    height: 300px;
-    width: 400px;
-  }
-  .flex-item-left img {
-    height:250px;
-    width:350px;
-}
-}
+
 @media (max-width: 480px) {
   .flex-container {
     flex-direction: column;
@@ -81,7 +67,6 @@
 /*for the lower part*/
 
 .person-badge img.normal {
-  border: 2px solid #0000cc;
   border-radius: 100px;
 }
 .person-badge {
@@ -105,7 +90,6 @@
 .person-badge img.peculiar {
   opacity: 0;
   transform: translateY(80px);
-  border: 2px solid #0000cc;
 }
 
 .person .links {
@@ -123,7 +107,7 @@
   transform: translateY(0);
 }
 .person-badge img {
-  width: 200px;
+  width: 200;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -133,7 +117,6 @@
 .person-badge img.peculiar {
   opacity: 0;
   transform: translateY(80px);
-  border: 3px solid #0000cc;
   border-radius: 150px;
 }
 
@@ -145,7 +128,6 @@
 .person-badge:hover img.normal {
   opacity: 0;
   transform: translateY(80px);
-  border: 3px solid #0000cc;
 }
 
 .person-badge:hover img.peculiar {
@@ -177,7 +159,7 @@
   margin-top: 50px;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 480px) {
   .person-badge {
       position: relative;
       margin: 0 0;
@@ -196,10 +178,39 @@
   }
   .Teamrow{
     justify-content: flex-start;
-    height: 1500px;
+    height: 1100px;
   }
 }
-
+/*media query for flexbox*/
+@media (min-width: 481px) and (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-item-right {
+    font-size: 20px;
+  }
+  .flex-item-left {
+    
+    height: 300px;
+    width: 400px;
+  }
+  .flex-item-left img {
+    height:250px;
+    width:350px;
+}
+.person-badge {
+    width:20vw;
+    height:20vw;
+}
+.person-badge img{
+    width: 20vw;
+    height:20vw;
+}
+.Teamrow{
+    justify-content: flex-start;
+    height: 2100px;
+  }
+}
 
 iframe {
     height: 20px;

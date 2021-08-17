@@ -79,17 +79,11 @@ const arrangeCol = () => {
     </div>
   );
 };
-function checkcolor() {
-  console.log('hii');
-  var element = document.body;
-  element.classList.toggle('dark-mode');
-}
 export default class Team extends React.Component {
   
   render() {
     return (
-      <div>
-        <button onClick={checkcolor}>Toggle dark mode</button>
+      <div className='header-demo'>
         <div className='flex-container'>
           <div className='flex-item-left'>
             <img
@@ -106,20 +100,43 @@ export default class Team extends React.Component {
           </div>
         </div>
         {arrangeCol()}
-        <div className="area" >
-      <ul className="circles">
-              <li><img src="https://img.icons8.com/color/48/000000/flutter.png"/></li>
-              <li><img src="https://img.icons8.com/plasticine/100/000000/react.png"/></li>
-              <li><img src="https://img.icons8.com/color/48/000000/angularjs.png"/></li>
-              <li><img src="https://img.icons8.com/color/48/000000/nodejs.png"/></li>
-              <li><img src="https://img.icons8.com/color/48/000000/mongodb.png"/></li>
-              <li><img src="https://img.icons8.com/color/48/000000/tensorflow.png"/></li>
-              <li><img src="https://img.icons8.com/color/48/000000/google-cloud.png"/></li>
-              <li><img src="https://img.icons8.com/color/48/000000/google-cloud-platform.png"/></li>
-              <li><img src="https://img.icons8.com/color/48/000000/django.png"/></li>
-              <li><img src="https://img.icons8.com/fluency/48/000000/mysql-logo.png"/></li>
-      </ul>
-  </div >
+        <div className='area'>
+          <ul className='circles'>
+            <li>
+              <img src='https://img.icons8.com/color/48/000000/flutter.png' />
+            </li>
+            <li>
+              <img src='https://img.icons8.com/plasticine/100/000000/react.png' />
+            </li>
+            <li>
+              <img src='https://img.icons8.com/color/48/000000/angularjs.png' />
+            </li>
+            <li>
+              <img src='https://img.icons8.com/color/48/000000/nodejs.png' />
+            </li>
+            <li>
+              <img src='https://img.icons8.com/color/48/000000/mongodb.png' />
+            </li>
+            <li>
+              <img src='https://img.icons8.com/color/48/000000/tensorflow.png' />
+            </li>
+            <li>
+              <img src='https://img.icons8.com/color/48/000000/google-cloud.png' />
+            </li>
+            <li>
+              <img src='https://img.icons8.com/color/48/000000/google-cloud-platform.png' />
+            </li>
+            <li>
+              <img src='https://img.icons8.com/color/48/000000/django.png' />
+            </li>
+            <li>
+              <img src='https://img.icons8.com/fluency/48/000000/mysql-logo.png' />
+            </li>
+          </ul>
+        </div>
+        <button type='button' className='btn btn-primary align-center justify-center'>
+          Primary
+        </button>
       </div>
     );
   }
