@@ -6,8 +6,7 @@ import './CSSFiles/Team.css';
 import TeamComponent from '../components/team/team-component';
 import { GitHub, LinkedIn } from "@material-ui/icons";
 import TeamData from './TeamData.js';
-import Karan from '../assets/img/Karan.jpg';
-import Dhruvil from '../assets/img/Dhruvil.jpg';
+
 
 const TeamMember = (props) => {
   return (
@@ -46,6 +45,7 @@ const ArrangeRow=(props)=>{
      <div className="Teamcol space-evenly" >
       {Members.slice(3,5)}
      </div>
+     <hr/>
      </div>);
   }
   return (<div id={props.core}>
@@ -54,6 +54,7 @@ const ArrangeRow=(props)=>{
       <div className={spacing} >
      {Members}
     </div>
+    <hr/>
     </div>
   );
 }
