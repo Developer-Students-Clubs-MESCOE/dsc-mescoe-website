@@ -24,6 +24,7 @@
 .flex-item-left {
   padding: 10px;
   flex: 50%;
+  align-items: center;
 }
 .flex-item-left img {
     height:470px;
@@ -33,11 +34,23 @@
 .flex-item-right {
   padding: 10px;
   flex: 50%;
-  align-items: center;
-  justify-content: center;
+  align-items:flex-end;
+  justify-content:flex-end;
   font-size: 28px;
-  color: #0000cc;
- 
+  color: black;
+  font-style: bold;
+  font-weight: 50;
+}
+.flex-item-right p{
+    font-family:'Google Sans',Roboto,sans-serif;
+    margin-top:80px;
+}
+.flex-button{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 480px) {
@@ -45,19 +58,13 @@
     flex-direction: column;
   }
   .flex-item-right {
-    font-size: 20px;
+    font-size: 24px;
   }
   .flex-item-left {
     display:flex;
     justify-content: center;
     padding:0px;
-    height: 200px;
-    width: 200px;
   }
-  .flex-item-left img {
-    height:150px;
-    width:230px;
-}
 }
 
 /*for testing dark mode*/
@@ -142,7 +149,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 3050px;
+    height: 2700px;
     z-index:2;
 }
 
@@ -181,6 +188,9 @@
     justify-content: flex-start;
     height: 1100px;
   }
+  .flex-item-right p{
+      margin-top:0px;
+  }
 }
 /*media query for flexbox*/
 @media (min-width: 481px) and (max-width: 800px) {
@@ -188,17 +198,8 @@
     flex-direction: column;
   }
   .flex-item-right {
-    font-size: 20px;
+    font-size: 28px;
   }
-  .flex-item-left {
-    
-    height: 300px;
-    width: 400px;
-  }
-  .flex-item-left img {
-    height:250px;
-    width:350px;
-}
 .person-badge {
     width:20vw;
     height:20vw;
@@ -209,7 +210,7 @@
 }
 .Teamrow{
     justify-content: flex-start;
-    height: 2200px;
+    height: 1800px;
   }
 }
 

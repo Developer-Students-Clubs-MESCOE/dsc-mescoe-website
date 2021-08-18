@@ -6,15 +6,21 @@ import './CSSFiles/Team.css';
 import TeamComponent from '../components/team/team-component';
 import { GitHub, LinkedIn } from '@material-ui/icons';
 import TeamData from './TeamData.js';
-import { Link } from 'react-router-dom';
-
+import { Link,} from 'react-router-dom';
 
 const TeamMember = (props) => {
   return (
     <div className='person' id={props.member.name}>
       <div className='person-badge'>
-        <img className='normal' src={props.member.imgn} />
-        <img className='peculiar' src={props.member.imgp} />
+        <img
+          className='normal'
+          src={process.env.PUBLIC_URL + props.member.imagen}
+        />
+        <img
+          className='peculiar'
+          src={process.env.PUBLIC_URL + props.member.imagep}
+        />
+        {console.log(props.member.imagen)}
       </div>
       <div className='info'>
         <h4>{props.member.name}</h4>
@@ -34,34 +40,29 @@ const TeamMember = (props) => {
 const ArrangeRow = (props) => {
   let Members = [];
   for (let member of TeamData[props.core]) {
-    member.imgn = member.imgn.Karan;
-    member.imgp = member.imgp.Dhruvil;
+    member.imagen = member.imagen;
+    member.imagep = member.imagep;
     Members.push(
       <TeamMember member={member} key={member.name} core={props.core} />
     );
   }
-  let spacing="Teamcol space-around";
-  if(Members.length<3)spacing="Teamcol space-evenly";
-  if(props.core==="Technical"){
-    return(<div id={props.core}>
-      <h2 className="Cores" >{props.core}</h2>
-      <hr/>
-       <div className="Teamcol">
-      {Members.slice(0,3)}
-     </div>
-     <div className="Teamcol space-evenly" >
-      {Members.slice(3,5)}
-     </div>
-     <hr/>
-     </div>);
+  let spacing = 'Teamcol space-around';
+  if (Members.length < 3) spacing = 'Teamcol space-evenly';
+  if (props.core === 'Technical') {
+    return (
+      <div id={props.core}>
+        <h2 className='Cores'>{props.core}</h2>
+
+        <div className='Teamcol'>{Members.slice(0, 3)}</div>
+        <div className='Teamcol space-evenly'>{Members.slice(3, 5)}</div>
+      </div>
+    );
   }
-  return (<div id={props.core}>
-     <h2 className="Cores" >{props.core}</h2>
-     <hr/>
-      <div className={spacing} >
-     {Members}
-    </div>
-    <hr/>
+  return (
+    <div id={props.core}>
+      <h2 className='Cores'>{props.core}</h2>
+
+      <div className={spacing}>{Members}</div>
     </div>
   );
 };
@@ -77,36 +78,59 @@ const arrangeCol = () => {
     <div>
       <div className='Teamrow'>
         <h1 className='Cores'>OUR TEAM</h1>
-        {Cores}
-        <Link to='/team2020'>
-          <center>
-            <button type='button' class='btn btn-dark w-25 mb-4'>
-              <center><h4>Team 2020</h4></center>
+        <div>{Cores}</div>
+        <center>
+          <Link to='/team2020'>
+            <button
+              type='button'
+              className='btn btn-dark m-4 p-2'
+              style={{ borderRadius: '30px' }}>
+              <h4>Team 2020</h4>
             </button>
-          </center>
-        </Link>
+          </Link>
+        </center>
       </div>
     </div>
   );
 };
+const goToTeam = () => {
+  window.scroll(0, 700);
+};
 export default class Team extends React.Component {
-  
   render() {
     return (
       <div className='header-demo'>
         <div className='flex-container'>
           <div className='flex-item-left'>
             <img
-              className='mt-4 ml-4'
+              className='mt-4 ml-4 img-fluid'
               src={process.env.PUBLIC_URL + '/Images/team5.gif'}
               alt='heading_illustration'
             />
           </div>
           <div className='flex-item-right'>
             <p>
+              <h3 style={{ marginBottom: '40px' }}>LOREM IPSUM</h3>
               The strength of the team is each<br></br> individual member. The
               strength<br></br> of each member is the team.
             </p>
+            <div onClick={goToTeam}>
+              <center>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='50'
+                  height='50'
+                  fill='black'
+                  class='bi bi-arrow-down'
+                  viewBox='0 0 16 16'>
+                  <path
+                    fill-rule='evenodd'
+                    d='M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z'
+                  />
+                </svg>
+              </center>
+            </div>
+            <div className='flex-button'></div>
           </div>
         </div>
         {arrangeCol()}

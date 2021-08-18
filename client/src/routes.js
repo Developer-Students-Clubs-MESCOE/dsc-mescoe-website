@@ -96,7 +96,7 @@ const ROUTES = [
     icon: null,
     name: 'Team2020',
     path: '/team2020',
-    component: <Team2020 />,
+    component: <Team2020/>,
     type: RouteType.PAGE
   }
 ];
