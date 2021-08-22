@@ -83,8 +83,7 @@ const arrangeCol = () => {
           <Link to='/team2020'>
             <button
               type='button'
-              className='btn btn-dark m-4 p-2'
-              style={{ borderRadius: '30px' }}>
+              className='btn btn-dark'>
               <h4>Team 2020</h4>
             </button>
           </Link>

@@ -1,3 +1,9 @@
+*{
+  padding:0;
+  margin:0;
+  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
+}
 .header-demo{
     height: 100%;
 }
@@ -51,6 +57,13 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+.btn{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width:  200px;
+  border-radius: 30%;
 }
 
 @media (max-width: 480px) {
@@ -190,6 +203,16 @@
   }
   .flex-item-right p{
       margin-top:0px;
+  }
+  .info h4{
+    margin-top: 3px;
+    font-size: 15px;
+  }
+  .img-fluid{
+    width: 90%;
+    height: 90%;
+    margin: 0px;
+    padding: 0px;
   }
 }
 /*media query for flexbox*/
@@ -334,13 +357,13 @@ iframe {
 
     0%{
         transform: translateY(0) rotate(0deg);
-        opacity: 1;
+        opacity: 0.9;
         border-radius: 0;
     }
 
     100%{
         transform: translateY(-1000px) rotate(720deg);
-        opacity: 0;
+        /* opacity: 0; */
         border-radius: 50%;
     }
 
