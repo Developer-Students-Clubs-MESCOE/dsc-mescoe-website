@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.9baaeab4.chunk.css",
-    "main.js": "/static/js/main.483c046f.chunk.js",
-    "main.js.map": "/static/js/main.483c046f.chunk.js.map",
+    "main.css": "/static/css/main.da650919.chunk.css",
+    "main.js": "/static/js/main.c438da2a.chunk.js",
+    "main.js.map": "/static/js/main.c438da2a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a066d184.js",
     "runtime-main.js.map": "/static/js/runtime-main.a066d184.js.map",
-    "static/css/2.9a766daa.chunk.css": "/static/css/2.9a766daa.chunk.css",
-    "static/js/2.d95d6335.chunk.js": "/static/js/2.d95d6335.chunk.js",
-    "static/js/2.d95d6335.chunk.js.map": "/static/js/2.d95d6335.chunk.js.map",
+    "static/css/2.fa6c921b.chunk.css": "/static/css/2.fa6c921b.chunk.css",
+    "static/js/2.1cd6bf97.chunk.js": "/static/js/2.1cd6bf97.chunk.js",
+    "static/js/2.1cd6bf97.chunk.js.map": "/static/js/2.1cd6bf97.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4108119032e0cafb43e3f918e472db66.js": "/precache-manifest.4108119032e0cafb43e3f918e472db66.js",
+    "precache-manifest.3e77b227c02182a8db4c292691d8c3c4.js": "/precache-manifest.3e77b227c02182a8db4c292691d8c3c4.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.9a766daa.chunk.css.map": "/static/css/2.9a766daa.chunk.css.map",
-    "static/css/main.9baaeab4.chunk.css.map": "/static/css/main.9baaeab4.chunk.css.map",
-    "static/js/2.d95d6335.chunk.js.LICENSE.txt": "/static/js/2.d95d6335.chunk.js.LICENSE.txt",
+    "static/css/2.fa6c921b.chunk.css.map": "/static/css/2.fa6c921b.chunk.css.map",
+    "static/css/main.da650919.chunk.css.map": "/static/css/main.da650919.chunk.css.map",
+    "static/js/2.1cd6bf97.chunk.js.LICENSE.txt": "/static/js/2.1cd6bf97.chunk.js.LICENSE.txt",
     "static/media/Dhruvil.jpg": "/static/media/Dhruvil.f5cfcfc5.jpg",
     "static/media/Gaurav.jpg": "/static/media/Gaurav.e58ffdd1.jpg",
     "static/media/index.css": "/static/media/trialNoGridFinal.26ed4dc2.svg",
@@ -25,7 +25,7 @@
     "static/media/Sakshi.jpg": "/static/media/Sakshi.08957251.jpg",
     "static/media/Tanya.jpg": "/static/media/Tanya.58f4b467.jpg",
     "static/media/Varun.jpg": "/static/media/Varun.6a4efdb7.jpg",
-    "static/media/down-arrow.svg": "/static/media/down-arrow.3550ec3d.svg",
+    "static/media/down-arrow.svg": "/static/media/down-arrow.7e4a21fb.svg",
     "static/media/dsc_home_image.webp": "/static/media/dsc_home_image.ddc5add1.webp",
     "static/media/gdg_black.png": "/static/media/gdg_black.3da31478.png",
     "static/media/gdg_wordmark.png": "/static/media/gdg_wordmark.c87747af.png",
@@ -33,9 +33,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a066d184.js",
-    "static/css/2.9a766daa.chunk.css",
-    "static/js/2.d95d6335.chunk.js",
-    "static/css/main.9baaeab4.chunk.css",
-    "static/js/main.483c046f.chunk.js"
+    "static/css/2.fa6c921b.chunk.css",
+    "static/js/2.1cd6bf97.chunk.js",
+    "static/css/main.da650919.chunk.css",
+    "static/js/main.c438da2a.chunk.js"
   ]
 }
