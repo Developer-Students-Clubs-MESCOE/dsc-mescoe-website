@@ -87,6 +87,18 @@ const ROUTES = [
 		),
 		type: RouteType.PAGE
 	},
+	{
+		icon: null,
+		name: 'Android Development RSVP',
+		path: '/android-rsvp',
+		component: (
+			<Redirect   
+				path="android-rsvp"
+				url="https://gdsc.community.dev/events/details/developer-student-clubs-modern-education-societys-college-of-engineering-pune-presents-lets-talk-android-dev/"
+			/>
+		),
+		type: RouteType.PAGE
+	},
 	
 ];
 
