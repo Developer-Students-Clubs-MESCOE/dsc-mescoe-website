@@ -99,6 +99,18 @@ const ROUTES = [
 		),
 		type: RouteType.PAGE
 	},
+	{
+		icon: null,
+		name: 'Testing Workflow',
+		path: '/testing',
+		component: (
+			<Redirect   
+				path="testing"
+				url="https://www.linkedin.com/in/manav-mandal-5b1496196/"
+			/>
+		),
+		type: RouteType.PAGE
+	},
 	
 ];
 
