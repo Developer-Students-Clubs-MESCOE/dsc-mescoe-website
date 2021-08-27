@@ -4,61 +4,60 @@ const TeamData = {
   Lead: [
     {
       name: 'Vaibhav Bhapkar',
-      imagen: '/Images/Karan.jpg',
-      imagep: '/Images/Dhruvil.jpg',
-      linkedInLink: 'adfsfafd',
-      githubLink: 'asdfasfdsf',
-      classname:
-        'person-badge ${classes.large} shadow-lg col d-flex justify-content-center',
+      imagen: Karan ,
+      imagep:  Dhruvil ,
+      linkedInLink: 'http://www.linkedin.com/in/vaibhav-bhapkar84',
+      githubLink: 'https://github.com/Vaibhav-84',
+      classname:'person-badge ${classes.large} shadow-lg col d-flex justify-content-center',
       classname1: 'row person mt-4',
       role: 'Lead'
     }
   ],
   Technical: [
     {
-      name: 'Manav',
-      imagen: '/Images/Karan.jpg',
-      imagep: '/Images/Dhruvil.jpg',
-      linkedInLink: '',
-      githubLink: '',
+      name: 'Manav Mandal',
+      imagen: Karan,
+      imagep: Dhruvil,
+      linkedInLink: 'https://www.linkedin.com/in/manav-mandal-5b1496196/',
+      githubLink: 'https://github.com/MXNXV',
       classname: 'person-badge ${classes.large} shadow-lg',
       classname1: 'row person mt-4',
       role: 'Technical Core'
     },
     {
       name: 'Hritvik',
-      imagen: '/Images/Karan.jpg',
-      imagep: '/Images/Dhruvil.jpg',
-      linkedInLink: '',
-      githubLink: '',
+      imagen: Karan,
+      imagep: Dhruvil,
+      linkedInLink: 'http://www.linkedin.com/in/hritvikk-gupta',
+      githubLink: 'https://github.com/Hritvikk',
       classname: 'person-badge ${classes.large} shadow-lg',
       classname1: 'person mt-4',
       role: 'Technical Core'
     },
     {
       name: 'Param',
-      imagen: '/Images/Karan.jpg',
-      imagep: '/Images/Dhruvil.jpg',
-      linkedInLink: '',
-      githubLink: '',
+      imagen: Karan,
+      imagep: Dhruvil,
+      linkedInLink: 'http://www.linkedin.com/in/param-tatiya-2660281b3',
+      githubLink: 'https://github.com/ParamTatiya02',
       classname: 'person-badge ${classes.large} shadow-lg',
       classname1: 'person mt-4'
     },
     {
       name: 'Shreyash',
-      imagen: '/Images/Karan.jpg',
-      imagep: '/Images/Dhruvil.jpg',
-      linkedInLink: '',
-      githubLink: '',
+      imagen: Karan,
+      imagep: Dhruvil,
+      linkedInLink: 'https://www.linkedin.com/in/shreyash-yewale-11a341166/',
+      githubLink: 'https://github.com/ShreyashYewale',
       classname: 'person-badge ${classes.large} shadow-lg',
       classname1: 'person mt-4'
     },
     {
       name: 'Kundan',
-      imagen: '/Images/Karan.jpg',
-      imagep: '/Images/Dhruvil.jpg',
-      linkedInLink: '',
-      githubLink: '',
+      imagen: Karan,
+      imagep: Dhruvil,
+      linkedInLink: 'https://www.linkedin.com/in/kundan-surve-593b841aa/',
+      githubLink: 'https://github.com/kundansurve',
       classname: 'person-badge ${classes.large} shadow-lg',
       classname1: 'person mt-4'
     }
@@ -66,69 +65,69 @@ const TeamData = {
   'Public Relations Cores': [
     {
       name: 'Prachiti',
-      imagen: '/Images/Karan.jpg',
-      imagep: '/Images/Dhruvil.jpg',
-      linkedInLink: '',
-      githubLink: '',
+      imagen: Karan,
+      imagep: Dhruvil,
+      linkedInLink: '#',
+      githubLink: '#',
       classname: 'person-badge ${classes.large} shadow-lg',
       classname1: ' row person mt-4'
     },
     {
       name: 'Zeeshan',
-      imagen: '/Images/Karan.jpg',
-      imagep: '/Images/Dhruvil.jpg',
-      linkedInLink: '',
-      githubLink: ''
+      imagen: Karan,
+      imagep: Dhruvil,
+      linkedInLink: 'https://www.linkedin.com/in/mohammed-zeeshan-patel-a894491a2',
+      githubLink: '#'
     },
     {
       name: 'Tanvi',
-      imagen: '/Images/Karan.jpg',
-      imagep: '/Images/Dhruvil.jpg',
-      linkedInLink: '',
-      githubLink: ''
+      imagen: Karan,
+      imagep: Dhruvil,
+      linkedInLink: 'https://www.linkedin.com/in/tanvi-budhabaware/',
+      githubLink: 'https://github.com/TanviNB'
     }
   ],
   'Finance Core': [
     {
       name: 'Pari',
-      imagen: '/Images/Karan.jpg',
-      imagep: '/Images/Dhruvil.jpg',
+      imagen: Karan,
+      imagep: Dhruvil,
       linkedInLink: '',
       githubLink: '',
       classname: 'person-badge ${classes.large} shadow-lg'
     },
     {
       name: 'Mihir',
-      imagen: '/Images/Karan.jpg',
-      imagep: '/Images/Dhruvil.jpg',
-      linkedInLink: '',
-      githubLink: '',
+      imagen: Karan,
+      imagep: Dhruvil,
+      linkedInLink: '#',
+      githubLink: '#',
       classname: 'person-badge ${classes.large} shadow-lg'
     }
   ],
   'Design Core': [
     {
       name: 'Priyanka',
-      imagen: '/Images/Karan.jpg',
-      imagep: '/Images/Dhruvil.jpg',
-      linkedInLink: '',
-      githubLink: '',
+      imagen: Karan,
+      imagep: Dhruvil,
+      linkedInLink: 'https://www.linkedin.com/in/priyankasalunke',
+      githubLink: 'https://github.com/priyankapiba',
       classname: 'person-badge ${classes.large} shadow-lg'
     },
     {
       name: 'Dipam',
-      imagen: '/Images/Karan.jpg',
-      imagep: '/Images/Dhruvil.jpg',
-      linkedInLink: '',
-      githubLink: '',
+      imagen: Karan,
+      imagep: Dhruvil,
+      linkedInLink: 'http://www.linkedin.com/in/dipam-patle-2a9a361b3',
+      githubLink: 'https://github.com/dipam11',
       classname: 'person-badge ${classes.large} shadow-lg'
     },
     {
       name: 'Pratiksha',
-      imagen: '/Images/Karan.jpg',
-      imagep: '/Images/Dhruvil.jpg',
-      linkedInLink: '',
-      githubLink: '',
+      imagen: Karan,
+      imagep: Dhruvil,
+      linkedInLink: '#',
+      githubLink: '#',
       classname: 'person-badge ${classes.large} shadow-lg'
     }
   ]

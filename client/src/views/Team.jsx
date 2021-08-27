@@ -4,13 +4,13 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { resetFooterStyle, resetNavStyle } from '../utils/utils';
 import './CSSFiles/Team.css';
 import TeamComponent from '../components/team/team-component';
-import { GitHub, LinkedIn } from '@material-ui/icons';
+import { Link } from 'react-router-dom'
+import { GitHub, LinkedIn } from "@material-ui/icons";
 import TeamData from './TeamData.js';
-import { Link,} from 'react-router-dom';
 
 const TeamMember = (props) => {
-  return (
-    <div className='person' id={props.member.name}>
+  console.log(props.member.linkedInLink);
+  return (<div className='person' id={props.member.name}>
       <div className='person-badge'>
         <img
           className='normal'
@@ -26,26 +26,18 @@ const TeamMember = (props) => {
       <div className='info'>
         <h4>{props.member.name}</h4>
       </div>
-      <div className='links'>
-        <a src={props.linkedInLink}>
-          <GitHub className='mr-2' style={{ color: 'black' }} />
-        </a>
-        <a src={props.githubLink}>
-          <LinkedIn className='ml-1' style={{ color: 'black' }} />
-        </a>
+        <div className="links">
+        <a href={props.member.githubLink} target="blank"><GitHub className="mr-2" style={{ color: "black" }} /></a>
+        <a href={props.member.linkedInLink} target="blank"><LinkedIn className="ml-1" style={{ color: "black" }} /></a>
+        </div>
       </div>
-    </div>
   );
 };
 
 const ArrangeRow = (props) => {
   let Members = [];
   for (let member of TeamData[props.core]) {
-    member.imagen = member.imagen;
-    member.imagep = member.imagep;
-    Members.push(
-      <TeamMember member={member} key={member.name} core={props.core} />
-    );
+    Members.push(<TeamMember member={member} key={member.name} core={props.core}/> ); 
   }
   let spacing = 'Teamcol space-around';
   if (Members.length < 3) spacing = 'Teamcol space-evenly';
