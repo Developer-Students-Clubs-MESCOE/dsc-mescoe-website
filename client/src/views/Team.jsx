@@ -7,7 +7,6 @@ import TeamComponent from '../components/team/team-component';
 import { Link } from 'react-router-dom'
 import { GitHub, LinkedIn } from "@material-ui/icons";
 import TeamData from './TeamData.js';
-import { Link,} from 'react-router-dom';
 
 const TeamMember = (props) => {
   console.log(props.member.linkedInLink);
@@ -37,8 +36,6 @@ const TeamMember = (props) => {
 const ArrangeRow = (props) => {
   let Members = [];
   for (let member of TeamData[props.core]) {
-    member.imgn=member.imgn;
-    member.imgp=member.imgp;
     Members.push(<TeamMember member={member} key={member.name} core={props.core}/> ); 
   }
   let spacing = 'Teamcol space-around';
