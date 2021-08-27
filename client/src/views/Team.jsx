@@ -15,6 +15,7 @@ const TeamMember = (props) => {
         <img
           className='normal'
           src={process.env.PUBLIC_URL + props.member.imagen}
+          height="200"
         />
         <img
           className='peculiar'
@@ -54,15 +55,17 @@ const ArrangeRow = (props) => {
         <h2 className='Cores'>{props.core}</h2>
 
         <div className='Teamcol'>{Members.slice(0, 3)}</div>
+        <hr></hr>
         <div className='Teamcol space-evenly'>{Members.slice(3, 5)}</div>
+        <hr></hr>
       </div>
     );
   }
   return (
     <div id={props.core}>
       <h2 className='Cores'>{props.core}</h2>
-
       <div className={spacing}>{Members}</div>
+      <hr></hr>
     </div>
   );
 };
