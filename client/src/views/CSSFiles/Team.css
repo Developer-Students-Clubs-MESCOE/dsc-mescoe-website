@@ -1,3 +1,12 @@
+*{
+  padding:0;
+  margin:0;
+  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
+}
+.header-demo{
+    height: 100%;
+}
 .person {
     width: auto;
     position: relative;
@@ -21,6 +30,7 @@
 .flex-item-left {
   padding: 10px;
   flex: 50%;
+  align-items: center;
 }
 .flex-item-left img {
     height:470px;
@@ -30,52 +40,54 @@
 .flex-item-right {
   padding: 10px;
   flex: 50%;
-  align-items: center;
-  justify-content: center;
+  align-items:flex-end;
+  justify-content:flex-end;
   font-size: 28px;
-  color: #0000cc;
+  color: black;
+  font-style: bold;
+  font-weight: 50;
 }
-/*media query for flexbox*/
-@media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
-  }
-  .flex-item-right {
-    font-size: 20px;
-  }
-  .flex-item-left {
-    
-    height: 300px;
-    width: 400px;
-  }
-  .flex-item-left img {
-    height:250px;
-    width:350px;
+.flex-item-right p{
+    font-family:'Google Sans',Roboto,sans-serif;
+    margin-top:80px;
 }
+.flex-button{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
+
+.btn{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width:  200px;
+  border-radius: 30%;
+}
+
 @media (max-width: 480px) {
   .flex-container {
     flex-direction: column;
   }
   .flex-item-right {
-    font-size: 20px;
+    font-size: 24px;
   }
   .flex-item-left {
     display:flex;
     justify-content: center;
     padding:0px;
-    height: 200px;
-    width: 200px;
   }
-  .flex-item-left img {
-    height:150px;
-    width:230px;
 }
+
+/*for testing dark mode*/
+.dark-mode {
+  background-color: black;
+  color: white;
 }
 /*for the lower part*/
 
 .person-badge img.normal {
-  border: 2px solid #0000cc;
   border-radius: 100px;
 }
 .person-badge {
@@ -99,7 +111,6 @@
 .person-badge img.peculiar {
   opacity: 0;
   transform: translateY(80px);
-  border: 2px solid #0000cc;
 }
 
 .person .links {
@@ -117,7 +128,7 @@
   transform: translateY(0);
 }
 .person-badge img {
-  width: 200px;
+  width: 200;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -127,7 +138,6 @@
 .person-badge img.peculiar {
   opacity: 0;
   transform: translateY(80px);
-  border: 3px solid #0000cc;
   border-radius: 150px;
 }
 
@@ -139,7 +149,6 @@
 .person-badge:hover img.normal {
   opacity: 0;
   transform: translateY(80px);
-  border: 3px solid #0000cc;
 }
 
 .person-badge:hover img.peculiar {
@@ -153,7 +162,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 3000px;
+    height: 2700px;
     z-index:2;
 }
 
@@ -171,7 +180,7 @@
   margin-top: 50px;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 480px) {
   .person-badge {
       position: relative;
       margin: 0 0;
@@ -190,10 +199,43 @@
   }
   .Teamrow{
     justify-content: flex-start;
-    height: 1500px;
+    height: 1100px;
+  }
+  .flex-item-right p{
+      margin-top:0px;
+  }
+  .info h4{
+    margin-top: 3px;
+    font-size: 15px;
+  }
+  .img-fluid{
+    width: 90%;
+    height: 90%;
+    margin: 0px;
+    padding: 0px;
   }
 }
-
+/*media query for flexbox*/
+@media (min-width: 481px) and (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-item-right {
+    font-size: 28px;
+  }
+.person-badge {
+    width:20vw;
+    height:20vw;
+}
+.person-badge img{
+    width: 20vw;
+    height:20vw;
+}
+.Teamrow{
+    justify-content: flex-start;
+    height: 1800px;
+  }
+}
 
 iframe {
     height: 20px;
@@ -228,7 +270,7 @@ iframe {
 
     list-style: none;
     animation: animate 25s linear infinite;
-    animation-direction: alternate-reverse;
+    animation-direction: alternate;
     bottom: -150px;
     
 }
@@ -315,13 +357,13 @@ iframe {
 
     0%{
         transform: translateY(0) rotate(0deg);
-        opacity: 1;
+        opacity: 0.9;
         border-radius: 0;
     }
 
     100%{
         transform: translateY(-1000px) rotate(720deg);
-        opacity: 0;
+        /* opacity: 0; */
         border-radius: 50%;
     }
 
