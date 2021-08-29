@@ -1,14 +1,16 @@
 import Karan from '../assets/img/Karan.jpg';
 import Dhruvil from '../assets/img/Dhruvil.jpg';
+
 const TeamData = {
   Lead: [
     {
       name: 'Vaibhav Bhapkar',
-      imagen: Karan ,
-      imagep:  Dhruvil ,
+      imagen: Karan,
+      imagep: Dhruvil,
       linkedInLink: 'http://www.linkedin.com/in/vaibhav-bhapkar84',
       githubLink: 'https://github.com/Vaibhav-84',
-      classname:'person-badge ${classes.large} shadow-lg col d-flex justify-content-center',
+      classname:
+        'person-badge ${classes.large} shadow-lg col d-flex justify-content-center',
       classname1: 'row person mt-4',
       role: 'Lead'
     }
@@ -76,7 +78,8 @@ const TeamData = {
       name: 'Zeeshan',
       imagen: Karan,
       imagep: Dhruvil,
-      linkedInLink: 'https://www.linkedin.com/in/mohammed-zeeshan-patel-a894491a2',
+      linkedInLink:
+        'https://www.linkedin.com/in/mohammed-zeeshan-patel-a894491a2',
       githubLink: '#'
     },
     {
