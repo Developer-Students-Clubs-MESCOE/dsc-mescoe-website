@@ -26,8 +26,8 @@ const TeamData = {
     },
     {
       name: 'Hritvikk Gupta',
-      imagen: require('../assets/img/Hritvikk1.png'),
-      imagep: require('../assets/img/Hritvikk2.png'),
+      imagen: require('../assets/img/Hritvikk2.png'),
+      imagep: require('../assets/img/Hritvik.png'),
       linkedInLink: 'http://www.linkedin.com/in/hritvikk-gupta',
       githubLink: 'https://github.com/Hritvikk',
       classname: 'person-badge ${classes.large} shadow-lg',
@@ -65,7 +65,7 @@ const TeamData = {
   'Public Relations Cores': [
     {
       name: 'Pracheeti Bhukan',
-      imagen: require('../assets/img/Pracheeti1.png'),
+      imagen: require('../assets/img/Prachiti.png'),
       imagep: require('../assets/img/Pracheeti2.png'),
       linkedInLink: '#',
       githubLink: '#',
@@ -124,8 +124,8 @@ const TeamData = {
     },
     {
       name: 'Pratiksha Surve',
-      imagen: require('../assets/img/Pratiksha1.png'),
-      imagep: require('../assets/img/Pratiksha2.png'),
+      imagen: require('../assets/img/Pratiksha2.png'),
+      imagep: require('../assets/img/Pratiksha.png'),
       linkedInLink: 'https://www.linkedin.com/in/pratiksha-surve-a26600203',
       githubLink: 'https://github.com/pratiksha2811',
       classname: 'person-badge ${classes.large} shadow-lg'
