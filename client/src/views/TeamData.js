@@ -26,8 +26,8 @@ const TeamData = {
     },
     {
       name: 'Hritvikk Gupta',
-      imagen: require('../assets/img/Hritvikk2.png'),
-      imagep: require('../assets/img/Hritvik.png'),
+      imagen: require('../assets/img/Hritvikk1.png'),
+      imagep: require('../assets/img/Hritvikk2.png'),
       linkedInLink: 'http://www.linkedin.com/in/hritvikk-gupta',
       githubLink: 'https://github.com/Hritvikk',
       classname: 'person-badge ${classes.large} shadow-lg',
@@ -65,10 +65,10 @@ const TeamData = {
   'Public Relations Cores': [
     {
       name: 'Pracheeti Bhukan',
-      imagen: require('../assets/img/Prachiti.png'),
+      imagen: require('../assets/img/Pracheeti1.png'),
       imagep: require('../assets/img/Pracheeti2.png'),
-      linkedInLink: '#',
-      githubLink: '#',
+      linkedInLink: 'https://www.linkedin.com/in/prachiti-bhukan-5302921b0',
+      githubLink: 'https://github.com/Prachiti-bhukan',
       classname: 'person-badge ${classes.large} shadow-lg',
       classname1: ' row person mt-4'
     },
@@ -92,15 +92,15 @@ const TeamData = {
       name: 'Pari Zunake',
       imagen: require('../assets/img/Pari1.png'),
       imagep: require('../assets/img/Pari2.png'),
-      linkedInLink: '',
-      githubLink: '',
+      linkedInLink: 'https://www.linkedin.com/in/pari-zunake-4b92911b7',
+      githubLink: 'http://github.com/parizunake',
       classname: 'person-badge ${classes.large} shadow-lg'
     },
     {
       name: 'Mihir Pankhawala',
       imagen: require('../assets/img/Mihir1.png'),
       imagep: require('../assets/img/Mihir2.png'),
-      linkedInLink: '#',
+      linkedInLink: 'https://www.linkedin.com/in/mihir-pankhawala-baa2531bb/',
       githubLink: '#',
       classname: 'person-badge ${classes.large} shadow-lg'
     }
@@ -124,8 +124,8 @@ const TeamData = {
     },
     {
       name: 'Pratiksha Surve',
-      imagen: require('../assets/img/Pratiksha2.png'),
-      imagep: require('../assets/img/Pratiksha.png'),
+      imagen: require('../assets/img/Pratiksha1.png'),
+      imagep: require('../assets/img/Pratiksha2.png'),
       linkedInLink: 'https://www.linkedin.com/in/pratiksha-surve-a26600203',
       githubLink: 'https://github.com/pratiksha2811',
       classname: 'person-badge ${classes.large} shadow-lg'

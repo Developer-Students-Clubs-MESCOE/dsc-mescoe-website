@@ -15,7 +15,6 @@ const TeamMember = (props) => {
         <img
           className='normal'
           src={process.env.PUBLIC_URL + props.member.imagen}
-          height="200"
         />
         <img
           className='peculiar'
