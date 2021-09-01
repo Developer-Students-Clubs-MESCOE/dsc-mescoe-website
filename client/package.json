@@ -19,7 +19,7 @@
     "react-dom": "^16.13.1",
     "react-player": "^2.6.2",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3",
+    "react-scripts": "^4.0.3",
     "react-typical": "^0.1.3"
   },
   "devDependencies": {
@@ -28,7 +28,6 @@
   "scripts": {
     "build": "react-scripts build",
     "start": "react-scripts start",
-
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
