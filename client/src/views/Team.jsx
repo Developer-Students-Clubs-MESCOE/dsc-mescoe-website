@@ -1,148 +1,166 @@
-import React from "react";
-import {Toolbar} from "@material-ui/core";
-import {Container, Row, Col} from "react-bootstrap";
-import {resetFooterStyle, resetNavStyle} from "../utils/utils";
-import Dhruvil from "../assets/img/Dhruvil.jpg";
-import Kaif from "../assets/img/Kaif.jpg";
-import Karan from "../assets/img/Karan.jpg";
-import Prem from "../assets/img/Prem.jpg";
-import Varun from "../assets/img/Varun.jpg";
-import Sakshi from "../assets/img/Sakshi.jpg";
-import Tanya from "../assets/img/Tanya.jpg";
-import Pratik from "../assets/img/Pratik.jpg";
-import Laukik from "../assets/img/Laukik.jpg";
-import Gaurav from "../assets/img/Gaurav.jpg";
+import React from 'react';
+import { Toolbar } from '@material-ui/core';
+import { Container, Row, Col } from 'react-bootstrap';
+import { resetFooterStyle, resetNavStyle } from '../utils/utils';
+import './CSSFiles/Team.css';
+import TeamComponent from '../components/team/team-component';
+import { Link } from 'react-router-dom'
+import { GitHub, LinkedIn } from "@material-ui/icons";
+import TeamData from './TeamData.js';
 
-import TeamComponent from "../components/team/team-component";
+const TeamMember = (props) => {
+  console.log(props.member.linkedInLink);
+  return (<div className='person' id={props.member.name}>
+      <div className='person-badge'>
+        <img
+          className='normal'
+          src={process.env.PUBLIC_URL + props.member.imagen}
+        />
+        <img
+          className='peculiar'
+          src={process.env.PUBLIC_URL + props.member.imagep}
+        />
+        {console.log(props.member.imagen)}
+      </div>
+      <div className='info'>
+        <h4>{props.member.name}</h4>
+      </div>
+        <div className="links">
+        <a href={props.member.githubLink} target="blank"><GitHub className="mr-2" style={{ color: "black" }} /></a>
+        <a href={props.member.linkedInLink} target="blank"><LinkedIn className="ml-1" style={{ color: "black" }} /></a>
+        </div>
+      </div>
+  );
+};
 
-export default class Team extends React.Component {
-  componentDidMount() {
-    document.title = "Team - DSC MESCOE";
-    resetNavStyle({page: "Team"});
-    if (JSON.parse(localStorage.getItem('isDarkMode'))) {
-      document.querySelectorAll('.team').forEach(e => {
-        e.classList.toggle('dark-mode')
-      })
-    }
+const ArrangeRow = (props) => {
+  let Members = [];
+  for (let member of TeamData[props.core]) {
+    Members.push(<TeamMember member={member} key={member.name} core={props.core}/> ); 
+  }
+  let spacing = 'Teamcol space-around';
+  if (Members.length < 3) spacing = 'Teamcol space-evenly';
+  if (props.core === 'Technical') {
+    return (
+      <div id={props.core}>
+        <h2 className='Cores'>{props.core}</h2>
+
+        <div className='Teamcol'>{Members.slice(0, 3)}</div>
+        <hr></hr>
+        <div className='Teamcol space-evenly'>{Members.slice(3, 5)}</div>
+        <hr></hr>
+      </div>
+    );
+  }
+  return (
+    <div id={props.core}>
+      <h2 className='Cores'>{props.core}</h2>
+      <div className={spacing}>{Members}</div>
+      <hr></hr>
+    </div>
+  );
+};
+
+const arrangeCol = () => {
+  const Cores = [];
+  const temp = Object.keys(TeamData);
+  for (let core of temp) {
+    Cores.push(<ArrangeRow core={core} key={core} />);
   }
 
+  return (
+    <div>
+      <div className='Teamrow'>
+        <h1 className='Cores'>OUR TEAM</h1>
+        <div>{Cores}</div>
+        <center>
+          <Link to='/team2020'>
+            <button
+              type='button'
+              className='btn btn-dark'>
+              <h4>Team 2020</h4>
+            </button>
+          </Link>
+        </center>
+      </div>
+    </div>
+  );
+};
+const goToTeam = () => {
+  window.scroll(0, 700);
+};
+export default class Team extends React.Component {
   render() {
-    const footer = document.querySelector('#contact');
-    if (footer) {
-      resetFooterStyle()
-    }
     return (
-      <Toolbar className='grid'>
-        <Container className="mb-5">
-          <Row className="mt-5 team">
-            <Col>
-              <h3 style={{color: '#4385F4', fontWeight: 600}}>Our Team</h3>
-            </Col>
-          </Row>
-          <Row className="mt-5 team">
-            <Col className="d-flex justify-content-center team-component">
-              <TeamComponent
-                name="Karan Wagh"
-                role="Lead"
-                imgUrl={Karan}
-                gitHublink="https://github.com/FlashTech-dev"
-                linkedInLink="https://www.linkedin.com/in/karanwagh"
-              />
-            </Col>
-          </Row>
-
-          <div className="row mt-5 tech-row team">
-            <div className="col-sm d-flex justify-content-center team-component">
-              <TeamComponent
-                name="Varun Irani"
-                role="Technical Core"
-                imgUrl={Varun}
-                gitHublink="https://github.com/VarunIrani"
-                linkedInLink="https://www.linkedin.com/in/varun-irani-b4275b192"
-              />
-            </div>
-            <div className="col-sm d-flex justify-content-center team-component">
-              <TeamComponent
-                name="Prem Kulkarni"
-                role="Technical Core"
-                imgUrl={Prem}
-                gitHublink="https://github.com/kulkarniprem04"
-                linkedInLink="https://www.linkedin.com/in/prem-kulkarni-99a3451a1"
-              />
-            </div>
-            <div className="col-sm d-flex justify-content-center team-component">
-              <TeamComponent
-                name="Pratik Temkar"
-                role="Technical Core"
-                imgUrl={Pratik}
-                gitHublink="https://github.com/pratikstemkar"
-                linkedInLink="https://www.linkedin.com/in/pratikstemkar"
-              />
-            </div>
+      <div className='header-demo'>
+        <div className='flex-container'>
+          <div className='flex-item-left'>
+            <img
+              className='mt-4 ml-4 img-fluid'
+              src={process.env.PUBLIC_URL + '/Images/team6.jpg'}
+              alt='heading_illustration'
+            />
           </div>
-
-          <div className="row mt-5 pr-row team">
-            <div className="col-sm d-flex justify-content-center team-component">
-              <TeamComponent
-                name="Sakshi Chaudhari"
-                role="Public Relations Core"
-                imgUrl={Sakshi}
-                gitHublink="https://github.com/sakshi-chaudhari"
-                linkedInLink="https://www.linkedin.com/in/sakshi-chaudhari-b8585b192"
-              />
+          <div className='flex-item-right'>
+            <p>
+              The strength of the team is each<br></br> individual member. The
+              strength<br></br> of each member is the team.
+            </p>
+            <div onClick={goToTeam}>
+              <center>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='50'
+                  height='50'
+                  fill='black'
+                  class='bi bi-arrow-down'
+                  viewBox='0 0 16 16'>
+                  <path
+                    fill-rule='evenodd'
+                    d='M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z'
+                  />
+                </svg>
+              </center>
             </div>
-            <div className="col-sm d-flex justify-content-center team-component">
-              <TeamComponent
-                name="Tanya Raina"
-                role="Public Relations Core"
-                imgUrl={Tanya}
-                gitHublink="https://github.com/TanyaRaina"
-                linkedInLink="https://www.linkedin.com/in/tanya-raina-apr214"
-              />
-            </div>
+            <div className='flex-button'></div>
           </div>
-
-          <div className="row mt-5 last-row team">
-            <div className="col-sm d-flex justify-content-center team-component">
-              <TeamComponent
-                name="Laukik Chavan"
-                role="Design Core"
-                imgUrl={Laukik}
-                gitHublink="https://github.com/leo13200006"
-                linkedInLink="https://www.linkedin.com/in/laukik-chavan-aba574137"
-              />
-            </div>
-            <div className="col-sm d-flex justify-content-center team-component">
-              <TeamComponent
-                name="Kaif Tamboli"
-                role="Design Core"
-                imgUrl={Kaif}
-                gitHublink="https://github.com/kaift3"
-                linkedInLink="https://www.linkedin.com/in/kaif-tamboli-916351193"
-              />
-            </div>
-            <div className="col-sm d-flex justify-content-center team-component">
-              <TeamComponent
-                name="Gaurav Verma"
-                role="Finance Core"
-                imgUrl={Gaurav}
-                gitHublink="https://github.com/thegauravverma"
-                linkedInLink="https://www.linkedin.com/in/gaurav-verma-777a70174"
-              />
-            </div>
-            <div className="col-sm d-flex justify-content-center team-component">
-              <TeamComponent
-                name="Dhruvil Shah"
-                role="Finance Core"
-                imgUrl={Dhruvil}
-                gitHublink="https://github.com/ds-2803"
-                linkedInLink="https://www.linkedin.com/in/dhruvil-shah-b416b018a"
-              />
-            </div>
-          </div>
-          <Row className='mb-5'/>
-        </Container>
-      </Toolbar>
+        </div>
+        {arrangeCol()}
+        <div className='area'>
+          <ul className='circles'>
+            <li>
+              <img src='https://img.icons8.com/color/48/000000/flutter.png' />
+            </li>
+            <li>
+              <img src='https://img.icons8.com/plasticine/100/000000/react.png' />
+            </li>
+            <li>
+              <img src='https://img.icons8.com/color/48/000000/angularjs.png' />
+            </li>
+            <li>
+              <img src='https://img.icons8.com/color/48/000000/nodejs.png' />
+            </li>
+            <li>
+              <img src='https://img.icons8.com/color/48/000000/mongodb.png' />
+            </li>
+            <li>
+              <img src='https://img.icons8.com/color/48/000000/tensorflow.png' />
+            </li>
+            <li>
+              <img src='https://img.icons8.com/color/48/000000/google-cloud.png' />
+            </li>
+            <li>
+              <img src='https://img.icons8.com/color/48/000000/google-cloud-platform.png' />
+            </li>
+            <li>
+              <img src='https://img.icons8.com/color/48/000000/django.png' />
+            </li>
+            <li>
+              <img src='https://img.icons8.com/fluency/48/000000/mysql-logo.png' />
+            </li>
+          </ul>
+        </div>
+      </div>
     );
   }
 }

@@ -67,6 +67,7 @@ class EventCard extends Component {
               boxShadow: `-10px -10px ${this.props.color}`,
               borderRadius: 10,
               border: `2px solid ${this.props.color}`,
+             
             }} className="event-modal">
               <CardActionArea>
                 <ResponsiveEmbed aspectRatio='16by9'>

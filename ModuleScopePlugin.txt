@@ -1,0 +1,2 @@
+
+const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
