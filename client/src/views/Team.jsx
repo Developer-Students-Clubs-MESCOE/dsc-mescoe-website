@@ -97,13 +97,12 @@ export default class Team extends React.Component {
           <div className='flex-item-left'>
             <img
               className='mt-4 ml-4 img-fluid'
-              src={process.env.PUBLIC_URL + '/Images/team5.gif'}
+              src={process.env.PUBLIC_URL + '/Images/team6.jpg'}
               alt='heading_illustration'
             />
           </div>
           <div className='flex-item-right'>
             <p>
-              <h3 style={{ marginBottom: '40px' }}>LOREM IPSUM</h3>
               The strength of the team is each<br></br> individual member. The
               strength<br></br> of each member is the team.
             </p>
