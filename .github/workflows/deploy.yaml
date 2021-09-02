@@ -20,6 +20,10 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '14'
+    - name: Git Creds
+      run: |
+        git config --global user.email "vaibhavbhapkar62@gmail.com"
+        git config --global user.name "Vaibhav-84"
         
     - name: Build and Deploy
       working-directory: ./client
