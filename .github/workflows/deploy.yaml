@@ -14,22 +14,22 @@ jobs:
   
     steps:
     - name: Checkout repository
-    - uses: actions/checkout@v2
+      uses: actions/checkout@v2
       
     - name: Client Folder
-    - run: cd client/
+      run: cd client/
     
     - name: Yarn Install
-    - uses: borales/actions-yarn@v2.3.0
+      uses: borales/actions-yarn@v2.3.0
       with:
         cmd: install # will run `yarn install` command
     
     - name: Yarn Build
-    - uses: borales/actions-yarn@v2.3.0
+      uses: borales/actions-yarn@v2.3.0
       with:
         cmd: build # will run `yarn build` command
         
     - name: Yarn Deploy
-    - uses: borales/actions-yarn@v2.3.0
+      uses: borales/actions-yarn@v2.3.0
       with:
         cmd: deploy # will run `yarn deploy` command
