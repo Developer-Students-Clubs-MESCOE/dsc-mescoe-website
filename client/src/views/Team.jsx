@@ -91,7 +91,7 @@ const goToTeam = () => {
 };
 export default class Team extends React.Component {
   componentDidMount() {
-    document.title = "Team2020 - GDSC MESCOE";
+    document.title = "Team - GDSC MESCOE";
      window.scrollTo(0, 0)
     resetNavStyle({page: "Team"});
     if (JSON.parse(localStorage.getItem('isDarkMode'))) {
