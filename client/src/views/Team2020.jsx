@@ -16,7 +16,7 @@ import TeamComponent from "../components/team/team-component";
 
 export default class Team2020 extends React.Component {
   componentDidMount() {
-    document.title = "Team - GDSC MESCOE";
+    document.title = "Team2020 - GDSC MESCOE";
      window.scrollTo(0, 0)
     resetNavStyle({page: "Team"});
     if (JSON.parse(localStorage.getItem('isDarkMode'))) {

@@ -9,7 +9,7 @@ import { GitHub, LinkedIn } from "@material-ui/icons";
 import TeamData from './TeamData.js';
 
 const TeamMember = (props) => {
-  console.log(props.member.linkedInLink);
+  
   return (<div className='person' id={props.member.name}>
       <div className='person-badge'>
         <img
@@ -90,6 +90,16 @@ const goToTeam = () => {
   window.scroll(0, 700);
 };
 export default class Team extends React.Component {
+  componentDidMount() {
+    document.title = "Team2020 - GDSC MESCOE";
+     window.scrollTo(0, 0)
+    resetNavStyle({page: "Team"});
+    if (JSON.parse(localStorage.getItem('isDarkMode'))) {
+      document.querySelectorAll('.team').forEach(e => {
+        e.classList.toggle('dark-mode')
+      })
+    }
+  }
   render() {
     return (
       <div className='header-demo'>
