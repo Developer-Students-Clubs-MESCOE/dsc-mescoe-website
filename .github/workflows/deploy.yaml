@@ -23,6 +23,8 @@ jobs:
         
     - name: Build and Deploy
       working-directory: ./client
+      env:
+        CI: ''
       run: | 
         npm install
         npm run build
