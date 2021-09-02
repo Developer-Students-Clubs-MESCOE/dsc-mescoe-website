@@ -15,21 +15,15 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-      
-    - name: Client Folder
-      run: cd client/
     
-    - name: Yarn Install
-      uses: borales/actions-yarn@v2.3.0
+    - name: Setup Node.js 12
+      uses: actions/setup-node@v2
       with:
-        cmd: install # will run `yarn install` command
-    
-    - name: Yarn Build
-      uses: borales/actions-yarn@v2.3.0
-      with:
-        cmd: build # will run `yarn build` command
+        node-version: '12'
         
-    - name: Yarn Deploy
-      uses: borales/actions-yarn@v2.3.0
-      with:
-        cmd: deploy # will run `yarn deploy` command
+    - name: Build and Deploy
+      working-directory: ./client
+      run: | 
+        npm install
+        npm run build
+        npm run deploy
