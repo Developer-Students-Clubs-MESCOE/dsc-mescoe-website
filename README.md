@@ -9,7 +9,7 @@
   </a>
 </p>
 
-### 🏠 [Homepage](https://dscmescoe.com)
+### 🏠 [Homepage](https://dscmescoe.tech)
 
 ## Install
 
