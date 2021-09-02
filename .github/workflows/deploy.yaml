@@ -21,7 +21,7 @@ jobs:
       with:
         node-version: '14'
         
-    - name: Build and Deploy
+    - name: Build
       working-directory: ./client
       env:
         CI: ''
