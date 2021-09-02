@@ -1,6 +1,9 @@
 name: CI/CD
 
 on:
+  pull_request:
+    branches:
+      - master
   push:
     branches: 
       - master
@@ -12,20 +15,21 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-
-    - name: Set up Node.js 12
-      uses: actions/setup-node@v1
-      with:
-        node-version: 12
-
-    - name: Client Folder
-      run: cd client/
-
-    - name: Install dependencies
-      run: npm ci
-
-    - name: Build
-      run: npm run build
       
-    - name: Deploy
-      run: npm run deploy
+    - name: Client Folder
+    - run: cd client/
+    
+    - name: Yarn Install
+    - uses: borales/actions-yarn@v2.3.0
+      with:
+        cmd: install # will run `yarn install` command
+    
+    - name: Yarn Build
+    - uses: borales/actions-yarn@v2.3.0
+      with:
+        cmd: build # will run `yarn build` command
+        
+    - name: Yarn Deploy
+    - uses: borales/actions-yarn@v2.3.0
+      with:
+        cmd: deploy
