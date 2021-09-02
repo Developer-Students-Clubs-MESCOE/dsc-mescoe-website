@@ -76,7 +76,7 @@ const ROUTES = [
   {
     icon: <Image src={gdgBlack} style={{ width: '1.5em' }} />,
     name: 'Community Page',
-    path: 'https://dsc.community.dev/modern-education-societys-college-of-engineering/',
+    path: 'https://gdsc.community.dev/modern-education-societys-college-of-engineering-pune/',
     component: null,
     type: RouteType.LINK
   },
