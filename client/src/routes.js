@@ -82,13 +82,24 @@ const ROUTES = [
   },
   {
     icon: null,
-    name: 'Web Dev Bootcamp',
-    path: '/webdev-bootcamp',
+    name: 'Web Dev Heist Submission',
+    path: '/webdevheist-submission',
     component: (
       <Redirect
-        path='webdev-bootcamp'
-        url='https://teams.microsoft.com/l/meetup-join/19%3ameeting_MWE5YjQyYTktNWE0Mi00OTNlLTk2NjQtNWY3ZTgyZTc5N2My%40thread.v2/0?context=%7b%22Tid%22%3a%22a3d598b6-6092-4351-b1a3-b213e8adc03b%22%2c%22Oid%22%3a%22105d357b-9536-4050-bdb5-0d5c3c247423%22%7d
-        '
+        path='webdevheist-submission'
+        url='https://docs.google.com/forms/d/e/1FAIpQLSe7HaoN8gAUM7hvEvxWxljeE7fAMYCqsl1pOdZQpLwi2SXhSQ/viewform?usp=sf_link'
+      />
+    ),
+    type: RouteType.PAGE
+  },
+  {
+    icon: null,
+    name: 'Web Dev Heist Submission',
+    path: '/webdevheist-submission',
+    component: (
+      <Redirect
+        path='webdevheist-submission'
+        url='https://docs.google.com/forms/d/e/1FAIpQLSe7HaoN8gAUM7hvEvxWxljeE7fAMYCqsl1pOdZQpLwi2SXhSQ/viewform?usp=sf_link'
       />
     ),
     type: RouteType.PAGE
