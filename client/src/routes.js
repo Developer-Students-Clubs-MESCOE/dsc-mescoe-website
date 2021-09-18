@@ -82,28 +82,17 @@ const ROUTES = [
   },
   {
     icon: null,
-    name: 'Web Dev Heist Submission',
-    path: '/webdevheist-submission',
+    name: 'GCP Introduction',
+    path: '/intro-gcp',
     component: (
       <Redirect
-        path='webdevheist-submission'
-        url='https://docs.google.com/forms/d/e/1FAIpQLSe7HaoN8gAUM7hvEvxWxljeE7fAMYCqsl1pOdZQpLwi2SXhSQ/viewform?usp=sf_link'
+        path='intro-gcp'
+        url='https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTU5ZGI2YTItYjAwMC00NDMxLTljMjYtYWM1OWUwYzQ1YmQz%40thread.v2/0?context=%7b%22Tid%22%3a%22a3d598b6-6092-4351-b1a3-b213e8adc03b%22%2c%22Oid%22%3a%22105d357b-9536-4050-bdb5-0d5c3c247423%22%7d'
       />
     ),
     type: RouteType.PAGE
   },
-  {
-    icon: null,
-    name: 'Web Dev Heist Submission',
-    path: '/webdevheist-submission',
-    component: (
-      <Redirect
-        path='webdevheist-submission'
-        url='https://docs.google.com/forms/d/e/1FAIpQLSe7HaoN8gAUM7hvEvxWxljeE7fAMYCqsl1pOdZQpLwi2SXhSQ/viewform?usp=sf_link'
-      />
-    ),
-    type: RouteType.PAGE
-  },
+
   {
     icon: null,
     name: 'Team2020',
