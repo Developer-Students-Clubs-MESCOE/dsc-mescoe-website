@@ -58,7 +58,7 @@ export default class Events extends React.Component {
 					<h3 style={{color: '#34A852', fontWeight: 600}} className='mt-5 event'>Recently Held Events</h3>
 					<Row className='ml-3'>
 						{this.state.eventSections.recent.length ?
-							this.state.eventSections.recent.map((eventSection, key) =>
+							this.state.eventSections.recent.reverse().map((eventSection, key) =>
 								<Col xs="12"
 										 key={key}
 										 className='p-0 pr-4 mt-5 event'
