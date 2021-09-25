@@ -33,7 +33,9 @@ class GCPRank extends Component {
     this.state = {
       value: 0,
       track1: [],
-      track2: []
+      track2: [],
+      searchtrack1: [],
+      searchtrack2: []
     };
     this.handleChange = this.handleChange.bind(this);
   }
@@ -52,7 +54,7 @@ class GCPRank extends Component {
         track1.data.forEach((data) => {
           let medal;
           if (data.rank === 0) {
-            medal = this.MedalColors.PLATINUM;
+            medal = this.MedalColors.DIAMOND;
           } else if (data.rank === 1) {
             medal = this.MedalColors.GOLD;
           } else if (data.rank === 2) {
@@ -74,7 +76,7 @@ class GCPRank extends Component {
         track2.data.forEach((data) => {
           let medal;
           if (data.rank === 0) {
-            medal = this.MedalColors.PLATINUM;
+            medal = this.MedalColors.DIAMOND;
           } else if (data.rank === 1) {
             medal = this.MedalColors.GOLD;
           } else if (data.rank === 2) {
@@ -93,7 +95,12 @@ class GCPRank extends Component {
             lastBadgeName: data.latest_track2
           });
         });
-        this.setState({ track1: track1Data, track2: track2Data });
+        this.setState({
+          track1: track1Data,
+          track2: track2Data,
+          searchtrack1: track1Data,
+          searchtrack2: track2Data
+        });
       });
     });
     if (JSON.parse(localStorage.getItem('isDarkMode'))) {
@@ -102,38 +109,90 @@ class GCPRank extends Component {
       });
     }
   }
-
   medals = () => (
     <Row className='justify-content-center'>
       <Col xs={3}>
         <Row className='justify-content-center'>
-          <span className='medal platinum' />
-          <p className='my-auto gcp'>Platinum</p>
+          <button
+            className='medal diamond'
+            value={this.MedalColors.DIAMOND}
+            style={{ border: 'none' }}
+            onClick={this.filterByBadge}
+          />
+          <p className='my-auto gcp'>Diamond</p>
         </Row>
       </Col>
       <Col xs={3}>
         <Row className='justify-content-center'>
-          <span className='medal gold' />
+          <button
+            className='medal gold'
+            value={this.MedalColors.GOLD}
+            style={{ border: 'none' }}
+            onClick={this.filterByBadge}
+          />
           <p className='my-auto gcp'>Gold</p>
         </Row>
       </Col>
       <Col xs={3}>
         <Row className='justify-content-center'>
-          <span className='medal silver' />
+          <button
+            className='medal silver'
+            value={this.MedalColors.SILVER}
+            style={{ border: 'none' }}
+            onClick={this.filterByBadge}
+          />
           <p className='my-auto gcp'>Silver</p>
         </Row>
       </Col>
       <Col xs={3}>
         <Row className='justify-content-center'>
-          <span className='medal bronze' />
+          <button
+            className='medal bronze'
+            value={this.MedalColors.BRONZE}
+            style={{ border: 'none' }}
+            onClick={this.filterByBadge}
+          />
           <p className='my-auto gcp'>Bronze</p>
         </Row>
       </Col>
     </Row>
   );
-
+  handleChangeInput = (e) => {
+    if (this.state.value === 0) {
+      this.setState({
+        searchtrack1: this.state.track1.filter((item) => {
+          return item.name
+            .toLowerCase()
+            .startsWith(e.target.value.toLowerCase());
+        })
+      });
+    } else {
+      this.setState({
+        searchtrack2: this.state.track2.filter((item) => {
+          return item.name
+            .toLowerCase()
+            .startsWith(e.target.value.toLowerCase());
+        })
+      });
+    }
+  };
+  filterByBadge = (badge) => {
+    if (this.state.value === 0) {
+      this.setState({
+        searchtrack1: this.state.track1.filter((item) => {
+          return item.medalColor === badge.target.value;
+        })
+      });
+    } else {
+      this.setState({
+        searchtrack2: this.state.track2.filter((item) => {
+          return item.medalColor === badge.target.value;
+        })
+      });
+    }
+  };
   MedalColors = {
-    PLATINUM: '#e5e4e2',
+    DIAMOND: '#b9f2ff',
     GOLD: '#FFD700',
     SILVER: '#c0c0c0',
     BRONZE: '#cd7f32',
@@ -145,8 +204,6 @@ class GCPRank extends Component {
     if (footer) {
       resetFooterStyle();
     }
-    const track1 = this.state.track1;
-    const track2 = this.state.track2;
     return (/*
       <Toolbar className='grid'>
         <Container>
@@ -155,6 +212,16 @@ class GCPRank extends Component {
               <h3 style={{ color: '#8a3fff' }} className='gcp'>
                 30 Days of Google Cloud
               </h3>
+            </Col>
+            <Col>
+              <input
+                id='admin-manage-faculty-textfield'
+                type='text'
+                className='form-control w-75 h-100 p-2 text-center'
+                style={{ border: '1px solid #7b7f85', borderRadius: 20 }}
+                placeholder='Search Your Name Here'
+                onInput={this.handleChangeInput}
+              />
             </Col>
           </Row>
           <Row className='mb-3' />
@@ -199,37 +266,37 @@ class GCPRank extends Component {
                 </Col>
                 <Col className='gcp'>{this.medals()}</Col>
               </Row>
-              {track1.length ? (
+              {this.state.searchtrack1.length ? (
                 <React.Fragment>
-                  {track1
-                    .filter((e) => e.medalColor === this.MedalColors.PLATINUM)
+                  {this.state.searchtrack1
+                    .filter((e) => e.medalColor === this.MedalColors.DIAMOND)
                     .map((d, index) => (
                       <Row className='mt-4 gcp' key={index}>
                         <RankCard data={d} />
                       </Row>
                     ))}
-                  {track1
+                  {this.state.searchtrack1
                     .filter((e) => e.medalColor === this.MedalColors.GOLD)
                     .map((d, index) => (
                       <Row className='mt-4 gcp' key={index}>
                         <RankCard data={d} />
                       </Row>
                     ))}
-                  {track1
+                  {this.state.searchtrack1
                     .filter((e) => e.medalColor === this.MedalColors.SILVER)
                     .map((d, index) => (
                       <Row className='mt-4 gcp' key={index}>
                         <RankCard data={d} />
                       </Row>
                     ))}
-                  {track1
+                  {this.state.searchtrack1
                     .filter((e) => e.medalColor === this.MedalColors.BRONZE)
                     .map((d, index) => (
                       <Row className='mt-4 gcp' key={index}>
                         <RankCard data={d} />
                       </Row>
                     ))}
-                  {track1
+                  {this.state.searchtrack1
                     .filter((e) => e.medalColor === this.MedalColors.NORMAL)
                     .map((d, index) => (
                       <Row className='mt-4 gcp' key={index}>
@@ -259,37 +326,37 @@ class GCPRank extends Component {
                 </Col>
                 <Col className='gcp'>{this.medals()}</Col>
               </Row>
-              {track2.length ? (
+              {this.state.searchtrack2.length ? (
                 <React.Fragment>
-                  {track2
-                    .filter((e) => e.medalColor === this.MedalColors.PLATINUM)
+                  {this.state.searchtrack2
+                    .filter((e) => e.medalColor === this.MedalColors.DIAMOND)
                     .map((d, index) => (
                       <Row className='mt-4 gcp' key={index}>
                         <RankCard data={d} />
                       </Row>
                     ))}
-                  {track2
+                  {this.state.searchtrack2
                     .filter((e) => e.medalColor === this.MedalColors.GOLD)
                     .map((d, index) => (
                       <Row className='mt-4 gcp' key={index}>
                         <RankCard data={d} />
                       </Row>
                     ))}
-                  {track2
+                  {this.state.searchtrack2
                     .filter((e) => e.medalColor === this.MedalColors.SILVER)
                     .map((d, index) => (
                       <Row className='mt-4 gcp' key={index}>
                         <RankCard data={d} />
                       </Row>
                     ))}
-                  {track2
+                  {this.state.searchtrack2
                     .filter((e) => e.medalColor === this.MedalColors.BRONZE)
                     .map((d, index) => (
                       <Row className='mt-4 gcp' key={index}>
                         <RankCard data={d} />
                       </Row>
                     ))}
-                  {track2
+                  {this.state.searchtrack2
                     .filter((e) => e.medalColor === this.MedalColors.NORMAL)
                     .map((d, index) => (
                       <Row className='mt-4 gcp' key={index}>
@@ -311,12 +378,12 @@ class GCPRank extends Component {
         </Container>
       </Toolbar>*/
       <Row className='m-5 text-center'>
-            <Col>
-              <h3 style={{ color: '#8a3fff'}} className='gcp'>
-                Ranking will be displayed on 27th September.
-              </h3>
-            </Col>
-        </Row>
+           <Col>
+           <h3 style={{ color: '#8a3fff'}} className='gcp'>
+           Ranking will be displayed on 27th September.
+        </h3>
+      </Col>
+      </Row>
     );
   }
 }
