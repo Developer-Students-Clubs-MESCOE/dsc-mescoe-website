@@ -98,6 +98,18 @@ const ROUTES = [
     ),
     type: RouteType.PAGE,
   },
+  {
+    icon: null,
+    name: 'Kickstarter Registration',
+    path: '/kickstarter-registration',
+    component: (
+      <Redirect
+        path='/kickstarter-registration'
+        url='https://gdsc.community.dev/events/details/developer-student-clubs-modern-education-societys-college-of-engineering-pune-presents-qwiklabs-kickstarter/'
+      />
+    ),
+    type: RouteType.PAGE,
+  },
 
   {
     icon: null,
