@@ -380,7 +380,7 @@ class GCPRank extends Component {
       <Row className='m-5 text-center'>
            <Col>
            <h3 style={{ color: '#8a3fff'}} className='gcp'>
-           Ranking will be displayed on 27th September.
+           Ranking will be displayed Soon.
         </h3>
       </Col>
       </Row>
