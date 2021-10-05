@@ -6,6 +6,7 @@ import RankCard from '../components/RankCard';
 import Axios from 'axios';
 import { serverURL } from '../utils/utils';
 import { Skeleton } from '@material-ui/lab';
+import './CSSFiles/Rank.css';
 const TabPanel = (props) => {
   const { children, value, index, ...other } = props;
   return (
@@ -213,14 +214,14 @@ class GCPRank extends Component {
               <input
                 id='admin-manage-faculty-textfield'
                 type='text'
-                className='form-control w-75 h-100 p-2 text-center'
-                style={{ border: '1px solid #7b7f85', borderRadius: 20 }}
+                className='form-control p-2 text-center'
+                style={{ border: '1px solid #7b7f85', borderRadius: 20,width:'300px' }}
                 placeholder='Search Your Name Here'
                 onInput={this.handleChangeInput}
               />
             </Col>
           </Row>
-          <Row className='mb-3' >
+          <Row className='mb-3 mt-3' >
             <Alert variant="danger">Data gets updated after every 24 hours</Alert>
             </Row>
           <AppBar position='static' color='inherit'>
