@@ -29,9 +29,6 @@ class RankCard extends Component {
                   <Row className='mt-2'>
                     <p className='h6'>Number of Skill Badges -- {data.numSkillBadges}</p>
                   </Row>
-                  <Row className='mt-2'>
-                    <p className='h6'>Last Earned Skill Badge -- {data.lastBadgeName}</p>
-                  </Row>
                   {/*<Row className='mt-2'>*/}
                   {/*  <p className='h6'>Date -- {data.lastBadgeDate}</p>*/}
                   {/*</Row>*/}
@@ -39,13 +36,7 @@ class RankCard extends Component {
               </Row>
             </Container>
           </CardActionArea>
-          <CardActions className='justify-content-end px-3'>
-            <a style={{textDecoration: 'inherit'}} rel="noopener noreferrer" target='_blank' href={data.profileURL}>
-              <Button variant='outlined' style={{border: `2px solid ${data.medalColor}`, fontWeight: 600}}>
-                View Profile
-              </Button>
-            </a>
-          </CardActions>
+          
         </Card>
       </Col>
     );

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { resetFooterStyle, resetNavStyle } from '../utils/utils';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row,Alert} from 'react-bootstrap';
 import { Toolbar, Box, AppBar, Tabs, Tab } from '@material-ui/core';
 import RankCard from '../components/RankCard';
 import Axios from 'axios';
@@ -53,13 +53,13 @@ class GCPRank extends Component {
         let track2Data = [];
         track1.data.forEach((data) => {
           let medal;
-          if (data.rank === 0) {
+          if (data.rank === 1) {
             medal = this.MedalColors.DIAMOND;
-          } else if (data.rank === 1) {
-            medal = this.MedalColors.GOLD;
           } else if (data.rank === 2) {
-            medal = this.MedalColors.SILVER;
+            medal = this.MedalColors.GOLD;
           } else if (data.rank === 3) {
+            medal = this.MedalColors.SILVER;
+          } else if (data.rank === 4) {
             medal = this.MedalColors.BRONZE;
           } else {
             medal = this.MedalColors.NORMAL;
@@ -67,21 +67,19 @@ class GCPRank extends Component {
           track1Data.push({
             name: data.name,
             rank: data.rank,
-            profileURL: data.qwiklabs_profile,
             medalColor: medal,
             numSkillBadges: data.track1_count,
-            lastBadgeName: data.latest_track1
           });
         });
         track2.data.forEach((data) => {
           let medal;
-          if (data.rank === 0) {
+          if (data.rank === 1) {
             medal = this.MedalColors.DIAMOND;
-          } else if (data.rank === 1) {
-            medal = this.MedalColors.GOLD;
           } else if (data.rank === 2) {
-            medal = this.MedalColors.SILVER;
+            medal = this.MedalColors.GOLD;
           } else if (data.rank === 3) {
+            medal = this.MedalColors.SILVER;
+          } else if (data.rank === 4) {
             medal = this.MedalColors.BRONZE;
           } else {
             medal = this.MedalColors.NORMAL;
@@ -89,10 +87,8 @@ class GCPRank extends Component {
           track2Data.push({
             name: data.name,
             rank: data.rank,
-            profileURL: data.qwiklabs_profile,
             medalColor: medal,
             numSkillBadges: data.track2_count,
-            lastBadgeName: data.latest_track2
           });
         });
         this.setState({
@@ -204,7 +200,7 @@ class GCPRank extends Component {
     if (footer) {
       resetFooterStyle();
     }
-    return (/*
+    return (
       <Toolbar className='grid'>
         <Container>
           <Row className='mt-5'>
@@ -224,7 +220,9 @@ class GCPRank extends Component {
               />
             </Col>
           </Row>
-          <Row className='mb-3' />
+          <Row className='mb-3' >
+            <Alert variant="danger">Data gets updated after every 24 hours</Alert>
+            </Row>
           <AppBar position='static' color='inherit'>
             <Tabs
               TabIndicatorProps={{
@@ -376,14 +374,14 @@ class GCPRank extends Component {
           </TabPanel>
           <Row className='mb-5' />
         </Container>
-      </Toolbar>*/
+      </Toolbar>/*
       <Row className='m-5 text-center'>
            <Col>
            <h3 style={{ color: '#8a3fff'}} className='gcp'>
            Ranking will be displayed Soon.
         </h3>
       </Col>
-      </Row>
+      </Row>*/
     );
   }
 }

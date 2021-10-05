@@ -35,4 +35,4 @@ export function resetFooterStyle() {
   }
 }
 
-export const serverURL = 'https://dscmescoe.herokuapp.com'
+export const serverURL = 'http://localhost:5000';

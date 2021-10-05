@@ -17,33 +17,24 @@ function mySortFunction(data, mainNum, secNum) {
 	})
 }
 
-function createDataTobeSend(sortedData) {
-	let rank = 0;
+function createDataTobeSend(sortedData,track) {
+	let rank = 1;
 	let result = [];
 	let b1 = 6;
-	let b2 = 6;
 	for (let i=0; i < sortedData.length; i++) {
 		const data = sortedData[i];
-		const track1 = data[5].split('|');
-		const track2 = data[7].split('|');
-		if (b1 !== data[4] || b2 !== data[6]) {
-			if (b1 !== data[4]) {
-				b1 = data[4];
-			}
-			if (b2 !== data[6]) {
-				b2 = data[6];
+		if (b1 !== data[track]) {
+			if (b1 !== data[track]) {
+				b1 = data[track];
 			}
 			rank++;
 		}
 		const jsonObject = {
 			"rank": rank,
 			"name": data[0],
-			"qwiklabs_profile": data[3],
-			"track1_count": data[4],
-			"track2_count": data[6],
-			"total_count": data[4] + data[6],
-			"latest_track1": track1[track1.length - 1],
-			"latest_track2": track2[track2.length - 1],
+			"track1_count": data[1],
+			"track2_count": data[2],
+			"total_count": data[1] + data[2],
 		}
 		result.push(jsonObject)
 	}
@@ -54,8 +45,8 @@ rankRouter.get("/track1", (req, res) => {
 	database
 		.readAll("ranks")
 		.then(ranks => {
-			ranks = mySortFunction(ranks, 4, 6);
-			res.status(200).json(createDataTobeSend(ranks));
+			ranks = mySortFunction(ranks, 1, 2);
+			res.status(200).json(createDataTobeSend(ranks,1));
 		})
 		.catch(err => console.log(err));
 })
@@ -64,8 +55,8 @@ rankRouter.get("/track2", (req, res) => {
 	database
 		.readAll("ranks")
 		.then(ranks => {
-			ranks = mySortFunction(ranks, 6, 4);
-			res.status(200).json(createDataTobeSend(ranks));
+			ranks = mySortFunction(ranks, 2, 1);
+			res.status(200).json(createDataTobeSend(ranks,2));
 		})
 		.catch(err => console.log(err));
 })
