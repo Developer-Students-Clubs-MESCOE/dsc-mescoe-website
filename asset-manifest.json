@@ -6,12 +6,12 @@
     "runtime-main.js": "/static/js/runtime-main.528b251f.js",
     "runtime-main.js.map": "/static/js/runtime-main.528b251f.js.map",
     "static/css/2.081f420c.chunk.css": "/static/css/2.081f420c.chunk.css",
-    "static/js/2.868e033e.chunk.js": "/static/js/2.868e033e.chunk.js",
-    "static/js/2.868e033e.chunk.js.map": "/static/js/2.868e033e.chunk.js.map",
+    "static/js/2.4ff47578.chunk.js": "/static/js/2.4ff47578.chunk.js",
+    "static/js/2.4ff47578.chunk.js.map": "/static/js/2.4ff47578.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.081f420c.chunk.css.map": "/static/css/2.081f420c.chunk.css.map",
     "static/css/main.d547d5c3.chunk.css.map": "/static/css/main.d547d5c3.chunk.css.map",
-    "static/js/2.868e033e.chunk.js.LICENSE.txt": "/static/js/2.868e033e.chunk.js.LICENSE.txt",
+    "static/js/2.4ff47578.chunk.js.LICENSE.txt": "/static/js/2.4ff47578.chunk.js.LICENSE.txt",
     "static/media/Dhruvil.ed100e59.jpg": "/static/media/Dhruvil.ed100e59.jpg",
     "static/media/Gaurav.7f170daa.jpg": "/static/media/Gaurav.7f170daa.jpg",
     "static/media/index.css": "/static/media/trialNoGridFinal.399edd62.svg",
@@ -33,7 +33,7 @@
   "entrypoints": [
     "static/js/runtime-main.528b251f.js",
     "static/css/2.081f420c.chunk.css",
-    "static/js/2.868e033e.chunk.js",
+    "static/js/2.4ff47578.chunk.js",
     "static/css/main.d547d5c3.chunk.css",
     "static/js/main.a1c1ad2a.chunk.js"
   ]
