@@ -100,12 +100,12 @@ const ROUTES = [
   },
   {
     icon: null,
-    name: 'Kickstarter Registration',
-    path: '/kickstarter-registration',
+    name: 'Hacktoberfest Registration',
+    path: '/hacktoberfest-registration',
     component: (
       <Redirect
-        path='/kickstarter-registration'
-        url='https://gdsc.community.dev/events/details/developer-student-clubs-modern-education-societys-college-of-engineering-pune-presents-qwiklabs-kickstarter/'
+        path='/hacktoberfest-registration'
+        url='https://gdsc.community.dev/events/details/developer-student-clubs-modern-education-societys-college-of-engineering-pune-presents-hacktoberfest-2021/'
       />
     ),
     type: RouteType.PAGE,
