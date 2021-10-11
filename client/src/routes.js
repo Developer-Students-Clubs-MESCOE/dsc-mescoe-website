@@ -92,7 +92,7 @@ const ROUTES = [
     path: '/hacktoberfest',
     component: (
       <Redirect
-        path='hacktoberfest'
+        path='/hacktoberfest'
         url='https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_OGY4ZDBhMWMtYmJiMi00ODVmLWJhNWMtNDk3YjRlMmRhZjA1%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%25223a3cd3f3-9917-40dc-91e0-85146eaf5d55%2522%252c%2522Oid%2522%253a%25227c041bd0-f19d-4bf9-897f-497793409f05%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=8711275e-1ea5-478c-8f5e-44f8c06e3f6b&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true'
       />
     ),
