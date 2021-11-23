@@ -28,7 +28,7 @@ yarn start
 👤 **GDSC MESCOE**
 
 * Website: https://gdscmescoe.tech
-* Twitter: [@@gdscmescoe](https://twitter.com/gdscmescoe)
+* Twitter: [@gdscmescoe](https://twitter.com/gdscmescoe)
 * Github: [@Developer-Students-Clubs-MESCOE](https://github.com/Developer-Students-Clubs-MESCOE)
 * LinkedIn: [@gdscmescoe](https://www.linkedin.com/company/dscmescoe)
 * Medium: [@GDSCMESCOE](https://medium.com/@dscmescoe)
