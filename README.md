@@ -25,13 +25,13 @@ yarn start
 
 ## Author
 
-👤 **DSC MESCOE**
+👤 **GDSC MESCOE**
 
 * Website: https://gdscmescoe.tech
-* Twitter: [@dscmescoe](https://twitter.com/dscmescoe)
+* Twitter: [@@gdscmescoe](https://twitter.com/gdscmescoe)
 * Github: [@Developer-Students-Clubs-MESCOE](https://github.com/Developer-Students-Clubs-MESCOE)
-* LinkedIn: [@dscmescoe](https://www.linkedin.com/company/dscmescoe)
-* Medium: [@DSCMESCOE](https://medium.com/@dscmescoe)
+* LinkedIn: [@gdscmescoe](https://www.linkedin.com/company/dscmescoe)
+* Medium: [@GDSCMESCOE](https://medium.com/@dscmescoe)
 
 ## Show your support
 
