@@ -100,12 +100,12 @@ const ROUTES = [
   },
   {
     icon: null,
-    name: 'Hacktoberfest Registration',
-    path: '/hacktoberfest-registration',
+    name: 'ASJ introduction',
+    path: '/ASJ-introduction',
     component: (
       <Redirect
-        path='/hacktoberfest-registration'
-        url='https://gdsc.community.dev/events/details/developer-student-clubs-modern-education-societys-college-of-engineering-pune-presents-hacktoberfest-2021/'
+        path='/ASJ-introduction'
+        url='https://teams.microsoft.com/l/meetup-join/19%3ameeting_YTA3ZWJhZTctYmZhMS00MGU5LWJjOWUtYjEzNjg2NmNjYTYx%40thread.v2/0?context=%7b%22Tid%22%3a%22a3d598b6-6092-4351-b1a3-b213e8adc03b%22%2c%22Oid%22%3a%22105d357b-9536-4050-bdb5-0d5c3c247423%22%7d'
       />
     ),
     type: RouteType.PAGE,
