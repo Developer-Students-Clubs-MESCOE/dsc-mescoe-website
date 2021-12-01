@@ -5,29 +5,39 @@ import {resetFooterStyle} from "../../utils/utils";
 
 export const socials = [
   {
-    icon: <Facebook className="m-xl-4 m-lg-3 m-md-1" style={{color: 'black'}}/>,
+    icon: (
+      <Facebook className='m-xl-4 m-lg-3 m-md-1' style={{ color: 'black' }} />
+    ),
     link: 'https://www.facebook.com/dscmescoepune/',
-    name: "Facebook",
+    name: 'Facebook'
   },
   {
-    icon: <GitHub className="m-xl-4 m-lg-3 m-md-1" style={{color: 'black'}}/>,
+    icon: (
+      <GitHub className='m-xl-4 m-lg-3 m-md-1' style={{ color: 'black' }} />
+    ),
     link: 'https://github.com/Developer-Students-Clubs-MESCOE',
-    name: "GitHub",
+    name: 'GitHub'
   },
   {
-    icon: <Instagram className="m-xl-4 m-lg-3 m-md-1" style={{color: 'black'}}/>,
-    link: 'https://www.instagram.com/mescoedsc/',
-    name: "Instagram",
+    icon: (
+      <Instagram className='m-xl-4 m-lg-3 m-md-1' style={{ color: 'black' }} />
+    ),
+    link: 'https://www.instagram.com/gdsc_mescoe/',
+    name: 'Instagram'
   },
   {
-    icon: <LinkedIn className="m-xl-4 m-lg-3 m-md-1" style={{color: 'black'}}/>,
+    icon: (
+      <LinkedIn className='m-xl-4 m-lg-3 m-md-1' style={{ color: 'black' }} />
+    ),
     link: 'https://www.linkedin.com/company/dscmescoe/',
-    name: "LinkedIn",
+    name: 'LinkedIn'
   },
   {
-    icon: <Twitter className="m-xl-4 m-lg-3 m-md-1" style={{color: 'black'}}/>,
-    link: 'https://twitter.com/dscmescoe',
-    name: "Twitter",
+    icon: (
+      <Twitter className='m-xl-4 m-lg-3 m-md-1' style={{ color: 'black' }} />
+    ),
+    link: 'https://twitter.com/gdscmescoe',
+    name: 'Twitter'
   }
 ];
 
