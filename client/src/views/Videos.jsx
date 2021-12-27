@@ -5,6 +5,8 @@ import {resetFooterStyle, resetNavStyle, serverURL} from "../utils/utils";
 import axios from 'axios'
 import VideoCard from "../components/video/VideoCard";
 import {Skeleton} from "@material-ui/lab";
+import darkbgimg from '../assets/img/darkmodebg.svg';
+import bgimg from '../assets/img/trialNoGridFinal.svg';
 
 export default class Videos extends React.Component {
 	constructor(props) {
@@ -12,6 +14,13 @@ export default class Videos extends React.Component {
 		this.state = {
 			videos: []
 		}
+		if (JSON.parse(localStorage.getItem('isDarkMode'))) {
+			document.querySelector(":root").style.setProperty('--card',`#242424`);
+			document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
+			document.querySelector(":root").style.setProperty('--white',`#121212`);
+			document.querySelector(":root").style.setProperty('--black',`#ffffff`);
+			document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
+		  }
 	}
 
 	componentDidMount() {
@@ -22,9 +31,11 @@ export default class Videos extends React.Component {
 			.then(res => {
 				this.setState({videos: res.data});
 				if (JSON.parse(localStorage.getItem('isDarkMode'))) {
-					document.querySelectorAll('.video').forEach(e => {
-						e.classList.toggle('dark-mode')
-					})
+					document.querySelector(":root").style.setProperty('--card',`#242424`);
+					document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
+      document.querySelector(":root").style.setProperty('--white',`#121212`);
+      document.querySelector(":root").style.setProperty('--black',`#ffffff`);
+      document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
 				}
 			})
 			.catch(err => console.error(err.message));
@@ -36,7 +47,7 @@ export default class Videos extends React.Component {
 			resetFooterStyle()
 		}
 		return (
-			<Toolbar className="grid">
+			<Toolbar className="grid" style={{minHeight:"100vh"}}>
 				<Container>
 					<h3 className="mt-5 video" style={{color: '#EA4435', fontWeight: 600}}>Videos</h3>
 					<Row className="ml-3">

@@ -17,18 +17,18 @@ class ProjectCard extends Component {
           <ResponsiveEmbed aspectRatio="16by9">
             <CardMedia image={project.image} component="img" title="Event Image"/>
           </ResponsiveEmbed>
-          <CardContent>
+          <CardContent  style={{backgroundColor:"var(--card)",color:"var(--black)"}} >
             <p className='p-0 m-0' style={{fontSize: 16, fontWeight: "normal",}}>
               <b>{project.title}</b><br/>
               <b>Description: </b>{project.description}<br/>
             </p>
           </CardContent>
-        </CardActionArea>
-        <CardActions>
-          {project.github ? <Button href={project.github} target="_blank" style={{color: '#000000'}}>
+        </CardActionArea >
+        <CardActions  style={{backgroundColor:"var(--card)",color:"var(--black)"}}>
+          {project.github ? <Button href={project.github} target="_blank" style={{color: 'var(--black)'}}>
             <GitHubIcon/>
           </Button> : null}
-          {project.youtube ? <Button href={project.youtube} target="_blank" style={{color: '#ff0000'}}>
+          {project.youtube ? <Button href={project.youtube} target="_blank" style={{color: 'var(--black)'}}>
             <YouTubeIcon/>
           </Button> : null}
         </CardActions>

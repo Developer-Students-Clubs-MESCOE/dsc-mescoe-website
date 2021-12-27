@@ -1,9 +1,24 @@
 .dark-mode {
     filter: invert(0.95);
 }
-
+:root{
+    --white: #ffffff;
+    --black: #121212;
+    --bg-img: url("../src/assets/img/trialNoGridFinal.svg");
+    --transparent: transparent;
+    --card: #ffffff;
+}
+.dsc-nav{
+    background-color: var(--white);
+    color: var(--black);
+}
+#root{
+    background-color: var(--white);
+    color: var(--black);
+}
 .grid {
-    background-image: url("../src/assets/img/trialNoGridFinal.svg");
+    background-image: var(--bg-img);
+    min-height: 100vh;
 }
 
 .dsc-brand {
@@ -16,6 +31,11 @@
 
 .fade-out-animation {
     animation: fadeOut 300ms forwards;
+}
+
+.darkmodebtn img{
+    width:25px;
+    height:25px;
 }
 
 @keyframes fadeIn {

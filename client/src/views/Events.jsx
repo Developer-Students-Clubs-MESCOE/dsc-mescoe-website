@@ -5,12 +5,23 @@ import {resetFooterStyle, resetNavStyle, serverURL} from "../utils/utils";
 // import eventSections from '../data/eventSections';
 import EventCard from '../components/event/EventCard';
 import Axios from "axios";
+import darkbgimg from '../assets/img/darkmodebg.svg';
+import bgimg from '../assets/img/trialNoGridFinal.svg';
 
 export default class Events extends React.Component {
-
-	state = {
-		eventSections: {upcoming: [], recent: []}
+	constructor(props){
+		super(props)
+		this.state = {
+			eventSections: {upcoming: [], recent: []}
+		}
+		if (JSON.parse(localStorage.getItem('isDarkMode'))) {
+			document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
+			document.querySelector(":root").style.setProperty('--white',`#121212`);
+			document.querySelector(":root").style.setProperty('--black',`#ffffff`);
+			document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
+		  }
 	}
+	
 
 	componentDidMount() {
 		document.title = 'Events - GDSC MESCOE';
@@ -25,9 +36,12 @@ export default class Events extends React.Component {
 			events["recent"] = recentEvents
 			this.setState({eventSections: events})
 			if (JSON.parse(localStorage.getItem('isDarkMode'))) {
-				document.querySelectorAll('.event').forEach(e => {
-					e.classList.toggle('dark-mode')
-				})
+				//dark mode
+				document.querySelector(":root").style.setProperty('--card',`#242424`);	
+				document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
+      document.querySelector(":root").style.setProperty('--white',`#121212`);
+      document.querySelector(":root").style.setProperty('--black',`#ffffff`);
+      document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
 			}
 		});
 	}
@@ -38,7 +52,7 @@ export default class Events extends React.Component {
 			resetFooterStyle()
 		}
 		return (
-			<Toolbar className='grid'>
+			<Toolbar className='grid' style={{padding:"2em"}}>
 				<Container>
 					<h3 style={{color: '#FBBD04', fontWeight: 600}} className='mt-5 event'>Upcoming Events</h3>
 					<Row className='ml-3'>

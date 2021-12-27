@@ -11,11 +11,21 @@ import homeSections from "../data/homeSections";
 import HomeSection from "../components/home/HomeSection";
 import {resetFooterStyle, resetNavStyle, serverURL} from "../utils/utils";
 import Axios from "axios";
+import darkbgimg from '../assets/img/darkmodebg.svg';
+import bgimg from '../assets/img/trialNoGridFinal.svg';
+
 
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
     this.handleScroll = this.handleScroll.bind(this);
+    if (JSON.parse(localStorage.getItem('isDarkMode'))) {
+      document.querySelector(":root").style.setProperty('--card',`#242424`);
+      document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
+      document.querySelector(":root").style.setProperty('--white',`#121212`);
+      document.querySelector(":root").style.setProperty('--black',`#ffffff`);
+      document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
+    }
   }
 
   componentDidMount() {
@@ -24,9 +34,11 @@ export default class Home extends React.Component {
     window.addEventListener('scroll', this.handleScroll);
 
     if (JSON.parse(localStorage.getItem('isDarkMode'))) {
-      document.querySelectorAll('.home').forEach(e => {
-        e.classList.toggle('dark-mode')
-      })
+      document.querySelector(":root").style.setProperty('--card',`#242424`);
+      document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
+      document.querySelector(":root").style.setProperty('--white',`#121212`);
+      document.querySelector(":root").style.setProperty('--black',`#ffffff`);
+      document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
     }
 
     Axios.get(`${serverURL}/api/events/top3`).then(result => {
@@ -78,8 +90,9 @@ export default class Home extends React.Component {
       resetFooterStyle()
     }
     return (
-      <Toolbar className='grid'>
-        <Container className="mt-5">
+      <Toolbar className='grid' >
+        <div style={{backgroundColor:'var(--transparent)',width:"100%",margin:"0px", padding:"0px"}}>
+        <Container className="mt-5" >
           <Row className="text-md-left">
             <Col xs="12" md="6" className='my-auto'>
               <Row ref={node => this.brand = node} className="text-left">
@@ -168,7 +181,7 @@ export default class Home extends React.Component {
           </Row>
           <Row className='mt-5'>
             <Col xs="2" md="1" lg="1" className="mx-auto p-lg-4">
-              <Image src={downArrow} style={{width: "100%"}}/>
+              <Image src={downArrow} style={{width: "100%",color:"var(--black)"}}/>
             </Col>
           </Row>
           <Row className='mt-4'/>
@@ -178,6 +191,7 @@ export default class Home extends React.Component {
           <Row className='mb-5'/>
           <Row className='mb-5'/>
         </Container>
+        </div>
       </Toolbar>
     );
   }

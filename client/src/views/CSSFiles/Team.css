@@ -16,7 +16,7 @@
   justify-content: center;
   height: auto;
   text-align: center;
-  z-index: 2;
+  z-index: 3;
 }
 /*for the  upper part*/
 .flex-container {
@@ -162,7 +162,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   height: 2700px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .Teamcol {
@@ -255,7 +255,7 @@ iframe {
 }
 .area {
   background: transparent;
-  z-index: 0;
+  z-index: 1;
 }
 
 .circles {
@@ -265,7 +265,7 @@ iframe {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  z-index: -1;
+  z-index: 0;
 }
 
 .circles li {
@@ -366,10 +366,11 @@ iframe {
   }
 }
 .Circles img {
-  z-index: 0;
+  z-index: 1;
   width: 80px;
   height: 80px;
 }
 .row .align-items-center img {
-  z-index: 5;
+  z-index: 6;
 }
+

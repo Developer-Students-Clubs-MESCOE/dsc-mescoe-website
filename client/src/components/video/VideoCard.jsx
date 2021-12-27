@@ -16,14 +16,14 @@ class VideoCard extends Component {
           <ResponsiveEmbed aspectRatio="16by9">
             <ReactPlayer height="100%" width="100%" url={video.url}/>
           </ResponsiveEmbed>
-          <CardContent>
+          <CardContent style={{backgroundColor:"var(--card)",color:"var(--black)"}}>
             <p className='p-0 m-0' style={{ fontSize: 16, fontWeight: "normal", }}>
               <b>{video.name}</b><br />
               <b>Description: </b>{video.description}<br />
             </p>
           </CardContent>
         </CardActionArea>
-        <CardActions>
+        <CardActions style={{color: '#EA4435',backgroundColor:"var(--card)"}} >
           <Button style={{color: '#EA4435'}} target="_blank" href={video.url}>Watch Now</Button>
         </CardActions>
       </Card>
