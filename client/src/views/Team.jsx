@@ -9,6 +9,8 @@ import { GitHub, LinkedIn } from "@material-ui/icons";
 import TeamData from './TeamData.js';
 import darkbgimg from '../assets/img/darkmodebg.svg';
 import bgimg from '../assets/img/trialNoGridFinal.svg';
+import gdgLogo from "../assets/img/gdg_logo.png";
+import gdg_black from "../assets/img/gdg_black.png";
 
 const TeamMember = (props) => {
   
@@ -95,25 +97,13 @@ const goToTeam = () => {
 export default class Team extends React.Component {
   constructor(props){
     super(props)
-    if (JSON.parse(localStorage.getItem('isDarkMode'))) {
-      document.querySelector(":root").style.setProperty('--card',`#242424`);
-      document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
-      document.querySelector(":root").style.setProperty('--white',`#121212`);
-      document.querySelector(":root").style.setProperty('--black',`#ffffff`);
-      document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
-    }
+   
   }
   componentDidMount() {
     document.title = "Team - GDSC MESCOE";
      window.scrollTo(0, 0)
     resetNavStyle({page: "Team"});
-    if (JSON.parse(localStorage.getItem('isDarkMode'))) {
-      document.querySelector(":root").style.setProperty('--card',`#242424`);
-      document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
-      document.querySelector(":root").style.setProperty('--white',`#121212`);
-      document.querySelector(":root").style.setProperty('--black',`#ffffff`);
-      document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
-    }
+    
   }
   render() {
     return (

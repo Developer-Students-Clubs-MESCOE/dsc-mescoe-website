@@ -66,7 +66,7 @@ class VideoCard extends Component {
                 <ResponsiveEmbed aspectRatio='16by9'>
                   <ReactPlayer height='100%' width='100%' url={video.url} />
                 </ResponsiveEmbed>
-                <CardContent>
+                <CardContent style={{backgroundColor:"var(--white)",color:"var(--black)"}}>
                   <p
                     className='p-0 m-0'
                     style={{ fontSize: 16, fontWeight: 'normal' }}>
@@ -78,7 +78,7 @@ class VideoCard extends Component {
                   </p>
                 </CardContent>
               </CardActionArea>
-              <CardActions>
+              <CardActions style={{backgroundColor:"var(--white)",color:"var(--black)"}}>
                 <Button size='large' className='mr-auto' onClick={this.toggleEventModal}
                         style={{color: 'white', backgroundColor: 'red'}}>
                   Close
@@ -102,16 +102,17 @@ class VideoCard extends Component {
             <ResponsiveEmbed aspectRatio='16by9'>
               <ReactPlayer height='100%' width='100%' url={video.url} />
             </ResponsiveEmbed>
-            <CardContent>
+            <CardContent style={{backgroundColor:"var(--white)",color:"var(--black)"}}>
               <h6 className='p-0 m-0'>{video.name}</h6>
             </CardContent>
           </CardActionArea>
-          <CardActions>
+          <CardActions style={{backgroundColor:"var(--white)",color:"var(--black)"}}>
             <Button
+            style={{backgroundColor:"var(--white)",color:"var(--black)"}}
               onClick={() => {
                 this.clickEvent(video);
               }}>
-              Watch Now
+              View Description
             </Button>
           </CardActions>
         </Card>

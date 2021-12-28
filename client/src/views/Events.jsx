@@ -7,6 +7,8 @@ import EventCard from '../components/event/EventCard';
 import Axios from "axios";
 import darkbgimg from '../assets/img/darkmodebg.svg';
 import bgimg from '../assets/img/trialNoGridFinal.svg';
+import gdgLogo from "../assets/img/gdg_logo.png";
+import gdg_black from "../assets/img/gdg_black.png";
 
 export default class Events extends React.Component {
 	constructor(props){
@@ -14,12 +16,7 @@ export default class Events extends React.Component {
 		this.state = {
 			eventSections: {upcoming: [], recent: []}
 		}
-		if (JSON.parse(localStorage.getItem('isDarkMode'))) {
-			document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
-			document.querySelector(":root").style.setProperty('--white',`#121212`);
-			document.querySelector(":root").style.setProperty('--black',`#ffffff`);
-			document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
-		  }
+		
 	}
 	
 
@@ -35,14 +32,7 @@ export default class Events extends React.Component {
 			events["upcoming"] = upcomingEvents
 			events["recent"] = recentEvents
 			this.setState({eventSections: events})
-			if (JSON.parse(localStorage.getItem('isDarkMode'))) {
-				//dark mode
-				document.querySelector(":root").style.setProperty('--card',`#242424`);	
-				document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
-      document.querySelector(":root").style.setProperty('--white',`#121212`);
-      document.querySelector(":root").style.setProperty('--black',`#ffffff`);
-      document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
-			}
+			
 		});
 	}
 
@@ -52,7 +42,7 @@ export default class Events extends React.Component {
 			resetFooterStyle()
 		}
 		return (
-			<Toolbar className='grid' style={{padding:"2em"}}>
+			<Toolbar className='grid' style={{padding:"2em",minHeight:"100vh"}}>
 				<Container>
 					<h3 style={{color: '#FBBD04', fontWeight: 600}} className='mt-5 event'>Upcoming Events</h3>
 					<Row className='ml-3'>

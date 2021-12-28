@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 import { Modal, Card,Button,Typography ,CardActions, CardContent} from '@material-ui/core';
 import Typical from 'react-typical';
 import gdgLogo from "../assets/img/gdg_logo.png";
+import gdg_black from "../assets/img/gdg_black.png";
 import gdgWordmark from "../assets/img/gdg_wordmark.png";
 import dscHomeImage from "../assets/img/dsc_home_image.webp";
 import downArrow from "../assets/img/down-arrow.svg";
@@ -19,27 +20,16 @@ import bgimg from '../assets/img/trialNoGridFinal.svg';
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
+    this.state={img:(JSON.parse(localStorage.getItem('isDarkMode')))?gdg_black:gdgLogo};
     this.handleScroll = this.handleScroll.bind(this);
-    if (JSON.parse(localStorage.getItem('isDarkMode'))) {
-      document.querySelector(":root").style.setProperty('--card',`#242424`);
-      document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
-      document.querySelector(":root").style.setProperty('--white',`#121212`);
-      document.querySelector(":root").style.setProperty('--black',`#ffffff`);
-      document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
-    }
+    
   }
   componentDidMount() {
     document.title = 'Home - GDSC MESCOE';
     resetNavStyle({page: 'Home'})
     window.addEventListener('scroll', this.handleScroll);
 
-    if (JSON.parse(localStorage.getItem('isDarkMode'))) {
-      document.querySelector(":root").style.setProperty('--card',`#242424`);
-      document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
-      document.querySelector(":root").style.setProperty('--white',`#121212`);
-      document.querySelector(":root").style.setProperty('--black',`#ffffff`);
-      document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
-    }
+    
 
     Axios.get(`${serverURL}/api/events/top3`).then(result => {
       homeSections[2].cards = result.data
@@ -98,7 +88,7 @@ export default class Home extends React.Component {
               <Row ref={node => this.brand = node} className="text-left">
                 <Col xs="3" md="3" xl="2" className="my-auto">
                   <Link to="/">
-                    <Image src={gdgLogo} style={{width: '100%'}} className='home'/>
+                    <Image src={this.state.img} style={{width: '100%'}} className='home logo-switch'/>
                   </Link>
                 </Col>
                 <Col xs='9' md='9' xl='6' className='my-auto'>

@@ -1,4 +1,4 @@
-import teamImage from "../assets/img/team.webp";
+import teamImage from "../assets/img/team5.gif";
 import gcpImage from '../assets/img/gcp.png';
 let homeSections = [
   {

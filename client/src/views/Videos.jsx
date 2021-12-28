@@ -7,6 +7,8 @@ import VideoCard from "../components/video/VideoCard";
 import {Skeleton} from "@material-ui/lab";
 import darkbgimg from '../assets/img/darkmodebg.svg';
 import bgimg from '../assets/img/trialNoGridFinal.svg';
+import gdgLogo from "../assets/img/gdg_logo.png";
+import gdg_black from "../assets/img/gdg_black.png";
 
 export default class Videos extends React.Component {
 	constructor(props) {
@@ -14,13 +16,7 @@ export default class Videos extends React.Component {
 		this.state = {
 			videos: []
 		}
-		if (JSON.parse(localStorage.getItem('isDarkMode'))) {
-			document.querySelector(":root").style.setProperty('--card',`#242424`);
-			document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
-			document.querySelector(":root").style.setProperty('--white',`#121212`);
-			document.querySelector(":root").style.setProperty('--black',`#ffffff`);
-			document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
-		  }
+		
 	}
 
 	componentDidMount() {
@@ -30,13 +26,7 @@ export default class Videos extends React.Component {
 		axios.get(`${serverURL}/api/videos`)
 			.then(res => {
 				this.setState({videos: res.data});
-				if (JSON.parse(localStorage.getItem('isDarkMode'))) {
-					document.querySelector(":root").style.setProperty('--card',`#242424`);
-					document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
-      document.querySelector(":root").style.setProperty('--white',`#121212`);
-      document.querySelector(":root").style.setProperty('--black',`#ffffff`);
-      document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
-				}
+				
 			})
 			.catch(err => console.error(err.message));
 	}
