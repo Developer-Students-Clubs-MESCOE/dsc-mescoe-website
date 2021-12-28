@@ -30,7 +30,7 @@ class EventCard extends Component {
   }
 
   clickEvent = (card) => {
-    this.setState({card: card})
+    this.setState({ card: card })
     this.toggleEventModal()
   }
 
