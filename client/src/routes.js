@@ -100,12 +100,12 @@ const ROUTES = [
   },
   {
     icon: null,
-    name: 'Hacktoberfest Registration',
-    path: '/hacktoberfest-registration',
+    name: 'ASJ-HandsOnSession',
+    path: '/ASJ-HandsOnSession',
     component: (
       <Redirect
-        path='/hacktoberfest-registration'
-        url='https://gdsc.community.dev/events/details/developer-student-clubs-modern-education-societys-college-of-engineering-pune-presents-hacktoberfest-2021/'
+        path='/ASJ-HandsOnSession'
+        url='https://gdsc.community.dev/events/details/developer-student-clubs-modern-education-societys-college-of-engineering-pune-presents-kotlin-a-journey-to-the-app-store/'
       />
     ),
     type: RouteType.PAGE,

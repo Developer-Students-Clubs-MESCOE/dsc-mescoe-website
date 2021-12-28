@@ -7,6 +7,8 @@ import TeamComponent from '../components/team/team-component';
 import { Link } from 'react-router-dom'
 import { GitHub, LinkedIn } from "@material-ui/icons";
 import TeamData from './TeamData.js';
+import darkbgimg from '../assets/img/darkmodebg.svg';
+import bgimg from '../assets/img/trialNoGridFinal.svg';
 
 const TeamMember = (props) => {
   
@@ -26,8 +28,8 @@ const TeamMember = (props) => {
         <h4>{props.member.name}</h4>
       </div>
         <div className="links">
-        <a href={props.member.githubLink} target="blank"><GitHub className="mr-2" style={{ color: "black" }} /></a>
-        <a href={props.member.linkedInLink} target="blank"><LinkedIn className="ml-1" style={{ color: "black" }} /></a>
+        <a href={props.member.githubLink} target="blank"><GitHub className="mr-2" style={{ color: 'var(--black)' }} /></a>
+        <a href={props.member.linkedInLink} target="blank"><LinkedIn className="ml-1" style={{ color: 'var(--black)' }} /></a>
         </div>
       </div>
   );
@@ -36,7 +38,7 @@ const TeamMember = (props) => {
 const ArrangeRow = (props) => {
   let Members = [];
   for (let member of TeamData[props.core]) {
-    Members.push(<TeamMember member={member} key={member.name} core={props.core}/> ); 
+    Members.push(<TeamMember member={member} key={member.name} core={props.core}/> );
   }
   let spacing = 'Teamcol space-around';
   if (Members.length < 3) spacing = 'Teamcol space-evenly';
@@ -69,15 +71,16 @@ const arrangeCol = () => {
   }
 
   return (
-    <div>
-      <div className='Teamrow'>
-        <h1 className='Cores'>OUR TEAM</h1>
+    <div style={{zIndex:"10"}}>
+      <div className='Teamrow' >
+        <h1 className='Cores' style={{zIndex:"7"}}>OUR TEAM</h1>
         <div>{Cores}</div>
-        <center>
+        <center style={{zIndex:"10"}}>
           <Link to='/team2020'>
             <button
               type='button'
-              className='btn btn-dark'>
+              className='btn btn-dark'
+              style={{zIndex:"10"}}>
               <h4>Team 2020</h4>
             </button>
           </Link>
@@ -90,28 +93,41 @@ const goToTeam = () => {
   window.scroll(0, 700);
 };
 export default class Team extends React.Component {
+  constructor(props){
+    super(props)
+    if (JSON.parse(localStorage.getItem('isDarkMode'))) {
+      document.querySelector(":root").style.setProperty('--card',`#242424`);
+      document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
+      document.querySelector(":root").style.setProperty('--white',`#121212`);
+      document.querySelector(":root").style.setProperty('--black',`#ffffff`);
+      document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
+    }
+  }
   componentDidMount() {
     document.title = "Team - GDSC MESCOE";
      window.scrollTo(0, 0)
     resetNavStyle({page: "Team"});
     if (JSON.parse(localStorage.getItem('isDarkMode'))) {
-      document.querySelectorAll('.team').forEach(e => {
-        e.classList.toggle('dark-mode')
-      })
+      document.querySelector(":root").style.setProperty('--card',`#242424`);
+      document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
+      document.querySelector(":root").style.setProperty('--white',`#121212`);
+      document.querySelector(":root").style.setProperty('--black',`#ffffff`);
+      document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
     }
   }
   render() {
     return (
-      <div className='header-demo'>
+      <div className='header-demo' >
         <div className='flex-container'>
-          <div className='flex-item-left'>
+          <div className='flex-item-left' style={{zIndex:"6"}}>
             <img
               className='mt-4 ml-4 img-fluid'
-              src={process.env.PUBLIC_URL + '/Images/team6.jpg'}
+              src={process.env.PUBLIC_URL + '/Images/team6.png'}
               alt='heading_illustration'
+
             />
           </div>
-          <div className='flex-item-right'>
+          <div className='flex-item-right' style={{color:'var(--black)',zIndex:"6"}}>
             <p>
               The strength of the team is each<br></br> individual member. The
               strength<br></br> of each member is the team.
@@ -122,9 +138,10 @@ export default class Team extends React.Component {
                   xmlns='http://www.w3.org/2000/svg'
                   width='50'
                   height='50'
-                  fill='black'
+                  fill='var(--black)'
                   class='bi bi-arrow-down'
-                  viewBox='0 0 16 16'>
+                  viewBox='0 0 16 16'
+                  zIndex="6">
                   <path
                     fill-rule='evenodd'
                     d='M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z'
@@ -136,7 +153,7 @@ export default class Team extends React.Component {
           </div>
         </div>
         {arrangeCol()}
-        <div className='area'>
+        <div className='area' >
           <ul className='circles'>
             <li>
               <img src='https://img.icons8.com/color/48/000000/flutter.png' />

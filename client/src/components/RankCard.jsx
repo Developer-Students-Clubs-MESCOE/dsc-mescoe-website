@@ -4,6 +4,10 @@ import {Button, CardActionArea, CardActions} from "@material-ui/core";
 import {Col, Container, Image, Row} from "react-bootstrap";
 
 class RankCard extends Component {
+  constructor(props){
+    super(props);
+
+  }
   render() {
     const data = this.props.data
     return (
@@ -13,7 +17,7 @@ class RankCard extends Component {
           borderRadius: 10,
           border: `2px solid ${data.medalColor}`
         }}>
-          <CardActionArea>
+          <CardActionArea style={{backgroundColor:"var(--white)",color:"var(--black)"}}>
             <Container>
               <Row className='m-xl-4 m-lg-3 m-md-3 m-sm-3 mt-3 align-items-center'>
                 {/*<Col xs={2}>*/}

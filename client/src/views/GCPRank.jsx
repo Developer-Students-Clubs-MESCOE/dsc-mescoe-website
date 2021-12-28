@@ -7,6 +7,9 @@ import Axios from 'axios';
 import { serverURL } from '../utils/utils';
 import { Skeleton } from '@material-ui/lab';
 import './CSSFiles/Rank.css';
+import darkbgimg from '../assets/img/darkmodebg.svg';
+import bgimg from '../assets/img/trialNoGridFinal.svg';
+
 const TabPanel = (props) => {
   const { children, value, index, ...other } = props;
   return (
@@ -101,13 +104,14 @@ class GCPRank extends Component {
       });
     });
     if (JSON.parse(localStorage.getItem('isDarkMode'))) {
-      document.querySelectorAll('.gcp').forEach((e) => {
-        e.classList.toggle('dark-mode');
-      });
+      document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
+      document.querySelector(":root").style.setProperty('--white',`#121212`);
+      document.querySelector(":root").style.setProperty('--black',`#ffffff`);
+      document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
     }
   }
   medals = () => (
-    <Row className='justify-content-center'>
+    <Row className='justify-content-center' >
       <Col xs={3}>
         <Row className='justify-content-center'>
           <button
@@ -202,8 +206,8 @@ class GCPRank extends Component {
       resetFooterStyle();
     }
     return (
-      <Toolbar className='grid'>
-        <Container>
+      <Toolbar className='grid' >
+        <Container >
           <Row className='mt-5'>
             <Col>
               <h3 style={{ color: '#8a3fff' }} className='gcp'>
@@ -224,11 +228,11 @@ class GCPRank extends Component {
           <Row className='mb-3 mt-3' >
             <Alert variant="danger">Data gets updated after every 24 hours</Alert>
             </Row>
-          <AppBar position='static' color='inherit'>
-            <Tabs
+          <AppBar position='static' color='inherit' style={{backgroundColor:"var(--white)",color:"var(--black)"}}>
+            <Tabs 
               TabIndicatorProps={{
                 style: {
-                  backgroundColor: '#8a3fff',
+                  backgroundColor:"var(--white)",color:"var(--black)",
                   height: 4
                 }
               }}
@@ -236,9 +240,10 @@ class GCPRank extends Component {
               aria-label='rank tabs'
               variant='scrollable'>
               <Tab
+              
                 label='Cloud Engineering'
                 {...a11yProps(0)}
-                style={{ fontFamily: 'Google Sans', fontWeight: 'bold' }}
+                style={{ fontFamily: 'Google Sans', fontWeight: 'bold' ,backgroundColor:"var(--white)",color:"var(--black)"}}
                 onClick={() => {
                   this.handleChange(0);
                 }}
@@ -246,7 +251,7 @@ class GCPRank extends Component {
               <Tab
                 label='Data Science and ML'
                 {...a11yProps(1)}
-                style={{ fontFamily: 'Google Sans', fontWeight: 'bold' }}
+                style={{ fontFamily: 'Google Sans', fontWeight: 'bold',backgroundColor:"var(--white)",color:"var(--black)" }}
                 onClick={() => {
                   this.handleChange(1);
                 }}
@@ -256,9 +261,9 @@ class GCPRank extends Component {
           <TabPanel
             value={this.state.value}
             index={0}
-            style={{ backgroundColor: 'white' }}
+            style={{ backgroundColor: "var(--white)",color:"var(--black)" }}
             className='mb-5 MuiPaper-elevation3'>
-            <Container>
+            <Container style={{backgroundColor:"var(--white)",color:"var(--black)"}}>
               <Row>
                 <Col xl={3}>
                   <h4 style={{ color: '#222' }}>Cloud Engineering</h4>
@@ -316,9 +321,9 @@ class GCPRank extends Component {
           <TabPanel
             value={this.state.value}
             index={1}
-            style={{ backgroundColor: 'white' }}
+            style={{ backgroundColor: "var(--white)",color:"var(--black)" }}
             className='mb-5 MuiPaper-elevation3'>
-            <Container>
+            <Container style={{ backgroundColor: "var(--white)",color:"var(--black)" }}>
               <Row>
                 <Col xl={3}>
                   <h4 style={{ color: '#222' }}>Data Science and ML</h4>

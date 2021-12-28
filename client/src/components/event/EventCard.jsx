@@ -55,9 +55,7 @@ class EventCard extends Component {
             }}
             onShow={() => {
               if (JSON.parse(localStorage.getItem('isDarkMode'))) {
-                document.querySelectorAll('.event-modal').forEach(e => {
-                  e.classList.toggle('dark-mode')
-                })
+                
               }
             }}
 
@@ -73,7 +71,7 @@ class EventCard extends Component {
                 <ResponsiveEmbed aspectRatio='16by9'>
                   <CardMedia image={this.state.card.image} component="img" title="Event Image"/>
                 </ResponsiveEmbed>
-                <CardContent>
+                <CardContent style={{backgroundColor:"var(--card)",color:"var(--black)"}}>
                   <h5>{data.title}</h5>
                   {this.state.card.content.map((text, key) => <p
                       key={key}
@@ -93,13 +91,13 @@ class EventCard extends Component {
                   </Row>
                 </CardContent>
               </CardActionArea>
-              <CardActions>
+              <CardActions style={{backgroundColor:"var(--card)",color:"var(--black)"}}>
                 <Button size='large' className='mr-auto' onClick={this.toggleEventModal}
                         style={{color: 'white', backgroundColor: 'red'}}>
                   Close
                 </Button>
                 <Button className='ml-auto' href={data.registrationLink} size='large'
-                        style={{color: 'white', backgroundColor: '#242424'}}>
+                        style={{color: 'white', backgroundColor: '#141414'}}>
                   Register
                 </Button>
               </CardActions>
@@ -116,14 +114,14 @@ class EventCard extends Component {
             <ResponsiveEmbed aspectRatio="16by9">
               <CardMedia image={data.image} component="img" title="Event Image"/>
             </ResponsiveEmbed>
-            <CardContent>
+            <CardContent  style={{backgroundColor:"var(--card)",color:"var(--black)"}}>
               <h6
                 className='p-0 m-0'
               >{data.title}</h6>
             </CardContent>
           </CardActionArea>
-          <CardActions>
-            <Button onClick={() => {
+          <CardActions  style={{backgroundColor:"var(--card)",color:"var(--black)"}} >
+            <Button style={{color:"var(--black)"}} onClick={() => {
               this.clickEvent(data)
             }}>
               Learn More

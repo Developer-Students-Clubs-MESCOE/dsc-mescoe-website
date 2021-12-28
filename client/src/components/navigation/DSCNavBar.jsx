@@ -6,6 +6,9 @@ import {Link} from 'react-router-dom';
 import DSCDrawer from "./DSCDrawer";
 import ROUTES, {RouteType} from "../../routes";
 import DarkModeToggler from "../DarkModeToggler";
+import darkbgimg from '../../assets/img/darkmodebg.svg';
+import bgimg from '../../assets/img/trialNoGridFinal.svg';
+
 
 const linkRoutes = ROUTES.filter(route => route.type === RouteType.LINK && route.icon !== null)
 const pageRoutes = ROUTES.filter(route => route.type === RouteType.PAGE && route.icon !== null)
@@ -21,45 +24,33 @@ export default class DSCNavBar extends Component {
 
   componentDidMount() {
     if (JSON.parse(localStorage.getItem('isDarkMode'))) {
-      document.querySelector(':root').classList.toggle('dark-mode')
-      document.querySelectorAll('.nav-logo').forEach(e => {
-        e.classList.toggle('dark-mode')
-      })
+      
     }
   }
 
   handleThemeSwitch() {
     this.setState({isDarkMode: !this.state.isDarkMode})
     localStorage.setItem('isDarkMode', JSON.stringify(!JSON.parse(localStorage.getItem('isDarkMode'))))
-    document.querySelector(':root').classList.toggle('dark-mode')
-    document.querySelectorAll('.nav-logo').forEach(e => {
-      e.classList.toggle('dark-mode')
-    })
-    document.querySelectorAll('.home').forEach(e => {
-      e.classList.toggle('dark-mode')
-    })
-    document.querySelectorAll('.team').forEach(e => {
-      e.classList.toggle('dark-mode')
-    })
-    document.querySelectorAll('.event').forEach(e => {
-      e.classList.toggle('dark-mode')
-    })
-    document.querySelectorAll('.video').forEach(e => {
-      e.classList.toggle('dark-mode')
-    })
-    document.querySelectorAll('.project').forEach(e => {
-      e.classList.toggle('dark-mode')
-    })
-    document.querySelectorAll('.gcp').forEach(e => {
-      e.classList.toggle('dark-mode')
-    })
+    if(!this.state.isDarkMode){
+      document.querySelector(":root").style.setProperty('--card',`#242424`);
+      document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
+      document.querySelector(":root").style.setProperty('--white',`#121212`);
+      document.querySelector(":root").style.setProperty('--black',`#ffffff`);
+      document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
+    }else{
+      document.querySelector(":root").style.setProperty('--card',`#ffffff`);
+      document.querySelector(":root").style.setProperty('--transparent',`transparent`);
+      document.querySelector(":root").style.setProperty('--white',`#ffffff`);
+      document.querySelector(":root").style.setProperty('--black',`#121212`);
+      document.querySelector(":root").style.setProperty('--bg-img',`url("${bgimg}")`);
+    }
   }
 
   render() {
     return (
-      <AppBar position="fixed" color="inherit" className="dsc-nav">
-        <Toolbar>
-          <Container>
+      <AppBar position="fixed" color="inherit"  className="dsc-nav">
+        <Toolbar className="dsc-nav">
+          <Container >
             <Row>
               <Hidden lgUp implementation="css" className="my-auto">
                 <Col xs="1" className='my-auto mr-1'>
@@ -120,7 +111,7 @@ export default class DSCNavBar extends Component {
                             {route.name}
                           </a>
                       )}
-                      {/*<DarkModeToggler isDarkMode={this.state.isDarkMode} handleThemeSwitch={this.handleThemeSwitch} color='black'/>*/}
+                      <DarkModeToggler isDarkMode={this.state.isDarkMode} handleThemeSwitch={this.handleThemeSwitch} color='var(--black)'/>
                     </Row>
                   </Container>
                 </Hidden>

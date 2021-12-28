@@ -7,6 +7,8 @@ import {resetFooterStyle, resetNavStyle, serverURL} from "../utils/utils";
 import {Container, Row, Col} from 'react-bootstrap';
 import ProjectCard from "../components/project/ProjectCard";
 import {Skeleton} from "@material-ui/lab";
+import darkbgimg from '../assets/img/darkmodebg.svg';
+import bgimg from '../assets/img/trialNoGridFinal.svg';
 
 
 export default class Projects extends React.Component {
@@ -29,6 +31,13 @@ export default class Projects extends React.Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    if (JSON.parse(localStorage.getItem('isDarkMode'))) {
+      document.querySelector(":root").style.setProperty('--card',`#242424`);
+      document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
+      document.querySelector(":root").style.setProperty('--white',`#121212`);
+      document.querySelector(":root").style.setProperty('--black',`#ffffff`);
+      document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
+    }
   }
 
 
@@ -66,9 +75,12 @@ export default class Projects extends React.Component {
       .then(res => {
         this.setState({projects: res.data});
         if (JSON.parse(localStorage.getItem('isDarkMode'))) {
-          document.querySelectorAll('.project').forEach(e => {
-            e.classList.toggle('dark-mode')
-          })
+          //dark mode
+          document.querySelector(":root").style.setProperty('--card',`#242424`);
+          document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
+      document.querySelector(":root").style.setProperty('--white',`#121212`);
+      document.querySelector(":root").style.setProperty('--black',`#ffffff`);
+      document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
         }
       })
       .catch(err => console.error(err.message));
@@ -92,7 +104,7 @@ export default class Projects extends React.Component {
       resetFooterStyle()
     }
     return (
-      <Toolbar className='grid'>
+      <Toolbar className='grid' style={{minHeight:"100vh"}}>
         <Container>
           <Row className="mt-5">
             <Col>
