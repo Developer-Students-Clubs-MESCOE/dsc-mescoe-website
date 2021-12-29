@@ -2,7 +2,6 @@ import {Toolbar} from '@material-ui/core';
 import React from 'react';
 import {Col, Container, Image, Row} from 'react-bootstrap';
 import {Link} from "react-router-dom";
-import { Modal, Card,Button,Typography ,CardActions, CardContent} from '@material-ui/core';
 import Typical from 'react-typical';
 import gdgLogo from "../assets/img/gdg_logo.png";
 import gdgWordmark from "../assets/img/gdg_wordmark.png";
@@ -13,7 +12,6 @@ import HomeSection from "../components/home/HomeSection";
 import {resetFooterStyle, resetNavStyle, serverURL} from "../utils/utils";
 import Axios from "axios";
 import darkbgimg from '../assets/img/darkmodebg.svg';
-import bgimg from '../assets/img/trialNoGridFinal.svg';
 
 
 export default class Home extends React.Component {
