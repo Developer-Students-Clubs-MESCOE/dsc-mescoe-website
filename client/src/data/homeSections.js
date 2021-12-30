@@ -1,22 +1,6 @@
-import teamImage from "../assets/img/39610-design-final.gif";
-import gcpImage from '../assets/img/gcp.png';
+import teamImage from "../assets/img/new6.gif";
+
 let homeSections = [
-  {
-    title: '30 Days of Google Cloud',
-    content: [
-      'Checkout where you stand amongst other GDSC Members in the race to complete quests on Qwiklabs!',
-    ],
-    button: {
-      text: 'Show Ranks',
-      textColor: '#fff',
-      backgroundColor: '#8a3fff',
-      isLink: true,
-      href: '/#/gcp-rank',
-    },
-    image: gcpImage,
-    cards: [],
-    videos: [],
-  },
   {
     title: 'Get to know the team',
     content: [

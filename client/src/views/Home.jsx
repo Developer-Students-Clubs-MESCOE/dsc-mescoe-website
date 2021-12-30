@@ -18,7 +18,7 @@ import Typical from 'react-typical';
 import gdgLogo from '../assets/img/gdg_logo.png';
 import gdg_black from '../assets/img/gdg_black.png';
 import gdgWordmark from '../assets/img/gdg_wordmark.png';
-import dscHomeImage from '../assets/img/dsc_home_image.webp';
+import dscHomeImage from '../assets/img/new4.gif';
 import downArrow from '../assets/img/down-arrow.svg';
 import homeSections from '../data/homeSections';
 import HomeSection from '../components/home/HomeSection';
@@ -56,11 +56,11 @@ export default class Home extends React.Component {
     console.log('MODAL LOADING');
 
     Axios.get(`${serverURL}/api/events/top3`).then((result) => {
-      homeSections[2].cards = result.data;
+      homeSections[1].cards = result.data;
       Axios.get(`${serverURL}/api/videos/top3`).then((result) => {
-        homeSections[3].videos = result.data;
+        homeSections[2].videos = result.data;
         Axios.get(`${serverURL}/api/projects/top3`).then((result) => {
-          homeSections[4].cards = result.data;
+          homeSections[3].cards = result.data;
         });
       });
     });
@@ -100,7 +100,7 @@ export default class Home extends React.Component {
       }
     }
   }
-  style = {
+  modalStyle = {
     position: 'absolute',
     top: '50%',
     left: '50%',
@@ -124,7 +124,7 @@ export default class Home extends React.Component {
           aria-labelledby='modal-modal-title'
           aria-describedby='modal-modal-description'
           >
-          <Box sx={this.style}>
+          <Box sx={this.modalStyle}>
             <Card className='event-modal'>
               <CardActionArea>
                 <ResponsiveEmbed aspectRatio='16by9'>
@@ -154,13 +154,9 @@ export default class Home extends React.Component {
                     ref={(node) => (this.brand = node)}
                     className='text-left'>
                     <Col xs='3' md='3' xl='2' className='my-auto'>
-                      <div className='dsc-brand'>
-                        <Image
-                          src={this.state.img}
-                          style={{ width: '100vh'}}
-                          className='home logo-switch'
-                        />
-                      </div>
+                    <Link to="/">
+                    <Image src={this.state.img} style={{width: '100%'}} className='home logo-switch'/>
+                  </Link>
                     </Col>
                     <Col xs='9' md='9' xl='6' className='my-auto'>
                       <Link

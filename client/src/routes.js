@@ -10,7 +10,6 @@ import { Movie, People, Today, HomeRounded as HomeIcon, DeveloperBoard } from '@
 import { faMedium } from '@fortawesome/free-brands-svg-icons';
 import gdgBlack from './assets/img/gdg_black.png';
 import { Image } from 'react-bootstrap';
-import GCPRank from './views/GCPRank';
 export const RouteType = {
 	LINK: 0,
 	PAGE: 1,
@@ -25,13 +24,6 @@ class Redirect extends React.Component {
 }
 
 const ROUTES = [
-  {
-    icon: null,
-    name: 'GCP Rank',
-    path: '/gcp-rank',
-    component: <GCPRank />,
-    type: RouteType.PAGE,
-  },
   {
     icon: <HomeIcon style={{ color: 'var(--black)' }} />,
     name: 'Home',

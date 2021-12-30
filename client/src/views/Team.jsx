@@ -7,7 +7,7 @@ import TeamComponent from '../components/team/team-component';
 import { Link } from 'react-router-dom'
 import { GitHub, LinkedIn } from "@material-ui/icons";
 import TeamData from './TeamData.js';
-
+import teamImage from '../assets/img/new1.gif';
 
 const TeamMember = (props) => {
   
@@ -108,8 +108,8 @@ export default class Team extends React.Component {
         <div className='flex-container'>
           <div className='flex-item-left' style={{zIndex:"6"}}>
             <img
-              className='mt-4 ml-4 img-fluid'
-              src={process.env.PUBLIC_URL + '/Images/team6.png'}
+              className=' img-fluid'
+              src={teamImage}
               alt='heading_illustration'
 
             />
