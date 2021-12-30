@@ -9,6 +9,10 @@ import DarkModeToggler from "../DarkModeToggler";
 import darkbgimg from '../../assets/img/darkmodebg.svg';
 import bgimg from '../../assets/img/trialNoGridFinal.svg';
 import gdg_black from "../../assets/img/gdg_black.png";
+import gdg_blackleft from "../../assets/img/gdg_blackleft.png";
+import gdg_blackright from "../../assets/img/gdg_blackright.png";
+import gdgLogoleft from '../../assets/img/gdg_logoleft.png';
+import gdgLogoright from '../../assets/img/gdg_logoright.png';
 
 const linkRoutes = ROUTES.filter(route => route.type === RouteType.LINK && route.icon !== null)
 const pageRoutes = ROUTES.filter(route => route.type === RouteType.PAGE && route.icon !== null)
@@ -49,7 +53,26 @@ export default class DSCNavBar extends Component {
         
       });
       document.querySelector(".darkModeAnimation").style.display="flex";
-      
+      //change logo as per dark theme
+      setTimeout(()=>{
+        document.querySelector(".large-logoleft").src=gdg_blackleft;
+        document.querySelector(".large-logoright").src=gdg_blackright;
+        for(let i=1;i<=100;i++){
+          setTimeout(()=>{
+            document.querySelector('.large-logoleft').style.left=`-${i/4}vw`;
+          },i*5)
+        }
+        for(let i=1;i<=100;i++){
+          setTimeout(()=>{
+            document.querySelector('.large-logoright').style.right=`-${i/4}vw`;
+          },i*5)
+        }
+        setTimeout(()=>{
+          document.querySelector('.large-logoleft').style.left=`0vw`;
+          document.querySelector('.large-logoright').style.right=`0vw`;
+          document.querySelector(".darkModeText").style.display="flex"},1000)
+      },1000);
+      //changing css variables bvalues as per dark theme
       setTimeout(()=>{
       document.querySelector(":root").style.setProperty('--card',`#242424`);
       document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
@@ -57,9 +80,19 @@ export default class DSCNavBar extends Component {
       document.querySelector(":root").style.setProperty('--black',`#ffffff`);
       document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
         },1000)
-        setTimeout(()=>{document.querySelector(".darkModeAnimation").style.display="none";},3000)
+        // after animation bringing back to the original images state
+        setTimeout(()=>{
+          document.querySelector(".darkModeAnimation").style.display="none";
+        document.querySelector(".large-logoleft").src=gdgLogoleft;
+        document.querySelector(".large-logoright").src=gdgLogoright;
+        document.querySelector('.large-logoleft').style.left=`0vw`;
+          document.querySelector('.large-logoright').style.right=`0vw`;
+        document.querySelector(".darkModeText").style.display="none";
+        
+      },5000)
     }else{
       document.querySelectorAll(".logo-switch").forEach((e)=>{
+        
         e.src=gdgLogo;
       });
       document.querySelector(":root").style.setProperty('--card',`#ffffff`);
