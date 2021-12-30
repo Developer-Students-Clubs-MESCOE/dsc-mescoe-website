@@ -67,10 +67,11 @@ export default class DSCNavBar extends Component {
             document.querySelector('.large-logoright').style.right=`-${i/4}vw`;
           },i*5)
         }
+
         setTimeout(()=>{
           document.querySelector('.large-logoleft').style.left=`0vw`;
           document.querySelector('.large-logoright').style.right=`0vw`;
-          document.querySelector(".darkModeText").style.display="flex"},1000)
+          document.querySelector(".darkModeText").style.display="flex"},500)
       },1000);
       //changing css variables bvalues as per dark theme
       setTimeout(()=>{

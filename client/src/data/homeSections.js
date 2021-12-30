@@ -1,4 +1,4 @@
-import teamImage from "../assets/img/newteam.jpeg";
+import teamImage from "../assets/img/39610-design-final.gif";
 import gcpImage from '../assets/img/gcp.png';
 let homeSections = [
   {

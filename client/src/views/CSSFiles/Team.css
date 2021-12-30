@@ -272,7 +272,7 @@ iframe {
   position: absolute;
 
   list-style: none;
-  animation: animate 25s linear infinite;
+  animation: animate2 25s linear infinite;
   animation-direction: alternate;
   bottom: -150px;
 }
@@ -352,7 +352,7 @@ iframe {
   animation-duration: 11s;
 }
 
-@keyframes animate {
+@keyframes animate2 {
   0% {
     transform: translateY(0) rotate(0deg);
     opacity: 0.9;

@@ -7,10 +7,7 @@ import TeamComponent from '../components/team/team-component';
 import { Link } from 'react-router-dom'
 import { GitHub, LinkedIn } from "@material-ui/icons";
 import TeamData from './TeamData.js';
-import darkbgimg from '../assets/img/darkmodebg.svg';
-import bgimg from '../assets/img/trialNoGridFinal.svg';
-import gdgLogo from "../assets/img/gdg_logo.png";
-import gdg_black from "../assets/img/gdg_black.png";
+
 
 const TeamMember = (props) => {
   
