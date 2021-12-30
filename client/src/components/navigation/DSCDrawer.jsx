@@ -20,17 +20,18 @@ class DSCDrawer extends Component {
 
   list = () => (
     <div
-      style={{backgroundColor: "#fff", height: "100%"}}
+      style={{backgroundColor: "var(--white)",color:"var(--black)", height: "100%"}}
       role="presentation"
       onClick={this.toggleDrawer(false)}
       onKeyDown={this.toggleDrawer(false)}
+
     >
       <List>
         {pageRoutes.map((route, index) => (
           <Link to={route.path} key={index} style={{textDecoration: 'inherit'}}>
             <ListItem button>
               <ListItemIcon>{route.icon}</ListItemIcon>
-              <ListItemText primary={route.name} style={{color: "black", fontSize: 24}}/>
+              <ListItemText primary={route.name} style={{color: "var(--black)", fontSize: 24}}/>
             </ListItem>
           </Link>
         ))}
@@ -38,22 +39,22 @@ class DSCDrawer extends Component {
           <a href={route.path} key={index} target='blank' style={{textDecoration: 'inherit'}}>
             <ListItem button>
               <ListItemIcon>{route.icon}</ListItemIcon>
-              <ListItemText primary={route.name} style={{color: "black"}}/>
+              <ListItemText primary={route.name} style={{color: "var(--black)"}}/>
             </ListItem>
           </a>
         ))}
-        {/*<ListItem>*/}
-        {/*  <DarkModeToggler isDarkMode={this.props.isDarkMode} handleThemeSwitch={this.props.handleThemeSwitch}*/}
-        {/*                   color='black'/>*/}
-        {/*</ListItem>*/}
+        <ListItem>
+        <DarkModeToggler isDarkMode={this.props.isDarkMode} handleThemeSwitch={this.props.handleThemeSwitch}
+                           color='var(--black)'/>
+        </ListItem>
       </List>
-      <Divider style={{backgroundColor: "black"}}/>
-      <List>
+      <Divider style={{backgroundColor: "var(--black)"}}/>
+      <List style={{backgroundColor: "var(--white)"}} >
         {socials.map((social, index) => (
           <a href={social.link} target="blank" key={index} style={{textDecoration: 'inherit'}}>
             <ListItem button>
-              <ListItemIcon style={{color: 'black'}}>{social.icon}</ListItemIcon>
-              <ListItemText primary={social.name} style={{color: "black"}}/>
+              <ListItemIcon style={{color: 'var(--black)'}}>{social.icon}</ListItemIcon>
+              <ListItemText primary={social.name} style={{color: "var(--black)"}}/>
             </ListItem>
           </a>
         ))}

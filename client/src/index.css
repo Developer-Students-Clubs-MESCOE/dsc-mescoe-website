@@ -1,6 +1,18 @@
 .dark-mode {
     filter: invert(0.95);
 }
+.darkModeAnimation{
+    position: fixed;
+    top:0px;
+    left:0px;
+    display: none;
+    align-items: center;
+justify-content: center;
+    z-index: 8;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
 :root{
     --white: #ffffff;
     --black: #121212;
@@ -99,3 +111,45 @@
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Google Sans', 'Roboto', sans-serif;
 }
+.flip-card {
+    background-color: transparent;
+    min-width: 300px;
+    min-height: 300px;
+    
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card .flip-card-inner {
+    animation: animate 1s;
+  }
+  @keyframes animate {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(180deg);}
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: transparent;
+    color:whitesmoke;
+  }
+  
+  .flip-card-back {
+    background:transparent;
+    color: white;
+    transform: rotateY(180deg);
+  }

@@ -46,13 +46,18 @@ export default class DSCNavBar extends Component {
     if(!this.state.isDarkMode){
       document.querySelectorAll(".logo-switch").forEach((e)=>{
         e.src=gdg_black;
-
+        
       });
+      document.querySelector(".darkModeAnimation").style.display="flex";
+      
+      setTimeout(()=>{
       document.querySelector(":root").style.setProperty('--card',`#242424`);
       document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
       document.querySelector(":root").style.setProperty('--white',`#121212`);
       document.querySelector(":root").style.setProperty('--black',`#ffffff`);
       document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
+        },1000)
+        setTimeout(()=>{document.querySelector(".darkModeAnimation").style.display="none";},3000)
     }else{
       document.querySelectorAll(".logo-switch").forEach((e)=>{
         e.src=gdgLogo;
@@ -62,12 +67,13 @@ export default class DSCNavBar extends Component {
       document.querySelector(":root").style.setProperty('--white',`#ffffff`);
       document.querySelector(":root").style.setProperty('--black',`#121212`);
       document.querySelector(":root").style.setProperty('--bg-img',`url("${bgimg}")`);
+      
     }
   }
 
   render() {
     return (
-      <AppBar position="fixed" color="inherit"  className="dsc-nav">
+      <AppBar position="fixed" color="inherit" style={{zIndex:"7"}} className="dsc-nav">
         <Toolbar className="dsc-nav">
           <Container >
             <Row>
@@ -92,6 +98,7 @@ export default class DSCNavBar extends Component {
                 >
                   GDSC MESCOE
                 </Link>
+                
               </Col>
               <Col lg="8" className="my-auto">
                 <Hidden mdDown implementation="css">
@@ -133,11 +140,14 @@ export default class DSCNavBar extends Component {
                       <DarkModeToggler isDarkMode={this.state.isDarkMode} handleThemeSwitch={this.handleThemeSwitch} color='var(--black)'/>
                     </Row>
                   </Container>
+                  
                 </Hidden>
+                
               </Col>
             </Row>
           </Container>
         </Toolbar>
+        
       </AppBar>
     );
   }
