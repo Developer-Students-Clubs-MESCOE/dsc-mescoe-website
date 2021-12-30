@@ -3,6 +3,7 @@ import React from 'react';
 import { Col, Container, Image, Row, ResponsiveEmbed } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import newYearImage from '../assets/img/newyear2.gif';
+import Confetti from 'react-confetti';
 import {
   Modal,
   Card,
@@ -104,7 +105,8 @@ export default class Home extends React.Component {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 'auto',
+    width: '80vh',
+    flex:'wrap',
     bgcolor: 'background.paper',
   };
   render() {
@@ -114,50 +116,26 @@ export default class Home extends React.Component {
     }
     return (
       <>
+        {this.state.open&&(<Confetti run={this.state.open}/>)}
         <Modal
           open={this.state.open}
           onClose={this.handleClose}
           style={{ zIndex: 9999 }}
           aria-labelledby='modal-modal-title'
           aria-describedby='modal-modal-description'
-          centered>
+          >
           <Box sx={this.style}>
-            <Card
-              className='event-modal'>
+            <Card className='event-modal'>
               <CardActionArea>
                 <ResponsiveEmbed aspectRatio='16by9'>
                   <CardMedia
+                    bright={false}
                     image={newYearImage}
                     component='img'
                     title='New Year Image'
                   />
                 </ResponsiveEmbed>
-                <CardContent
-                  style={{
-                    backgroundColor: 'var(--white)',
-                    color: 'var(--black)'
-                  }}>
-                  <h5>GDSC MESCOE WISHES EVERYONE HAPPY NEW YEAR</h5>
-                </CardContent>
               </CardActionArea>
-              <CardActions
-                style={{
-                  backgroundColor: 'var(--card)',
-                  color: 'var(--black)'
-                }}>
-                <Button
-                  size='large'
-                  className='mr-auto'
-                  style={{ color: 'white', backgroundColor: 'red' }}>
-                  NOT NOW
-                </Button>
-                <Button
-                  className='ml-auto'
-                  size='large'
-                  style={{ color: 'white', backgroundColor: '#141414' }}>
-                  ENABLE DARK MODE
-                </Button>
-              </CardActions>
             </Card>
           </Box>
         </Modal>
@@ -176,13 +154,13 @@ export default class Home extends React.Component {
                     ref={(node) => (this.brand = node)}
                     className='text-left'>
                     <Col xs='3' md='3' xl='2' className='my-auto'>
-                      <Link to='/'>
+                      <div className='dsc-brand'>
                         <Image
                           src={this.state.img}
-                          style={{ width: '100%' }}
+                          style={{ width: '100vh'}}
                           className='home logo-switch'
                         />
-                      </Link>
+                      </div>
                     </Col>
                     <Col xs='9' md='9' xl='6' className='my-auto'>
                       <Link

@@ -20,6 +20,7 @@
     "mongoose": "^5.10.6",
     "morgan": "~1.9.1",
     "normalize-url": "^5.1.0",
+    "react-confetti": "^6.0.1",
     "request": "^2.88.2"
   },
   "devDependencies": {
