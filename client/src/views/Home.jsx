@@ -117,12 +117,35 @@ export default class Home extends React.Component {
     }
     return (
       <>
-        
-        <div className='wishnewyear' style={{display:(this.state.open)?"flex":"none",flexDirection:"column",position:"fixed",width:"100vw",height:"100vh",zIndex:"9999",top:"0px",left:"0px",alignItems:"center",justifyContent:"flex-start",backgroundColor:"rgba(0,0,0,0.8)"}}>
-        {this.state.open&&(<Confetti run={this.state.open}/>)}
-          <img src={newYearImage} alt="" style={{marginTop:"0px",maxWidth:"100vw",maxHeight:"92vh"}}/>
-          <img style={{position:"absolute",right:"2em",top:"2em"}}src="https://img.icons8.com/ios-glyphs/30/ffffff/delete-sign.png" onClick={()=>{this.setState({open:false});}}/>
-          <DarkModeToggler isDarkMode={this.state.isDarkMode} onClick={this.handleClose} handleThemeSwitch={()=>{this.handleThemeSwitch()}} color='var(--black)'/>
+        <div
+          className='wishnewyear'
+          style={{
+            display: this.state.open ? 'flex' : 'none',
+            flexDirection: 'column',
+            position: 'fixed',
+            width: '100vw',
+            height: '100vh',
+            zIndex: '9999',
+            top: '0px',
+            left: '0px',
+            alignItems: 'center',
+            justifyContent: 'flex-start',
+            backgroundColor: 'rgba(0,0,0,0.8)'
+          }}>
+          {this.state.open && <Confetti run={this.state.open} />}
+          <img
+            src={newYearImage}
+            alt=''
+            style={{ marginTop: '0px', maxWidth: '100vw', maxHeight: '92vh' }}
+          />
+          <img
+            style={{ position: 'absolute', right: '2em', top: '2em' }}
+            src='https://img.icons8.com/ios-glyphs/30/ffffff/delete-sign.png'
+            alt=''
+            onClick={() => {
+              this.setState({ open: false });
+            }}
+          />
         </div>
         <Toolbar className='grid'>
           <div
@@ -139,9 +162,13 @@ export default class Home extends React.Component {
                     ref={(node) => (this.brand = node)}
                     className='text-left'>
                     <Col xs='3' md='3' xl='2' className='my-auto'>
-                    <Link to="/">
-                    <Image src={this.state.img} style={{width: '100%'}} className='home logo-switch'/>
-                  </Link>
+                      <Link to='/'>
+                        <Image
+                          src={this.state.img}
+                          style={{ width: '100%' }}
+                          className='home logo-switch'
+                        />
+                      </Link>
                     </Col>
                     <Col xs='9' md='9' xl='6' className='my-auto'>
                       <Link
@@ -168,7 +195,7 @@ export default class Home extends React.Component {
                         Powered by
                       </p>
                     </Col>
-                    <Col xs='6' lg='5' xl='6' className='my-auto mx-xl-n4'>
+                    <Col xs='12' lg='5' xl='6' className='my-auto mx-xl-n4'>
                       <a href='https://gdg.community.dev/' target='blank'>
                         <Image
                           src={gdgWordmark}
@@ -224,27 +251,26 @@ export default class Home extends React.Component {
                     src={dscHomeImage}
                     style={{
                       width: '100%',
-                      borderRadius: 30,
-
+                      borderRadius: 30
                     }}
                   />
                 </Col>
               </Row>
               <Row className='mt-5'>
                 <Col xs='2' md='1' lg='1' className='mx-auto p-lg-4'>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='50'
-                  height='50'
-                  fill='var(--black)'
-                  class='bi bi-arrow-down'
-                  viewBox='0 0 16 16'
-                  zIndex="6">
-                  <path
-                    fill-rule='evenodd'
-                    d='M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z'
-                  />
-                </svg>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='50'
+                    height='50'
+                    fill='var(--black)'
+                    class='bi bi-arrow-down'
+                    viewBox='0 0 16 16'
+                    zIndex='6'>
+                    <path
+                      fill-rule='evenodd'
+                      d='M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z'
+                    />
+                  </svg>
                 </Col>
               </Row>
               <Row className='mt-4' />

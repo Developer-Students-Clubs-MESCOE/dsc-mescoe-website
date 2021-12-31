@@ -13,6 +13,8 @@ import gdg_blackleft from "../../assets/img/gdg_blackleft.png";
 import gdg_blackright from "../../assets/img/gdg_blackright.png";
 import gdgLogoleft from '../../assets/img/gdg_logoleft.png';
 import gdgLogoright from '../../assets/img/gdg_logoright.png';
+import newYearImage from '../../assets/img/Happy-New-Year.svg';
+import Confetti from 'react-confetti';
 
 const linkRoutes = ROUTES.filter(route => route.type === RouteType.LINK && route.icon !== null)
 const pageRoutes = ROUTES.filter(route => route.type === RouteType.PAGE && route.icon !== null)
@@ -21,6 +23,7 @@ export default class DSCNavBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      open:true,
       isDarkMode: JSON.parse(localStorage.getItem('isDarkMode'))
     }
     this.handleThemeSwitch = this.handleThemeSwitch.bind(this);
@@ -108,40 +111,58 @@ export default class DSCNavBar extends Component {
   render() {
     return (
       <>
-      <div className=""></div>
-      <AppBar position="fixed" color="inherit" style={{zIndex:"7"}} className="dsc-nav">
-        <Toolbar className="dsc-nav">
-          <Container >
-            <Row>
-              <Hidden lgUp implementation="css" className="my-auto">
-                <Col xs="1" className='my-auto mr-1'>
-                  <DSCDrawer isDarkMode={this.state.isDarkMode} handleThemeSwitch={this.handleThemeSwitch}/>
+        <div className=''></div>
+        <AppBar
+          position='fixed'
+          color='inherit'
+          style={{ zIndex: '7' }}
+          className='dsc-nav'>
+          <Toolbar className='dsc-nav'>
+            <Container>
+              <Row>
+                <Hidden lgUp implementation='css' className='my-auto'>
+                  <Col xs='1' className='my-auto mr-1'>
+                    <DSCDrawer
+                      isDarkMode={this.state.isDarkMode}
+                      handleThemeSwitch={this.handleThemeSwitch}
+                    />
+                  </Col>
+                </Hidden>
+                <Col
+                  lg='1'
+                  md='1'
+                  sm='1'
+                  xs='2'
+                  className='dsc-brand my-auto p-xl-3 p-lg-3 p-md-2 p-sm-1 p-xs-0'>
+                  <Link to='/'>
+                    <Image
+                      src={gdgLogo}
+                      style={{ width: '100%' }}
+                      className='nav-logo logo-switch'
+                    />
+                  </Link>
                 </Col>
-              </Hidden>
-              <Col lg="1" md="1" sm="1" xs="2" className="dsc-brand my-auto p-xl-3 p-lg-3 p-md-2 p-sm-1 p-xs-0">
-                <Link to="/">
-                  <Image  src={gdgLogo} style={{width: '100%'}} className='nav-logo logo-switch'/>
-                </Link>
-              </Col>
-              <Col lg="3" md="6" sm="6" xs="6" className="my-auto dsc-brand p-0">
-                <Link
-                  to="/"
-                  style={{
-                    fontSize: 18,
-                    color: 'inherit',
-                    textDecoration: 'inherit'
-                  }}
-                >
-                  GDSC MESCOE
-                </Link>
-                
-              </Col>
-              <Col lg="8" className="my-auto">
-                <Hidden mdDown implementation="css">
-                  <Container fluid>
-                    <Row className="justify-content-between">
-                      {pageRoutes.map(
-                        (route, index) =>
+                <Col
+                  lg='3'
+                  md='6'
+                  sm='6'
+                  xs='6'
+                  className='my-auto dsc-brand p-0'>
+                  <Link
+                    to='/'
+                    style={{
+                      fontSize: 18,
+                      color: 'inherit',
+                      textDecoration: 'inherit'
+                    }}>
+                    GDSC MESCOE
+                  </Link>
+                </Col>
+                <Col lg='8' className='my-auto'>
+                  <Hidden mdDown implementation='css'>
+                    <Container fluid>
+                      <Row className='justify-content-between'>
+                        {pageRoutes.map((route, index) => (
                           <Link
                             key={index}
                             style={{
@@ -151,13 +172,11 @@ export default class DSCNavBar extends Component {
                               color: 'inherit',
                               textDecoration: 'inherit'
                             }}
-                            to={route.path}
-                          >
+                            to={route.path}>
                             {route.name}
                           </Link>
-                      )}
-                      {linkRoutes.map(
-                        (route, index) =>
+                        ))}
+                        {linkRoutes.map((route, index) => (
                           <a
                             key={index}
                             style={{
@@ -168,23 +187,23 @@ export default class DSCNavBar extends Component {
                               textDecoration: 'inherit'
                             }}
                             href={route.path}
-                            target='blank'
-                          >
+                            target='blank'>
                             {route.name}
                           </a>
-                      )}
-                      <DarkModeToggler isDarkMode={this.state.isDarkMode} handleThemeSwitch={this.handleThemeSwitch} color='var(--black)'/>
-                    </Row>
-                  </Container>
-                  
-                </Hidden>
-                
-              </Col>
-            </Row>
-          </Container>
-        </Toolbar>
-        
-      </AppBar>
+                        ))}
+                        <DarkModeToggler
+                          isDarkMode={this.state.isDarkMode}
+                          handleThemeSwitch={this.handleThemeSwitch}
+                          color='var(--black)'
+                        />
+                      </Row>
+                    </Container>
+                  </Hidden>
+                </Col>
+              </Row>
+            </Container>
+          </Toolbar>
+        </AppBar>
       </>
     );
   }
