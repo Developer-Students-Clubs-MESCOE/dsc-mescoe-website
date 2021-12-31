@@ -13,11 +13,7 @@ import Pratik from "../assets/img/Pratik.jpg";
 import Laukik from "../assets/img/Laukik.jpg";
 import Gaurav from "../assets/img/Gaurav.jpg";
 import TeamComponent from "../components/team/team-component";
-import darkbgimg from '../assets/img/darkmodebg.svg';
-import bgimg from '../assets/img/trialNoGridFinal.svg';
-import { prop } from "cheerio/lib/api/attributes";
-import gdgLogo from "../assets/img/gdg_logo.png";
-import gdg_black from "../assets/img/gdg_black.png";
+
 
 export default class Team2020 extends React.Component {
   constructor(props){

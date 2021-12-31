@@ -4,29 +4,18 @@ import { Col, Container, Image, Row, ResponsiveEmbed } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import newYearImage from '../assets/img/Happy-New-Year.svg';
 import Confetti from 'react-confetti';
-import {
-  Modal,
-  Card,
-  Button,
-  Typography,
-  CardActions,
-  CardContent,
-  CardMedia,
-  CardActionArea
-} from '@material-ui/core';
+
 import Typical from 'react-typical';
 import gdgLogo from '../assets/img/gdg_logo.png';
 import gdg_black from '../assets/img/gdg_black.png';
 import gdgWordmark from '../assets/img/gdg_wordmark.png';
 import dscHomeImage from '../assets/img/new11.gif';
-import downArrow from '../assets/img/down-arrow.svg';
+
 import homeSections from '../data/homeSections';
 import HomeSection from '../components/home/HomeSection';
 import { resetFooterStyle, resetNavStyle, serverURL } from '../utils/utils';
 import Axios from 'axios';
-import darkbgimg from '../assets/img/darkmodebg.svg';
-import bgimg from '../assets/img/trialNoGridFinal.svg';
-import DarkModeToggler from "../components/DarkModeToggler";
+
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -136,10 +125,10 @@ export default class Home extends React.Component {
           <img
             src={newYearImage}
             alt=''
-            style={{ marginTop: '0px', maxWidth: '100vw', maxHeight: '92vh' }}
+            style={{zIndex:"10000", marginTop: '0px', maxWidth: '100vw', maxHeight: '92vh' }}
           />
           <img
-            style={{ position: 'absolute', right: '2em', top: '2em' }}
+            style={{ zIndex:"10001",position: 'absolute', right: '2em', top: '2em' }}
             src='https://img.icons8.com/ios-glyphs/30/ffffff/delete-sign.png'
             alt=''
             onClick={() => {

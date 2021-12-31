@@ -1,9 +1,8 @@
 import React from 'react';
-import { Toolbar } from '@material-ui/core';
-import { Container, Row, Col } from 'react-bootstrap';
+
 import { resetFooterStyle, resetNavStyle } from '../utils/utils';
 import './CSSFiles/Team.css';
-import TeamComponent from '../components/team/team-component';
+
 import { Link } from 'react-router-dom'
 import { GitHub, LinkedIn } from "@material-ui/icons";
 import TeamData from './TeamData.js';

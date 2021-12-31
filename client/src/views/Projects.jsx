@@ -7,10 +7,6 @@ import {resetFooterStyle, resetNavStyle, serverURL} from "../utils/utils";
 import {Container, Row, Col} from 'react-bootstrap';
 import ProjectCard from "../components/project/ProjectCard";
 import {Skeleton} from "@material-ui/lab";
-import darkbgimg from '../assets/img/darkmodebg.svg';
-import bgimg from '../assets/img/trialNoGridFinal.svg';
-import gdgLogo from "../assets/img/gdg_logo.png";
-import gdg_black from "../assets/img/gdg_black.png";
 
 
 export default class Projects extends React.Component {

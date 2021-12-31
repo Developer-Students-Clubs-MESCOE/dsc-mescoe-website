@@ -5,10 +5,7 @@ import {resetFooterStyle, resetNavStyle, serverURL} from "../utils/utils";
 import axios from 'axios'
 import VideoCard from "../components/video/VideoCard";
 import {Skeleton} from "@material-ui/lab";
-import darkbgimg from '../assets/img/darkmodebg.svg';
-import bgimg from '../assets/img/trialNoGridFinal.svg';
-import gdgLogo from "../assets/img/gdg_logo.png";
-import gdg_black from "../assets/img/gdg_black.png";
+
 
 export default class Videos extends React.Component {
 	constructor(props) {

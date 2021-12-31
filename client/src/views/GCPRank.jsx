@@ -8,7 +8,6 @@ import { serverURL } from '../utils/utils';
 import { Skeleton } from '@material-ui/lab';
 import './CSSFiles/Rank.css';
 import darkbgimg from '../assets/img/darkmodebg.svg';
-import bgimg from '../assets/img/trialNoGridFinal.svg';
 import gdgLogo from "../assets/img/gdg_logo.png";
 import gdg_black from "../assets/img/gdg_black.png";
 
