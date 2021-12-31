@@ -8,7 +8,8 @@ import { serverURL } from '../utils/utils';
 import { Skeleton } from '@material-ui/lab';
 import './CSSFiles/Rank.css';
 import darkbgimg from '../assets/img/darkmodebg.svg';
-import bgimg from '../assets/img/trialNoGridFinal.svg';
+import gdgLogo from "../assets/img/gdg_logo.png";
+import gdg_black from "../assets/img/gdg_black.png";
 
 const TabPanel = (props) => {
   const { children, value, index, ...other } = props;
@@ -42,6 +43,15 @@ class GCPRank extends Component {
       searchtrack2: []
     };
     this.handleChange = this.handleChange.bind(this);
+    if (JSON.parse(localStorage.getItem('isDarkMode'))) {
+      document.querySelectorAll(".logo-switch").forEach((e)=>{
+        e.src=gdg_black;
+      });
+      document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
+      document.querySelector(":root").style.setProperty('--white',`#121212`);
+      document.querySelector(":root").style.setProperty('--black',`#ffffff`);
+      document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
+    }
   }
 
   handleChange(value) {
@@ -104,10 +114,17 @@ class GCPRank extends Component {
       });
     });
     if (JSON.parse(localStorage.getItem('isDarkMode'))) {
+      document.querySelectorAll(".logo-switch").forEach((e)=>{
+        e.src=gdg_black;
+      });
       document.querySelector(":root").style.setProperty('--transparent',`rgba(18,18,18,0.8)`);
       document.querySelector(":root").style.setProperty('--white',`#121212`);
       document.querySelector(":root").style.setProperty('--black',`#ffffff`);
       document.querySelector(":root").style.setProperty('--bg-img',`url("${darkbgimg}")`);
+    }else{
+      document.querySelectorAll(".logo-switch").forEach((e)=>{
+        e.src=gdgLogo;
+      });
     }
   }
   medals = () => (

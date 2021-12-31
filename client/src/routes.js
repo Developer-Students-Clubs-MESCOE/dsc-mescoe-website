@@ -10,7 +10,6 @@ import { Movie, People, Today, HomeRounded as HomeIcon, DeveloperBoard } from '@
 import { faMedium } from '@fortawesome/free-brands-svg-icons';
 import gdgBlack from './assets/img/gdg_black.png';
 import { Image } from 'react-bootstrap';
-import GCPRank from './views/GCPRank';
 export const RouteType = {
 	LINK: 0,
 	PAGE: 1,
@@ -26,42 +25,35 @@ class Redirect extends React.Component {
 
 const ROUTES = [
   {
-    icon: null,
-    name: 'GCP Rank',
-    path: '/gcp-rank',
-    component: <GCPRank />,
-    type: RouteType.PAGE,
-  },
-  {
-    icon: <HomeIcon style={{ color: 'black' }} />,
+    icon: <HomeIcon style={{ color: 'var(--black)' }} />,
     name: 'Home',
     path: '/',
     component: <Home />,
     type: RouteType.PAGE,
   },
   {
-    icon: <People style={{ color: 'black' }} />,
+    icon: <People style={{ color: 'var(--black)' }} />,
     name: 'Team',
     path: '/team',
     component: <Team />,
     type: RouteType.PAGE,
   },
   {
-    icon: <Today style={{ color: 'black' }} />,
+    icon: <Today style={{ color: 'var(--black)' }} />,
     name: 'Events',
     path: '/events',
     component: <Events />,
     type: RouteType.PAGE,
   },
   {
-    icon: <Movie style={{ color: 'black' }} />,
+    icon: <Movie style={{ color: 'var(--black)' }} />,
     name: 'Videos',
     path: '/videos',
     component: <Videos />,
     type: RouteType.PAGE,
   },
   {
-    icon: <DeveloperBoard style={{ color: 'black' }} />,
+    icon: <DeveloperBoard style={{ color: 'var(--black)' }} />,
     name: 'Projects',
     path: '/projects',
     component: <Projects />,
@@ -70,7 +62,7 @@ const ROUTES = [
   {
     icon: (
       <FontAwesomeIcon
-        style={{ color: 'black', fontSize: 26 }}
+        style={{ color: 'var(--black)', fontSize: 26 }}
         icon={faMedium}
       />
     ),

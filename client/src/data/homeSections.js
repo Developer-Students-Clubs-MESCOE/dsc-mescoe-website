@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import teamImage from "../assets/img/newteam.jpeg";
 import gcpImage from '../assets/img/cloudimage.svg';
 let homeSections = [
@@ -18,6 +19,12 @@ let homeSections = [
     videos: []
   },
   {
+=======
+import teamImage from "../assets/img/new4.gif";
+
+let homeSections = [
+  {
+>>>>>>> main
     title: 'Get to know the team',
     content: [
       'We’ve got a set of minds, that will blow your mind, teaching you, all sorts of stuff in the world of development.',

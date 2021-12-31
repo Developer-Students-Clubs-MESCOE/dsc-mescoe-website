@@ -71,7 +71,7 @@ class EventCard extends Component {
                 <ResponsiveEmbed aspectRatio='16by9'>
                   <CardMedia image={this.state.card.image} component="img" title="Event Image"/>
                 </ResponsiveEmbed>
-                <CardContent style={{backgroundColor:"var(--card)",color:"var(--black)"}}>
+                <CardContent style={{backgroundColor:"var(--white)",color:"var(--black)"}}>
                   <h5>{data.title}</h5>
                   {this.state.card.content.map((text, key) => <p
                       key={key}
@@ -114,13 +114,13 @@ class EventCard extends Component {
             <ResponsiveEmbed aspectRatio="16by9">
               <CardMedia image={data.image} component="img" title="Event Image"/>
             </ResponsiveEmbed>
-            <CardContent  style={{backgroundColor:"var(--card)",color:"var(--black)"}}>
+            <CardContent  style={{backgroundColor:"var(--white)",color:"var(--black)"}}>
               <h6
                 className='p-0 m-0'
               >{data.title}</h6>
             </CardContent>
           </CardActionArea>
-          <CardActions  style={{backgroundColor:"var(--card)",color:"var(--black)"}} >
+          <CardActions  style={{backgroundColor:"var(--white)",color:"var(--black)"}} >
             <Button style={{color:"var(--black)"}} onClick={() => {
               this.clickEvent(data)
             }}>
