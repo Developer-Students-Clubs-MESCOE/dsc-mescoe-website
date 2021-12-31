@@ -13,6 +13,8 @@ import gdg_blackleft from "../../assets/img/gdg_blackleft.png";
 import gdg_blackright from "../../assets/img/gdg_blackright.png";
 import gdgLogoleft from '../../assets/img/gdg_logoleft.png';
 import gdgLogoright from '../../assets/img/gdg_logoright.png';
+import newYearImage from '../../assets/img/Happy-New-Year.svg';
+import Confetti from 'react-confetti';
 
 const linkRoutes = ROUTES.filter(route => route.type === RouteType.LINK && route.icon !== null)
 const pageRoutes = ROUTES.filter(route => route.type === RouteType.PAGE && route.icon !== null)
@@ -21,6 +23,7 @@ export default class DSCNavBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      open: true,
       isDarkMode: JSON.parse(localStorage.getItem('isDarkMode'))
     }
     this.handleThemeSwitch = this.handleThemeSwitch.bind(this);
@@ -46,6 +49,9 @@ export default class DSCNavBar extends Component {
 
   handleThemeSwitch() {
     this.setState({isDarkMode: !this.state.isDarkMode})
+    if(this.state.open){
+      this.setState({open:false})
+    }
     localStorage.setItem('isDarkMode', JSON.stringify(!JSON.parse(localStorage.getItem('isDarkMode'))))
     if(!this.state.isDarkMode){
       document.querySelectorAll(".logo-switch").forEach((e)=>{
@@ -108,7 +114,14 @@ export default class DSCNavBar extends Component {
   render() {
     return (
       <>
-      <div className=""></div>
+      <div className='wishnewyear' style={{display:(this.state.open)?"flex":"none",flexDirection:"column",position:"fixed",width:"100vw",height:"100vh",zIndex:"9999",top:"0px",left:"0px",alignItems:"center",justifyContent:"flex-start",backgroundColor:"rgba(0,0,0,0.8)"}}>
+        {this.state.open&&(<Confetti run={this.state.open}/>)}
+          <img src={newYearImage} alt="" style={{marginTop:"0px",maxWidth:"100vw",maxHeight:"82vh",zIndex:"100000"}}/>
+          <img style={{position:"absolute",zIndex:"100002",right:"2em",top:"2em"}}src="https://img.icons8.com/ios-glyphs/30/ffffff/delete-sign.png" onClick={()=>{this.setState({open:false});}}/>
+          {(!this.state.isDarkMode)?<>
+          <h6 style={{position:"relative",top:"-1em",color:"white",zIndex:"100000",maxWidth:"300px",textAlign:"center"}}>No matter how fast light travels, it finds the dark themes (darkness) has always got there first and is waiting for it.</h6>
+          <DarkModeToggler isDarkMode={this.state.isDarkMode} style={{zIndex:"100000"}} handleThemeSwitch={()=>{this.handleThemeSwitch()}} color='white'/></>:null}
+        </div>
       <AppBar position="fixed" color="inherit" style={{zIndex:"7"}} className="dsc-nav">
         <Toolbar className="dsc-nav">
           <Container >

@@ -33,7 +33,7 @@ export default class Home extends React.Component {
     super(props);
     this.state = {
       img: JSON.parse(localStorage.getItem('isDarkMode')) ? gdg_black : gdgLogo,
-      open: true
+      open: true,
     };
     this.handleScroll = this.handleScroll.bind(this);
     this.handleOpen = this.handleOpen.bind(this);
@@ -117,13 +117,6 @@ export default class Home extends React.Component {
     }
     return (
       <>
-        
-        <div className='wishnewyear' style={{display:(this.state.open)?"flex":"none",flexDirection:"column",position:"fixed",width:"100vw",height:"100vh",zIndex:"9999",top:"0px",left:"0px",alignItems:"center",justifyContent:"flex-start",backgroundColor:"rgba(0,0,0,0.8)"}}>
-        {this.state.open&&(<Confetti run={this.state.open}/>)}
-          <img src={newYearImage} alt="" style={{marginTop:"0px",maxWidth:"100vw",maxHeight:"92vh"}}/>
-          <img style={{position:"absolute",right:"2em",top:"2em"}}src="https://img.icons8.com/ios-glyphs/30/ffffff/delete-sign.png" onClick={()=>{this.setState({open:false});}}/>
-          <DarkModeToggler isDarkMode={this.state.isDarkMode} onClick={this.handleClose} handleThemeSwitch={()=>{this.handleThemeSwitch()}} color='var(--black)'/>
-        </div>
         <Toolbar className='grid'>
           <div
             style={{
