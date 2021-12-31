@@ -2,7 +2,7 @@ import { Toolbar, Box } from '@material-ui/core';
 import React from 'react';
 import { Col, Container, Image, Row, ResponsiveEmbed } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import newYearImage from '../assets/img/newyear2.gif';
+import newYearImage from '../assets/img/HappyNewYear.svg';
 import Confetti from 'react-confetti';
 import {
   Modal,
@@ -106,7 +106,7 @@ export default class Home extends React.Component {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: '80vh',
-    flex:'wrap',
+    height:'auto',
     bgcolor: 'background.paper',
   };
   render() {
@@ -127,14 +127,12 @@ export default class Home extends React.Component {
           <Box sx={this.modalStyle}>
             <Card className='event-modal'>
               <CardActionArea>
-                <ResponsiveEmbed aspectRatio='16by9'>
                   <CardMedia
                     bright={false}
                     image={newYearImage}
                     component='img'
                     title='New Year Image'
                   />
-                </ResponsiveEmbed>
               </CardActionArea>
             </Card>
           </Box>
