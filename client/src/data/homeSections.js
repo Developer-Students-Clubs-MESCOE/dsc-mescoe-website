@@ -1,4 +1,4 @@
-import teamImage from "../assets/img/new6.gif";
+import teamImage from "../assets/img/new2.gif";
 
 let homeSections = [
   {

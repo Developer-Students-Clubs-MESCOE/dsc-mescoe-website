@@ -107,6 +107,8 @@ export default class DSCNavBar extends Component {
 
   render() {
     return (
+      <>
+      <div className=""></div>
       <AppBar position="fixed" color="inherit" style={{zIndex:"7"}} className="dsc-nav">
         <Toolbar className="dsc-nav">
           <Container >
@@ -183,6 +185,7 @@ export default class DSCNavBar extends Component {
         </Toolbar>
         
       </AppBar>
+      </>
     );
   }
 }

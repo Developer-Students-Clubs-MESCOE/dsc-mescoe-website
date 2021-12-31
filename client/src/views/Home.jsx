@@ -2,7 +2,7 @@ import { Toolbar, Box } from '@material-ui/core';
 import React from 'react';
 import { Col, Container, Image, Row, ResponsiveEmbed } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import newYearImage from '../assets/img/HappyNewYear.svg';
+import newYearImage from '../assets/img/Happy-New-Year.svg';
 import Confetti from 'react-confetti';
 import {
   Modal,
@@ -18,7 +18,7 @@ import Typical from 'react-typical';
 import gdgLogo from '../assets/img/gdg_logo.png';
 import gdg_black from '../assets/img/gdg_black.png';
 import gdgWordmark from '../assets/img/gdg_wordmark.png';
-import dscHomeImage from '../assets/img/new4.gif';
+import dscHomeImage from '../assets/img/new11.gif';
 import downArrow from '../assets/img/down-arrow.svg';
 import homeSections from '../data/homeSections';
 import HomeSection from '../components/home/HomeSection';
@@ -26,6 +26,7 @@ import { resetFooterStyle, resetNavStyle, serverURL } from '../utils/utils';
 import Axios from 'axios';
 import darkbgimg from '../assets/img/darkmodebg.svg';
 import bgimg from '../assets/img/trialNoGridFinal.svg';
+import DarkModeToggler from "../components/DarkModeToggler";
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -116,27 +117,13 @@ export default class Home extends React.Component {
     }
     return (
       <>
+        
+        <div className='wishnewyear' style={{display:(this.state.open)?"flex":"none",flexDirection:"column",position:"fixed",width:"100vw",height:"100vh",zIndex:"9999",top:"0px",left:"0px",alignItems:"center",justifyContent:"flex-start",backgroundColor:"rgba(0,0,0,0.8)"}}>
         {this.state.open&&(<Confetti run={this.state.open}/>)}
-        <Modal
-          open={this.state.open}
-          onClose={this.handleClose}
-          style={{ zIndex: 9999 }}
-          aria-labelledby='modal-modal-title'
-          aria-describedby='modal-modal-description'
-          >
-          <Box sx={this.modalStyle}>
-            <Card className='event-modal'>
-              <CardActionArea>
-                  <CardMedia
-                    bright={false}
-                    image={newYearImage}
-                    component='img'
-                    title='New Year Image'
-                  />
-              </CardActionArea>
-            </Card>
-          </Box>
-        </Modal>
+          <img src={newYearImage} alt="" style={{marginTop:"0px",maxWidth:"100vw",maxHeight:"92vh"}}/>
+          <img style={{position:"absolute",right:"2em",top:"2em"}}src="https://img.icons8.com/ios-glyphs/30/ffffff/delete-sign.png" onClick={()=>{this.setState({open:false});}}/>
+          <DarkModeToggler isDarkMode={this.state.isDarkMode} onClick={this.handleClose} handleThemeSwitch={()=>{this.handleThemeSwitch()}} color='var(--black)'/>
+        </div>
         <Toolbar className='grid'>
           <div
             style={{
@@ -238,18 +225,26 @@ export default class Home extends React.Component {
                     style={{
                       width: '100%',
                       borderRadius: 30,
-                      boxShadow: '-10px -10px #4385F4',
-                      border: '2px solid #4385F4'
+
                     }}
                   />
                 </Col>
               </Row>
               <Row className='mt-5'>
                 <Col xs='2' md='1' lg='1' className='mx-auto p-lg-4'>
-                  <Image
-                    src={downArrow}
-                    style={{ width: '100%', color: 'var(--black)' }}
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='50'
+                  height='50'
+                  fill='var(--black)'
+                  class='bi bi-arrow-down'
+                  viewBox='0 0 16 16'
+                  zIndex="6">
+                  <path
+                    fill-rule='evenodd'
+                    d='M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z'
                   />
+                </svg>
                 </Col>
               </Row>
               <Row className='mt-4' />

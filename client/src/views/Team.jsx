@@ -111,7 +111,7 @@ export default class Team extends React.Component {
               className=' img-fluid'
               src={teamImage}
               alt='heading_illustration'
-
+              width="100%"
             />
           </div>
           <div className='flex-item-right' style={{color:'var(--black)',zIndex:"6"}}>

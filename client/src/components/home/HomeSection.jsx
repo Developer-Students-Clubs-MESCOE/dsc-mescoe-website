@@ -66,9 +66,9 @@ class HomeSection extends Component {
 				</Col>
 				<Hidden xsDown>
 					{data.image ? <Col md="6" lg="6" className='my-auto'>
-						<Paper elevation={3} style={{borderRadius: 10,backgroundColor:"transparent"}} variant="outlined">
+						
 							<Image src={data.image} width="100%" style={{borderRadius: 10}}/>
-						</Paper>
+						
 					</Col> : null}
 				</Hidden>
 			</React.Fragment>
