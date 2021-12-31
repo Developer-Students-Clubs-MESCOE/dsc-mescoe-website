@@ -93,7 +93,7 @@ const goToTeam = () => {
 export default class Team extends React.Component {
   constructor(props){
     super(props)
-   
+   document.querySelector("body").style.backgroundColor="var(--white)";
   }
   componentDidMount() {
     document.title = "Team - GDSC MESCOE";
