@@ -73,12 +73,12 @@ const arrangeCol = () => {
       <div className='Teamrow' >
         <h1 className='Cores' style={{zIndex:"7"}}>OUR TEAM</h1>
         <div>{Cores}</div>
-        <center style={{zIndex:"10"}}>
+        <center style={{zIndex:"7"}}>
           <Link to='/team2020'>
             <button
               type='button'
               className='btn btn-dark'
-              style={{zIndex:"10"}}>
+              style={{zIndex:"7"}}>
               <h4>Team 2020</h4>
             </button>
           </Link>
