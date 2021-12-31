@@ -1,30 +1,7 @@
-<<<<<<< HEAD
-import teamImage from "../assets/img/newteam.jpeg";
-import gcpImage from '../assets/img/cloudimage.svg';
-let homeSections = [
-  {
-    title: '30 Days of Google Cloud',
-    content: [
-      'Checkout where you stand amongst other GDSC Members in the race to complete quests on Qwiklabs!'
-    ],
-    button: {
-      text: 'Show Ranks',
-      textColor: '#fff',
-      backgroundColor: '#8a3fff',
-      isLink: true,
-      href: '/#/gcp-rank'
-    },
-    image: gcpImage,
-    cards: [],
-    videos: []
-  },
-  {
-=======
 import teamImage from "../assets/img/new4.gif";
 
 let homeSections = [
   {
->>>>>>> main
     title: 'Get to know the team',
     content: [
       'We’ve got a set of minds, that will blow your mind, teaching you, all sorts of stuff in the world of development.',
