@@ -23,7 +23,7 @@ export default class DSCNavBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      open:true,
+      open: true,
       isDarkMode: JSON.parse(localStorage.getItem('isDarkMode'))
     }
     this.handleThemeSwitch = this.handleThemeSwitch.bind(this);
@@ -49,6 +49,9 @@ export default class DSCNavBar extends Component {
 
   handleThemeSwitch() {
     this.setState({isDarkMode: !this.state.isDarkMode})
+    if(this.state.open){
+      this.setState({open:false})
+    }
     localStorage.setItem('isDarkMode', JSON.stringify(!JSON.parse(localStorage.getItem('isDarkMode'))))
     if(!this.state.isDarkMode){
       document.querySelectorAll(".logo-switch").forEach((e)=>{

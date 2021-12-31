@@ -33,7 +33,7 @@ export default class Home extends React.Component {
     super(props);
     this.state = {
       img: JSON.parse(localStorage.getItem('isDarkMode')) ? gdg_black : gdgLogo,
-      open: true
+      open: true,
     };
     this.handleScroll = this.handleScroll.bind(this);
     this.handleOpen = this.handleOpen.bind(this);
