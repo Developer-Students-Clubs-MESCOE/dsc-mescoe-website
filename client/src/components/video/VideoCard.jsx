@@ -66,7 +66,11 @@ class VideoCard extends Component {
                 <ResponsiveEmbed aspectRatio='16by9'>
                   <ReactPlayer height='100%' width='100%' url={video.url} />
                 </ResponsiveEmbed>
-                <CardContent style={{backgroundColor:"var(--white)",color:"var(--black)"}}>
+                <CardContent
+                  style={{
+                    backgroundColor: 'var(--white)',
+                    color: 'var(--black)'
+                  }}>
                   <p
                     className='p-0 m-0'
                     style={{ fontSize: 16, fontWeight: 'normal' }}>
@@ -78,16 +82,26 @@ class VideoCard extends Component {
                   </p>
                 </CardContent>
               </CardActionArea>
-              <CardActions style={{backgroundColor:"var(--white)",color:"var(--black)"}}>
-                <Button size='large' className='mr-auto' onClick={this.toggleEventModal}
-                        style={{color: 'white', backgroundColor: 'red'}}>
+              <CardActions
+                style={{
+                  backgroundColor: 'var(--white)',
+                  color: 'var(--black)'
+                }}>
+                <Button
+                  size='large'
+                  className='mr-auto'
+                  onClick={this.toggleEventModal}
+                  style={{ color: 'white', backgroundColor: 'red' }}>
                   Close
                 </Button>
-                <Button className='ml-auto' href={video.url} size='large'
-                        style={{color: 'white', backgroundColor: '#242424'}}>
+                <Button
+                  className='ml-auto'
+                  href={video.url}
+                  size='large'
+                  style={{ color: 'white', backgroundColor: '#242424' }}>
                   Watch Now
                 </Button>
-                </CardActions>
+              </CardActions>
             </Card>
           </Modal>
         ) : null}
@@ -102,13 +116,18 @@ class VideoCard extends Component {
             <ResponsiveEmbed aspectRatio='16by9'>
               <ReactPlayer height='100%' width='100%' url={video.url} />
             </ResponsiveEmbed>
-            <CardContent style={{backgroundColor:"var(--white)",color:"var(--black)"}}>
+            <CardContent
+              style={{
+                backgroundColor: 'var(--white)',
+                color: 'var(--black)'
+              }}>
               <h6 className='p-0 m-0'>{video.name}</h6>
             </CardContent>
           </CardActionArea>
-          <CardActions style={{backgroundColor:"var(--white)",color:"var(--black)"}}>
+          <CardActions
+            style={{ backgroundColor: 'var(--white)', color: 'var(--black)' }}>
             <Button
-            style={{backgroundColor:"var(--white)",color:"var(--black)"}}
+              style={{ backgroundColor: 'var(--white)', color: 'var(--black)' }}
               onClick={() => {
                 this.clickEvent(video);
               }}>

@@ -72,7 +72,11 @@ class ProjectCard extends Component {
                     title='Event Image'
                   />
                 </ResponsiveEmbed>
-                <CardContent style={{backgroundColor:"var(--white)",color:"var(--black)"}}>
+                <CardContent
+                  style={{
+                    backgroundColor: 'var(--white)',
+                    color: 'var(--black)'
+                  }}>
                   <p
                     className='p-0 m-0'
                     style={{ fontSize: 16, fontWeight: 'normal' }}>
@@ -84,7 +88,11 @@ class ProjectCard extends Component {
                   </p>
                 </CardContent>
               </CardActionArea>
-              <CardActions style={{backgroundColor:"var(--white)",color:"var(--black)"}}>
+              <CardActions
+                style={{
+                  backgroundColor: 'var(--white)',
+                  color: 'var(--black)'
+                }}>
                 {project.github ? (
                   <Button
                     href={project.github}
@@ -107,9 +115,9 @@ class ProjectCard extends Component {
         ) : null}
         <Card
           style={{
-            boxShadow: `-10px -10px #EA4435`,
+            boxShadow: `-10px -10px #34A852`,
             borderRadius: 10,
-            border: `2px solid #EA4435`
+            border: `2px solid #34A852`
           }}
           className=''>
           <CardActionArea>
@@ -120,13 +128,18 @@ class ProjectCard extends Component {
                 title='Event Image'
               />
             </ResponsiveEmbed>
-            <CardContent  style={{backgroundColor:"var(--white)",color:"var(--black)"}}>
+            <CardContent
+              style={{
+                backgroundColor: 'var(--white)',
+                color: 'var(--black)'
+              }}>
               <h6 className='p-0 m-0'>{project.title}</h6>
             </CardContent>
           </CardActionArea>
-          <CardActions style={{backgroundColor:"var(--white)",color:"var(--black)"}}>
-            <Button 
-            style={{backgroundColor:"var(--white)",color:"var(--black)"}}
+          <CardActions
+            style={{ backgroundColor: 'var(--white)', color: 'var(--black)' }}>
+            <Button
+              style={{ backgroundColor: 'var(--white)', color: 'var(--black)' }}
               onClick={() => {
                 this.clickEvent(project);
               }}>
