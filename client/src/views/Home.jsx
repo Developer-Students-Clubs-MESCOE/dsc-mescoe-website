@@ -2,8 +2,6 @@ import { Toolbar, Box } from '@material-ui/core';
 import React from 'react';
 import { Col, Container, Image, Row, ResponsiveEmbed } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import newYearImage from '../assets/img/Happy-New-Year.svg';
-import Confetti from 'react-confetti';
 
 import Typical from 'react-typical';
 import gdgLogo from '../assets/img/gdg_logo.png';
@@ -51,6 +49,7 @@ export default class Home extends React.Component {
         homeSections[2].videos = result.data;
         Axios.get(`${serverURL}/api/projects/top3`).then((result) => {
           homeSections[3].cards = result.data;
+          this.setState({})
         });
       });
     });
@@ -105,7 +104,6 @@ export default class Home extends React.Component {
       resetFooterStyle();
     }
     return (
-      <>
         <Toolbar className='grid'>
           <div
             style={{
@@ -243,7 +241,6 @@ export default class Home extends React.Component {
             </Container>
           </div>
         </Toolbar>
-      </>
     );
   }
 }
