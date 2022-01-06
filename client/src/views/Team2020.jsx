@@ -14,16 +14,17 @@ import Laukik from "../assets/img/Laukik.jpg";
 import Gaurav from "../assets/img/Gaurav.jpg";
 import TeamComponent from "../components/team/team-component";
 
+
 export default class Team2020 extends React.Component {
+  constructor(props){
+    super(props)
+    
+  }
   componentDidMount() {
     document.title = "Team2020 - GDSC MESCOE";
      window.scrollTo(0, 0)
     resetNavStyle({page: "Team"});
-    if (JSON.parse(localStorage.getItem('isDarkMode'))) {
-      document.querySelectorAll('.team').forEach(e => {
-        e.classList.toggle('dark-mode')
-      })
-    }
+   
   }
 
   render() {

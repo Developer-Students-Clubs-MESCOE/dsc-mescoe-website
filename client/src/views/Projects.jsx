@@ -29,6 +29,7 @@ export default class Projects extends React.Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    
   }
 
 
@@ -65,11 +66,7 @@ export default class Projects extends React.Component {
     axios.get(`${serverURL}/api/projects`)
       .then(res => {
         this.setState({projects: res.data});
-        if (JSON.parse(localStorage.getItem('isDarkMode'))) {
-          document.querySelectorAll('.project').forEach(e => {
-            e.classList.toggle('dark-mode')
-          })
-        }
+        
       })
       .catch(err => console.error(err.message));
   }
@@ -92,7 +89,7 @@ export default class Projects extends React.Component {
       resetFooterStyle()
     }
     return (
-      <Toolbar className='grid'>
+      <Toolbar className='grid' style={{minHeight:"100vh"}}>
         <Container>
           <Row className="mt-5">
             <Col>

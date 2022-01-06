@@ -6,12 +6,14 @@ import axios from 'axios'
 import VideoCard from "../components/video/VideoCard";
 import {Skeleton} from "@material-ui/lab";
 
+
 export default class Videos extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			videos: []
 		}
+		
 	}
 
 	componentDidMount() {
@@ -21,11 +23,7 @@ export default class Videos extends React.Component {
 		axios.get(`${serverURL}/api/videos`)
 			.then(res => {
 				this.setState({videos: res.data});
-				if (JSON.parse(localStorage.getItem('isDarkMode'))) {
-					document.querySelectorAll('.video').forEach(e => {
-						e.classList.toggle('dark-mode')
-					})
-				}
+				
 			})
 			.catch(err => console.error(err.message));
 	}
@@ -36,7 +34,7 @@ export default class Videos extends React.Component {
 			resetFooterStyle()
 		}
 		return (
-			<Toolbar className="grid">
+			<Toolbar className="grid" style={{minHeight:"100vh"}}>
 				<Container>
 					<h3 className="mt-5 video" style={{color: '#EA4435', fontWeight: 600}}>Videos</h3>
 					<Row className="ml-3">

@@ -5,6 +5,8 @@ import DSCNavBar from './components/navigation/DSCNavBar';
 import ROUTES, { RouteType } from './routes';
 import Footer from './components/navigation/Footer';
 import Team2020 from './views/Team2020';
+import {Button} from 'react-bootstrap';
+
 
 export default class App extends React.Component {
   constructor(props) {
@@ -16,6 +18,7 @@ export default class App extends React.Component {
     window.addEventListener('scroll', this.handleScroll);
     if (localStorage.getItem('isDarkMode') === null) {
       localStorage.setItem('isDarkMode', JSON.stringify(false));
+      //dark mode
     }
   }
 
@@ -60,6 +63,7 @@ export default class App extends React.Component {
         <Switch>
           {this.getRoutes(ROUTES)}
         </Switch>
+
         <Hidden xsDown>
           <Footer />
         </Hidden>

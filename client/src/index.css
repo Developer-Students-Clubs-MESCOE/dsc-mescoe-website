@@ -1,9 +1,36 @@
 .dark-mode {
     filter: invert(0.95);
 }
-
+.darkModeAnimation{
+    position: fixed;
+    top:0px;
+    left:0px;
+    display: none;
+    align-items: center;
+justify-content: center;
+    z-index: 8;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+:root{
+    --white: #ffffff;
+    --black: #121212;
+    --bg-img: url("../src/assets/img/trialNoGridFinal.svg");
+    --transparent: transparent;
+    --card: #ffffff;
+}
+.dsc-nav{
+    background-color: var(--white);
+    color: var(--black);
+}
+#root{
+    background-color: var(--white);
+    color: var(--black);
+}
 .grid {
-    background-image: url("../src/assets/img/trialNoGridFinal.svg");
+    background-image: var(--bg-img);
+    min-height: 100vh;
 }
 
 .dsc-brand {
@@ -16,6 +43,11 @@
 
 .fade-out-animation {
     animation: fadeOut 300ms forwards;
+}
+
+.darkmodebtn img{
+    width:25px;
+    height:25px;
 }
 
 @keyframes fadeIn {
@@ -78,4 +110,82 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Google Sans', 'Roboto', sans-serif;
+}
+.flip-card {
+    background-color: transparent;
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flip-card .flip-card-inner {
+    animation: animate 1s;
+    
+  }
+  .largeLogo {
+      position: relative;
+  }
+  @keyframes animate {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(180deg);}
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flip-card-front {
+    background-color: transparent;
+    color:whitesmoke;
+  }
+  .flip-card-back {
+    background:transparent;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .darkModeText{
+      display: none;
+  }
+  .leftAnimate{
+      animation: leftAnimate 3sec;
+  }
+  .rightAnimate{
+    animation: rightAnimate 3sec;
+}
+  @keyframes leftAnimate{
+      0%{
+          left:0vw;
+      }
+      100%{
+          left: 25vw;
+      }
+  }
+  @keyframes rightAnimate{
+    0%{
+        left:0vw;
+    }
+    100%{
+        left: 25vw;
+    }
 }
