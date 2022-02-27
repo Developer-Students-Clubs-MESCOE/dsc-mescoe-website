@@ -92,12 +92,12 @@ const ROUTES = [
   },
   {
     icon: null,
-    name: 'Solution-Challenge',
-    path: '/Solution-Challenge',
+    name: 'FLutteringWithFlutter',
+    path: '/FLutteringWithFlutter',
     component: (
       <Redirect
-        path='/Solution-Challenge'
-        url='https://gdsc.community.dev/events/details/developer-student-clubs-modern-education-societys-college-of-engineering-pune-presents-solution-challenge/'
+        path='/FLutteringWithFlutter'
+        url='/https://teams.microsoft.com/l/meetup-join/19%3ameeting_OTVmMDc0YzktOWQ4OC00ODUxLWFlMWEtMjA3YWMwMGZhMDcw%40thread.v2/0?context=%7b%22Tid%22%3a%22a3d598b6-6092-4351-b1a3-b213e8adc03b%22%2c%22Oid%22%3a%22105d357b-9536-4050-bdb5-0d5c3c247423%22%7d'
       />
     ),
     type: RouteType.PAGE,
