@@ -105,6 +105,19 @@ const ROUTES = [
 
   {
     icon: null,
+    name: 'FluteringWithFlutter_Register',
+    path: '/FluteringWithFlutter_Register',
+    component: (
+      <Redirect
+        path='/FluteringWithFlutter_Register'
+        url='https://gdsc.community.dev/events/details/developer-student-clubs-modern-education-societys-college-of-engineering-pune-presents-flutter-festival-modern-education-societys-college-of-engineering-pune/'
+      />
+    ),
+    type: RouteType.PAGE,
+  },
+
+  {
+    icon: null,
     name: 'Team2020',
     path: '/team2020',
     component: <Team2020 />,
