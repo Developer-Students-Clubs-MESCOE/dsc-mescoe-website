@@ -92,12 +92,12 @@ const ROUTES = [
   },
   {
     icon: null,
-    name: 'FluteringWithFlutter',
-    path: '/FluteringWithFlutter',
+    name: 'AIMLOnAzureRegistration',
+    path: '/AIMLOnAzureRegistration',
     component: (
       <Redirect
-        path='/FluteringWithFlutter'
-        url='https://teams.microsoft.com/l/meetup-join/19%3ameeting_OTVmMDc0YzktOWQ4OC00ODUxLWFlMWEtMjA3YWMwMGZhMDcw%40thread.v2/0?context=%7b%22Tid%22%3a%22a3d598b6-6092-4351-b1a3-b213e8adc03b%22%2c%22Oid%22%3a%22105d357b-9536-4050-bdb5-0d5c3c247423%22%7d'
+        path='/AIMLOnAzureRegistration'
+        url='https://gdsc.community.dev/events/details/developer-student-clubs-modern-education-societys-college-of-engineering-pune-presents-getting-started-on-ai-ml-with-azure/'
       />
     ),
     type: RouteType.PAGE,
@@ -105,12 +105,12 @@ const ROUTES = [
 
   {
     icon: null,
-    name: 'FluteringWithFlutter_Register',
-    path: '/FluteringWithFlutter_Register',
+    name: 'AIMLOnAzureTeamsLink',
+    path: '/AIMLOnAzureTeamsLink',
     component: (
       <Redirect
-        path='/FluteringWithFlutter_Register'
-        url='https://gdsc.community.dev/events/details/developer-student-clubs-modern-education-societys-college-of-engineering-pune-presents-flutter-festival-modern-education-societys-college-of-engineering-pune/'
+        path='/AIMLOnAzureTeamsLink'
+        url='https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGExNWM5ZjctOWRiMC00N2MyLTkyNTctMDI1NTM4ZjkyMWM5%40thread.v2/0?context=%7b%22Tid%22%3a%22a3d598b6-6092-4351-b1a3-b213e8adc03b%22%2c%22Oid%22%3a%22bd5c280b-e588-4b9d-9418-323538bd5091%22%7d'
       />
     ),
     type: RouteType.PAGE,
