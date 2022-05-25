@@ -105,12 +105,12 @@ const ROUTES = [
 
   {
     icon: null,
-    name: 'AIMLOnAzureTeamsLink',
-    path: '/AIMLOnAzureTeamsLink',
+    name: 'Skill-Up-CP',
+    path: '/Skill-Up-CP',
     component: (
       <Redirect
-        path='/AIMLOnAzureTeamsLink'
-        url='https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGExNWM5ZjctOWRiMC00N2MyLTkyNTctMDI1NTM4ZjkyMWM5%40thread.v2/0?context=%7b%22Tid%22%3a%22a3d598b6-6092-4351-b1a3-b213e8adc03b%22%2c%22Oid%22%3a%22bd5c280b-e588-4b9d-9418-323538bd5091%22%7d'
+        path='/Skill-Up-CP'
+        url='https://teams.microsoft.com/l/meetup-join/19%3Ameeting_MmM5MjExNjUtNjIyMi00N2I5LThiZTYtODRlYjY5MWVkOTk1%40thread.v2/0?context=%7B%22Tid%22%3A%22a3d598b6-6092-4351-b1a3-b213e8adc03b%22%2C%22Oid%22%3A%22ab9aed67-eff7-4975-834b-3f5bd7e7796a%22%2C%22MessageId%22%3A%220%22%7D'
       />
     ),
     type: RouteType.PAGE,
