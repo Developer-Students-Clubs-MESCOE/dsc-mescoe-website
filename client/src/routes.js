@@ -4,6 +4,7 @@ import Events from './views/Events';
 import Videos from './views/Videos';
 import Projects from './views/Projects';
 import Team2020 from './views/Team2020';
+import Team2021 from './views/Team2021';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Movie, People, Today, HomeRounded as HomeIcon, DeveloperBoard } from '@material-ui/icons';
@@ -123,6 +124,13 @@ const ROUTES = [
     component: <Team2020 />,
     type: RouteType.PAGE,
   },
+  {
+    icon: null,
+    name: 'Team2021',
+    path: '/team2021',
+    component: <Team2021/>,
+    type: RouteType.PAGE,
+  }
 ];
 
 export default ROUTES;

@@ -42,7 +42,7 @@ const ArrangeRow = (props) => {
   if (Members.length < 3) spacing = 'Teamcol space-evenly';
   if (props.core === 'Technical') {
     return (
-      <div id={props.core}>
+      <div id={props.core}> 
         <h2 className='Cores'>{props.core}</h2>
 
         <div className='Teamcol'>{Members.slice(0, 3)}</div>
@@ -74,14 +74,24 @@ const arrangeCol = () => {
         <h1 className='Cores' style={{zIndex:"7"}}>OUR TEAM</h1>
         <div>{Cores}</div>
         <center style={{zIndex:"7"}}>
+        <Link to='/team2021'>
+            <button
+              type='button'
+              className='btn mx-2 btn-dark'
+              style={{zIndex:"7"}}>
+              <h4>Team 2021 </h4>
+            </button>
+          </Link>
           <Link to='/team2020'>
             <button
               type='button'
-              className='btn btn-dark'
+              className='btn mx-2 btn-dark'
               style={{zIndex:"7"}}>
-              <h4>Team 2020</h4>
+              <h4>Team 2020 </h4>
             </button>
           </Link>
+          
+          
         </center>
       </div>
     </div>
