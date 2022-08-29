@@ -52,7 +52,7 @@ const TeamData = {
       classname: 'person-badge ${classes.large} shadow-lg',
       classname1: 'person mt-4'
     },  {
-      name: 'DEVESH SINGH',
+      name: 'Devesh Singh',
       imagen: 'Images/devesh.png',
       imagep: 'Images/devesh.png',
       linkedInLink: 'https://www.linkedin.com/in/deveshsingh162002',
@@ -86,7 +86,7 @@ const TeamData = {
       githubLink: 'https://github.com/Prathameshkhaire'
     }
   ],
-  '': [
+  ' ': [
     
     {
       name: 'Siddhii Agarwal',
@@ -103,7 +103,7 @@ const TeamData = {
       githubLink: 'https://github.com/Prathameshkhaire'
     }
   ],
-  'Design Core': [
+  'Design Core ': [
     {
       name: 'Kunal Digole ',
       imagen: 'Images/kunal.png',
@@ -129,7 +129,7 @@ const TeamData = {
       classname: 'person-badge ${classes.large} shadow-lg'
     },
   ],
-  '': [
+  '            ': [
     {
       name: 'Radhaiya Kulkarni',
       imagen: 'Images/radhaiya.png',
