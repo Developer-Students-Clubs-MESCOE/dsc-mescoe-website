@@ -56,7 +56,7 @@ const TeamData = {
       imagen: 'Images/devesh.png',
       imagep: 'Images/devesh.png',
       linkedInLink: 'https://www.linkedin.com/in/deveshsingh162002',
-      githubLink: ' https://github.com/Khushal-Thanvi',
+      githubLink: '/',
       classname: 'person-badge ${classes.large} shadow-lg',
       classname1: 'person mt-4'
     }
@@ -82,7 +82,7 @@ const TeamData = {
       name: 'Prathamesh Khaire',
       imagen: 'Images/khaire.png',
       imagep: 'Images/khaire.png',
-      linkedInLink: 'https://www.linkedin.com/in/tanvi-budhabaware/',
+      linkedInLink: 'https://www.linkedin.com/in/prathamesh-khaire-22012003',
       githubLink: 'https://github.com/Prathameshkhaire'
     }
   ],
@@ -99,8 +99,8 @@ const TeamData = {
       name: 'Manish More',
       imagen: 'Images/manish.png',
       imagep: 'Images/manish.png',
-      linkedInLink: 'https://www.linkedin.com/in/tanvi-budhabaware/',
-      githubLink: 'https://github.com/Prathameshkhaire'
+      linkedInLink: 'https://www.linkedin.com/in/manish-more-3a065621b/',
+      githubLink: 'https://github.com/Maniszz'
     }
   ],
   'Design Core ': [
@@ -134,7 +134,7 @@ const TeamData = {
       name: 'Radhaiya Kulkarni',
       imagen: 'Images/radhaiya.png',
       imagep: 'Images/radhaiya.png',
-      linkedInLink: 'https://www.linkedin.com/in/kunal-digole-878727213/',
+      linkedInLink: 'https://www.linkedin.com/in/radhaiya-kulkarni/',
       githubLink: 'https://github.com/Radhaiya',
       classname: 'person-badge ${classes.large} shadow-lg'
     },
@@ -142,8 +142,8 @@ const TeamData = {
       name: 'Pratik Pawar',
       imagen: 'Images/pratik.png',
       imagep: 'Images/pratik.png',
-      linkedInLink: 'https://www.linkedin.com/in/chirag-fulfagar-b9538b213',
-      githubLink: 'https://github.com/chiragfulfagar',
+      linkedInLink: 'https://www.linkedin.com/in/pratik-pawar-6a7725213',
+      githubLink: 'https://github.com/Pawar-Pratik',
       classname: 'person-badge ${classes.large} shadow-lg'
     }
   ],

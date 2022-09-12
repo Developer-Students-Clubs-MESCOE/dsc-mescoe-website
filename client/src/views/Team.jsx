@@ -12,7 +12,7 @@ const TeamMember = (props) => {
   
   return (<div className='person' id={props.member.name}>
       <div className='person-badge'>
-        <img
+        <img    
           className='normal'
           src={process.env.PUBLIC_URL + props.member.imagen}
         />
@@ -27,7 +27,7 @@ const TeamMember = (props) => {
       </div>
         <div className="links">
         <a href={props.member.githubLink} target="blank"><GitHub className="mr-2" style={{ color: 'var(--black)' }} /></a>
-        <a href={props.member.linkedInLink} target="blank"><LinkedIn className="ml-1" style={{ color: 'var(--black)' }} /></a>
+        <a href={props.member.linkedInLink} target="blank"><LinkedIn className="ml-1" style={{ color: 'var(--black  )' }} /></a>
         </div>
       </div>
   );
