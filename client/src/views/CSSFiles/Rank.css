@@ -1,0 +1,8 @@
+
+@media screen and (max-width:480px) {
+    input
+        {
+            width:200px;
+            height:50px;
+        }
+}
