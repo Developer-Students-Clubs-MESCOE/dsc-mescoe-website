@@ -10,6 +10,7 @@ class RankCard extends Component {
   }
   render() {
     const data = this.props.data
+    
     return (
       <Col>
         <Card style={{
