@@ -38,67 +38,10 @@ class GCPRank extends Component {
     super(props);
     this.state = {
       value: 0,
-      track1: [
-        {
-          0: "Satyam Vishwakarma",
-          1: { $numberInt: "6" },
-          2: { $numberInt: "6" },
-          _id: { $oid: "617d24ccb1b7d313d1758b5e" },
-        },
-        {
-          0: "Vaibhav Singh",
-          1: { $numberInt: "1" },
-          2: { $numberInt: "1" },
-          _id: { $oid: "617d24ccb1b7d313d1758b60" },
-        },
-        {
-          0: "Dhruvil Shah",
-          1: { $numberInt: "6" },
-          2: { $numberInt: "6" },
-          _id: { $oid: "617d24ccb1b7d313d1758b63" },
-        },
-      ],
+      track1: [],
       track2: [],
-      searchtrack1: [
-        {
-          0: "Satyam Vishwakarma",
-          1: { $numberInt: "6" },
-          2: { $numberInt: "6" },
-          _id: { $oid: "617d24ccb1b7d313d1758b5e" },
-        },
-        {
-          0: "Vaibhav Singh",
-          1: { $numberInt: "1" },
-          2: { $numberInt: "1" },
-          _id: { $oid: "617d24ccb1b7d313d1758b60" },
-        },
-        {
-          0: "Dhruvil Shah",
-          1: { $numberInt: "6" },
-          2: { $numberInt: "6" },
-          _id: { $oid: "617d24ccb1b7d313d1758b63" },
-        },
-      ],
-      searchtrack2: [
-        {
-          0: "Satyam Vishwakarma",
-          1: { $numberInt: "6" },
-          2: { $numberInt: "6" },
-          _id: { $oid: "617d24ccb1b7d313d1758b5e" },
-        },
-        {
-          0: "Vaibhav Singh",
-          1: { $numberInt: "1" },
-          2: { $numberInt: "1" },
-          _id: { $oid: "617d24ccb1b7d313d1758b60" },
-        },
-        {
-          0: "Dhruvil Shah",
-          1: { $numberInt: "6" },
-          2: { $numberInt: "6" },
-          _id: { $oid: "617d24ccb1b7d313d1758b63" },
-        },
-      ],
+      searchtrack1: [],
+      searchtrack2: [],
     };
     this.handleChange = this.handleChange.bind(this);
     if (JSON.parse(localStorage.getItem("isDarkMode"))) {
@@ -123,30 +66,22 @@ class GCPRank extends Component {
   componentDidMount() {
     document.title = "GCP Rank - DSC MESCOE";
     resetNavStyle({ page: "GCP Rank" });
-    Axios.get(`${serverURL}/api/ranks/track1`).then((track1) => {
-      Axios.get(`${serverURL}/api/ranks/track2`).then((track2) => {
-        let track1Data = [
-          {
-            0: "Satyam Vishwakarma",
-            1: { $numberInt: "6" },
-            2: { $numberInt: "6" },
-            _id: { $oid: "617d24ccb1b7d313d1758b5e" },
-          },
-          {
-            0: "Vaibhav Singh",
-            1: { $numberInt: "1" },
-            2: { $numberInt: "1" },
-            _id: { $oid: "617d24ccb1b7d313d1758b60" },
-          },
-          {
-            0: "Dhruvil Shah",
-            1: { $numberInt: "6" },
-            2: { $numberInt: "6" },
-            _id: { $oid: "617d24ccb1b7d313d1758b63" },
-          },
-        ];
+        let track1 = {data:[{
+          rank:1,
+          name:"sumit",
+          track1_count:3
+        
+        }]};
+        let track2 = {data: [{
+          rank:3,
+          name:"khushal",
+          track1_count:2
+        
+        }]}
+
+        let track1Data = [];
         let track2Data = [];
-        track1Data.forEach((data) => {
+        track1.data.forEach((data) => {
           
           let medal;
           if (data.rank === 1) {
@@ -193,8 +128,7 @@ class GCPRank extends Component {
           searchtrack1: track1Data,
           searchtrack2: track2Data,
         });
-      });
-    });
+      
     if (JSON.parse(localStorage.getItem("isDarkMode"))) {
       document.querySelectorAll(".logo-switch").forEach((e) => {
         e.src = gdg_black;
