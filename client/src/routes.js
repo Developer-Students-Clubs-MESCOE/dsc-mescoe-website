@@ -11,6 +11,7 @@ import { Movie, People, Today, HomeRounded as HomeIcon, DeveloperBoard } from '@
 import { faMedium } from '@fortawesome/free-brands-svg-icons';
 import gdgBlack from './assets/img/gdg_black.png';
 import { Image } from 'react-bootstrap';
+import GCPRank from './views/GCPRank';
 export const RouteType = {
 	LINK: 0,
 	PAGE: 1,
@@ -39,13 +40,13 @@ const ROUTES = [
     component: <Team />,
     type: RouteType.PAGE,
   },
-  {
-    icon: <Today style={{ color: 'var(--black)' }} />,
-    name: 'Events',
-    path: '/events',
-    component: <Events />,
-    type: RouteType.PAGE,
-  },
+  // {
+  //   icon: <Today style={{ color: 'var(--black)' }} />,
+  //   name: 'Events',
+  //   path: '/events',
+  //   component: <Events />,
+  //   type: RouteType.PAGE,
+  // },
   {
     icon: <Movie style={{ color: 'var(--black)' }} />,
     name: 'Videos',
@@ -58,6 +59,13 @@ const ROUTES = [
     name: 'Projects',
     path: '/projects',
     component: <Projects />,
+    type: RouteType.PAGE,
+  },
+  {
+    icon: <DeveloperBoard style={{ color: 'var(--black)' }} />,
+    name: 'GCPRank',
+    path: '/GCPRank',
+    component: <GCPRank />,
     type: RouteType.PAGE,
   },
   {
