@@ -1,0 +1,19 @@
+
+.darkModeAnimation{
+    position: fixed;
+    top:0px;
+    left:0px;
+    display: none;
+    align-items: center;
+justify-content: center;
+    z-index: 8;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+.darkModeText{
+    display: none;
+}
+.largeLogo {
+    position: relative;
+}
