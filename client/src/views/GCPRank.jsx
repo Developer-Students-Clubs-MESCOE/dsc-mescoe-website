@@ -67,9 +67,9 @@ class GCPRank extends Component {
     document.title = "GCP Rank - DSC MESCOE";
     resetNavStyle({ page: "GCP Rank" });
         let track1 = {data:[{
-          rank:3,
+          rank:1,
           name:"SAHIL MANOJ VICHARE",
-          track1_count:1
+          track1_count:3
         
         },{
           rank:3,
@@ -82,14 +82,14 @@ class GCPRank extends Component {
           track1_count:0
         
         },{
-          rank:4,
+          rank:1,
           name:"Sakshi Santosh Labde",
-          track1_count:0
+          track1_count:3
         
         },{
-          rank:4,
+          rank:1,
           name:"Chetan Marathe",
-          track1_count:0
+          track1_count:3
         
         },{
           rank:4,
@@ -97,9 +97,9 @@ class GCPRank extends Component {
           track1_count:0
         
         },{
-          rank:4,
+          rank:1,
           name:"Mahesh Rajendra Bhabad",
-          track1_count:1
+          track1_count:3
         
         },{
           rank:4,
@@ -122,9 +122,9 @@ class GCPRank extends Component {
           track1_count:1
         
         },{
-          rank:4,
+          rank:1,
           name:"Shubham Santosh Chitampalle",
-          track1_count:0
+          track1_count:3
         
         },{
           rank:4,
@@ -132,14 +132,14 @@ class GCPRank extends Component {
           track1_count:0
         
         },{
-          rank:3,
+          rank:1,
           name:"Param Tatiya",
-          track1_count:0
+          track1_count:3
         
         },{
-          rank:3,
+          rank:1,
           name:"Bhakti Wadikar ",
-          track1_count:0
+          track1_count:3
         
         },{
           rank:4,
@@ -347,27 +347,27 @@ class GCPRank extends Component {
                 30 Days of Google Cloud
               </h3>
             </Col>
-//             <Col>
-//               <input
-//                 id="admin-manage-faculty-textfield"
-//                 type="text"
-//                 className="form-control p-2 text-center"
-//                 style={{
-//                   border: "1px solid #7b7f85",
-//                   borderRadius: 20,
-//                   width: "300px",
-//                 }}
-//                 placeholder="Search Your Name Here"
-//                 onInput={this.handleChangeInput}
-//               />
-//             </Col>
+            <Col>
+              <input
+                id="admin-manage-faculty-textfield"
+                type="text"
+                className="form-control p-2 text-center"
+                style={{
+                  border: "1px solid #7b7f85",
+                  borderRadius: 20,
+                  width: "300px",
+                }}
+                placeholder="Search Your Name Here"
+                onInput={this.handleChangeInput}
+              />
+            </Col>
           </Row>
           <Row className="mb-3 mt-3">
             <Alert variant="danger">
               Data gets updated after every 24 hours
             </Alert>
           </Row>
-          <AppBar
+          {/* <AppBar
             position="static"
             color="inherit"
             style={{ backgroundColor: "var(--white)", color: "var(--black)" }}
@@ -384,34 +384,34 @@ class GCPRank extends Component {
               aria-label="rank tabs"
               variant="scrollable"
             >
-//               <Tab
-//                 label="Cloud Engineering"
-//                 {...a11yProps(0)}
-//                 style={{
-//                   fontFamily: "Google Sans",
-//                   fontWeight: "bold",
-//                   backgroundColor: "var(--white)",
-//                   color: "var(--black)",
-//                 }}
-//                 onClick={() => {
-//                   this.handleChange(0);
-//                 }}
-//               />
-//               <Tab
-//                 label="Data Science and ML"
-//                 {...a11yProps(1)}
-//                 style={{
-//                   fontFamily: "Google Sans",
-//                   fontWeight: "bold",
-//                   backgroundColor: "var(--white)",
-//                   color: "var(--black)",
-//                 }}
-//                 onClick={() => {
-//                   this.handleChange(1);
-//                 }}
-//               />
-//             </Tabs>
-          </AppBar>
+              <Tab
+                label="Cloud Engineering"
+                {...a11yProps(0)}
+                style={{
+                  fontFamily: "Google Sans",
+                  fontWeight: "bold",
+                  backgroundColor: "var(--white)",
+                  color: "var(--black)",
+                }}
+                onClick={() => {
+                  this.handleChange(0);
+                }}
+              />
+              <Tab
+                label="Data Science and ML"
+                {...a11yProps(1)}
+                style={{
+                  fontFamily: "Google Sans",
+                  fontWeight: "bold",
+                  backgroundColor: "var(--white)",
+                  color: "var(--black)",
+                }}
+                onClick={() => {
+                  this.handleChange(1);
+                }}
+              />
+            </Tabs>
+          </AppBar> */}
           <TabPanel
             value={this.state.value}
             index={0}
@@ -423,7 +423,7 @@ class GCPRank extends Component {
             >
               <Row>
                 <Col xl={3}>
-                  <h4 style={{ color: "#222" }}>Cloud Engineering</h4>
+                  {/* <h4 style={{ color: "#222" }}>Cloud Engineering</h4> */}
                 </Col> 
                 <Col className="gcp">{this.medals()}</Col>
               </Row>
