@@ -347,20 +347,20 @@ class GCPRank extends Component {
                 30 Days of Google Cloud
               </h3>
             </Col>
-            <Col>
-              <input
-                id="admin-manage-faculty-textfield"
-                type="text"
-                className="form-control p-2 text-center"
-                style={{
-                  border: "1px solid #7b7f85",
-                  borderRadius: 20,
-                  width: "300px",
-                }}
-                placeholder="Search Your Name Here"
-                onInput={this.handleChangeInput}
-              />
-            </Col>
+//             <Col>
+//               <input
+//                 id="admin-manage-faculty-textfield"
+//                 type="text"
+//                 className="form-control p-2 text-center"
+//                 style={{
+//                   border: "1px solid #7b7f85",
+//                   borderRadius: 20,
+//                   width: "300px",
+//                 }}
+//                 placeholder="Search Your Name Here"
+//                 onInput={this.handleChangeInput}
+//               />
+//             </Col>
           </Row>
           <Row className="mb-3 mt-3">
             <Alert variant="danger">
