@@ -384,33 +384,33 @@ class GCPRank extends Component {
               aria-label="rank tabs"
               variant="scrollable"
             >
-              <Tab
-                label="Cloud Engineering"
-                {...a11yProps(0)}
-                style={{
-                  fontFamily: "Google Sans",
-                  fontWeight: "bold",
-                  backgroundColor: "var(--white)",
-                  color: "var(--black)",
-                }}
-                onClick={() => {
-                  this.handleChange(0);
-                }}
-              />
-              <Tab
-                label="Data Science and ML"
-                {...a11yProps(1)}
-                style={{
-                  fontFamily: "Google Sans",
-                  fontWeight: "bold",
-                  backgroundColor: "var(--white)",
-                  color: "var(--black)",
-                }}
-                onClick={() => {
-                  this.handleChange(1);
-                }}
-              />
-            </Tabs>
+//               <Tab
+//                 label="Cloud Engineering"
+//                 {...a11yProps(0)}
+//                 style={{
+//                   fontFamily: "Google Sans",
+//                   fontWeight: "bold",
+//                   backgroundColor: "var(--white)",
+//                   color: "var(--black)",
+//                 }}
+//                 onClick={() => {
+//                   this.handleChange(0);
+//                 }}
+//               />
+//               <Tab
+//                 label="Data Science and ML"
+//                 {...a11yProps(1)}
+//                 style={{
+//                   fontFamily: "Google Sans",
+//                   fontWeight: "bold",
+//                   backgroundColor: "var(--white)",
+//                   color: "var(--black)",
+//                 }}
+//                 onClick={() => {
+//                   this.handleChange(1);
+//                 }}
+//               />
+//             </Tabs>
           </AppBar>
           <TabPanel
             value={this.state.value}
