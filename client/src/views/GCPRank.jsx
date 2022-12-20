@@ -64,8 +64,8 @@ class GCPRank extends Component {
   }
 
   componentDidMount() {
-    document.title = "GCP Rank - DSC MESCOE";
-    resetNavStyle({ page: "GCP Rank" });
+    document.title = "GCCP Rank - DSC MESCOE";
+    resetNavStyle({ page: "GCCP Rank" });
         let track1 = {data:[{
           rank:1,
           name:"SAHIL MANOJ VICHARE",
