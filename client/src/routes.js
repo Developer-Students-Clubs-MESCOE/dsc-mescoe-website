@@ -63,8 +63,8 @@ const ROUTES = [
   },
   {
     icon: <DeveloperBoard style={{ color: 'var(--black)' }} />,
-    name: 'GCPRank',
-    path: '/GCPRank',
+    name: 'GCCPRank',
+    path: '/GCCPRank',
     component: <GCPRank />,
     type: RouteType.PAGE,
   },
