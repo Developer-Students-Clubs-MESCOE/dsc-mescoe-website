@@ -374,7 +374,7 @@ class GCPRank extends Component {
           <Row className="mt-5">
             <Col>
               <h3 style={{ color: "#8a3fff" }} className="gcp">
-                30 Days of Google Cloud
+                Google Cloud Career Practitioner
               </h3>
             </Col>
             <Col>
