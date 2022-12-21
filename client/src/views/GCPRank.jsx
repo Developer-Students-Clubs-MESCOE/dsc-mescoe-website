@@ -82,48 +82,43 @@ class GCPRank extends Component {
           track1_count:3
         
         },{
-          rank:2,
-          name:"Kashish Deepak Kosalge ",
-          track1_count:2
-        
-        },{
           rank:1,
-          name:"Mahesh Rajendra Bhabad",
-          track1_count:3
-        
-        },{
-          rank:2,
-          name:"SANIA SHAKEELAHMED NIDAGUNDI",
-          track1_count:0
-        
-        },{
-          rank:3,
-          name:"Megha",
-          track1_count:0
-        
-        },{
-          rank:2,
-          name:"SANSKRUTI JITENDRA SHARMA",
-          track1_count:0
-        
-        },{
-          rank:2,
-          name:"Prathamesh Kalyan Sable",
-          track1_count:2
-        
-        },{
-          rank:1,
-          name:"Shubham Santosh Chitampalle",
-          track1_count:3
-        
-        },{
-          rank:2,
-          name:"Sejal Sagar Jadhav",
+          name:"Diksha Tukaram Gavshete          ",
           track1_count:1
         
         },{
           rank:1,
-          name:"Param Tatiya",
+          name:"Kashish Deepak Kosalge           ",
+          track1_count:2
+        
+        },{
+          rank:1,
+          name:"Mahesh Rajendra Bhabad          ",
+          track1_count:3
+        
+        },{
+          rank:1,
+          name:"Megha",
+          track1_count:0
+        
+        },{
+          rank:1,
+          name:"Prathamesh Kalyan Sable          ",
+          track1_count:3
+        
+        },{
+          rank:1,
+          name:"Shubham Santosh Chitampalle          ",
+          track1_count:3
+        
+        },{
+          rank:1,
+          name:"Sejal Sagar Jadhav          ",
+          track1_count:1
+        
+        },{
+          rank:1,
+          name:"Param Tatiya          ",
           track1_count:3
         
         },{
@@ -132,38 +127,58 @@ class GCPRank extends Component {
           track1_count:3
         
         },{
-          rank:2,
+          rank:1,
           name:"Gauri Bhanage ",
-          track1_count:1
+          track1_count:3
+        
+        },{
+          rank:1,
+          name:"Kunal Digole",
+          track1_count:0
+        
+        },{
+          rank:1,
+          name:"Omkar Balwant Chougule ",
+          track1_count:2
+        
+        },{
+          rank:1,
+          name:"Yash Raosaheb Jadhav",
+          track1_count:2
         
         },{
           rank:2,
-          name:" Vaishnavi Ganesh Nikam",
+          name:"Aakanksha Sharad Patil",
+          track1_count:0
+        
+        },{
+          rank:2,
+          name:"ATHARVA SANTOSH GAWADE ",
           track1_count:0
         
         },{
           rank:2,
           name:"Kaustubh Shankar Warade",
-          track1_count:0
+          track1_count:1
         
         },{
-          rank:3,
-          name:"Kunal Digole",
+          rank:2,
+          name:"Komal Patilba Kadnor          ",
           track1_count:0
         
         },{
           rank:2,
-          name:"Omkar Balwant Chougule ",
+          name:"SANIA SHAKEELAHMED NIDAGUNDI ",
+          track1_count:1
+        
+        },{
+          rank:2,
+          name:"SANSKRUTI JITENDRA SHARMa          ",
           track1_count:0
         
         },{
           rank:2,
-          name:"Yash Raosaheb Jadhav",
-          track1_count:0
-        
-        },{
-          rank:3,
-          name:"Aakanksha Sharad Patil",
+          name:" Vaishnavi Ganesh Nikam",
           track1_count:0
         
         },{
@@ -172,18 +187,53 @@ class GCPRank extends Component {
           track1_count:0
         
         },{
-          rank:4,
-          name:"ATHARVA SANTOSH GAWADE ",
+          rank:3,
+          name:"Sanika Sunil Chavan          ",
           track1_count:0
         
         },{
-          rank:4,
-          name:"Diksha Tukaram Gavshete",
-          track1_count:0
-        
-        },{
-          rank:4,
+          rank:3,
           name:"Parth Chandrashekhar Desai",
+          track1_count:1
+        
+        },{
+          rank:3,
+          name:"Rashmi Sureshrao Dhole",
+          track1_count:0
+        
+        },{
+          rank:4,
+          name:"AYUSH PRAKASH YEOLE          ",
+          track1_count:0
+        
+        },{
+          rank:4,
+          name:"Sampada Ramkrishna Aghav          ",
+          track1_count:1
+        
+        },{
+          rank:4,
+          name:"Kshipra Wasnik          ",
+          track1_count:0
+        
+        },{
+          rank:4,
+          name:"Mugdha Arvind",
+          track1_count:1
+        
+        },{
+          rank:4,
+          name:" Nandini Sharad Pajgade  ",
+          track1_count:0
+        
+        },{
+          rank:4,
+          name:"Shravani Shivaji Borude",
+          track1_count:0
+        
+        },{
+          rank:4,
+          name:"Vishnu Santosh Popalghat",
           track1_count:0
         
         },{
@@ -193,15 +243,12 @@ class GCPRank extends Component {
         
         },{
           rank:4,
-          name:"Rashmi Sureshrao Dhole",
-          track1_count:0
-        
-        },{
-          rank:4,
           name:"Khushal Rajendra Thanvi",
           track1_count:0
         
-        }]};
+        },]};
+
+
         let track2 = {data: []}
 
         let track1Data = [];
@@ -374,7 +421,7 @@ class GCPRank extends Component {
           <Row className="mt-5">
             <Col>
               <h3 style={{ color: "#8a3fff" }} className="gcp">
-                Google Cloud Career Practitioner
+                30 Days of Google Cloud
               </h3>
             </Col>
             <Col>
