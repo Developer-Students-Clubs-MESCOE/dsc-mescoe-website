@@ -126,6 +126,13 @@ class EventCard extends Component {
             }}>
               Learn More
             </Button>
+            {
+            
+            //console.log(data + "Cards ")
+           data.upcoming===true?
+          <p style={{marginLeft: "90px", marginTop: "auto", marginBottom: "5px", color: "red", fontSize: "2.3ex"}} >Upcomming!</p>
+          : null
+          }
           </CardActions>
         </Card>
       </React.Fragment>
